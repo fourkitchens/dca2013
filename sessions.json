@@ -1,0 +1,63 @@
+[
+  {
+    "title": "Practical Drupal Commerce",
+    "presenters": "Ryan Szrama",
+    "tag": "Site building"
+  },
+  {
+    "title": "Preying on the drupal_alter()",
+    "presenters": "Matt Kleve",
+    "tag": "Development"
+  },
+  {
+    "title": "How to Seal the Deal Without Writing a Proposal",
+    "presenters": "Tim Hamilton",
+    "tag": "Business and marketing"
+  },
+  {
+    "title": "Sustainable theme development with Fusion",
+    "presenters": "Jason Yergeau",
+    "tag": "Design, Theming and UX"
+  },
+  {
+    "title": "Future-friendly: Responsive Drupal Theming",
+    "presenters": "Chris Ruppel",
+    "tag": "Design, Theming and UX"
+  },
+  {
+    "title": "I’m Leaving You: The risks of dumping your old CMS for Drupal and how to manage them",
+    "presenters": "Nicole Lind",
+    "tag": "Business and marketing"
+  },
+  {
+    "title": "To the Grave and Back: Practical Performance Tuning and Benchmarking",
+    "presenters": "Nick Lewis",
+    "tag": "Development"
+  },
+  {
+    "title": "Drupal as a Civic Platform: The City of Austin Experience",
+    "presenters": "Matthew Esquibel",
+    "tag": "Site building"
+  },
+  {
+    "title": "Overcoming the Departmental Site Challenge: How to Unify a University’s Web Platform with Drupal 7",
+    "presenters": "",
+    "tag": ""
+  },
+  {
+    "title": "",
+    "presenters": "",
+    "tag": ""
+  },
+  {
+    "title": "",
+    "presenters": "",
+    "tag": ""
+  },
+  {
+    "title": "",
+    "presenters": "",
+    "tag": ""
+  }
+
+]
