@@ -8,5 +8,6 @@
 Run this to install them all:
 
 ```bash
-sudo gem install jekyll jekyll-assets
+sudo gem install jekyll --pre
+sudo gem install jekyll-assets
 ```
