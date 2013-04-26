@@ -1,0 +1,21 @@
+---
+layout: ember
+title: DrupalCamp Austin 2013 Schedule
+---
+
+{% raw %}
+<script type="text/x-handlebars" data-template-name="application">
+  <h3>This is the main application template</h3>
+  {{outlet}}
+</script>
+
+<script type="text/x-handlebars" data-template-name="schedule">
+  {{#each session in allSessions}}
+    <div>
+      <b>{{session.title}}</b>
+      <p>{{session.presenters}}</p>
+      <p>{{session.tag}}</p>
+    </div>
+  {{/each}}
+</script>
+{% endraw %}
