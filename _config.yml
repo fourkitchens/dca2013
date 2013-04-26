@@ -1,0 +1,12 @@
+safe:        false
+auto:        true
+server:      false
+server_port: 4000
+baseurl:     /
+url:         http://localhost:4000
+source:      .
+destination: ./_site
+plugins:     ./_plugins
+future:      true
+markdown:    maruku
+permalink:   date
