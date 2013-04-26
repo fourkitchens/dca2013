@@ -1,1 +1,5 @@
 .DS_Store
+
+# ignore stuff that Jekyll poops out
+_site/README.md
+_site/CONTRIBUTING.md
