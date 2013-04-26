@@ -14,11 +14,15 @@
 
     resetScheduleInfo: function() {
       var self = this;
-      var dummyData = [];
+      var request = $.ajax('/sessions.json');
 
-      self.set('allSessions', dummyData.map(function(session) {
-        return App.SessionModel.create(session);
-      }));
+      request.done(function(data, textStatus, jqXHR) {
+        if (jqXHR.status === 200) {
+          self.set('allSessions', data.map(function(session) {
+            return App.SessionModel.create(session);
+          }));
+        }
+      });
     }
   });
 
