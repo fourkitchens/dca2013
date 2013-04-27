@@ -60,12 +60,14 @@ h4 {
 // Secondary content (sidebar)
 
 .secondary {
+  margin-top: 8em;
 
   p, li {
     font-size: em(21);
   }
 
   h2 {
+    margin-top: 0;
     line-height: 1em;
   }
 

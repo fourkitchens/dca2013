@@ -1,5 +1,6 @@
 require 'singularitygs'
 require 'jacket'
+require 'breakpoint'
 # Require any additional compass plugins here.
 
 

@@ -6,11 +6,19 @@
   @include grid-max;
 
   .primary {
-    @include grid-span(6);
+    @include grid-span(9);
+
+    @include breakpoint($sidebar) {
+      @include grid-span(6);
+    }
   }
 
   .secondary {
-    @include grid-span(3,7);
+    @include grid-span(9);
+
+    @include breakpoint($sidebar) {
+      @include grid-span(3,7);
+    }
 
     .block {
       margin-bottom: 2em;

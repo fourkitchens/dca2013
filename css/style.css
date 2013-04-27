@@ -526,10 +526,14 @@ h4 {
   opacity: .8;
 }
 
+.secondary {
+  margin-top: 8em;
+}
 .secondary p, .secondary li {
   font-size: 1.3125em;
 }
 .secondary h2 {
+  margin-top: 0;
   line-height: 1em;
 }
 .secondary #nav-sub ul {
@@ -629,17 +633,33 @@ footer .social {
   margin: 0 auto;
 }
 .col-2 .primary {
-  width: 65.90909%;
-  clear: right;
-  float: left;
-  margin-left: 0%;
-  margin-right: 2.27273%;
-}
-.col-2 .secondary {
-  width: 31.81818%;
+  width: 100%;
   clear: right;
   float: right;
   margin-right: 0%;
+}
+@media (min-width: 460px) {
+  .col-2 .primary {
+    width: 65.90909%;
+    clear: right;
+    float: left;
+    margin-left: 0%;
+    margin-right: 2.27273%;
+  }
+}
+.col-2 .secondary {
+  width: 100%;
+  clear: right;
+  float: right;
+  margin-right: 0%;
+}
+@media (min-width: 460px) {
+  .col-2 .secondary {
+    width: 31.81818%;
+    clear: right;
+    float: right;
+    margin-right: 0%;
+  }
 }
 .col-2 .secondary .block {
   margin-bottom: 2em;
