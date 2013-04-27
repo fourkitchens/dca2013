@@ -1,0 +1,13 @@
+---
+layout: col-2
+title: DrupalCamp Austin News
+---
+
+<!-- NO WORKY YET -->
+<div class="news">
+{% for post in site.categories.news %}
+
+	<h3><a href="{{ post.permalink }}">{{ post.title }}</a></h3>
+
+{% endfor %}
+</div><!-- .news -->
