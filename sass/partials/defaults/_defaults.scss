@@ -45,3 +45,22 @@ img {
 textarea {
   resize: vertical; // Allow only vertical resizing of textareas.
 }
+
+// Buttons
+
+.button {
+  color: white;
+  background-color: $orange;
+  @include border-radius(5px);
+  padding: .5em 1em;
+  font-size: em(21);
+
+  &:hover {
+    background-color: $darkorange;
+    color: white;
+  }
+
+  &:visited {
+    color: white;
+  }
+}

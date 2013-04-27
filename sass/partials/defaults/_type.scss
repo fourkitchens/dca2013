@@ -41,7 +41,7 @@ h4 {
   margin: 0 0 1.3em;
 }
 
-// Copy
+// Primary content
 
 .primary.content {
   p, li, blockquote {
@@ -54,5 +54,31 @@ h4 {
     padding: .4em 2em;
     border-left: .75em solid $darkgreen;
     opacity: .8;
+  }
+}
+
+// Secondary content (sidebar)
+
+.secondary {
+
+  p, li {
+    font-size: em(21);
+  }
+
+  h2 {
+    line-height: 1em;
+  }
+
+  #nav-sub {
+
+    ul {
+      margin: 0;
+      padding: 0;
+    }
+
+    li {
+      list-style-image: none;
+      list-style-type: none;
+    }
   }
 }

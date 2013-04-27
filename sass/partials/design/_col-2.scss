@@ -11,5 +11,9 @@
 
   .secondary {
     @include grid-span(3,7);
+
+    .block {
+      margin-bottom: 2em;
+    }
   }
 }
