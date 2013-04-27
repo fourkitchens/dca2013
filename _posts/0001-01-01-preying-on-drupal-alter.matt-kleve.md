@@ -1,11 +1,13 @@
 ---
 layout: session
-published: true
-title: Preying on Drupal Alter
-permalink: /sessions/preying-drupal-alter
 category: session
-room: Phase2
+permalink: /sessions/preying-drupal-alter
+published: true
+
+title: Preying on Drupal Alter
+
 presenters: Ryan Szrama
+room: Phase2
 track: Site building
 ---
 
