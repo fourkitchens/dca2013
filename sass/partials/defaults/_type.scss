@@ -1,4 +1,6 @@
-// Typography CSS
+//
+// Typography
+//
 
 // Typographic scale
 // 16, 18, 21, 24, 36, 48
@@ -41,7 +43,7 @@ h4 {
 
 // Copy
 
-.primary {
+.primary.content {
   p, li, blockquote {
     font-size: em(21);
   }

@@ -507,7 +507,7 @@ h4 {
   margin: 0 0 1.3em;
 }
 
-.primary p, .primary li, .primary blockquote {
+.primary.content p, .primary.content li, .primary.content blockquote {
   font-size: 1.3125em;
 }
 
@@ -524,7 +524,7 @@ body {
   font-family: "Source Sans Pro", sans-serif;
   line-height: 1.4;
   color: azure;
-  background: url('/img/background.png?1367102455') repeat 0 0;
+  background: url('/img/background.png') repeat 0 0;
 }
 
 a {

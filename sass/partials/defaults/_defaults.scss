@@ -27,9 +27,11 @@ body {
 a {
   color: $orange;
   text-decoration: none;
+
   &:visited {
     color: $orange;
   }
+
   &:hover {
     color: $darkorange;
     cursor: pointer;
@@ -41,5 +43,5 @@ img {
 }
 
 textarea {
-    resize: vertical; // Allow only vertical resizing of textareas.
+  resize: vertical; // Allow only vertical resizing of textareas.
 }
