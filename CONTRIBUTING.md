@@ -33,9 +33,17 @@ We have .gitignore excluding the ```_site``` directory that Jekyll creates becau
 
 ## Content
 
+### Naming conventions
+
 Jekyll has a hard requirement for posts' file names. The required format is as follows: ```YYYY-MM-DD-post-slug.md``` — but... we don't want to bother with a valid date for most types of pages. So we're using fake dates for most content. News is the notable exception, which should contain the actual publish date.
 
 ```
 News: YYYY-MM-DD-post-slug.md
 Sessions: 0001-01-01-session-title.md
 ```
+
+### Templating
+
+* Crash course in Liquid templates: https://github.com/Shopify/liquid/wiki/Liquid-for-Designers
+* High-level overview of structured content in Jekyll: http://developmentseed.org/blog/2011/09/09/jekyll-github-pages/
+* Look in the ```_layouts``` folder to see all of our templates.
