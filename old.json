@@ -1,0 +1,75 @@
+[
+  {
+    "title": "Practical Drupal Commerce",
+    "presenters": "Ryan Szrama",
+    "track": "Site building",
+    "room" : "Phase2",
+    "description": ""
+  },
+  {
+    "title": "Preying on the drupal_alter()",
+    "presenters": "Matt Kleve",
+    "track": "Development",
+    "room" : "Phase2"
+  },
+  {
+    "title": "How to Seal the Deal Without Writing a Proposal",
+    "presenters": "Tim Hamilton",
+    "track": "Business and marketing",
+    "room" : "Phase2"
+  },
+  {
+    "title": "Sustainable theme development with Fusion",
+    "presenters": "Jason Yergeau",
+    "track": "Design, Theming and UX",
+    "room" : "Chapter 3"
+  },
+  {
+    "title": "Future-friendly: Responsive Drupal Theming",
+    "presenters": "Chris Ruppel",
+    "track": "Design, Theming and UX",
+    "room" : "Chapter 3"
+  },
+  {
+    "title": "I’m Leaving You: The risks of dumping your old CMS for Drupal and how to manage them",
+    "presenters": "Nicole Lind",
+    "track": "Business and marketing",
+    "room" : "Chapter 3"
+  },
+  {
+    "title": "To the Grave and Back: Practical Performance Tuning and Benchmarking",
+    "presenters": "Nick Lewis",
+    "track": "Development",
+    "room" : "Chapter 3"
+  },
+  {
+    "title": "Drupal as a Civic Platform: The City of Austin Experience",
+    "presenters": "Matthew Esquibel",
+    "track": "Site building",
+    "room" : "Palantir"
+  },
+  {
+    "title": "Overcoming the Departmental Site Challenge: How to Unify a University’s Web Platform with Drupal 7",
+    "presenters": "Glenn Hilton",
+    "track": "Site building",
+    "room" : "Palantir"
+  },
+  {
+    "title": "Building Results Oriented Web Projects – The Method that ends the Madness",
+    "presenters": "Tom McCracken",
+    "track": "Business and marketing",
+    "room" : "Palantir"
+  },
+  {
+    "title": "Building Mobile Applications with Drupal",
+    "presenters": "Jeff Linwood",
+    "track": "Development",
+    "room" : "Palantir"
+  },
+  {
+    "title": "How to Recruit and Retain Top Talent - Insight into Building a Stellar Team",
+    "presenters": "Glenn Hilton",
+    "track": "Business and marketing",
+    "room" : "Palantir"
+  }
+]

@@ -1,0 +1,7 @@
+{
+  "title": "{{ item.title }}",
+  "content": "{{ item.content }}",
+  "room": "{{ item.room }}",
+  "presenters": "{{ item.presenters }}",
+  "track": "{{ item.track }}"
+}
