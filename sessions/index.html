@@ -1,0 +1,15 @@
+---
+layout: col-2
+title: DrupalCamp Austin News
+---
+
+<h2>Submitted Sessions</h2>
+
+<div class="sessions">
+{% for post in site.categories.sessions %}
+
+  <h3><a href="{{ post.permalink }}">{{ post.title }}</a></h3>
+  <p><em>Presented by {{ post.presenters }}</em></p>
+
+{% endfor %}
+</div><!-- .sessions -->
