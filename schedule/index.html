@@ -1,26 +1,37 @@
 ---
-layout: ember
+layout: col-1
 title: Schedule | DrupalCamp Austin 2013
 ---
 
+<div id="ember-container"></div>
+
 {% raw %}
 <script type="text/x-handlebars" data-template-name="application">
-  <h3>This is the main application template</h3>
+  <h2>Session Schedule</h2>
   {{outlet}}
 </script>
 
 <script type="text/x-handlebars" data-template-name="schedule">
-  {{#each session in allSessions}}
-    <div>
-      <b>{{session.title}}</b>
-      <div>{{session.room}}</div>
-      <div>{{session.presenters}}</div>
-      <div>{{session.track}}</div>
-      <div>{{session.start}}</div>
-      <div>{{session.difficulty}}</div>
-      <div>{{session.day}}</div>
-      <div>{{{session.content}}}</div>
-    </div>
-  {{/each}}
+  {{view Ember.Select id="track-selector" contentBinding="allTracks" valueBinding="track"}}
+  {{view Ember.Select id="difficulty-selector" contentBinding="allDifficulties" valueBinding="difficulty"}}
+  {{#if visibleSessions}}
+    {{#each session in visibleSessions}}
+      <div>
+        <b>{{session.title}}</b>
+        <div>{{session.room}}</div>
+        <div>{{session.presenters}}</div>
+        <div>{{session.track}}</div>
+        <div>{{session.start}}</div>
+        <div>{{session.difficulty}}</div>
+        <div>{{session.day}}</div>
+        <div>{{{session.content}}}</div>
+      </div>
+    {{/each}}
+  {{else}}
+    No sessions match your selection.
+  {{/if}}
 </script>
 {% endraw %}
+
+<script src="/js/dist/main.min.js"></script>
+<script src="/js/dist/schedule_main.js"></script>
