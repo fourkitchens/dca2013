@@ -49,12 +49,12 @@ To build the JavaScript, use `grunt` and `grunt watch`. To install the required 
 
 ### Naming conventions
 
-Jekyll has a hard requirement for posts' file names. The required format is as follows: ```YYYY-MM-DD-post-slug.md``` — but... we don't want to bother with a valid date for most types of pages. So we're using fake dates for most content. News is the notable exception, which should contain the actual publish date.
+Jekyll has a hard requirement for posts' file names. The required format is as follows: ```YYYY-MM-DD-post-slug.md``` — but... we don't want to bother with a valid date for most types of pages. So we're using fake, hardcoded dates for most content. News is the notable exception, which **should** contain the actual publish date.
 
 ```
 News     YYYY-MM-DD-post-slug.md
-Sessions 0001-01-01-session-title.md
 FAQs     0002-02-02-faq-title.md
+Sessions 0003-03-03-session-title.md
 ```
 
 ### Templating
