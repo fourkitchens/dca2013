@@ -6,7 +6,7 @@ title: Submitted Sessions | DrupalCamp Austin 2013
 <h2>Submitted Sessions</h2>
 
 <div class="sessions">
-{% for post in site.categories.session %}
+{% for post in site.categories.session reversed %}
 
   <div class="session">
     <h3><a href="{{ post.permalink }}">{{ post.title }}</a></h3>
