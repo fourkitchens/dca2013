@@ -28,13 +28,17 @@ module.exports = function(grunt) {
       options: {
         separator: ';'
       },
+      modernizr: {
+        src: [
+          '_js/min/modernizr.min.js'
+        ],
+        dest: 'js/dist/modernizr.min.js'
+      },
       allpages: {
         src: [
-          '_js/min/modernizr.min.js',
-          '_js/min/jquery.min.js',
-          '_js/min/grid.min.js'
+          '_js/min/jquery.min.js'
         ],
-        dest: 'js/dist/allpages.min.js'
+        dest: 'js/dist/main.min.js'
       },
       schedule_page: {
         src: [
@@ -42,14 +46,14 @@ module.exports = function(grunt) {
           '_js/vendor/ember.js',
           '_js/schedule.js'
         ],
-        dest: 'js/dist/schedule_page.js'
+        dest: 'js/dist/schedule_main.js'
       }
     },
 
     uglify: {
       schedule: {
         files: {
-          'js/dist/schedule_page.min.js': ['js/dist/schedule_page.js']
+          'js/dist/schedule_main.min.js': ['js/dist/schedule_main.js']
         }
       }
     },
