@@ -2,3 +2,6 @@
 
 # ignore stuff that Jekyll poops out
 _site
+
+# ignore Sass stuff
+.sass-cache
