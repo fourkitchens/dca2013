@@ -2,9 +2,17 @@
 
 ## Required gems
 
+You may want to configure RubyGems to not install the unneeded RDoc stuff for each gem. To do that, add a `~/.gemrc` file and insert the following lines:
+
+```
+install: --no-rdoc --no-ri
+update:  --no-rdoc --no-ri
+```
+
 In Terminal, run these commands to install everything you need:
 
 ```bash
+sudo gem update --system
 sudo gem install jekyll --pre
 sudo gem install uglifier singularitygs jacket
 ```
