@@ -473,6 +473,10 @@ table {
   border-spacing: 0;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  color: #97c441;
+}
+
 h2, h3, h4, h5, h6 {
   font-family: "atrament-web", "Helvetica Neue", Arial, sans-serif;
   text-transform: uppercase;
@@ -503,8 +507,8 @@ h4 {
   margin: 0 0 1.3em;
 }
 
-.primary {
-  font-size: 1.125em;
+.primary p, .primary li, .primary blockquote {
+  font-size: 1.3125em;
 }
 
 html,
@@ -519,16 +523,19 @@ body {
   font-size: 75%/1.5em;
   font-family: "Source Sans Pro", sans-serif;
   line-height: 1.4;
+  color: azure;
+  background: url('/img/background.png?1367100089') repeat 0 0;
 }
 
 a {
-  color: #00e;
+  color: #ed9310;
+  text-decoration: none;
 }
 a:visited {
-  color: #551a8b;
+  color: #ed9310;
 }
 a:hover {
-  color: #06e;
+  color: #d34913;
   cursor: pointer;
 }
 

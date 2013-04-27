@@ -20,15 +20,18 @@ body {
   font-size: 75%/1.5em;
   font-family: $source-sans-pro;
   line-height: 1.4;
+  color: $bodycolor;
+  background: image-url('background.png') repeat 0 0;
 }
 
 a {
-  color: #00e;
+  color: $orange;
+  text-decoration: none;
   &:visited {
-    color: #551a8b;
+    color: $orange;
   }
   &:hover {
-    color: #06e;
+    color: $darkorange;
     cursor: pointer;
   }
 }

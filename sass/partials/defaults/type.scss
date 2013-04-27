@@ -5,7 +5,9 @@
 
 // Headings
 
-h1, h2, h3, h4, h5, h6 {}
+h1, h2, h3, h4, h5, h6 {
+  color: $green;
+}
 
 h2, h3, h4, h5, h6 {
   font-family: $atrament;
@@ -40,5 +42,7 @@ h4 {
 // Copy
 
 .primary {
-  font-size: em(18);
+  p, li, blockquote {
+    font-size: em(21);
+  }
 }

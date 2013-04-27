@@ -1,9 +1,9 @@
 /*
-Syntax error: Undefined variable: "$atrament".
-        on line 11 of /Users/aaron/Sites/dca2013-static/sass/partials/defaults/type.scss
+Syntax error: Undefined variable: "$green".
+        on line 9 of /Users/aaron/Sites/dca2013-static/sass/partials/defaults/type.scss
 
 Backtrace:
-/Users/aaron/Sites/dca2013-static/sass/partials/defaults/type.scss:11
+/Users/aaron/Sites/dca2013-static/sass/partials/defaults/type.scss:9
 /Library/Ruby/Gems/1.8/gems/sass-3.2.6/lib/sass/../sass/script/variable.rb:49:in `_perform'
 /Library/Ruby/Gems/1.8/gems/sass-3.2.6/lib/sass/../sass/script/node.rb:40:in `perform'
 /Library/Ruby/Gems/1.8/gems/sass-3.2.6/lib/sass/../sass/tree/visitors/perform.rb:298:in `visit_prop'
@@ -79,4 +79,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined variable: \"$atrament\".\A         on line 11 of /Users/aaron/Sites/dca2013-static/sass/partials/defaults/type.scss"; }
+  content: "Syntax error: Undefined variable: \"$green\".\A         on line 9 of /Users/aaron/Sites/dca2013-static/sass/partials/defaults/type.scss"; }
