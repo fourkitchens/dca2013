@@ -2,10 +2,7 @@
 
 ## Required gems
 
-* jekyll
-* uglifier
-
-Run this to install them all:
+Run these commands to install everything you need:
 
 ```bash
 sudo gem install jekyll --pre
