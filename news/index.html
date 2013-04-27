@@ -3,11 +3,12 @@ layout: col-2
 title: DrupalCamp Austin News
 ---
 
-<!-- NO WORKY YET -->
+<h2>News</h2>
+
 <div class="news">
 {% for post in site.categories.news %}
 
-	<h3><a href="{{ post.permalink }}">{{ post.title }}</a></h3>
+	<h3><a href="{{ post.permalink }}">{{ post.title }}</a> posted on {{ post.date | date: "%B %d, %Y" }}</h3>
 
 {% endfor %}
 </div><!-- .news -->
