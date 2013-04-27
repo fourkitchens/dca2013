@@ -1,0 +1,13 @@
+// Page CSS
+
+header {
+  @include grid-max;
+}
+
+footer {
+  @include grid-max;
+
+  .social {
+    @include grid-span(3);
+  }
+}

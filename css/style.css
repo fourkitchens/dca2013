@@ -471,3 +471,38 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
+header {
+  max-width: 880px;
+  margin: 0 auto;
+}
+
+footer {
+  max-width: 880px;
+  margin: 0 auto;
+}
+footer .social {
+  width: 31.81818%;
+  clear: right;
+  float: left;
+  margin-left: 0%;
+  margin-right: 2.27273%;
+}
+
+.col-2 {
+  max-width: 880px;
+  margin: 0 auto;
+}
+.col-2 .primary {
+  width: 65.90909%;
+  clear: right;
+  float: left;
+  margin-left: 0%;
+  margin-right: 2.27273%;
+}
+.col-2 .secondary {
+  width: 31.81818%;
+  clear: right;
+  float: right;
+  margin-right: 0%;
+}

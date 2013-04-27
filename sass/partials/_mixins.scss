@@ -1,0 +1,7 @@
+// Global function to define max-width
+// Don't set this and a grid-span on the same element
+
+@mixin grid-max($grid-width: $grid-max) {
+  max-width: $grid-width;
+  margin: 0 auto;
+}

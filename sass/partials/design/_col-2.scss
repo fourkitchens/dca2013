@@ -1,0 +1,11 @@
+.col-2 {
+  @include grid-max;
+
+  .primary {
+    @include grid-span(6);
+  }
+
+  .secondary {
+    @include grid-span(3,7);
+  }
+}
