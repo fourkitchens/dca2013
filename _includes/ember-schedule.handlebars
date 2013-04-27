@@ -2,13 +2,29 @@
 <script type="text/x-handlebars" data-template-name="schedule">
   {{view Ember.Select id="track-selector" contentBinding="allTracks" valueBinding="track"}}
   {{view Ember.Select id="difficulty-selector" contentBinding="allDifficulties" valueBinding="difficulty"}}
-  {{#if organizedSessions}}
-    <div id="rooms">
-      {{#each room in displayRooms}}
-        <span class="room-title">{{room}}</span>
-      {{/each}}
-    </div>
-
+  {{#if sessionsTable}}
+    <table>
+      <thead>
+        <tr>
+          {{#each head in sessionsTable.header}}
+            <th>{{head}}</th>
+          {{/each}}
+        </tr>
+      </thead>
+      <tbody>
+        {{#each row in sessionsTable.rows}}
+          <tr>
+            {{#each session in row}}
+              <td>
+                {{#with session}}
+                  {{view App.SessionView}}
+                {{/with}}
+              </td>
+            {{/each}}
+          </tr>
+        {{/each}}
+      </tbody>
+    </table>
   {{else}}
     No sessions match your selection.
   {{/if}}

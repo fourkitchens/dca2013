@@ -31,7 +31,7 @@
       var track = this.get('track');
       var difficulty = this.get('difficulty');
 
-      return this.get('allSessions').filter(function(item, index, enumerable) {
+      return this.get('allSessions').filter(function(item) {
         if (track && item.get('track') !== track) {
           return false;
         }
@@ -42,18 +42,18 @@
       });
     }.property('allSessions', 'track', 'difficulty'),
 
-    displayDays: null,
-    displayRooms: null,
-    displayStarts: null,
-
-    organizedSessions: function() {
+    sessionsTable: function() {
       var selected = this.get('selectedSessions');
       var matrix = {};
+      var table = {
+        header: [],
+        rows: []
+      };
       var days = [];
       var rooms = [];
       var starts = [];
 
-      selected.forEach(function(item, index, enumerable) {
+      selected.forEach(function(item) {
         days.push(item.day);
         rooms.push(item.room);
         starts.push(item.start);
@@ -68,14 +68,28 @@
           matrix[item.day][item.start][item.room] = [];
         }
 
-        matrix[item.day][item.start][item.room].push(item);
+        matrix[item.day][item.start][item.room] = item;
       });
 
-      this.set('displayDays', days.uniq().toArray());
-      this.set('displayRooms', rooms.uniq().toArray());
-      this.set('displayStarts', starts.uniq().toArray());
+      days = days.uniq();
+      rooms = rooms.uniq();
+      starts = starts.uniq();
 
-      return matrix;
+      rooms.forEach(function(room) {
+        table.header.push(room);
+      });
+
+      days.forEach(function(day) {
+        starts.forEach(function(start) {
+          var row = [];
+          rooms.forEach(function(room) {
+            row.push(matrix[day][start][room]);
+          });
+          table.rows.push(row);
+        });
+      });
+
+      return table;
     }.property('selectedSessions'),
 
     resetScheduleInfo: function() {
