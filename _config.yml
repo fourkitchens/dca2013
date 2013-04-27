@@ -1,2 +1,2 @@
 pygments: true
-exclude: CONTRIBUTING.md, README.md
+exclude: CONTRIBUTING.md, README.md, sass, config.rb
