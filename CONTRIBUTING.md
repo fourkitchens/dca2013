@@ -41,6 +41,10 @@ The ```-w``` argument means *watch* so now whenever you (or Sass) make changes t
 
 We have .gitignore excluding the ```_site``` directory that Jekyll creates because Github will take care of generating that folder when we push to ```gh-pages``` branch.
 
+## JavaScript
+
+To build the JavaScript, use `grunt` and `grunt watch`. To install the required npm modules, start with `npm install`. You may need to install node.js if you don't have it. It's easily downloadable from the nodejs.com website.
+
 ## Content
 
 ### Naming conventions
