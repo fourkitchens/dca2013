@@ -1,0 +1,15 @@
+{% raw %}
+<script type="text/x-handlebars" data-template-name="schedule">
+  {{view Ember.Select id="track-selector" contentBinding="allTracks" valueBinding="track"}}
+  {{view Ember.Select id="difficulty-selector" contentBinding="allDifficulties" valueBinding="difficulty"}}
+  {{#if visibleSessions}}
+    {{#each session in visibleSessions}}
+      {{#with session}}
+        {{view App.SessionView}}
+      {{/with}}
+    {{/each}}
+  {{else}}
+    No sessions match your selection.
+  {{/if}}
+</script>
+{% endraw %}

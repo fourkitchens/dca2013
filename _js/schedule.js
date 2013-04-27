@@ -65,6 +65,10 @@
     }
   });
 
+  App.SessionView = Ember.View.extend({
+    templateName: 'session'
+  });
+
   App.ScheduleView = Ember.View.extend({
     templateName: 'schedule'
   });
