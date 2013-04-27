@@ -11,6 +11,6 @@
           body.setAttribute('data-development-grid', 'hide');
         }
       }
-    }
-  }
+    };
+  };
 })();

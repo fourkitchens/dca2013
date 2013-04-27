@@ -1,7 +1,11 @@
 .DS_Store
 
-# ignore stuff that Jekyll poops out
+# Ignore stuff that Jekyll poops out
 _site
 
-# ignore Sass stuff
+# Ignore Sass stuff
 .sass-cache
+
+# For Grunt npm modules
+node_modules
+_tmp
