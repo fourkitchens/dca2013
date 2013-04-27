@@ -4,8 +4,13 @@
 
   App.SessionModel = Ember.Object.extend({
     title: '',
+    room: '',
     presenters: '',
-    tag: ''
+    track: '',
+    start: '',
+    difficulty: '',
+    day: '',
+    content: ''
   });
 
   App.ScheduleModel = Ember.Object.extend({
@@ -18,10 +23,17 @@
 
       request.done(function(data, textStatus, jqXHR) {
         if (jqXHR.status === 200) {
+          // We have to add 'false' to the end of our Jekyll-produced JSON otherwise
+          // we have a dangling comma. So strip out the false.
+          data = data.slice(0, data.length-1);
           self.set('allSessions', data.map(function(session) {
             return App.SessionModel.create(session);
           }));
         }
+      });
+
+      request.fail(function(jqXHR, textStatus, errorThrown) {
+        throw new Error('Unable to load session information: ' + textStatus);
       });
     }
   });

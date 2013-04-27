@@ -1,6 +1,6 @@
 ---
 layout: ember
-title: Schedule - DrupalCamp Austin 2013
+title: Schedule | DrupalCamp Austin 2013
 ---
 
 {% raw %}
@@ -13,8 +13,13 @@ title: Schedule - DrupalCamp Austin 2013
   {{#each session in allSessions}}
     <div>
       <b>{{session.title}}</b>
-      <p>{{session.presenters}}</p>
-      <p>{{session.tag}}</p>
+      <div>{{session.room}}</div>
+      <div>{{session.presenters}}</div>
+      <div>{{session.track}}</div>
+      <div>{{session.start}}</div>
+      <div>{{session.difficulty}}</div>
+      <div>{{session.day}}</div>
+      <div>{{{session.content}}}</div>
     </div>
   {{/each}}
 </script>

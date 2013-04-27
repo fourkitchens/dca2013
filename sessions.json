@@ -1,7 +1,7 @@
 ---
 ---
 [
-{% for item in site.categories.session %}
+{% for item in site.categories.session reversed %}
   {% include post.json %},
 {% endfor %}
 false

@@ -1,10 +1,10 @@
 {
-  "title": "{{ item.title }}",
-  "content": "{{ item.content }}",
-  "room": "{{ item.room }}",
-  "presenters": "{{ item.presenters }}",
-  "track": "{{ item.track }}",
-  "start": "{{ item.start }}",
-  "difficulty": "{{ item.difficulty }}",
-  "day": "{{ item.day }}"
+  "title": "{{ item.title | json}}",
+  "content": "{{ item.content | strip_newlines | json}}",
+  "room": "{{ item.room | json}}",
+  "presenters": "{{ item.presenters | json}}",
+  "track": "{{ item.track | json}}",
+  "start": "{{ item.start | json}}",
+  "difficulty": "{{ item.difficulty | json}}",
+  "day": "{{ item.day | json}}"
 }
