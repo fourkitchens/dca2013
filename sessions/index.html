@@ -6,10 +6,15 @@ title: Submitted Sessions | DrupalCamp Austin
 <h2>Submitted Sessions</h2>
 
 <div class="sessions">
-{% for post in site.categories.sessions %}
+{% for post in site.categories.session %}
 
-  <h3><a href="{{ post.permalink }}">{{ post.title }}</a></h3>
-  <p><em>Presented by {{ post.presenters }}</em></p>
+  <div class="session">
+    <h3><a href="{{ post.permalink }}">{{ post.title }}</a></h3>
+    <p class="meta"><em>Presented by {{ post.presenters }}</em></p>
+    <p class="desc">
+      {{ post.content }}
+    </p>
+  </div>
 
 {% endfor %}
 </div><!-- .sessions -->
