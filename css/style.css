@@ -489,6 +489,17 @@ footer .social {
   margin-right: 2.27273%;
 }
 
+.col-1 {
+  max-width: 880px;
+  margin: 0 auto;
+}
+.col-1 .primary {
+  width: 100%;
+  clear: right;
+  float: right;
+  margin-right: 0%;
+}
+
 .col-2 {
   max-width: 880px;
   margin: 0 auto;

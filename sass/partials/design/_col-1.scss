@@ -1,0 +1,7 @@
+.col-1 {
+  @include grid-max;
+
+  .primary {
+    @include grid-span(9);
+  }
+}
