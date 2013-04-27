@@ -3,5 +3,8 @@
   "content": "{{ item.content }}",
   "room": "{{ item.room }}",
   "presenters": "{{ item.presenters }}",
-  "track": "{{ item.track }}"
+  "track": "{{ item.track }}",
+  "start": "{{ item.start }}",
+  "difficulty": "{{ item.difficulty }}",
+  "day": "{{ item.day }}"
 }

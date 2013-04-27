@@ -2,8 +2,11 @@
 layout: page
 ---
 <article id="session">
-  {{ page.room }}
-  {{ page.track }}
-  {{ page.presenters }}
-  {{ content }}
+  <div>Room: {{ page.room }}</div>
+  <div>Track: {{ page.track }}</div>
+  <div>Presenters: {{ page.presenters }}</div>
+  <div>Day: {{ page.day }}</div>
+  <div>Start time: {{ page.start }}</div>
+  <div>Difficulty: {{ page.difficulty }}</div>
+  <div>{{ content }}</div>
 </article>
