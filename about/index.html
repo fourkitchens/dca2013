@@ -1,0 +1,27 @@
+---
+layout: col-2
+title: About | DrupalCamp Austin
+---
+
+<div id="venue">
+  <h2>Venue</h2>
+
+  <h3>Drupal Camp Austin 2013 will be heald at the <a href="http://www.austinconventioncenter.com/">Austin Convetion Center.</a></h3>
+
+  <p>Getting there couldn't be easier.</p>
+
+  <div id="map" style="height: 300px"></div>
+  <p><a href="http://goo.gl/maps/lhzeb" target="_blank">Directions from Google.</a></p>
+</div>
+{% raw %}
+<script src="http://cdn.leafletjs.com/leaflet-0.5/leaflet.js"></script>
+<script>
+var map = L.map('map').setView([30.263581,-97.739568], 15);
+L.tileLayer('http://{s}.tile.cloudmade.com/3CBE3931811A4EBB83CE169BCB705740/997/256/{z}/{x}/{y}.png', {
+    attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://cloudmade.com">CloudMade</a>',
+    maxZoom: 18
+}).addTo(map);
+var marker = L.marker([30.263581,-97.739568]).addTo(map);
+marker.bindPopup("<b>Austin Convetion Center</b>")
+</script>
+{% endraw %}
