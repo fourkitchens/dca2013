@@ -593,6 +593,26 @@ footer .social {
   margin-right: 0%;
 }
 
+#nav-main {
+  text-align: center;
+}
+#nav-main li {
+  list-style-type: none;
+  list-style-image: none;
+  display: inline-block;
+  font-family: "atrament-web", "Helvetica Neue", Arial, sans-serif;
+  text-transform: uppercase;
+  font-size: 2.25em;
+}
+#nav-main li.nav-main-left {
+  text-align: right;
+  margin-left: 1em;
+}
+#nav-main li.nav-main-right {
+  text-align: left;
+  margin-right: 1em;
+}
+
 #map {
   height: 300px;
 }

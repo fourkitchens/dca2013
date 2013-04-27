@@ -1,0 +1,22 @@
+// Header CSS
+
+#nav-main {
+ text-align: center;
+
+ li {
+   list-style-type: none;
+   list-style-image: none;
+   display: inline-block;
+   font-family: $atrament;
+   text-transform: uppercase;
+   font-size: em(36);
+   &.nav-main-left {
+     text-align: right;
+     margin-left: 1em;
+   }
+   &.nav-main-right {
+     text-align: left;
+     margin-right: 1em;
+   }
+ } 
+}
