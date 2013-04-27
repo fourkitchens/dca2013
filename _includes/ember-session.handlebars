@@ -8,7 +8,11 @@
     <div>{{start}}</div>
     <div>{{difficulty}}</div>
     <div>{{day}}</div>
-    <div>{{{content}}}</div>
+    {{#if showContent}}
+        <div>{{{content}}}</div>
+    {{else}}
+        <button {{action "expand" session target="view"}}>Show details</button>
+    {{/if}}
   </div>
 </script>
 {% endraw %}

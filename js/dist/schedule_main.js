@@ -30758,6 +30758,9 @@ Ember
   });
   window.App = App;
 
+  //-------------------------
+  // Models
+  //-------------------------
   App.SessionModel = Ember.Object.extend({
     title: '',
     room: '',
@@ -30766,7 +30769,8 @@ Ember
     start: '',
     difficulty: '',
     day: '',
-    content: ''
+    content: '',
+    showContent: false
   });
 
   App.ScheduleModel = Ember.Object.extend({
@@ -30818,17 +30822,32 @@ Ember
     }
   });
 
+  //-------------------------
+  // Views
+  //-------------------------
   App.SessionView = Ember.View.extend({
-    templateName: 'session'
+    templateName: 'session',
+    expand: function(session) {
+      session.set('showContent', true);
+    }
   });
 
   App.ScheduleView = Ember.View.extend({
     templateName: 'schedule'
   });
 
+  //-------------------------
+  // Controllers
+  //-------------------------
   App.ScheduleController = Ember.ObjectController.extend({
   });
 
+  App.SessionController = Ember.ObjectController.extend({
+  });
+
+  //-------------------------
+  // Router
+  //-------------------------
   App.ScheduleRoute = Ember.Route.extend({
     model: function() {
       App.scheduleModel = App.ScheduleModel.create();
