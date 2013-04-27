@@ -30780,7 +30780,7 @@ Ember
     track: null,
     difficulty: null,
 
-    visibleSessions: function() {
+    selectedSessions: function() {
       var track = this.get('track');
       var difficulty = this.get('difficulty');
 
@@ -30794,6 +30794,42 @@ Ember
         return true;
       });
     }.property('allSessions', 'track', 'difficulty'),
+
+    displayDays: null,
+    displayRooms: null,
+    displayStarts: null,
+
+    organizedSessions: function() {
+      var selected = this.get('selectedSessions');
+      var matrix = {};
+      var days = [];
+      var rooms = [];
+      var starts = [];
+
+      selected.forEach(function(item, index, enumerable) {
+        days.push(item.day);
+        rooms.push(item.room);
+        starts.push(item.start);
+
+        if (!matrix.hasOwnProperty(item.day)) {
+          matrix[item.day] = {};
+        }
+        if (!matrix[item.day].hasOwnProperty(item.start)) {
+          matrix[item.day][item.start] = {};
+        }
+        if (!matrix[item.day][item.start].hasOwnProperty(item.room)) {
+          matrix[item.day][item.start][item.room] = [];
+        }
+
+        matrix[item.day][item.start][item.room].push(item);
+      });
+
+      this.set('displayDays', days.uniq().toArray());
+      this.set('displayRooms', rooms.uniq().toArray());
+      this.set('displayStarts', starts.uniq().toArray());
+
+      return matrix;
+    }.property('selectedSessions'),
 
     resetScheduleInfo: function() {
       var self = this;
