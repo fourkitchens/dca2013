@@ -17,6 +17,16 @@ sudo gem install jekyll --pre
 sudo gem install uglifier singularitygs jacket
 ```
 
+## Git
+
+We're not doing feature branches, so when you want to get upstream changes, use the rebase flag:
+
+```bash
+git pull --rebase
+```
+
+This will "rewind" your commits since your last pull, add the upstream commits, then "fast-forward" your commits back on top of the upstream changes. It may cause conflicts, but since upstream changes were already in the repo it was going to happen anyway.
+
 ## Jekyll server
 
 In Terminal, run the following command to get a server started:
