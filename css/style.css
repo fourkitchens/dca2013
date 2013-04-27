@@ -1,3 +1,4 @@
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,400italic,700italic);
 /* normalize.css v2.1.0 | MIT License | git.io/normalize */
 /* normalize.scss v2.1.0 | MIT/GPLv2 License | bit.ly/normalize-with-compass */
 /* ==========================================================================
@@ -470,6 +471,73 @@ textarea {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+
+h2, h3, h4, h5, h6 {
+  font-family: "atrament-web", "Helvetica Neue", Arial, sans-serif;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-family: "quatro", "Helvetica Neue", Arial, sans-serif;
+  font-size: 3em;
+  margin: 0.97em 0 0.5em;
+  line-height: 1.125em;
+}
+
+h2 {
+  font-size: 2.25em;
+  line-height: 1.77777em;
+  margin-bottom: 1em;
+}
+
+h3 {
+  font-size: 1.5em;
+  margin: 1.7em 0 0.85em;
+  line-height: 1.5em;
+}
+
+h4 {
+  font-size: 1.3125em;
+  line-height: 1.12382em;
+  margin: 0 0 1.3em;
+}
+
+.primary {
+  font-size: 1.125em;
+}
+
+html,
+button,
+input,
+select,
+textarea {
+  color: #222;
+}
+
+body {
+  font-size: 75%/1.5em;
+  font-family: "Source Sans Pro", sans-serif;
+  line-height: 1.4;
+}
+
+a {
+  color: #00e;
+}
+a:visited {
+  color: #551a8b;
+}
+a:hover {
+  color: #06e;
+  cursor: pointer;
+}
+
+img {
+  vertical-align: middle;
+}
+
+textarea {
+  resize: vertical;
 }
 
 header {

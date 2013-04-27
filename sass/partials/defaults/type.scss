@@ -1,0 +1,44 @@
+// Typography CSS
+
+// Typographic scale
+// 16, 18, 21, 24, 36, 48
+
+// Headings
+
+h1, h2, h3, h4, h5, h6 {}
+
+h2, h3, h4, h5, h6 {
+  font-family: $atrament;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-family: $quatro;
+  font-size: em(48);
+  margin: .97em 0 .5em;
+  line-height: 1.125em;
+}
+
+h2 {
+  font-size: em(36);
+  line-height: 1.77777em;
+  margin-bottom: 1em;
+}
+
+h3 {
+  font-size: em(24);
+  margin: 1.7em 0 .85em;
+  line-height: 1.5em;
+}
+
+h4 {
+  font-size: em(21);
+  line-height: 1.12382em;
+  margin: 0 0 1.3em;
+}
+
+// Copy
+
+.primary {
+  font-size: em(18);
+}
