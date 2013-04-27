@@ -517,3 +517,7 @@ footer .social {
   float: right;
   margin-right: 0%;
 }
+
+#map {
+  height: 300px;
+}
