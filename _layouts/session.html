@@ -1,12 +1,21 @@
 ---
-layout: page
+layout: col-2
 ---
+
 <article id="session">
-  <div>Room: {{ page.room }}</div>
-  <div>Track: {{ page.track }}</div>
-  <div>Presenters: {{ page.presenters }}</div>
-  <div>Day: {{ page.day }}</div>
-  <div>Start time: {{ page.start }}</div>
-  <div>Difficulty: {{ page.difficulty }}</div>
-  <div>{{ content }}</div>
+  <h2>{{ page.title }}</h2>
+
+  <ul class="meta">
+    <li>Difficulty: {{ page.difficulty }}</li>
+    <li>Track: {{ page.track }}</li>
+    <li>Presenters: {{ page.presenters }}</li>
+  </ul>
+
+  <ul class="sched">
+    <li>Day: {{ page.day }}</li>
+    <li>Start time: {{ page.start }}</li>
+    <li>Room: {{ page.room }}</li>
+  </ul>
+
+  <p class="desc">{{ content }}</p>
 </article>

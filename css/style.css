@@ -485,7 +485,7 @@ h2, h3, h4, h5, h6 {
 h1 {
   font-family: "quatro", "Helvetica Neue", Arial, sans-serif;
   font-size: 3em;
-  margin: 0.97em 0 0.5em;
+  margin: .97em 0 .5em;
   line-height: 1.125em;
 }
 
@@ -497,7 +497,7 @@ h2 {
 
 h3 {
   font-size: 1.5em;
-  margin: 1.7em 0 0.85em;
+  margin: 1.7em 0 .85em;
   line-height: 1.5em;
 }
 
@@ -524,7 +524,7 @@ body {
   font-family: "Source Sans Pro", sans-serif;
   line-height: 1.4;
   color: azure;
-  background: url('/img/background.png?1367100089') repeat 0 0;
+  background: url('/img/background.png?1367102455') repeat 0 0;
 }
 
 a {
