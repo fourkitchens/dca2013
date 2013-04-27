@@ -8,7 +8,8 @@ http_path = "/"
 css_dir = "css"
 sass_dir = "sass"
 images_dir = "img"
-javascripts_dir = "js"
+## we're aggregating JS with grunt, so mind the underscore: _js
+javascripts_dir = "_js"
 fonts_dir = "fonts"
 
 # You can select your preferred output style here (can be overridden via the command line):
