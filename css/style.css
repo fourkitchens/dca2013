@@ -663,21 +663,21 @@ footer .social {
 }
 @media (min-width: 720px) {
   section.room article.session.room-chapter-three-room {
-    width: 31.81818%;
+    width: 32.20339%;
     float: left;
     margin-right: -100%;
     margin-left: 0%;
     clear: none;
   }
   section.room article.session.room-room-102 {
-    width: 31.81818%;
+    width: 32.20339%;
     float: left;
     margin-right: -100%;
-    margin-left: 34.09091%;
+    margin-left: 33.89831%;
     clear: none;
   }
   section.room article.session.room-entermedia-room {
-    width: 31.81818%;
+    width: 32.20339%;
     float: right;
     margin-left: 0;
     margin-right: 0;
@@ -686,21 +686,21 @@ footer .social {
 }
 @media (min-width: 720px) {
   section.difficulty article.session.difficulty-beginner {
-    width: 31.81818%;
+    width: 32.20339%;
     float: left;
     margin-right: -100%;
     margin-left: 0%;
     clear: none;
   }
   section.difficulty article.session.difficulty-intermediate {
-    width: 31.81818%;
+    width: 32.20339%;
     float: left;
     margin-right: -100%;
-    margin-left: 34.09091%;
+    margin-left: 33.89831%;
     clear: none;
   }
   section.difficulty article.session.difficulty-expert {
-    width: 31.81818%;
+    width: 32.20339%;
     float: right;
     margin-left: 0;
     margin-right: 0;
@@ -709,28 +709,28 @@ footer .social {
 }
 @media (min-width: 720px) {
   section.track article.session.track-design-theming-and-ux {
-    width: 20.45455%;
+    width: 23.72881%;
     float: left;
     margin-right: -100%;
-    margin-left: 11.36364%;
+    margin-left: 0%;
     clear: none;
   }
   section.track article.session.track-development {
-    width: 20.45455%;
+    width: 23.72881%;
     float: left;
     margin-right: -100%;
-    margin-left: 34.09091%;
+    margin-left: 25.42373%;
     clear: none;
   }
   section.track article.session.track-business-and-marketing {
-    width: 20.45455%;
+    width: 23.72881%;
     float: left;
     margin-right: -100%;
-    margin-left: 56.81818%;
+    margin-left: 50.84746%;
     clear: none;
   }
   section.track article.session.track-site-building {
-    width: 20.45455%;
+    width: 23.72881%;
     float: right;
     margin-left: 0;
     margin-right: 0;
