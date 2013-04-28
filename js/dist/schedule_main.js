@@ -30775,69 +30775,72 @@ Ember
 
   App.ScheduleModel = Ember.Object.extend({
     allSessions: [],
-    allTracks: [],
-    allDifficulties: [],
-    track: null,
-    difficulty: null,
+
+    // For filters.
+    trackFilters: [],
+    difficultyFilters: [],
+
+    // Table options.
+    columnOptions: ['room', 'track'],
+    columnSelected: 'room',
 
     selectedSessions: function() {
-      var track = this.get('track');
-      var difficulty = this.get('difficulty');
-
+      var self = this;
       return this.get('allSessions').filter(function(item) {
-        if (track && item.get('track') !== track) {
-          return false;
-        }
-        if (difficulty && item.get('difficulty') !== difficulty) {
-          return false;
-        }
-        return true;
+        var trackSelected = self.get('trackFilters').some(function(filter) {
+          return item.get('track') == filter.get('name') && filter.get('selected');
+        });
+        var difficultySelected = self.get('difficultyFilters').some(function(filter) {
+          return item.get('difficulty') == filter.get('name') && filter.get('selected');
+        });
+        return trackSelected && difficultySelected;
       });
-    }.property('allSessions', 'track', 'difficulty'),
+    }.property('allSessions', 'trackFilters.@each.selected', 'difficultyFilters.@each.selected'),
+
+    tableParams: function() {
+      var params = {
+        day: [],
+        room: [],
+        start: [],
+        track: []
+      };
+      this.get('selectedSessions').forEach(function(item) {
+        params.day.push(item.day);
+        params.room.push(item.room);
+        params.start.push(item.start);
+        params.track.push(item.track);
+      });
+      for (var key in params) {
+        params[key] = params[key].uniq().toArray();
+      }
+      return params;
+    }.property('selectedSessions'),
 
     sessionsTable: function() {
       var selected = this.get('selectedSessions');
-      var matrix = {};
+      var params = this.get('tableParams');
       var table = {
-        header: [],
+        header: [''],
         rows: []
       };
-      var days = [];
-      var rooms = [];
-      var starts = [];
 
-      selected.forEach(function(item) {
-        days.push(item.day);
-        rooms.push(item.room);
-        starts.push(item.start);
+      var columnSelected = this.get('columnSelected');
+      var rowChoice = 'start';
 
-        if (!matrix.hasOwnProperty(item.day)) {
-          matrix[item.day] = {};
-        }
-        if (!matrix[item.day].hasOwnProperty(item.start)) {
-          matrix[item.day][item.start] = {};
-        }
-        if (!matrix[item.day][item.start].hasOwnProperty(item.room)) {
-          matrix[item.day][item.start][item.room] = [];
-        }
-
-        matrix[item.day][item.start][item.room] = item;
+      params[columnSelected].forEach(function(colHead) {
+        table.header.push(colHead);
       });
 
-      days = days.uniq().toArray();
-      rooms = rooms.uniq().toArray();
-      starts = starts.uniq().toArray();
+      params.day.forEach(function(day) {
+        params[rowChoice].forEach(function(rowDef) {
+          var row = [{rowTitle: day + ', ' + rowDef}];
+          params[columnSelected].forEach(function(col) {
+            var foundItem = selected.find(function(item) {
+              return (item.day == day && item[columnSelected] == col && item[rowChoice] == rowDef);
+            });
 
-      rooms.forEach(function(room) {
-        table.header.push(room);
-      });
-
-      days.forEach(function(day) {
-        starts.forEach(function(start) {
-          var row = [];
-          rooms.forEach(function(room) {
-            if (typeof matrix[day] == 'object' && typeof matrix[day][start] == 'object' && typeof matrix[day][start][room] == 'object') {
-              row.push(matrix[day][start][room]);
+            if (foundItem) {
+              row.push(foundItem);
             }
             else {
               row.push(false);
@@ -30848,7 +30851,7 @@ Ember
       });
 
       return table;
-    }.property('selectedSessions'),
+    }.property('selectedSessions', 'columnSelected'),
 
     resetScheduleInfo: function() {
       var self = this;
@@ -30859,15 +30862,25 @@ Ember
           // We have to add 'false' to the end of our Jekyll-produced JSON otherwise
           // we have a dangling comma. So strip out the false.
           data = data.slice(0, data.length-1);
-          var allTracks = [null];
-          var allDifficulties = [null];
+          var allTracks = [];
+          var allDifficulties = [];
           self.set('allSessions', data.map(function(session) {
             allTracks.push(session.track);
             allDifficulties.push(session.difficulty);
             return App.SessionModel.create(session);
           }));
-          self.set('allTracks', allTracks.uniq().toArray());
-          self.set('allDifficulties', allDifficulties.uniq().toArray());
+          self.set('trackFilters', allTracks.uniq().map(function(item) {
+            return Ember.Object.create({
+              name: item,
+              selected: true
+            });
+          }));
+          self.set('difficultyFilters', allDifficulties.uniq().map(function(item) {
+            return Ember.Object.create({
+              name: item,
+              selected: true
+            });
+          }));
         }
       });
 
@@ -30895,6 +30908,9 @@ Ember
   // Controllers
   //-------------------------
   App.ScheduleController = Ember.ObjectController.extend({
+    toggleFilter: function(item) {
+      item.set('selected', !item.get('selected'));
+    }
   });
 
   App.SessionController = Ember.ObjectController.extend({
