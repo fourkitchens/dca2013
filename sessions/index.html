@@ -3,14 +3,14 @@ layout: col-2
 title: Submitted Sessions | DrupalCamp Austin 2013
 ---
 
-<h2>Submitted Sessions</h2>
+<h1>Submitted Sessions</h1>
 
 <div class="sessions">
 {% for post in site.categories.session %}
 
   <div class="session">
-    <h3><a href="{{ post.permalink }}">{{ post.title }}</a></h3>
-    <p class="meta"><em>Presented by {{ post.presenters }}</em></p>
+    <h2><a href="{{ post.permalink }}">{{ post.title }}</a></h2>
+    <p class="meta"><em>Proposed by {{ post.presenters }}</em></p>
     <p class="desc">
       {{ post.content }}
     </p>

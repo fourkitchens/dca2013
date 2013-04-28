@@ -15,7 +15,7 @@ start: TBD
 room: TBD
 ---
 
-## The Bite
+### The Bite
 It all begins with the bite... Let's say you need to automate something repetitive that you always do within the Drupal UI. Or, maybe you would like to write automated tests for Drupal, but do not want to mess with the nasty installation and runtime of Selenium IDE. Enter Zombie.js... a lightweight, insanely fast, headless browser for testing and automation within a single Node.js package. No browser required. You have just been bitten.
 
 ### The Infection
