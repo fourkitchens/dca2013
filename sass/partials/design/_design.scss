@@ -5,10 +5,16 @@
 //   form element styles) use the 'defaults' folder.
 //
 
+// Layouts and page tpls
 @import 'page';
 @import 'col-1';
 @import 'col-2';
 
+// General site components
 @import 'header';
 @import 'about';
-@import 'session';
+
+// Sessions
+@import 'sessions';
+@import 'sessions-submitted';
+@import 'sessions-schedule';

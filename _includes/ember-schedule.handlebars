@@ -23,36 +23,32 @@
   </div>
 
   {{#if sessionsTable}}
-    <table>
-      <thead>
-        <tr>
-          {{#each head in sessionsTable.header}}
-            <th>{{head}}</th>
-          {{/each}}
-        </tr>
-      </thead>
-      <tbody>
-        {{#each row in sessionsTable.rows}}
-          <tr>
-            {{#each session in row}}
-              <td>
-                {{#if session}}
-                  {{#if session.rowTitle}}
-                    {{session.rowTitle}}
-                  {{else}}
-                    {{#with session}}
-                      {{view App.SessionView}}
-                    {{/with}}
-                  {{/if}}
-                {{/if}}
-              </td>
-            {{/each}}
-          </tr>
+    <section class="sched">
+      <header>
+        {{#each head in sessionsTable.header}}
+          <span class="room">{{head}}</span>
         {{/each}}
-      </tbody>
-    </table>
+      </header>
+      {{#each row in sessionsTable.rows}}
+        <section class="slot">
+          {{#each session in row}}
+            {{#if session}}
+              {{#if session.rowTitle}}
+                <h3 class="time">{{session.rowTitle}}</h3>
+              {{else}}
+                {{#with session}}
+                  <article class="session">
+                    {{view App.SessionView}}
+                  </article><!-- .session -->
+                {{/with}}
+              {{/if}}
+            {{/if}}
+          {{/each}}
+        </section><!-- .slot -->
+      {{/each}}
+    </section><!-- .sched -->
   {{else}}
-    No sessions match your selection.
+    <p class="none">No sessions match your selection.</p>
   {{/if}}
 </script>
 {% endraw %}

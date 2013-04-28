@@ -1,17 +1,18 @@
 {% raw %}
 <script type="text/x-handlebars" data-template-name="session">
   <div {{bindAttr class="filtered"}}>
-    <b>{{title}}</b>
-    <div>{{room}}</div>
-    <div>{{presenters}}</div>
-    <div>{{track}}</div>
-    <div>{{start}}</div>
-    <div>{{difficulty}}</div>
-    <div>{{day}}</div>
+    <h2>{{title}}</h2>
+    <p class="meta">Presented by {{presenters}}</p>
+    <p class="sched">{{day}} in {{room}} at {{start}}</p>
+    <ul class="meta">
+      <li>{{track}}</li>
+      <li>{{difficulty}}</li>
+    </ul>
     {{#if showContent}}
-        <div>{{{content}}}</div>
+      <button {{action "collapse" session target="view"}}>Hide details</button>
+      <div class="desc">{{{content}}}</div>
     {{else}}
-        <button {{action "expand" session target="view"}}>Show details</button>
+      <button {{action "expand" session target="view"}}>Show details</button>
     {{/if}}
   </div>
 </script>

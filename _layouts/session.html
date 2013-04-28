@@ -2,13 +2,13 @@
 layout: col-2
 ---
 
-<article id="session">
-  <h2>{{ page.title }}</h2>
+<article class="session">
+  <h1>{{ page.title }}</h1>
+  <p class="meta">Presenters: {{ page.presenters }}</p>
 
   <ul class="meta">
     <li>Difficulty: {{ page.difficulty }}</li>
     <li>Track: {{ page.track }}</li>
-    <li>Presenters: {{ page.presenters }}</li>
   </ul>
 
   <ul class="sched">
@@ -17,5 +17,5 @@ layout: col-2
     <li>Room: {{ page.room }}</li>
   </ul>
 
-  <p class="desc">{{ content }}</p>
+  <div class="desc">{{ content }}</div>
 </article>

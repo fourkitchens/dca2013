@@ -174,6 +174,9 @@
     templateName: 'session',
     expand: function(session) {
       session.set('showContent', true);
+    },
+    collapse: function(session) {
+      session.set('showContent', false);
     }
   });
 

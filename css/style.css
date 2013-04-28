@@ -627,17 +627,78 @@ footer .social {
   height: 300px;
 }
 
-.sessions .session h2 {
+.session h2 {
   margin-bottom: .25em;
   line-height: 1.1em;
 }
-.sessions .session p.meta {
+.session p.meta {
   margin: 0;
   opacity: .8;
 }
-.sessions .session h3 {
+.session h3 {
   margin: 0;
 }
-.sessions .session p {
+.session p {
+  margin-top: 0;
+}
+
+.schedule .slot .time {
+  clear: both;
+  margin: 1em 0;
+  padding: .5em 1em;
+  background-color: #ed9310;
+  color: #000;
+}
+.schedule .room {
+  width: 31.81818%;
+  clear: right;
+  float: left;
+  margin-left: 0%;
+  margin-right: 2.27273%;
+}
+.schedule article.session {
+  width: 100%;
+  clear: right;
+  float: right;
+  margin-right: 0%;
+  padding-bottom: 2em;
+}
+@media (min-width: 500px) {
+  .schedule article.session {
+    width: 43.18182%;
+    clear: right;
+    float: left;
+    margin-left: 0%;
+    margin-right: 2.27273%;
+  }
+  .schedule article.session:nth-of-type(2n) {
+    width: 43.18182%;
+    clear: right;
+    float: right;
+    margin-right: 0%;
+  }
+}
+@media (min-width: 720px) {
+  .schedule article.session {
+    width: 31.81818%;
+    clear: right;
+    float: left;
+    margin-left: 0%;
+    margin-right: 2.27273%;
+  }
+  .schedule article.session:nth-of-type(2) {
+    width: 31.81818%;
+    clear: right;
+    float: left;
+    margin-right: 2.27273%;
+  }
+  .schedule article.session:nth-of-type(3) {
+    width: 31.81818%;
+    clear: right;
+    float: right;
+    margin-right: 0%;
+  }
+}
+.schedule article.session h2 {
   margin-top: 0;
 }

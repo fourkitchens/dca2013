@@ -1,0 +1,45 @@
+//
+// Submitted Sessions
+//
+
+.schedule {
+  .slot .time {
+    clear: both;
+    margin: 1em 0;
+    padding: .5em 1em;
+    background-color: $orange;
+    color: #000;
+  }
+
+  .room {
+    @include grid-span(3);
+  }
+
+  article.session {
+    @include grid-span(9);
+    padding-bottom: 2em;
+
+    @include breakpoint($sched-md) {
+      @include grid-span(4);
+
+      &:nth-of-type(2n) {
+        @include grid-span(4,6);
+      }
+    }
+
+    @include breakpoint($sched-lg) {
+      @include grid-span(3);
+
+      &:nth-of-type(2) {
+        @include grid-span(3,4);
+      }
+      &:nth-of-type(3) {
+        @include grid-span(3,7);
+      }
+    }
+
+    h2 {
+      margin-top: 0;
+    }
+  }
+}
