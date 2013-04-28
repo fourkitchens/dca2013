@@ -13,7 +13,13 @@
   </div>
 
   <div id="column-select">
-    {{view Ember.Select valueBinding="columnSelected" contentBinding="columnOptions"}}
+    {{#each col in columnOptions}}
+      <button {{action "chooseCol" col}} {{bindAttr class=":toggle col.selected"}}>{{col.name}}</button>
+    {{/each}}
+  </div>
+
+  <div id="reset-button">
+    <button {{action "resetFilters"}}>Reset</button>
   </div>
 
   {{#if sessionsTable}}

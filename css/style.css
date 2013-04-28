@@ -574,6 +574,16 @@ footer .social {
   float: right;
   margin-right: 0%;
 }
+.col-1 .filtered {
+  color: #333333;
+}
+.col-1 button.toggle {
+  background-color: grey;
+  color: white;
+}
+.col-1 button.toggle.selected {
+  background-color: #d34913;
+}
 
 .col-2 {
   max-width: 880px;

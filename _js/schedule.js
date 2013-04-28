@@ -1,4 +1,5 @@
 (function ($) {
+  var cl = console.log.bind(console);
   var App = Ember.Application.create({
     LOG_TRANSITIONS: true,
     rootElement: '#ember-container'
@@ -17,7 +18,8 @@
     difficulty: '',
     day: '',
     content: '',
-    showContent: false
+    showContent: false,
+    filtered: false
   });
 
   App.ScheduleModel = Ember.Object.extend({
@@ -28,43 +30,71 @@
     difficultyFilters: [],
 
     // Table options.
-    columnOptions: ['room', 'track'],
-    columnSelected: 'room',
+    columnOptions: [
+      Ember.Object.create({
+        name: 'room',
+        selected: true
+      }),
+      Ember.Object.create({
+        name: 'track',
+        selected: false
+      }),
+      Ember.Object.create({
+        name: 'difficulty',
+        selected: false
+      }),
+      Ember.Object.create({
+        name: 'presenters',
+        selected: false
+      })
+    ],
+    columnSelected: function() {
+      var col = this.get('columnOptions').find(function(item) {
+        if (item.get('selected')) {
+          return true;
+        }
+      });
+      return col.get('name');
+    }.property('columnOptions.@each.selected'),
 
-    selectedSessions: function() {
+    filterSessions: function() {
       var self = this;
-      return this.get('allSessions').filter(function(item) {
+      this.get('allSessions').map(function(item) {
         var trackSelected = self.get('trackFilters').some(function(filter) {
           return item.get('track') == filter.get('name') && filter.get('selected');
         });
         var difficultySelected = self.get('difficultyFilters').some(function(filter) {
           return item.get('difficulty') == filter.get('name') && filter.get('selected');
         });
-        return trackSelected && difficultySelected;
+        item.set('filtered', !(trackSelected && difficultySelected));
       });
-    }.property('allSessions', 'trackFilters.@each.selected', 'difficultyFilters.@each.selected'),
+    }.observes('allSessions', 'trackFilters.@each.selected', 'difficultyFilters.@each.selected'),
 
     tableParams: function() {
       var params = {
         day: [],
         room: [],
         start: [],
-        track: []
+        track: [],
+        difficulty: [],
+        presenters: []
       };
-      this.get('selectedSessions').forEach(function(item) {
+      this.get('allSessions').forEach(function(item) {
         params.day.push(item.day);
         params.room.push(item.room);
         params.start.push(item.start);
         params.track.push(item.track);
+        params.difficulty.push(item.difficulty);
+        params.presenters.push(item.presenters);
       });
       for (var key in params) {
         params[key] = params[key].uniq().toArray();
       }
       return params;
-    }.property('selectedSessions'),
+    }.property('allSessions'),
 
     sessionsTable: function() {
-      var selected = this.get('selectedSessions');
+      var allSessions = this.get('allSessions');
       var params = this.get('tableParams');
       var table = {
         header: [''],
@@ -82,7 +112,7 @@
         params[rowChoice].forEach(function(rowDef) {
           var row = [{rowTitle: day + ', ' + rowDef}];
           params[columnSelected].forEach(function(col) {
-            var foundItem = selected.find(function(item) {
+            var foundItem = allSessions.find(function(item) {
               return (item.day == day && item[columnSelected] == col && item[rowChoice] == rowDef);
             });
 
@@ -98,7 +128,7 @@
       });
 
       return table;
-    }.property('selectedSessions', 'columnSelected'),
+    }.property('allSessions', 'columnSelected'),
 
     resetScheduleInfo: function() {
       var self = this;
@@ -157,6 +187,24 @@
   App.ScheduleController = Ember.ObjectController.extend({
     toggleFilter: function(item) {
       item.set('selected', !item.get('selected'));
+    },
+
+    resetFilters: function() {
+      this.get('difficultyFilters').map(function(item) {
+        item.set('selected', true);
+      });
+      this.get('trackFilters').map(function(item) {
+        item.set('selected', true);
+      });
+    },
+
+    chooseCol: function(col) {
+      col.set('selected', true);
+      this.get('columnOptions').map(function(item) {
+        if (item.get('name') != col.get('name')) {
+          item.set('selected', false);
+        }
+      });
     }
   });
 
