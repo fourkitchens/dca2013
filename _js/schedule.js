@@ -71,9 +71,9 @@
         matrix[item.day][item.start][item.room] = item;
       });
 
-      days = days.uniq();
-      rooms = rooms.uniq();
-      starts = starts.uniq();
+      days = days.uniq().toArray();
+      rooms = rooms.uniq().toArray();
+      starts = starts.uniq().toArray();
 
       rooms.forEach(function(room) {
         table.header.push(room);
@@ -83,7 +83,12 @@
         starts.forEach(function(start) {
           var row = [];
           rooms.forEach(function(room) {
-            row.push(matrix[day][start][room]);
+            if (typeof matrix[day] == 'object' && typeof matrix[day][start] == 'object' && typeof matrix[day][start][room] == 'object') {
+              row.push(matrix[day][start][room]);
+            }
+            else {
+              row.push(false);
+            }
           });
           table.rows.push(row);
         });

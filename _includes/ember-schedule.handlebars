@@ -16,9 +16,11 @@
           <tr>
             {{#each session in row}}
               <td>
-                {{#with session}}
-                  {{view App.SessionView}}
-                {{/with}}
+                {{#if session}}
+                  {{#with session}}
+                    {{view App.SessionView}}
+                  {{/with}}
+                {{/if}}
               </td>
             {{/each}}
           </tr>
