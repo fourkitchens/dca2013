@@ -7,5 +7,6 @@
   "track": "{{ item.track | json}}",
   "start": "{{ item.start | json}}",
   "difficulty": "{{ item.difficulty | json}}",
-  "day": "{{ item.day | json}}"
+  "day": "{{ item.day | json}}",
+  "classes": "difficulty-{{ item.difficulty | replace: ' ','-' | downcase }} track-{{ item.track | replace: ' ','-' | replace: ',','' | downcase }} room-{{ item.room | replace: ' ','-' | downcase }}"
 }

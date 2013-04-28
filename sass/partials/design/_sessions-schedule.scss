@@ -10,36 +10,91 @@
     background-color: $darkblue;
     color: #000;
   }
+}
 
-  .room {
-    @include grid-span(3);
+//
+// To keep the Sass much lighter weight, we're not scoping all of
+// this stuff to the .schedule class. Things are still scoped
+// to each schedule view using & - section.[room|track|difficulty]
+//
+
+article.session {
+  // Singularity settings for schedule only
+  $output: 'isolation';
+
+  // Defaults for each session
+  .schedule & {
+    padding-bottom: 2em;
+    @include grid-span(9);
+
+    // Defaults for headings
+    h2 {
+      margin-top: 0;
+    }
   }
 
-  article.session {
-    @include grid-span(9);
-    padding-bottom: 2em;
+  // // All views look the same on small/medium screens
+  // @include breakpoint($sched-md) {
+  //   @include grid-span(4);
 
-    @include breakpoint($sched-md) {
-      @include grid-span(4);
+  //   &:nth-of-type(2n) {
+  //     @include grid-span(4,6);
+  //   }
+  // }
 
-      &:nth-of-type(2n) {
-        @include grid-span(4,6);
-      }
-    }
 
+  // Grid for Room view (3-col)
+  section.room & {
     @include breakpoint($sched-lg) {
-      @include grid-span(3);
+      &.room-chapter-three-room {
+        @include grid-span(3);
+      }
 
-      &:nth-of-type(2) {
+      &.room-room-102 {
         @include grid-span(3,4);
       }
-      &:nth-of-type(3) {
+
+      &.room-entermedia-room {
         @include grid-span(3,7);
       }
     }
+  }
 
-    h2 {
-      margin-top: 0;
+  // Grid for Difficulty view (3-col)
+  section.difficulty & {
+    @include breakpoint($sched-lg) {
+      &.difficulty-beginner {
+        @include grid-span(3,1);
+      }
+
+      &.difficulty-intermediate {
+        @include grid-span(3,4);
+      }
+
+      &.difficulty-expert {
+        @include grid-span(3,7);
+      }
+    }
+  }
+
+  // Grid for Track view (4-col)
+  section.track & {
+    @include breakpoint($sched-lg) {
+      &.track-design-theming-and-ux {
+        @include grid-span(2,2);
+      }
+
+      &.track-development {
+        @include grid-span(2,4);
+      }
+
+      &.track-business-and-marketing {
+        @include grid-span(2,6);
+      }
+
+      &.track-site-building {
+        @include grid-span(2,8);
+      }
     }
   }
 }

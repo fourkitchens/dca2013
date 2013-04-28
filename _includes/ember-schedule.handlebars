@@ -23,10 +23,10 @@
   </div>
 
   {{#if sessionsTable}}
-    <section class="sched">
+    <section id="sched" {{bindAttr class="columnSelected"}}>
       <header>
         {{#each head in sessionsTable.header}}
-          <span class="room">{{head}}</span>
+          <span class="column">{{head}}</span>
         {{/each}}
       </header>
       {{#each row in sessionsTable.rows}}
@@ -37,7 +37,7 @@
                 <h3 class="time">{{session.rowTitle}}</h3>
               {{else}}
                 {{#with session}}
-                  <article class="session">
+                  <article class="session {{unbound classes}}">
                     {{view App.SessionView}}
                   </article><!-- .session -->
                 {{/with}}

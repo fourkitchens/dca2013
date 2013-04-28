@@ -649,56 +649,91 @@ footer .social {
   background-color: #135c91;
   color: #000;
 }
-.schedule .room {
-  width: 31.81818%;
-  clear: right;
-  float: left;
-  margin-left: 0%;
-  margin-right: 2.27273%;
-}
+
 .schedule article.session {
-  width: 100%;
-  clear: right;
-  float: right;
-  margin-right: 0%;
   padding-bottom: 2em;
-}
-@media (min-width: 500px) {
-  .schedule article.session {
-    width: 43.18182%;
-    clear: right;
-    float: left;
-    margin-left: 0%;
-    margin-right: 2.27273%;
-  }
-  .schedule article.session:nth-of-type(2n) {
-    width: 43.18182%;
-    clear: right;
-    float: right;
-    margin-right: 0%;
-  }
-}
-@media (min-width: 720px) {
-  .schedule article.session {
-    width: 31.81818%;
-    clear: right;
-    float: left;
-    margin-left: 0%;
-    margin-right: 2.27273%;
-  }
-  .schedule article.session:nth-of-type(2) {
-    width: 31.81818%;
-    clear: right;
-    float: left;
-    margin-right: 2.27273%;
-  }
-  .schedule article.session:nth-of-type(3) {
-    width: 31.81818%;
-    clear: right;
-    float: right;
-    margin-right: 0%;
-  }
+  width: 100%;
+  float: right;
+  margin-left: 0;
+  margin-right: 0;
+  clear: none;
 }
 .schedule article.session h2 {
   margin-top: 0;
+}
+@media (min-width: 720px) {
+  section.room article.session.room-chapter-three-room {
+    width: 31.81818%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 0%;
+    clear: none;
+  }
+  section.room article.session.room-room-102 {
+    width: 31.81818%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 34.09091%;
+    clear: none;
+  }
+  section.room article.session.room-entermedia-room {
+    width: 31.81818%;
+    float: right;
+    margin-left: 0;
+    margin-right: 0;
+    clear: none;
+  }
+}
+@media (min-width: 720px) {
+  section.difficulty article.session.difficulty-beginner {
+    width: 31.81818%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 0%;
+    clear: none;
+  }
+  section.difficulty article.session.difficulty-intermediate {
+    width: 31.81818%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 34.09091%;
+    clear: none;
+  }
+  section.difficulty article.session.difficulty-expert {
+    width: 31.81818%;
+    float: right;
+    margin-left: 0;
+    margin-right: 0;
+    clear: none;
+  }
+}
+@media (min-width: 720px) {
+  section.track article.session.track-design-theming-and-ux {
+    width: 20.45455%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 11.36364%;
+    clear: none;
+  }
+  section.track article.session.track-development {
+    width: 20.45455%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 34.09091%;
+    clear: none;
+  }
+  section.track article.session.track-business-and-marketing {
+    width: 20.45455%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 56.81818%;
+    clear: none;
+  }
+  section.track article.session.track-site-building {
+    width: 20.45455%;
+    float: right;
+    margin-left: 0;
+    margin-right: 0;
+    clear: none;
+  }
 }
