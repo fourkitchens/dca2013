@@ -1,6 +1,7 @@
 {
   "title": "{{ item.title | json}}",
-  "content": "{{ item.content | strip_newlines | json}}",
+  "permalink": "{{ item.permalink | json }}",
+  "summary": "{{ item.summary | strip_newlines | json}}",
   "room": "{{ item.room | json}}",
   "presenters": "{{ item.presenters | json}}",
   "track": "{{ item.track | json}}",

@@ -30770,7 +30770,8 @@ Ember
     start: '',
     difficulty: '',
     day: '',
-    content: '',
+    summary: '',
+    permalink: '',
     showContent: false,
     filtered: false
   });
