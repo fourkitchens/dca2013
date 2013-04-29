@@ -515,6 +515,9 @@ h4 {
   margin: 0 0 1.3em;
 }
 
+.primary.content p {
+  margin: 0 0 1.5em 0;
+}
 .primary.content p, .primary.content li {
   font-size: 1.125em;
 }
@@ -706,6 +709,7 @@ main:after {
 
 #map {
   height: 300px;
+  margin-bottom: 1.5em;
 }
 
 .news-listing .entry h2 {
