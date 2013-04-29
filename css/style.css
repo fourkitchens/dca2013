@@ -639,9 +639,6 @@ footer .social {
   background-color: #135c91;
   color: #000;
 }
-.schedule .filtered {
-  color: #333333;
-}
 .schedule button.toggle {
   background-color: grey;
   color: white;
@@ -650,6 +647,39 @@ footer .social {
   background-color: #d34913;
 }
 
+article.session {
+  -webkit-transform-style: preserve3d;
+  -moz-transform-style: preserve3d;
+  -ms-transform-style: preserve3d;
+  -o-transform-style: preserve3d;
+  transform-style: preserve3d;
+  -webkit-perspective: 600px;
+  -moz-perspective: 600px;
+  -ms-perspective: 600px;
+  -o-perspective: 600px;
+  perspective: 600px;
+}
+article.session div {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  -webkit-transform-origin: 50% 100% 50%;
+  -moz-transform-origin: 50% 100% 50%;
+  -ms-transform-origin: 50% 100% 50%;
+  -o-transform-origin: 50% 100% 50%;
+  transform-origin: 50% 100% 50%;
+}
+article.session div.filtered {
+  opacity: .25;
+  -webkit-filter: blur(4px);
+  -webkit-transform: translateZ(-160px) rotateX(20deg);
+  -moz-transform: translateZ(-160px) rotateX(20deg);
+  -ms-transform: translateZ(-160px) rotateX(20deg);
+  -o-transform: translateZ(-160px) rotateX(20deg);
+  transform: translateZ(-160px) rotateX(20deg);
+}
 .schedule article.session {
   padding-bottom: 2em;
   width: 100%;

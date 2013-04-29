@@ -11,14 +11,11 @@
     color: #000;
   }
 
-  .filtered {
-    color: #333333;
-  }
-
   button {
     &.toggle {
       background-color: grey;
       color: white;
+
       &.selected {
         background-color: $darkorange;
       }
@@ -33,6 +30,22 @@
 //
 
 article.session {
+  // Transform container settings
+  @include transform-style(preserve3d);
+  @include perspective(600px);
+
+  // UI fanciness for schedule filtering
+  div {
+    @include transition(all .3s ease-in-out);
+    @include transform-origin(50% 100%);
+
+    // Filtered = suppressed from schedule
+    &.filtered {
+      opacity: .25;
+      -webkit-filter: blur(4px);
+      @include transform(translateZ(-160px) rotateX(20deg));
+    }
+  }
 
   // Defaults for each session
   .schedule & {
