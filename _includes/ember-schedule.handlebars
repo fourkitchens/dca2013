@@ -1,25 +1,30 @@
 {% raw %}
 <script type="text/x-handlebars" data-template-name="schedule">
-  <div id="track-filters">
-    {{#each track in trackFilters}}
-      <button {{action "toggleFilter" track}} {{bindAttr class=":toggle track.selected"}}>{{track.name}}</button>
-    {{/each}}
-  </div>
+  <div class="filters">
+    <div class="filters-track">
+      <label>Track:</label>
+      {{#each track in trackFilters}}
+        <button {{action "toggleFilter" track}} {{bindAttr class=":toggle track.selected"}}>{{track.name}}</button>
+      {{/each}}
+    </div>
 
-  <div id="difficulty-filters">
-    {{#each difficulty in difficultyFilters}}
-      <button {{action "toggleFilter" difficulty}} {{bindAttr class=":toggle difficulty.selected"}}>{{difficulty.name}}</button>
-    {{/each}}
-  </div>
+    <div class="filters-difficulty">
+      <label>Difficulty:</label>
+      {{#each difficulty in difficultyFilters}}
+        <button {{action "toggleFilter" difficulty}} {{bindAttr class=":toggle difficulty.selected"}}>{{difficulty.name}}</button>
+      {{/each}}
+    </div>
 
-  <div id="column-select">
-    {{#each col in columnOptions}}
-      <button {{action "chooseCol" col}} {{bindAttr class=":toggle col.selected"}}>{{col.name}}</button>
-    {{/each}}
-  </div>
+    <div class="column-select">
+      <label>Order by:</label>
+      {{#each col in columnOptions}}
+        <button {{action "chooseCol" col}} {{bindAttr class=":toggle col.selected"}}>{{col.name}}</button>
+      {{/each}}
+    </div>
 
-  <div id="reset-button">
-    <button {{action "resetFilters"}}>Reset</button>
+    <div class="filters-reset">
+      <button {{action "resetFilters"}}>Reset</button>
+    </div>
   </div>
 
   {{#if sessionsTable}}

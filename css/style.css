@@ -473,6 +473,14 @@ table {
   border-spacing: 0;
 }
 
+button {
+  display: inline-block;
+  margin: .3em;
+  border: 0;
+  padding: .3em .6em;
+  border-radius: .3em;
+}
+
 h1, h2, h3, h4, h5, h6 {
   color: #97c441;
 }
@@ -593,6 +601,11 @@ footer .social {
   margin-right: 0%;
 }
 
+.full {
+  max-width: 94%;
+  margin: 0 auto;
+}
+
 #nav-main {
   text-align: center;
 }
@@ -632,6 +645,9 @@ footer .social {
   margin-top: 0;
 }
 
+.schedule h1 {
+  text-align: center;
+}
 .schedule .slot .time {
   clear: both;
   margin: 1em 0;
@@ -639,12 +655,33 @@ footer .social {
   background-color: #135c91;
   color: #000;
 }
-.schedule button.toggle {
-  background-color: grey;
+.schedule .filters {
+  position: relative;
+  padding-right: 10em;
+}
+.schedule .filters label {
+  display: inline-block;
+  width: 5em;
+  margin-left: 1.5em;
+  padding-right: .5em;
+  text-align: right;
+}
+.schedule .filters button.toggle {
+  background-color: #135c91;
+  color: #c5d5f0;
+}
+.schedule .filters button.toggle.selected {
+  background-color: #d34913;
   color: white;
 }
-.schedule button.toggle.selected {
-  background-color: #d34913;
+.schedule .filters .filters-reset button {
+  position: absolute;
+  top: 0;
+  right: 2em;
+  background: #62802a;
+  color: white;
+  width: 6em;
+  height: 6em;
 }
 
 article.session {

@@ -2,7 +2,14 @@
 // Submitted Sessions
 //
 
+$sched-pad: 2em;
+$reset-width: 6em;
+
 .schedule {
+  h1 {
+    text-align: center;
+  }
+
   .slot .time {
     clear: both;
     margin: 1em 0;
@@ -11,13 +18,42 @@
     color: #000;
   }
 
-  button {
-    &.toggle {
-      background-color: grey;
-      color: white;
+  // Schedule filters
+  .filters {
+    position: relative;
+    padding-right: $reset-width + $sched-pad + 2em;
 
-      &.selected {
-        background-color: $darkorange;
+    label {
+      display: inline-block;
+      width: 5em;
+      margin-left: $sched-pad - .5em;
+      padding-right: .5em;
+      text-align: right;
+    }
+
+    // <button> automatically extends %button
+    button {
+      &.toggle {
+        background-color: $darkblue;
+        color: $lightblue;
+
+        &.selected {
+          background-color: $darkorange;
+          color: $white;
+        }
+      }
+    }
+
+    // Big ol' Reset button
+    .filters-reset {
+      button {
+        position: absolute;
+        top: 0;
+        right: $sched-pad;
+        background: $darkgreen;
+        color: $white;
+        width: $reset-width;
+        height: $reset-width;
       }
     }
   }
