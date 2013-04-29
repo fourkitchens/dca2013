@@ -8,18 +8,4 @@
   .primary {
     @include grid-span(9);
   }
-
-  .filtered {
-    color: #333333;
-  }
-
-  button {
-    &.toggle {
-      background-color: grey;
-      color: white;
-      &.selected {
-        background-color: $darkorange;
-      }
-    }
-  }
 }

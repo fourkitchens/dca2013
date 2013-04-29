@@ -574,16 +574,6 @@ footer .social {
   float: right;
   margin-right: 0%;
 }
-.col-1 .filtered {
-  color: #333333;
-}
-.col-1 button.toggle {
-  background-color: grey;
-  color: white;
-}
-.col-1 button.toggle.selected {
-  background-color: #d34913;
-}
 
 .col-2 {
   max-width: 880px;
@@ -648,6 +638,16 @@ footer .social {
   padding: .5em 1em;
   background-color: #135c91;
   color: #000;
+}
+.schedule .filtered {
+  color: #333333;
+}
+.schedule button.toggle {
+  background-color: grey;
+  color: white;
+}
+.schedule button.toggle.selected {
+  background-color: #d34913;
 }
 
 .schedule article.session {
