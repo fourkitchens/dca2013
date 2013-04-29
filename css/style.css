@@ -653,31 +653,30 @@ footer .social {
 .schedule article.session {
   padding-bottom: 2em;
   width: 100%;
+  clear: right;
   float: right;
-  margin-left: 0;
-  margin-right: 0;
-  clear: none;
+  margin-right: 0%;
 }
 .schedule article.session h2 {
   margin-top: 0;
 }
 @media (min-width: 720px) {
   section.room article.session.room-chapter-three-room {
-    width: 32.20339%;
+    width: 28.57143%;
     float: left;
     margin-right: -100%;
     margin-left: 0%;
     clear: none;
   }
   section.room article.session.room-room-102 {
-    width: 32.20339%;
+    width: 28.57143%;
     float: left;
     margin-right: -100%;
-    margin-left: 33.89831%;
+    margin-left: 35.71429%;
     clear: none;
   }
   section.room article.session.room-entermedia-room {
-    width: 32.20339%;
+    width: 28.57143%;
     float: right;
     margin-left: 0;
     margin-right: 0;
@@ -686,21 +685,21 @@ footer .social {
 }
 @media (min-width: 720px) {
   section.difficulty article.session.difficulty-beginner {
-    width: 32.20339%;
+    width: 28.57143%;
     float: left;
     margin-right: -100%;
     margin-left: 0%;
     clear: none;
   }
   section.difficulty article.session.difficulty-intermediate {
-    width: 32.20339%;
+    width: 28.57143%;
     float: left;
     margin-right: -100%;
-    margin-left: 33.89831%;
+    margin-left: 35.71429%;
     clear: none;
   }
   section.difficulty article.session.difficulty-expert {
-    width: 32.20339%;
+    width: 28.57143%;
     float: right;
     margin-left: 0;
     margin-right: 0;
@@ -709,28 +708,28 @@ footer .social {
 }
 @media (min-width: 720px) {
   section.track article.session.track-design-theming-and-ux {
-    width: 23.72881%;
+    width: 21.05263%;
     float: left;
     margin-right: -100%;
     margin-left: 0%;
     clear: none;
   }
   section.track article.session.track-development {
-    width: 23.72881%;
+    width: 21.05263%;
     float: left;
     margin-right: -100%;
-    margin-left: 25.42373%;
+    margin-left: 26.31579%;
     clear: none;
   }
   section.track article.session.track-business-and-marketing {
-    width: 23.72881%;
+    width: 21.05263%;
     float: left;
     margin-right: -100%;
-    margin-left: 50.84746%;
+    margin-left: 52.63158%;
     clear: none;
   }
   section.track article.session.track-site-building {
-    width: 23.72881%;
+    width: 21.05263%;
     float: right;
     margin-left: 0;
     margin-right: 0;
