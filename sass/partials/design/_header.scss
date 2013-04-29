@@ -5,22 +5,34 @@
 #nav-main {
   text-align: center;
 
+  .nav-main-left {
+    li {
+      text-align: right;
+      margin-left: .5em;
+
+      &:last-child {
+        margin-right: -1em;
+      }
+    }
+  }
+
+  .nav-main-right {
+    li {
+      text-align: left;
+      margin-right: .5em;
+
+      &:first-child {
+        margin-left: -1em;
+      }
+    }
+  }
+
   li {
     list-style-type: none;
     list-style-image: none;
     display: inline-block;
     font-family: $atrament;
     text-transform: uppercase;
-    font-size: em(36);
-
-    &.nav-main-left {
-      text-align: right;
-      margin-left: 1em;
-    }
-
-    &.nav-main-right {
-      text-align: left;
-      margin-right: 1em;
-    }
+    font-size: em(32);
   }
 }
