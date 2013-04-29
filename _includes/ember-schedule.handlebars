@@ -4,21 +4,21 @@
     <div class="filters-track">
       <label>Track:</label>
       {{#each track in trackFilters}}
-        <button {{action "toggleFilter" track}} {{bindAttr class=":toggle track.selected"}}>{{track.name}}</button>
+        <button {{action "toggleFilter" track}} {{bindAttr class=":toggle track.selected"}}>{{unbound track.name}}</button>
       {{/each}}
     </div>
 
     <div class="filters-difficulty">
       <label>Difficulty:</label>
       {{#each difficulty in difficultyFilters}}
-        <button {{action "toggleFilter" difficulty}} {{bindAttr class=":toggle difficulty.selected"}}>{{difficulty.name}}</button>
+        <button {{action "toggleFilter" difficulty}} {{bindAttr class=":toggle difficulty.selected"}}>{{unbound difficulty.name}}</button>
       {{/each}}
     </div>
 
     <div class="column-select">
       <label>Order by:</label>
       {{#each col in columnOptions}}
-        <button {{action "chooseCol" col}} {{bindAttr class=":toggle col.selected"}}>{{col.name}}</button>
+        <button {{action "chooseCol" col}} {{bindAttr class=":toggle col.selected"}}>{{unbound col.name}}</button>
       {{/each}}
     </div>
 
@@ -31,7 +31,7 @@
     <section id="sched" {{bindAttr class="columnSelected"}}>
       <header>
         {{#each head in sessionsTable.header}}
-          <span class="column">{{head}}</span>
+          <span class="column">{{unbound head}}</span>
         {{/each}}
       </header>
       {{#each row in sessionsTable.rows}}
@@ -39,7 +39,7 @@
           {{#each session in row}}
             {{#if session}}
               {{#if session.rowTitle}}
-                <h3 class="time">{{session.rowTitle}}</h3>
+                <h3 class="time">{{unbound session.rowTitle}}</h3>
               {{else}}
                 {{#with session}}
                   <article class="session {{unbound classes}}">

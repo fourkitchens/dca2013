@@ -1,16 +1,16 @@
 {% raw %}
 <script type="text/x-handlebars" data-template-name="session">
   <div {{bindAttr class="filtered"}}>
-    <h2><a href="{{unbound permalink}}">{{title}}</a></h2>
-    <p class="meta">Presented by {{presenters}}</p>
-    <p class="sched">{{day}} in {{room}} at {{start}}</p>
+    <h2><a href="{{unbound permalink}}">{{unbound title}}</a></h2>
+    <p class="meta">Presented by {{unbound presenters}}</p>
+    <p class="sched">{{unbound day}} in {{unbound room}} at {{unbound start}}</p>
     <ul class="meta">
-      <li>{{track}}</li>
-      <li>{{difficulty}}</li>
+      <li>{{unbound track}}</li>
+      <li>{{unbound difficulty}}</li>
     </ul>
     {{#if showContent}}
       <button {{action "collapse" session target="view"}}>Hide summary</button>
-      <div class="desc">{{{summary}}}</div>
+      <div class="desc">{{{unbound summary}}}</div>
     {{else}}
       <button {{action "expand" session target="view"}}>Show summary</button>
     {{/if}}
