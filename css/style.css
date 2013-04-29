@@ -637,6 +637,13 @@ footer .social {
   height: 300px;
 }
 
+.news-listing .entry h2 {
+  margin-bottom: 0;
+}
+.news-listing .entry p.meta {
+  margin-top: 0;
+}
+
 .session h2 {
   margin-bottom: .25em;
   line-height: 1.1em;

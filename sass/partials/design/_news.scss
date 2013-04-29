@@ -1,0 +1,15 @@
+//
+// News entries
+//
+
+// Top-level News listing
+.news-listing {
+  .entry {
+    h2 {
+      margin-bottom: 0;
+    }
+    p.meta {
+      margin-top: 0;
+    }
+  }
+}

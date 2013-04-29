@@ -5,11 +5,14 @@ title: DrupalCamp Austin News
 
 <h1>News</h1>
 
-<div class="news">
+<div class="news-listing">
 {% for post in site.categories.news %}
 
-  <h3><a href="{{ post.permalink }}">{{ post.title }}</a></h3>
-  <p><em>Posted on {{ post.date | date: "%B %d, %Y" }}</em></p>
+  <div class="entry">
+    <h2><a href="{{ post.permalink }}">{{ post.title }}</a></h2>
+    <p class="meta"><em>Posted by {{ post.author }} on {{ post.date | date: "%B %d, %Y" }}</em></p>
+    <div class="body">{{ post.content }}</div>
+  </div>
 
 {% endfor %}
 </div><!-- .news -->
