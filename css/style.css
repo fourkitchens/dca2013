@@ -518,6 +518,13 @@ h4 {
 .primary.content p, .primary.content li, .primary.content blockquote {
   font-size: 1.3125em;
 }
+.primary.content blockquote {
+  line-height: 1.5em;
+  margin: 2em 0;
+  padding: .4em 2em;
+  border-left: 0.75em solid #62802a;
+  opacity: .8;
+}
 
 html,
 button,

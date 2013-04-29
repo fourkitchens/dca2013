@@ -47,4 +47,12 @@ h4 {
   p, li, blockquote {
     font-size: em(21);
   }
+
+  blockquote {
+    line-height: em(24);
+    margin: 2em 0;
+    padding: .4em 2em;
+    border-left: .75em solid $darkgreen;
+    opacity: .8;
+  }
 }
