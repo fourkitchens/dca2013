@@ -107,6 +107,8 @@ article.session {
   // Grid for Room view (3-col)
   section.room & {
     // Singularity settings
+    // @TODO: use layout() instead of overriding global settings. This breaks things.
+    //   @see https://github.com/Team-Sass/Singularity/wiki/Spanning-The-Grid#group-context-overrides
     $output: 'isolation';
     $grids: 3;
 
