@@ -3,4 +3,14 @@
 //
 
 .submitted .session {
+
+  .desc {
+    @include transition(all .3s ease-in-out);
+    max-height: 1000px;
+    overflow: hidden;
+
+    &.collapsed {
+      max-height: 0;
+    }
+  }
 }

@@ -37,7 +37,8 @@ module.exports = function(grunt) {
       allpages: {
         src: [
           '_js/min/jquery.min.js',
-          '_js/faq.js'
+          '_js/faq.js',
+          '_js/session-submitted.js'
         ],
         dest: 'js/dist/main.min.js'
       },

@@ -659,6 +659,19 @@ footer .social {
   margin-top: 0;
 }
 
+.submitted .session .desc {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  max-height: 1000px;
+  overflow: hidden;
+}
+.submitted .session .desc.collapsed {
+  max-height: 0;
+}
+
 .schedule h1 {
   text-align: center;
 }

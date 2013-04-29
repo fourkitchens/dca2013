@@ -1,4 +1,4 @@
-(function($){
+;(function($){
   $(document).ready(function(){
     // vars
     var faqs = [];
