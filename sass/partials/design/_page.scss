@@ -1,13 +1,12 @@
 // Page CSS
 
 header {
+  @include clearfix;
   @include grid-max;
 }
 
-footer {
-  @include grid-max;
-
-  .social {
-    @include grid-span(3);
-  }
+main {
+  @include clearfix;
+  margin-bottom: 4em;
 }
+

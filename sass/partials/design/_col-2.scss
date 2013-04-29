@@ -3,6 +3,7 @@
 //
 
 .col-2 {
+  @include clearfix;
   @include grid-max;
 
   .primary {

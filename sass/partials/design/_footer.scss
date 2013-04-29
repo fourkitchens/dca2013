@@ -1,0 +1,14 @@
+//
+// Footer styles
+//
+
+footer {
+  @include clearfix;
+  @include grid-max;
+  margin-bottom: 1em;
+
+  .social {
+    @include grid-span(3);
+  }
+}
+

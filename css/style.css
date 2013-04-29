@@ -605,17 +605,19 @@ header {
   max-width: 880px;
   margin: 0 auto;
 }
-
-footer {
-  max-width: 880px;
-  margin: 0 auto;
+header:after {
+  content: "";
+  display: table;
+  clear: both;
 }
-footer .social {
-  width: 31.81818%;
-  clear: right;
-  float: left;
-  margin-left: 0%;
-  margin-right: 2.27273%;
+
+main {
+  margin-bottom: 4em;
+}
+main:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 .col-1 {
@@ -632,6 +634,11 @@ footer .social {
 .col-2 {
   max-width: 880px;
   margin: 0 auto;
+}
+.col-2:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 .col-2 .primary {
   width: 100%;
@@ -700,6 +707,24 @@ footer .social {
 }
 .news-listing .entry p.meta {
   margin-top: 0;
+}
+
+footer {
+  max-width: 880px;
+  margin: 0 auto;
+  margin-bottom: 1em;
+}
+footer:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+footer .social {
+  width: 31.81818%;
+  clear: right;
+  float: left;
+  margin-left: 0%;
+  margin-right: 2.27273%;
 }
 
 .session h2 {
