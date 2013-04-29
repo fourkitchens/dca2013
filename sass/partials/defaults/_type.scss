@@ -44,12 +44,13 @@ h4 {
 // Primary content
 
 .primary.content {
-  p, li, blockquote {
-    font-size: em(21);
+  p, li {
+    font-size: em(18);
   }
 
   blockquote {
-    line-height: em(24);
+    font-size: em(21);
+    line-height: 1.4em;
     margin: 2em 0;
     padding: .4em 2em;
     border-left: .75em solid $darkgreen;

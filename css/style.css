@@ -477,7 +477,7 @@ button {
   display: inline-block;
   margin: .3em;
   border: 0;
-  padding: .3em .6em;
+  padding: 0.3em 0.6em;
   border-radius: .3em;
 }
 
@@ -515,13 +515,14 @@ h4 {
   margin: 0 0 1.3em;
 }
 
-.primary.content p, .primary.content li, .primary.content blockquote {
-  font-size: 1.3125em;
+.primary.content p, .primary.content li {
+  font-size: 1.125em;
 }
 .primary.content blockquote {
-  line-height: 1.5em;
+  font-size: 1.3125em;
+  line-height: 1.4em;
   margin: 2em 0;
-  padding: .4em 2em;
+  padding: 0.4em 2em;
   border-left: 0.75em solid #62802a;
   opacity: .8;
 }
@@ -558,7 +559,7 @@ body {
   font-family: "Source Sans Pro", sans-serif;
   line-height: 1.4;
   color: azure;
-  background: url('/img/background.png?1367101612') repeat 0 0;
+  background: url('/img/background.png') repeat 0 0;
 }
 
 a {
@@ -719,7 +720,6 @@ footer .social {
 .submitted .session .desc {
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
-  -ms-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   max-height: 1000px;
@@ -735,7 +735,7 @@ footer .social {
 .schedule .slot .time {
   clear: both;
   margin: 1em 0;
-  padding: .5em 1em;
+  padding: 0.5em 1em;
   background-color: #135c91;
   color: #000;
 }
@@ -783,7 +783,6 @@ article.session {
 article.session div {
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
-  -ms-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   -webkit-transform-origin: 50% 100% 50%;
