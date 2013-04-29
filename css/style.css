@@ -482,41 +482,41 @@ button {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: #97c441;
+  margin-top: 0;
 }
 
 h2, h3, h4, h5, h6 {
+  color: #97c441;
   font-family: "atrament-web", "Helvetica Neue", Arial, sans-serif;
   text-transform: uppercase;
+  margin-bottom: .5em;
 }
 
 h1 {
+  color: azure;
   font-family: "quatro", "Helvetica Neue", Arial, sans-serif;
   font-size: 3em;
-  margin: 0.97em 0 0.5em;
   line-height: 1.125em;
 }
 
 h2 {
   font-size: 2.25em;
   line-height: 1.77777em;
-  margin-bottom: 1em;
 }
 
 h3 {
   font-size: 1.5em;
-  margin: 1.7em 0 0.85em;
   line-height: 1.5em;
 }
 
 h4 {
   font-size: 1.3125em;
   line-height: 1.12382em;
-  margin: 0 0 1.3em;
 }
 
 .primary.content p {
-  margin: 0 0 1.5em 0;
+  margin-top: 0;
+  margin-bottom: 1em;
 }
 .primary.content p, .primary.content li {
   font-size: 1.125em;

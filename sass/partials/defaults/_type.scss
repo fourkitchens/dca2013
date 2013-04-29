@@ -8,44 +8,44 @@
 // Headings
 
 h1, h2, h3, h4, h5, h6 {
-  color: $green;
+  margin-top: 0;
 }
 
 h2, h3, h4, h5, h6 {
+  color: $green;
   font-family: $atrament;
   text-transform: uppercase;
+  margin-bottom: .5em;
 }
 
 h1 {
+  color: $bodycolor;
   font-family: $quatro;
   font-size: em(48);
-  margin: .97em 0 .5em;
   line-height: 1.125em;
 }
 
 h2 {
   font-size: em(36);
   line-height: 1.77777em;
-  margin-bottom: 1em;
 }
 
 h3 {
   font-size: em(24);
-  margin: 1.7em 0 .85em;
   line-height: 1.5em;
 }
 
 h4 {
   font-size: em(21);
   line-height: 1.12382em;
-  margin: 0 0 1.3em;
 }
 
 // Primary content
 
 .primary.content {
   p {
-    margin: 0 0 1.5em 0;
+    margin-top: 0;
+    margin-bottom: 1em;
   }
 
   p, li {
