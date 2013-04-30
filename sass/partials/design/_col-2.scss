@@ -15,14 +15,58 @@
   }
 
   .secondary {
+    margin-top: 0;
+
     @include grid-span(9);
 
     @include breakpoint($sidebar) {
       @include grid-span(3,7);
+      margin-top: 6em;
     }
 
     .block {
       margin-bottom: 2em;
+    }
+  }
+}
+
+#nav-sub { // Sub-navigation (Sections)
+
+  ul {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+
+  li {
+    list-style-image: none;
+    list-style-type: none;
+    background-color: $darkblue;
+    padding: .2em .5em;
+
+    a {
+      color: $white;
+    }
+
+    &:first-child {
+      padding-top: .5em;
+      border-top-left-radius: .5em;
+      border-top-right-radius: .5em;
+    }
+
+    &:last-child {
+      padding-bottom: .5em;
+      border-bottom-left-radius: .5em;
+      border-bottom-right-radius: .5em;
+    }
+
+    &:hover {
+      background-color: $lightblue;
+      cursor: pointer;
+      
+      a {
+        color: $darkblue;
+      }
     }
   }
 }

@@ -530,23 +530,12 @@ h4 {
   opacity: .8;
 }
 
-.secondary {
-  margin-top: 8em;
-}
 .secondary p, .secondary li {
   font-size: 1.3125em;
 }
 .secondary h2 {
   margin-top: 0;
   line-height: 1em;
-}
-.secondary #nav-sub ul {
-  margin: 0;
-  padding: 0;
-}
-.secondary #nav-sub li {
-  list-style-image: none;
-  list-style-type: none;
 }
 
 html,
@@ -659,6 +648,7 @@ main:after {
   }
 }
 .col-2 .secondary {
+  margin-top: 0;
   width: 100%;
   clear: right;
   float: right;
@@ -670,10 +660,43 @@ main:after {
     clear: right;
     float: right;
     margin-right: 0%;
+    margin-top: 6em;
   }
 }
 .col-2 .secondary .block {
   margin-bottom: 2em;
+}
+
+#nav-sub ul {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+#nav-sub li {
+  list-style-image: none;
+  list-style-type: none;
+  background-color: #135c91;
+  padding: 0.2em 0.5em;
+}
+#nav-sub li a {
+  color: white;
+}
+#nav-sub li:first-child {
+  padding-top: .5em;
+  border-top-left-radius: .5em;
+  border-top-right-radius: .5em;
+}
+#nav-sub li:last-child {
+  padding-bottom: .5em;
+  border-bottom-left-radius: .5em;
+  border-bottom-right-radius: .5em;
+}
+#nav-sub li:hover {
+  background-color: #c5d5f0;
+  cursor: pointer;
+}
+#nav-sub li:hover a {
+  color: #135c91;
 }
 
 .full {
