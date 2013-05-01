@@ -479,7 +479,7 @@ button {
   display: inline-block;
   margin: .3em;
   border: 0;
-  padding: 0.3em 0.6em;
+  padding: .3em .6em;
   border-radius: .3em;
 }
 
@@ -538,7 +538,7 @@ i {
   font-size: 1.3125em;
   line-height: 1.4em;
   margin: 2em 0;
-  padding: 0.4em 2em;
+  padding: .4em 2em;
   border-left: 0.75em solid #62802a;
   opacity: .8;
 }
@@ -609,7 +609,7 @@ textarea {
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
   border-radius: 5px;
-  padding: 0.5em 1em;
+  padding: .5em 1em;
   font-size: 1.3125em;
 }
 .button:hover {
@@ -715,7 +715,7 @@ main .inner {
   list-style-image: none;
   list-style-type: none;
   background-color: #135c91;
-  padding: 0.2em 0.5em;
+  padding: .2em .5em;
 }
 #nav-sub li a {
   color: white;
@@ -817,6 +817,7 @@ footer .social {
 .submitted .session .desc {
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   max-height: 1000px;
@@ -832,7 +833,7 @@ footer .social {
 .schedule .slot .time {
   clear: both;
   margin: 1em 0;
-  padding: 0.5em 1em;
+  padding: .5em 1em;
   background-color: #135c91;
   color: #000;
 }
@@ -880,6 +881,7 @@ article.session {
 article.session div {
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   -webkit-transform-origin: 50% 100% 50%;
