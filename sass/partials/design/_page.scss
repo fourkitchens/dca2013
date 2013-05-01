@@ -8,5 +8,17 @@ header {
 main {
   @include clearfix;
   margin-bottom: 4em;
-}
+  
+  .primary {
+    padding-top: 1em;
+    padding-bottom: 2em;
+  }
 
+  .inner {
+    padding: 0 5%;
+
+    @include breakpoint($grid-max) {
+      padding: 0;
+    }
+  }
+}

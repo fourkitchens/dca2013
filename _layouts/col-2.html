@@ -4,11 +4,15 @@ layout: page
 
 <div class="col-2">
   <div class="primary content">
-    {{content}}
+    <div class="inner">
+      {{content}}
+    </div><!-- .inner -->
   </div><!-- .primary -->
 
   <div class="secondary content">
-    {% include about.html %}
-    {% include sections.html %}
+    <div class="inner">
+      {% include about.html %}
+      {% include sections.html %}
+    </div><!-- .inner -->
   </div><!-- .secondary -->
 </div><!-- .col-2 -->

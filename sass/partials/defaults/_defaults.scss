@@ -24,6 +24,12 @@ body {
   background: image-url('background.png') repeat 0 0;
 }
 
+main {
+  background-color: $darkbackground;
+  border-top: 4px solid $lightbackground;
+  border-bottom: 4px solid $lightbackground;
+}
+
 a {
   color: $orange;
   text-decoration: none;

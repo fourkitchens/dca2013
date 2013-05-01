@@ -19,10 +19,13 @@ h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  color: $bodycolor;
+  color: $green;
   font-family: $quatro;
   font-size: em(48);
   line-height: 1.125em;
+  border-bottom: 2px solid $lightbackground;
+  margin-top: .5em;
+  padding-bottom: .1em;
 }
 
 h2 {

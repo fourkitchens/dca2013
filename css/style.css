@@ -493,10 +493,13 @@ h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  color: azure;
+  color: #97c441;
   font-family: "quatro", "Helvetica Neue", Arial, sans-serif;
   font-size: 3em;
   line-height: 1.125em;
+  border-bottom: 2px solid #11212d;
+  margin-top: .5em;
+  padding-bottom: .1em;
 }
 
 h2 {
@@ -552,6 +555,12 @@ body {
   line-height: 1.4;
   color: azure;
   background: url('/img/background.png') repeat 0 0;
+}
+
+main {
+  background-color: #0a141b;
+  border-top: 4px solid #11212d;
+  border-bottom: 4px solid #11212d;
 }
 
 a {
@@ -610,6 +619,18 @@ main:after {
   content: "";
   display: table;
   clear: both;
+}
+main .primary {
+  padding-top: 1em;
+  padding-bottom: 2em;
+}
+main .inner {
+  padding: 0 5%;
+}
+@media (min-width: 880px) {
+  main .inner {
+    padding: 0;
+  }
 }
 
 .col-1 {
