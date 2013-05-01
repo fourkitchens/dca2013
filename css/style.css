@@ -1,4 +1,6 @@
 @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,400italic,700italic);
+@import url(/fonts/ss-social-circle/ss-social-circle.css);
+@import url(/fonts/ss-symbolicons-block/ss-symbolicons-block.css);
 /* normalize.css v2.1.0 | MIT License | git.io/normalize */
 /* normalize.scss v2.1.0 | MIT/GPLv2 License | bit.ly/normalize-with-compass */
 /* ==========================================================================
@@ -487,14 +489,14 @@ h1, h2, h3, h4, h5, h6 {
 
 h2, h3, h4, h5, h6 {
   color: #97c441;
-  font-family: "atrament-web", "Helvetica Neue", Arial, sans-serif;
+  font-family: "atrament-web", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   margin-bottom: .5em;
 }
 
 h1 {
   color: #97c441;
-  font-family: "quatro", "Helvetica Neue", Arial, sans-serif;
+  font-family: "quatro", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 3em;
   line-height: 1.125em;
   border-bottom: 2px solid #11212d;
@@ -517,12 +519,20 @@ h4 {
   line-height: 1.12382em;
 }
 
+i {
+  font-style: normal;
+}
+
 .primary.content p {
   margin-top: 0;
   margin-bottom: 1em;
 }
 .primary.content p, .primary.content li {
   font-size: 1.125em;
+}
+.primary.content i {
+  margin-right: .5em;
+  color: #97c441;
 }
 .primary.content blockquote {
   font-size: 1.3125em;
@@ -551,7 +561,7 @@ textarea {
 
 body {
   font-size: 75%/1.5em;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial sans-serif;
   line-height: 1.4;
   color: azure;
   background: url('/img/background.png') repeat 0 0;
@@ -581,6 +591,14 @@ img {
 
 textarea {
   resize: vertical;
+}
+
+.icon-social {
+  font-family: "SSSocialCircle";
+}
+
+.icon-symbolicons {
+  font-family: "SSSymbolicons";
 }
 
 .button {
@@ -746,7 +764,7 @@ main .inner {
   list-style-type: none;
   list-style-image: none;
   display: inline-block;
-  font-family: "atrament-web", "Helvetica Neue", Arial, sans-serif;
+  font-family: "atrament-web", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-size: 2em;
 }
