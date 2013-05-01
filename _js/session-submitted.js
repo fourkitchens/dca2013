@@ -1,11 +1,11 @@
 ;(function($){
 	$(document).ready(function(){
     $('.submitted .session')
-      // hide description by default
-      .find('.desc').addClass('collapsed')
+      // find description
+      .find('.desc')
       // toggle descriptions when you click title
       .parent().find('h2').click(function(){
-        $(this).parent().find('.desc').toggleClass('collapsed');
+        $(this).parent().find('.desc').toggleClass('expanded');
         return false;
       });
   });

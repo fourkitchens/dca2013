@@ -14,11 +14,16 @@
 
   .desc {
     @include transition(all .3s ease-in-out);
-    max-height: 1000px;
     overflow: hidden;
 
-    &.collapsed {
+    // if JS fires, collapse descriptions
+    .js & {
       max-height: 0;
+    }
+
+    // Expanded state
+    .js &.expanded {
+      max-height: 1000px;
     }
   }
 }

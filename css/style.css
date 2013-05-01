@@ -2892,11 +2892,13 @@ footer .social {
   -ms-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  max-height: 1000px;
   overflow: hidden;
 }
-.submitted .session .desc.collapsed {
+.js .submitted .session .desc {
   max-height: 0;
+}
+.js .submitted .session .desc.expanded {
+  max-height: 1000px;
 }
 
 .schedule h1 {
