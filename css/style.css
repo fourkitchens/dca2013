@@ -2834,6 +2834,13 @@ main .inner {
   margin-top: 0;
 }
 
+section.contact .icon-social {
+  font-size: 2em;
+  line-height: 0.9em;
+  position: relative;
+  top: 0.25em;
+}
+
 footer {
   max-width: 880px;
   margin: 0 auto;
