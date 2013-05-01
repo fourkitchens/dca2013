@@ -10,7 +10,13 @@
 // <link href="webfonts/ss-social-circle.css" rel="stylesheet" />
 //
 
-@include font-face('SSSocialCircle', inline-font-files('ss-social-circle/ss-social-circle.woff', woff) inline-font-files('ss-social-circle/ss-social-circle.ttf', ttf) font-files('ss-social-circle/ss-social-circle.svg#SSSocialCircle', svg), 'ss-social-circle/ss-social-circle.eot');
+@include font-face(
+  'SSSocialCircle',
+  inline-font-files('ss-social-circle/ss-social-circle.woff', 'woff'),
+  inline-font-files('ss-social-circle/ss-social-circle.ttf', 'ttf'),
+  font-files('ss-social-circle/ss-social-circle.svg#SSSocialCircle', 'svg'),
+  'ss-social-circle/ss-social-circle.eot'
+);
 
 // This triggers a redraw in IE to Fix IE8's :before content rendering.
 html:hover [class^="ss-"]{-ms-zoom: 1;}
