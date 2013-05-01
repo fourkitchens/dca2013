@@ -2629,6 +2629,11 @@ main {
 a {
   color: #ed9310;
   text-decoration: none;
+  -webkit-transition: color 0.06s linear;
+  -moz-transition: color 0.06s linear;
+  -ms-transition: color 0.06s linear;
+  -o-transition: color 0.06s linear;
+  transition: color 0.06s linear;
 }
 a:visited {
   color: #ed9310;
@@ -2874,6 +2879,13 @@ footer .social {
   margin-top: 0;
 }
 
+.submitted .session p.meta {
+  margin-top: 0;
+  margin-bottom: 1em;
+}
+.submitted .session p.meta:hover {
+  opacity: 1;
+}
 .submitted .session .desc {
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;

@@ -33,6 +33,7 @@ main {
 a {
   color: $orange;
   text-decoration: none;
+  @include transition(color .06s linear);
 
   &:visited {
     color: $orange;

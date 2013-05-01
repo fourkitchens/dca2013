@@ -3,6 +3,14 @@
 //
 
 .submitted .session {
+  p.meta {
+    margin-top: 0;
+    margin-bottom: 1em;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
 
   .desc {
     @include transition(all .3s ease-in-out);
