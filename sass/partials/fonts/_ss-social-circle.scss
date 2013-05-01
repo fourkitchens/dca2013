@@ -12,9 +12,9 @@
 
 @include font-face(
   'SSSocialCircle',
-  inline-font-files('ss-social-circle/ss-social-circle.woff', 'woff'),
-  inline-font-files('ss-social-circle/ss-social-circle.ttf', 'ttf'),
-  font-files('ss-social-circle/ss-social-circle.svg#SSSocialCircle', 'svg'),
+  inline-font-files('ss-social-circle/ss-social-circle.woff', woff)
+  inline-font-files('ss-social-circle/ss-social-circle.ttf', ttf)
+  font-files('ss-social-circle/ss-social-circle.svg#SSSocialCircle', svg),
   'ss-social-circle/ss-social-circle.eot'
 );
 
