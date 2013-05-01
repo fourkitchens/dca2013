@@ -1,25 +1,22 @@
 @charset "UTF-8";
 
-/*
-* Symbolset
-* www.symbolset.com
-* Copyright © 2012 Oak Studios LLC
-*
-* Upload this file to your web server
-* and place this within your <head> tags.
-* <link href="webfonts/ss-symbolicons-block.css" rel="stylesheet" />
-*/
+//
+// Symbolset
+// www.symbolset.com
+// Copyright © 2012 Oak Studios LLC
+//
+// Upload this file to your web server
+// and place this within your <head> tags.
+// <link href="webfonts/ss-symbolicons-block.css" rel="stylesheet" />
+//
 
-@font-face {
-  font-family: "SSSymbolicons";
-  src: url('ss-symbolicons-block.eot');
-  src: url('ss-symbolicons-block.eot?#iefix') format('embedded-opentype'),
-       url('ss-symbolicons-block.woff') format('woff'),
-       url('ss-symbolicons-block.ttf')  format('truetype'),
-       url('ss-symbolicons-block.svg#SSSymboliconsBlock') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
+@include font-face(
+  "SSSymbolicons",
+  inline-font-files('ss-symbolicons-block/ss-symbolicons-block.woff', 'woff'),
+  inline-font-files('ss-symbolicons-block/ss-symbolicons-block.ttf', 'truetype'),
+  font-files('ss-symbolicons-block/ss-symbolicons-block.svg#SSSymboliconsBlock', 'svg'),
+  'ss-symbolicons-block/ss-symbolicons-block.eot'
+);
 
 .ss-icon, .ss-icon.ss-symbolicons-block,
 [class^="ss-"]:before, [class*=" ss-"]:before,
