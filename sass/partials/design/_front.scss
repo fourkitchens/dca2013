@@ -1,0 +1,28 @@
+//
+// Front page styles
+//
+
+#front {
+}
+
+#front-main,
+.front-info {
+  text-align: center;
+}
+
+#front-main {
+  @include grid-span(9);
+
+  h1 {
+    border: none;
+    margin-bottom: .2em;
+  }
+}
+
+.front-info {
+  @include grid-span(3);
+  
+  &:last-child {
+    @include grid-span(3, 'last');   
+  }
+}

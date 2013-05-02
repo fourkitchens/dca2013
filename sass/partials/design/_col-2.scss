@@ -20,7 +20,7 @@
     @include grid-span(9);
 
     @include breakpoint($sidebar) {
-      @include grid-span(3,7);
+      @include grid-span(3,'last');
       margin-top: 6em;
     }
 
