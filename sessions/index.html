@@ -31,7 +31,7 @@ title: Sessions | DrupalCamp Austin 2013
 {% for post in site.categories.session %}
 
   <article class="session">
-    <h2><a href="{{ post.permalink }}">{{ post.title }}</a></h2>
+    <h3 class="title"><a href="{{ post.permalink }}">{{ post.title }}</a></h3>
     <p class="meta"><em>By {{ post.presenters }}</em></p>
     <div class="desc">
       {{ post.content }}

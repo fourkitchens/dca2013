@@ -4,7 +4,7 @@
       // find description
       .find('.desc')
       // toggle descriptions when you click title
-      .parent().find('h2').click(function(){
+      .parent().find('h3.title').click(function(){
         $(this).parent().find('.desc').toggleClass('expanded');
         return false;
       });
