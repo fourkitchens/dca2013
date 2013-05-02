@@ -4,7 +4,7 @@ category: session
 permalink: /sessions/civicrm-overview-case-studies
 published: true
 
-title: CiviCRM: Overview and Case Studies
+title: CiviCRM Overview and Case Studies
 summary: CiviCRM use cases for non-profits, membership-driven associations, and professional societies.
 presenters: Peter Petrik
 track: Government / Non-profit / Education
