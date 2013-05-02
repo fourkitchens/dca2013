@@ -20,10 +20,10 @@
     .js & {
       max-height: 0;
     }
+  }
 
-    // Expanded state
-    .js &.expanded {
-      max-height: 1000px;
-    }
+  // Expanded state
+  .js &.expanded .desc {
+    max-height: 70em;
   }
 }

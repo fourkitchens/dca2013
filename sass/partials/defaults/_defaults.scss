@@ -66,18 +66,7 @@ textarea {
 // Buttons
 
 .button {
-  color: white;
-  background-color: $orange;
-  @include border-radius(5px);
+  @extend %button;
   padding: .5em 1em;
   font-size: em(21);
-
-  &:hover {
-    background-color: $darkorange;
-    color: white;
-  }
-
-  &:visited {
-    color: white;
-  }
 }

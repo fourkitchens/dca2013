@@ -8,4 +8,23 @@
   border: 0;
   padding: .3em .6em;
   border-radius: .3em;
+  background-color: $orange;
+
+  &:hover {
+    background-color: $darkorange;
+    color: white;
+  }
+
+  &:visited {
+    color: white;
+  }
+}
+
+.cta {
+  @extend %button;
+  background-color: $blue;
+
+  &:hover {
+    background-color: $darkblue;
+  }
 }

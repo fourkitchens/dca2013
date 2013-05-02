@@ -2528,12 +2528,27 @@ html:hover [class^="ss-"] {
   content: '';
 }
 
-button {
+.cta, button, .button {
   display: inline-block;
   margin: .3em;
   border: 0;
   padding: .3em .6em;
   border-radius: .3em;
+  background-color: #ed9310;
+}
+.cta:hover, button:hover, .button:hover {
+  background-color: #d34913;
+  color: white;
+}
+.cta:visited, button:visited, .button:visited {
+  color: white;
+}
+
+.cta {
+  background-color: #176dad;
+}
+.cta:hover {
+  background-color: #135c91;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -2660,22 +2675,8 @@ textarea {
 }
 
 .button {
-  color: white;
-  background-color: #ed9310;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
-  border-radius: 5px;
   padding: .5em 1em;
   font-size: 1.3125em;
-}
-.button:hover {
-  background-color: #d34913;
-  color: white;
-}
-.button:visited {
-  color: white;
 }
 
 header {
@@ -2897,8 +2898,8 @@ footer .social {
 .js .submitted .session .desc {
   max-height: 0;
 }
-.js .submitted .session .desc.expanded {
-  max-height: 1000px;
+.js .submitted .session.expanded .desc {
+  max-height: 70em;
 }
 
 .schedule h1 {
