@@ -3,10 +3,27 @@
 //
 
 section.contact {
-  .icon-social {
+  @include breakpoint($contact-sm) {
+    text-align: center;
+  }
+
+  i {
     font-size: 2em;
     line-height: 0.9em;
     position: relative;
     top: 0.25em;
+    
+    @include breakpoint($contact-sm) {
+      @include grid-span(9);
+      top: 0;
+    }
+  }
+  
+  .contact-email {
+
+    @include breakpoint($contact-sm) {
+      @include grid-span(9);
+      margin-bottom: 2em;
+    }
   }
 }

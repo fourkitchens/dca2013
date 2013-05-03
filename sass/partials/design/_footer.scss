@@ -5,10 +5,33 @@
 footer {
   @include clearfix;
   @include grid-max;
-  margin-bottom: 1em;
+  text-align: center;
+  margin-bottom: 2em;
 
   .social {
-    @include grid-span(3);
+    
+    font-size: 2em;
+    position: relative;
+    top: .3em;
+
+    a {
+      color: $white;
+      margin-right: .5em;
+      
+      &:hover {
+        color: $darkorange;
+      }
+    }
+  }
+
+  @include breakpoint($footer-sm) {
+    .social,
+    .credits {
+      @include grid-span(9);  
+    }
+    .social {
+      margin-bottom: .5em;
+      font-size: 3em;
+    }  
   }
 }
-

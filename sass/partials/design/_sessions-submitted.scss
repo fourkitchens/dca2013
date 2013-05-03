@@ -13,17 +13,34 @@
   }
 
   .desc {
-    @include transition(all .3s ease-in-out);
+    @include transition(all .4s ease-in-out);
     overflow: hidden;
 
     // if JS fires, collapse descriptions
     .js & {
-      max-height: 0;
-    }
+      max-height: 0em;
 
-    // Expanded state
-    .js &.expanded {
-      max-height: 1000px;
+      // Also apply super fancy gradient thing
+      &:after {
+        display: block;
+        content: ' ';
+        width: 100%;
+        height: 3.2em;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        @include background(linear-gradient(top, rgba($darkbackground, 0), rgba($darkbackground, 1)));
+        @include transition(all .4s ease-in-out);
+      }
+    }
+  }
+
+  // Expanded state
+  .js &.expanded .desc {
+    max-height: 70em;
+
+    &:after {
+      height: 0;
     }
   }
 }

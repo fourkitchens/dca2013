@@ -30,6 +30,10 @@ main {
   border-bottom: 4px solid $lightbackground;
 }
 
+p {
+  margin: 0 0 1.5em 0;
+}
+
 a {
   color: $orange;
   text-decoration: none;
@@ -66,18 +70,7 @@ textarea {
 // Buttons
 
 .button {
-  color: white;
-  background-color: $orange;
-  @include border-radius(5px);
+  @extend %button;
   padding: .5em 1em;
   font-size: em(21);
-
-  &:hover {
-    background-color: $darkorange;
-    color: white;
-  }
-
-  &:visited {
-    color: white;
-  }
 }

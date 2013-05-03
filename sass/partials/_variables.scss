@@ -24,9 +24,11 @@ $darkgreen:   #62802A;
 $orange:      #ED9310;
 $darkorange:  #D34913;
 
-// Font stacks
+// Local and hosted fonts
 
-@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,400italic,700italic);
+@import "fonts/source-sans-pro";
+
+// Font stacks
 
 $quatro:          'quatro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 $atrament:        'atrament-web', 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -37,11 +39,18 @@ $source-sans-pro: 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial sans-ser
 @import "fonts/ss-social-circle";
 @import "fonts/ss-symbolicons-block";
 
-$icon-social: "SSSocialCircle";
+$icon-social:      "SSSocialCircle";
 $icon-symbolicons: "SSSymbolicons";
 
 // Breakpoints
 
-$sched-md: 500px;
-$sched-lg: 720px;
-$sidebar:  460px;
+$contact-sm:  0 700px;
+$faq-sm:      460px;
+$front-md:    720px;
+$footer-sm:   0px 460px;
+$nav-sm:      0 459px;
+$nav-md:      460px;
+$sched-md:    500px;
+$sched-lg:    720px;
+$sidebar:     460px;
+$sponsors-md: 720px;

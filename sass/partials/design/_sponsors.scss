@@ -1,0 +1,46 @@
+//
+// Sponsors style
+//
+
+#sponsors {
+  @include clearfix;
+  @include grid-max;
+  text-align: center;
+  margin-bottom: 2em;
+  
+  p {
+    @include grid-span(9);
+    margin-top: 1em;
+  }
+
+  .lone-star {
+    @include grid-span(9);
+
+    @include breakpoint($sponsors-md) {
+      @include grid-span(5);
+    }
+  }
+
+  .longhorn {
+    @include grid-span(9);
+
+    @include breakpoint($sponsors-md) {
+      @include grid-span(4, 'last');
+    }
+  }
+
+  .armadillo {
+
+    .sponsor {
+      @include grid-span(9);
+
+      @include breakpoint($sponsors-md) {
+        @include grid-span(3);  
+      
+        &:last-child {
+          @include grid-span(3, 'last');
+        }
+      }
+    }
+  }
+}

@@ -5,3 +5,16 @@
 button {
   @extend %button;
 }
+
+input {
+  font-size: em(18);
+  font-weight: bold;
+  padding: .5em;
+  border: 4px solid $lightbackground;
+
+  &:focus {
+    color: $darkbackground;
+    border-color: $orange;
+    outline: none; 
+  }
+}

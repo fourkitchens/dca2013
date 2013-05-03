@@ -11,8 +11,8 @@
   <link rel="stylesheet" href="/css/style.css" type="text/css" media="screen, projection">
   <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.5/leaflet.css" />
   <script src="/js/dist/modernizr.min.js"></script>
-  
-  <script type="text/javascript">
+
+  <script>
     (function() {
     if (Modernizr.fontface) {
       var config = {
@@ -23,11 +23,10 @@
     } // Modernizr.fontface
     })();
   </script>
-
 </head>
 <body>
   <header>
-    {% include nav.html %}
+    {% include header.html %}
   </header>
   <main role="main">
 
@@ -35,6 +34,7 @@
 
   </main>
 
+{% include sponsors.html %}
 {% include footer.html %}
 </body>
 </html>
