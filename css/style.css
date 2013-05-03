@@ -2904,11 +2904,34 @@ main .inner {
   }
 }
 
+@media (min-width: 0) and (max-width: 700px) {
+  section.contact {
+    text-align: center;
+  }
+}
 section.contact i {
   font-size: 2em;
   line-height: 0.9em;
   position: relative;
   top: 0.25em;
+}
+@media (min-width: 0) and (max-width: 700px) {
+  section.contact i {
+    width: 100%;
+    clear: right;
+    float: right;
+    margin-right: 0%;
+    top: 0;
+  }
+}
+@media (min-width: 0) and (max-width: 700px) {
+  section.contact .contact-email {
+    width: 100%;
+    clear: right;
+    float: right;
+    margin-right: 0%;
+    margin-bottom: 2em;
+  }
 }
 
 #sponsors {
