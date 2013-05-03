@@ -37,26 +37,35 @@ module.exports = function(grunt) {
       main: {
         src: [
           '_js/vendor/jquery.min.js',
-          '_js/min/responsive-nav.min.js',
+          '_js/vendor/responsive-nav.min.js',
           '_js/faq.js',
           '_js/session-submitted.js'
         ],
-        dest: 'js/dist/main.jss'
+        dest: 'js/dist/main_debug.js'
       },
-      schedule: {
+      schedule_debug: {
         src: [
           '_js/vendor/handlebars.js',
           '_js/vendor/ember.js',
           '_js/schedule.js'
         ],
-        dest: 'js/dist/schedule.js'
+        dest: 'js/dist/schedule_debug.js'
+      },
+      schedule_release: {
+        src: [
+          '_js/vendor/handlebars.js',
+          '_js/vendor/ember.min.js',
+          '_js/schedule.js'
+        ],
+        dest: 'js/dist/schedule_release.js'
       }
     },
 
     uglify: {
       schedule: {
         files: {
-          'js/dist/schedule_main.min.js': ['js/dist/schedule_main.js']
+          'js/dist/schedule_release.min.js': ['js/dist/schedule_release.js'],
+          'js/dist/main_release.min.js': ['js/dist/main_debug.js']
         }
       }
     },
