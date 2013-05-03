@@ -1,0 +1,13 @@
+//
+// FAQ page styles
+//
+
+#magic-search {
+  width: 90%;
+  text-align: center;
+  margin-bottom: 1em;
+
+  @include breakpoint($faq-sm) {
+    width: 60%;
+  }
+}
