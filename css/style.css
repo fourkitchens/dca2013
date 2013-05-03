@@ -2860,17 +2860,25 @@ main .inner {
 }
 
 .front-info {
-  width: 31.81818%;
-  clear: right;
-  float: left;
-  margin-left: 0%;
-  margin-right: 2.27273%;
-}
-.front-info:last-child {
-  width: 31.81818%;
+  width: 100%;
   clear: right;
   float: right;
   margin-right: 0%;
+}
+@media (min-width: 720px) {
+  .front-info {
+    width: 31.81818%;
+    clear: right;
+    float: left;
+    margin-left: 0%;
+    margin-right: 2.27273%;
+  }
+  .front-info:last-child {
+    width: 31.81818%;
+    clear: right;
+    float: right;
+    margin-right: 0%;
+  }
 }
 
 #map {

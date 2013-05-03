@@ -20,9 +20,13 @@
 }
 
 .front-info {
-  @include grid-span(3);
-  
-  &:last-child {
-    @include grid-span(3, 'last');   
+  @include grid-span(9);
+
+  @include breakpoint($front-md) {
+    @include grid-span(3);  
+
+    &:last-child {
+      @include grid-span(3, 'last');   
+    }
   }
 }
