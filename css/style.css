@@ -2904,7 +2904,7 @@ main .inner {
   }
 }
 
-section.contact .icon-social {
+section.contact i {
   font-size: 2em;
   line-height: 0.9em;
   position: relative;
@@ -2990,6 +2990,18 @@ footer:after {
   content: "";
   display: table;
   clear: both;
+}
+footer .social {
+  font-size: 2em;
+  position: relative;
+  top: .3em;
+}
+footer .social a {
+  color: white;
+  margin-right: .5em;
+}
+footer .social a:hover {
+  color: #d34913;
 }
 
 .session h2 {

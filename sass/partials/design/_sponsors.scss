@@ -7,7 +7,7 @@
   @include grid-max;
   text-align: center;
   margin-bottom: 2em;
-
+  
   p {
     @include grid-span(9);
     margin-top: 1em;

@@ -9,6 +9,18 @@ footer {
   margin-bottom: 2em;
 
   .social {
+    font-size: 2em;
+    position: relative;
+    top: .3em;
+    
+    a {
+      color: $white;
+      margin-right: .5em;
+      
+      &:hover {
+        color: $darkorange;
+      }
+    }
   }
 }
 
