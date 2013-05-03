@@ -5,10 +5,10 @@
 footer {
   @include clearfix;
   @include grid-max;
-  margin-bottom: 1em;
+  text-align: center;
+  margin-bottom: 2em;
 
   .social {
-    @include grid-span(3);
   }
 }
 

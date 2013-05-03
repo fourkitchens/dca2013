@@ -30,6 +30,10 @@ main {
   border-bottom: 4px solid $lightbackground;
 }
 
+p {
+  margin: 0 0 1.5em 0;
+}
+
 a {
   color: $orange;
   text-decoration: none;

@@ -2653,6 +2653,10 @@ main {
   border-bottom: 4px solid #11212d;
 }
 
+p {
+  margin: 0 0 1.5em 0;
+}
+
 a {
   color: #ed9310;
   text-decoration: none;
@@ -2701,7 +2705,7 @@ header:after {
 }
 
 main {
-  margin-bottom: 4em;
+  margin-bottom: 2em;
 }
 main:after {
   content: "";
@@ -2899,22 +2903,85 @@ section.contact .icon-social {
   top: 0.25em;
 }
 
+#sponsors {
+  max-width: 880px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 2em;
+}
+#sponsors:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+#sponsors p {
+  width: 100%;
+  clear: right;
+  float: right;
+  margin-right: 0%;
+  margin-top: 1em;
+}
+#sponsors .lone-star {
+  width: 100%;
+  clear: right;
+  float: right;
+  margin-right: 0%;
+}
+@media (min-width: 720px) {
+  #sponsors .lone-star {
+    width: 54.54545%;
+    clear: right;
+    float: left;
+    margin-left: 0%;
+    margin-right: 2.27273%;
+  }
+}
+#sponsors .longhorn {
+  width: 100%;
+  clear: right;
+  float: right;
+  margin-right: 0%;
+}
+@media (min-width: 720px) {
+  #sponsors .longhorn {
+    width: 43.18182%;
+    clear: right;
+    float: right;
+    margin-right: 0%;
+  }
+}
+#sponsors .armadillo .sponsor {
+  width: 100%;
+  clear: right;
+  float: right;
+  margin-right: 0%;
+}
+@media (min-width: 720px) {
+  #sponsors .armadillo .sponsor {
+    width: 31.81818%;
+    clear: right;
+    float: left;
+    margin-left: 0%;
+    margin-right: 2.27273%;
+  }
+  #sponsors .armadillo .sponsor:last-child {
+    width: 31.81818%;
+    clear: right;
+    float: right;
+    margin-right: 0%;
+  }
+}
+
 footer {
   max-width: 880px;
   margin: 0 auto;
-  margin-bottom: 1em;
+  text-align: center;
+  margin-bottom: 2em;
 }
 footer:after {
   content: "";
   display: table;
   clear: both;
-}
-footer .social {
-  width: 31.81818%;
-  clear: right;
-  float: left;
-  margin-left: 0%;
-  margin-right: 2.27273%;
 }
 
 .session h2 {

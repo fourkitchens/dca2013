@@ -37,12 +37,13 @@ $source-sans-pro: 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial sans-ser
 @import "fonts/ss-social-circle";
 @import "fonts/ss-symbolicons-block";
 
-$icon-social: "SSSocialCircle";
+$icon-social:      "SSSocialCircle";
 $icon-symbolicons: "SSSymbolicons";
 
 // Breakpoints
 
-$sched-md: 500px;
-$sched-lg: 720px;
-$sidebar:  460px;
-$faq-sm:   460px;
+$sched-md:    500px;
+$sched-lg:    720px;
+$sidebar:     460px;
+$faq-sm:      460px;
+$sponsors-md: 720px;
