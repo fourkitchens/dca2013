@@ -2724,10 +2724,6 @@ textarea {
   font-size: 1.3125em;
 }
 
-header {
-  max-width: 880px;
-  margin: 0 auto;
-}
 header:after {
   content: "";
   display: table;
@@ -2847,30 +2843,114 @@ main .inner {
   margin: 0 auto;
 }
 
-#nav-main {
+header #nav ul,
+header #branding {
+  max-width: 880px;
+  margin: 0 auto;
+}
+
+#nav ul {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: block;
+  list-style: none;
+}
+
+#nav li {
+  width: 100%;
+  display: block;
+}
+
+.js #nav {
+  clip: rect(0 0 0 0);
+  max-height: 0;
+  position: absolute;
+  display: block;
+  overflow: hidden;
+  zoom: 1;
+}
+
+#nav.opened {
+  max-height: 9999px;
+}
+
+@media (min-width: 460px) {
+  .js #nav {
+    position: relative;
+    max-height: none;
+  }
+
+  #nav-toggle {
+    display: none;
+  }
+}
+#nav a {
+  color: white;
+}
+#nav a:hover {
+  color: #d34913;
+}
+@media (min-width: 0) and (max-width: 459px) {
+  #nav {
+    border-bottom: 2px solid #11212d;
+    font-size: 1.5em;
+    background-color: #0a141b;
+  }
+  #nav ul {
+    padding: 0.5em 0;
+  }
+  #nav li {
+    padding-left: 1em;
+  }
+  #nav li a {
+    display: block;
+  }
+  #nav li:hover {
+    background-color: #d34913;
+  }
+  #nav li:hover a {
+    color: white;
+  }
+}
+@media (min-width: 460px) {
+  #nav {
+    text-align: center;
+    font-size: 1.125em;
+  }
+  #nav ul {
+    padding: 0.5em 0;
+  }
+  #nav li {
+    display: inline;
+    margin-right: 1em;
+  }
+  #nav li:last-child {
+    margin-right: 0;
+  }
+}
+
+#nav-toggle {
+  width: 50px;
+  height: 55px;
+  float: right;
+  text-indent: -9999px;
+  overflow: hidden;
+  background: url('/img/menu.png') transparent 0 0;
+}
+
+#branding {
   text-align: center;
+  padding-top: 1em;
+  padding-bottom: 1em;
 }
-#nav-main .nav-main-left li {
-  text-align: right;
-  margin-left: .5em;
-}
-#nav-main .nav-main-left li:last-child {
-  margin-right: -1em;
-}
-#nav-main .nav-main-right li {
-  text-align: left;
-  margin-right: .5em;
-}
-#nav-main .nav-main-right li:first-child {
-  margin-left: -1em;
-}
-#nav-main li {
-  list-style-type: none;
-  list-style-image: none;
-  display: inline-block;
-  font-family: "atrament-web", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  text-transform: uppercase;
-  font-size: 2em;
+@media (min-width: 0) and (max-width: 459px) {
+  #branding #logo {
+    margin-right: -50px;
+  }
+  #branding #logo img {
+    max-width: 200px;
+  }
 }
 
 #front-main,
