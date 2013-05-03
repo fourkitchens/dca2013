@@ -3003,6 +3003,19 @@ footer .social a {
 footer .social a:hover {
   color: #d34913;
 }
+@media (min-width: 0px) and (max-width: 460px) {
+  footer .social,
+  footer .credits {
+    width: 100%;
+    clear: right;
+    float: right;
+    margin-right: 0%;
+  }
+  footer .social {
+    margin-bottom: .5em;
+    font-size: 3em;
+  }
+}
 
 .session h2 {
   margin-bottom: .25em;

@@ -9,10 +9,11 @@ footer {
   margin-bottom: 2em;
 
   .social {
+    
     font-size: 2em;
     position: relative;
     top: .3em;
-    
+
     a {
       color: $white;
       margin-right: .5em;
@@ -22,5 +23,15 @@ footer {
       }
     }
   }
-}
 
+  @include breakpoint($footer-sm) {
+    .social,
+    .credits {
+      @include grid-span(9);  
+    }
+    .social {
+      margin-bottom: .5em;
+      font-size: 3em;
+    }  
+  }
+}
