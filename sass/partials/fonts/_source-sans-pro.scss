@@ -1,0 +1,54 @@
+// Webfont kit from http://www.fontsquirrel.com/fonts/source-sans-pro
+// Custom Sass
+// http://coding.smashingmagazine.com/2013/02/14/setting-weights-and-styles-at-font-face-declaration
+
+// Regular
+
+@include font-face(
+  "Source Sans Pro",
+  inline-font-files(
+    'source-sans-pro/SourceSansPro-Regular-webfont.woff', woff,
+    'source-sans-pro/SourceSansPro-Regular-webfont.ttf', ttf,
+    'source-sans-pro/SourceSansPro-Regular-webfont.svg', svg),
+  'source-sans-pro/SourceSansPro-Regular-webfont.eot',
+  normal, // font-weight
+  normal  // font-style
+);
+
+// Bold
+
+@include font-face(
+  "Source Sans Pro Bold",
+  inline-font-files(
+    'source-sans-pro/SourceSansPro-Bold-webfont.woff', woff,
+    'source-sans-pro/SourceSansPro-Bold-webfont.ttf', ttf,
+    'source-sans-pro/SourceSansPro-Bold-webfont.svg', svg),
+  'source-sans-pro/SourceSansPro-Bold-webfont.eot',
+  700 // font-weight
+);
+
+// Italic
+
+@include font-face(
+  "Source Sans Pro Italic",
+  inline-font-files(
+    'source-sans-pro/SourceSansPro-It-webfont.woff', woff,
+    'source-sans-pro/SourceSansPro-It-webfont.ttf', ttf,
+    'source-sans-pro/SourceSansPro-It-webfont.svg', svg),
+  'source-sans-pro/SourceSansPro-It-webfont.eot',
+  normal, // font-weight
+  italic  // font-style
+);
+
+// Bold italic
+
+@include font-face(
+  "Source Sans Pro Bold Italic",
+  inline-font-files(
+    'source-sans-pro/SourceSansPro-BoldIt-webfont.woff', woff,
+    'source-sans-pro/SourceSansPro-BoldIt-webfont.ttf', ttf,
+    'source-sans-pro/SourceSansPro-BoldIt-webfont.svg', svg),
+  'source-sans-pro/SourceSansPro-BoldIt-webfont.eot',
+  700,   // font-weight
+  italic // font-style
+);
