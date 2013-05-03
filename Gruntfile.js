@@ -37,6 +37,7 @@ module.exports = function(grunt) {
       main: {
         src: [
           '_js/vendor/jquery.min.js',
+          '_js/min/responsive-nav.min.js',
           '_js/faq.js',
           '_js/session-submitted.js'
         ],
