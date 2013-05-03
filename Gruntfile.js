@@ -30,25 +30,25 @@ module.exports = function(grunt) {
       },
       modernizr: {
         src: [
-          '_js/min/modernizr.min.js'
+          '_js/vendor/modernizr.min.js'
         ],
         dest: 'js/dist/modernizr.min.js'
       },
-      allpages: {
+      main: {
         src: [
-          '_js/min/jquery.min.js',
+          '_js/vendor/jquery.min.js',
           '_js/faq.js',
           '_js/session-submitted.js'
         ],
-        dest: 'js/dist/main.min.js'
+        dest: 'js/dist/main.jss'
       },
-      schedule_page: {
+      schedule: {
         src: [
           '_js/vendor/handlebars.js',
           '_js/vendor/ember.js',
           '_js/schedule.js'
         ],
-        dest: 'js/dist/schedule_main.js'
+        dest: 'js/dist/schedule.js'
       }
     },
 

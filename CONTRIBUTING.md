@@ -43,7 +43,19 @@ We have .gitignore excluding the ```_site``` directory that Jekyll creates becau
 
 ## JavaScript
 
-To build the JavaScript, use `grunt` and `grunt watch`. To install the required npm modules, start with `npm install`. You may need to install node.js if you don't have it. It's easily downloadable from the nodejs.com website.
+To build the JavaScript, use `grunt` and `grunt watch`. To install the required npm modules, start with `npm install`. You may need to install node.js if you don't have it. It's easily downloadable from the http://nodejs.com website.
+
+### The build pipeline
+
+JS is kept in the `_js/` folder. This is ignored by Jekyll. Grunt builds the JavaScript (minimizes and concatenates it) and places the built files in the `js/` folder, which Jekyll *will* include in the site build.
+
+In the JS source folder, there is a folder `/vendor`, which contains the minimized or unminimized versions of vendor script (e.g. jQuery and Ember), and sometimes both. We keep both in the case that the vendor provides an optimized version of their library that we can't reproduce using Grunt's minimize. For example, ember.min.js doesn't contain any assertions or debugging to reduce it's size even further than what you can achieve with a standard minimize.
+
+The Grunt job cleans the `js/dist` folder by removing it completely. It then recreates the folder and it's contents as follows:
+
+1. Modernizr.min is merely copied into place. This must be separate as it's loaded in the header.
+2.
+
 
 ## Content
 
