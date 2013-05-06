@@ -27,7 +27,7 @@ footer {
   @include breakpoint($footer-sm) {
     .social,
     .credits {
-      @include grid-span(9);  
+      @include isolation-span(9, 1);
     }
     .social {
       margin-bottom: .5em;

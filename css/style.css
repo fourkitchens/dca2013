@@ -2787,7 +2787,7 @@ main .inner {
     float: left;
     margin-right: -100%;
     margin-left: 0%;
-    clear: none;
+    clear: right;
   }
 }
 .col-2 .secondary {
@@ -2804,7 +2804,7 @@ main .inner {
     float: right;
     margin-left: 0;
     margin-right: 0;
-    clear: none;
+    clear: right;
     margin-top: 6em;
   }
 }

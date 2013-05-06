@@ -7,20 +7,20 @@
   @include grid-max;
 
   .primary {
-    @include grid-span(9);
+    @include isolation-span(9, 1);
 
     @include breakpoint($sidebar) {
-      @include grid-span(6);
+      @include isolation-span(6, 1, 'right');
     }
   }
 
   .secondary {
     margin-top: 0;
 
-    @include grid-span(9);
+    @include isolation-span(9, 1);
 
     @include breakpoint($sidebar) {
-      @include grid-span(3,'last');
+      @include isolation-span(3, 7, 'right');
       margin-top: 6em;
     }
 
