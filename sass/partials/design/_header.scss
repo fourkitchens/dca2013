@@ -3,8 +3,10 @@
 //
 
 header {
+  margin-bottom: 1em;
+
   #nav ul,
-  #branding {
+  .inner {
     @include grid-max;
   }
 }
@@ -75,27 +77,17 @@ header {
   float: right;
   text-indent: -9999px;
   overflow: hidden;
-  background: image-url('menu.png') transparent 0 0;
+  background: image-url('menu.png') transparent no-repeat 0 0;
 }
 
 // Logo styles
 
 #branding {
   text-align: center;
-  padding-top: 1em;
-  padding-bottom: 1em;
-  @include grid-span(3);
+  @include isolation-span(3, 4, 'right');
 
   @include breakpoint($nav-sm) {
-    @include grid-span(9);
-
-    #logo {
-      margin-right: -50px;
-
-      img {
-        max-width: 200px;
-      }
-    }
+    @include isolation-span(9, 1);
   }
 }
 
@@ -105,13 +97,24 @@ header {
 #cta-2 {
   text-align: center;
   padding-top: 5em;
-  @include grid-span(3);
-
+  
   .button {
     font-size: em(18);
   }
+}
+
+#cta-1 {
+  @include isolation-span(3, 1, 'right');
 
   @include breakpoint($nav-sm) {
-    @include grid-span(9);
+    @include isolation-span(9, 1);
+  }
+}
+
+#cta-2 {
+  @include isolation-span(3, 7, 'right');
+
+  @include breakpoint($nav-sm) {
+    @include isolation-span(9, 1);
   }
 }

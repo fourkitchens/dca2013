@@ -2849,8 +2849,11 @@ main .inner {
   margin: 0 auto;
 }
 
+header {
+  margin-bottom: 1em;
+}
 header #nav ul,
-header #branding {
+header .inner {
   max-width: 880px;
   margin: 0 auto;
 }
@@ -2942,18 +2945,16 @@ header #branding {
   float: right;
   text-indent: -9999px;
   overflow: hidden;
-  background: url('/img/menu.png') transparent 0 0;
+  background: url('/img/menu.png') transparent no-repeat 0 0;
 }
 
 #branding {
   text-align: center;
-  padding-top: 1em;
-  padding-bottom: 1em;
   width: 31.81818%;
   float: left;
   margin-right: -100%;
-  margin-left: 0%;
-  clear: none;
+  margin-left: 34.09091%;
+  clear: right;
 }
 @media (min-width: 0) and (max-width: 459px) {
   #branding {
@@ -2963,30 +2964,43 @@ header #branding {
     margin-right: 0;
     clear: none;
   }
-  #branding #logo {
-    margin-right: -50px;
-  }
-  #branding #logo img {
-    max-width: 200px;
-  }
 }
 
 #cta-1,
 #cta-2 {
   text-align: center;
   padding-top: 5em;
-  width: 31.81818%;
-  float: left;
-  margin-right: -100%;
-  margin-left: 0%;
-  clear: none;
 }
 #cta-1 .button,
 #cta-2 .button {
   font-size: 1.125em;
 }
+
+#cta-1 {
+  width: 31.81818%;
+  float: left;
+  margin-right: -100%;
+  margin-left: 0%;
+  clear: right;
+}
 @media (min-width: 0) and (max-width: 459px) {
-  #cta-1,
+  #cta-1 {
+    width: 100%;
+    float: right;
+    margin-left: 0;
+    margin-right: 0;
+    clear: none;
+  }
+}
+
+#cta-2 {
+  width: 31.81818%;
+  float: right;
+  margin-left: 0;
+  margin-right: 0;
+  clear: right;
+}
+@media (min-width: 0) and (max-width: 459px) {
   #cta-2 {
     width: 100%;
     float: right;
