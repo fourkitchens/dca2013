@@ -9,36 +9,40 @@
   margin-bottom: 2em;
   
   p {
-    @include grid-span(9);
+    @include isolation-span(9, 1);
     margin-top: 1em;
   }
 
   .lone-star {
-    @include grid-span(9);
+    @include isolation-span(9, 1);
 
     @include breakpoint($sponsors-md) {
-      @include grid-span(5);
+      @include isolation-span(5, 1);
     }
   }
 
   .longhorn {
-    @include grid-span(9);
+    @include isolation-span(9, 1);
 
     @include breakpoint($sponsors-md) {
-      @include grid-span(4, 'last');
+      @include isolation-span(4, 6, 'right');
     }
   }
 
   .armadillo {
 
     .sponsor {
-      @include grid-span(9);
+      @include isolation-span(9, 1);
 
       @include breakpoint($sponsors-md) {
-        @include grid-span(3);  
-      
-        &:last-child {
-          @include grid-span(3, 'last');
+        &:nth-child(1) {
+          @include isolation-span(3, 1, 'right');
+        }
+        &:nth-child(2) {
+          @include isolation-span(3, 4, 'right');
+        }
+        &:nth-child(3) {
+          @include isolation-span(3, 7, 'right');
         }
       }
     }

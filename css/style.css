@@ -2759,9 +2759,10 @@ main .inner {
 }
 .col-1 .primary {
   width: 100%;
-  clear: right;
   float: right;
-  margin-right: 0%;
+  margin-left: 0;
+  margin-right: 0;
+  clear: none;
 }
 
 .col-2 {
@@ -2775,32 +2776,35 @@ main .inner {
 }
 .col-2 .primary {
   width: 100%;
-  clear: right;
   float: right;
-  margin-right: 0%;
+  margin-left: 0;
+  margin-right: 0;
+  clear: none;
 }
 @media (min-width: 460px) {
   .col-2 .primary {
     width: 65.90909%;
-    clear: right;
     float: left;
+    margin-right: -100%;
     margin-left: 0%;
-    margin-right: 2.27273%;
+    clear: none;
   }
 }
 .col-2 .secondary {
   margin-top: 0;
   width: 100%;
-  clear: right;
   float: right;
-  margin-right: 0%;
+  margin-left: 0;
+  margin-right: 0;
+  clear: none;
 }
 @media (min-width: 460px) {
   .col-2 .secondary {
     width: 31.81818%;
-    clear: right;
     float: right;
-    margin-right: 0%;
+    margin-left: 0;
+    margin-right: 0;
+    clear: none;
     margin-top: 6em;
   }
 }
@@ -2946,17 +2950,18 @@ header #branding {
   padding-top: 1em;
   padding-bottom: 1em;
   width: 31.81818%;
-  clear: right;
   float: left;
+  margin-right: -100%;
   margin-left: 0%;
-  margin-right: 2.27273%;
+  clear: none;
 }
 @media (min-width: 0) and (max-width: 459px) {
   #branding {
     width: 100%;
-    clear: right;
     float: right;
-    margin-right: 0%;
+    margin-left: 0;
+    margin-right: 0;
+    clear: none;
   }
   #branding #logo {
     margin-right: -50px;
@@ -2971,10 +2976,10 @@ header #branding {
   text-align: center;
   padding-top: 5em;
   width: 31.81818%;
-  clear: right;
   float: left;
+  margin-right: -100%;
   margin-left: 0%;
-  margin-right: 2.27273%;
+  clear: none;
 }
 #cta-1 .button,
 #cta-2 .button {
@@ -2984,9 +2989,10 @@ header #branding {
   #cta-1,
   #cta-2 {
     width: 100%;
-    clear: right;
     float: right;
-    margin-right: 0%;
+    margin-left: 0;
+    margin-right: 0;
+    clear: none;
   }
 }
 
@@ -2997,9 +3003,10 @@ header #branding {
 
 #front-main {
   width: 100%;
-  clear: right;
   float: right;
-  margin-right: 0%;
+  margin-left: 0;
+  margin-right: 0;
+  clear: none;
 }
 #front-main h1 {
   border: none;
@@ -3008,23 +3015,25 @@ header #branding {
 
 .front-info {
   width: 100%;
-  clear: right;
   float: right;
-  margin-right: 0%;
+  margin-left: 0;
+  margin-right: 0;
+  clear: none;
 }
 @media (min-width: 720px) {
   .front-info {
     width: 31.81818%;
-    clear: right;
     float: left;
+    margin-right: -100%;
     margin-left: 0%;
-    margin-right: 2.27273%;
+    clear: none;
   }
   .front-info:last-child {
     width: 31.81818%;
-    clear: right;
     float: right;
-    margin-right: 0%;
+    margin-left: 0;
+    margin-right: 0;
+    clear: none;
   }
 }
 
@@ -3065,18 +3074,20 @@ section.contact i {
 @media (min-width: 0) and (max-width: 700px) {
   section.contact i {
     width: 100%;
-    clear: right;
     float: right;
-    margin-right: 0%;
+    margin-left: 0;
+    margin-right: 0;
+    clear: none;
     top: 0;
   }
 }
 @media (min-width: 0) and (max-width: 700px) {
   section.contact .contact-email {
     width: 100%;
-    clear: right;
     float: right;
-    margin-right: 0%;
+    margin-left: 0;
+    margin-right: 0;
+    clear: none;
     margin-bottom: 2em;
   }
 }
@@ -3094,59 +3105,72 @@ section.contact i {
 }
 #sponsors p {
   width: 100%;
-  clear: right;
   float: right;
-  margin-right: 0%;
+  margin-left: 0;
+  margin-right: 0;
+  clear: none;
   margin-top: 1em;
 }
 #sponsors .lone-star {
   width: 100%;
-  clear: right;
   float: right;
-  margin-right: 0%;
+  margin-left: 0;
+  margin-right: 0;
+  clear: none;
 }
 @media (min-width: 720px) {
   #sponsors .lone-star {
     width: 54.54545%;
-    clear: right;
     float: left;
+    margin-right: -100%;
     margin-left: 0%;
-    margin-right: 2.27273%;
+    clear: none;
   }
 }
 #sponsors .longhorn {
   width: 100%;
-  clear: right;
   float: right;
-  margin-right: 0%;
+  margin-left: 0;
+  margin-right: 0;
+  clear: none;
 }
 @media (min-width: 720px) {
   #sponsors .longhorn {
     width: 43.18182%;
-    clear: right;
     float: right;
-    margin-right: 0%;
+    margin-left: 0;
+    margin-right: 0;
+    clear: right;
   }
 }
 #sponsors .armadillo .sponsor {
   width: 100%;
-  clear: right;
   float: right;
-  margin-right: 0%;
+  margin-left: 0;
+  margin-right: 0;
+  clear: none;
 }
 @media (min-width: 720px) {
-  #sponsors .armadillo .sponsor {
+  #sponsors .armadillo .sponsor:nth-child(1) {
     width: 31.81818%;
-    clear: right;
     float: left;
+    margin-right: -100%;
     margin-left: 0%;
-    margin-right: 2.27273%;
-  }
-  #sponsors .armadillo .sponsor:last-child {
-    width: 31.81818%;
     clear: right;
+  }
+  #sponsors .armadillo .sponsor:nth-child(2) {
+    width: 31.81818%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 34.09091%;
+    clear: right;
+  }
+  #sponsors .armadillo .sponsor:nth-child(3) {
+    width: 31.81818%;
     float: right;
-    margin-right: 0%;
+    margin-left: 0;
+    margin-right: 0;
+    clear: right;
   }
 }
 
@@ -3177,9 +3201,10 @@ footer .social a:hover {
   footer .social,
   footer .credits {
     width: 100%;
-    clear: right;
     float: right;
-    margin-right: 0%;
+    margin-left: 0;
+    margin-right: 0;
+    clear: none;
   }
   footer .social {
     margin-bottom: .5em;
@@ -3318,9 +3343,10 @@ article.session div.filtered {
 .schedule article.session {
   padding-bottom: 2em;
   width: 100%;
-  clear: right;
   float: right;
-  margin-right: 0%;
+  margin-left: 0;
+  margin-right: 0;
+  clear: none;
 }
 .schedule article.session h2 {
   margin-top: 0;
