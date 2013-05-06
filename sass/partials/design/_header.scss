@@ -3,91 +3,30 @@
 //
 
 header {
-  margin-bottom: 1em;
 
   #nav ul,
   .inner {
     @include grid-max;
   }
-}
 
-// Nav styles
-
-@import 'responsive-nav';
-
-#nav {
-
-  a {
-    color: $white;
-
-    &:hover {
-      color: $darkorange;
-    }
+  @include breakpoint($header-md) {
+    margin-bottom: 1em;
   }
-
-  @include breakpoint($nav-sm) {
-    border-bottom: 2px solid $lightbackground;
-    font-size: em(24);
-    background-color: $darkbackground;
-
-    ul {
-      padding: .5em 0;
-    }
-
-    li {
-      padding-left: 1em;
-
-      a {
-        display: block;
-      }
-
-      &:hover {
-        background-color: $darkorange;
-
-        a {
-          color: white;
-        }
-      }
-    }
-  }
-
-  @include breakpoint($nav-md) {
-    text-align: center;
-    font-size: em(24);
-
-    ul {
-      padding: .5em 0;
-    }
-    li {
-      display: inline;
-      margin-right: 1em;
-
-      &:first-child {}
-
-      &:last-child {
-        margin-right: 0;
-      }
-    }
-  }
-}
-
-#nav-toggle {
-  width: 50px;
-  height: 50px;
-  float: right;
-  text-indent: -9999px;
-  overflow: hidden;
-  background: image-url('menu.png') transparent no-repeat 0 0;
 }
 
 // Logo styles
 
 #branding {
   text-align: center;
-  @include isolation-span(3, 4, 'right');
+  @include isolation-span(9, 1);
 
-  @include breakpoint($nav-sm) {
-    @include isolation-span(9, 1);
+  @include breakpoint($header-sm) {
+    margin-top: -2em;
+    margin-bottom: 1em;
+  }
+
+  @include breakpoint($header-lg) {
+    @include isolation-span(3, 4, 'right');
   }
 }
 
@@ -96,25 +35,38 @@ header {
 #cta-1,
 #cta-2 {
   text-align: center;
-  padding-top: 5em;
-  
+
   .button {
     font-size: em(18);
+  }
+  
+  @include breakpoint($header-lg) {
+    padding-top: 5em;
   }
 }
 
 #cta-1 {
-  @include isolation-span(3, 1, 'right');
+  @include isolation-span(9, 1);
 
-  @include breakpoint($nav-sm) {
-    @include isolation-span(9, 1);
+  @include breakpoint($header-md) {
+    @include isolation-span(4, 1, 'right');
+  }
+  
+  @include breakpoint($header-lg) {
+    @include isolation-span(3, 1, 'right');
   }
 }
 
 #cta-2 {
-  @include isolation-span(3, 7, 'right');
+  @include breakpoint($header-sm) {
+    display: none;
+  }
 
-  @include breakpoint($nav-sm) {
-    @include isolation-span(9, 1);
+  @include breakpoint($header-md) {
+    @include isolation-span(4, 6, 'right');
+  }
+  
+  @include breakpoint($header-lg) {
+    @include isolation-span(3, 7, 'right');
   }
 }
