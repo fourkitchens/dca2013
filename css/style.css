@@ -3020,34 +3020,41 @@ header .inner {
   float: right;
   margin-left: 0;
   margin-right: 0;
-  clear: none;
+  clear: right;
 }
 #front-main h1 {
   border: none;
   margin-bottom: .2em;
 }
 
-.front-info {
+#front .front-info {
   width: 100%;
   float: right;
   margin-left: 0;
   margin-right: 0;
-  clear: none;
+  clear: right;
 }
 @media (min-width: 720px) {
-  .front-info {
+  #front .front-info.sessions {
     width: 31.81818%;
     float: left;
     margin-right: -100%;
     margin-left: 0%;
-    clear: none;
+    clear: right;
   }
-  .front-info:last-child {
+  #front .front-info.workshops {
+    width: 31.81818%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 34.09091%;
+    clear: right;
+  }
+  #front .front-info.parties {
     width: 31.81818%;
     float: right;
     margin-left: 0;
     margin-right: 0;
-    clear: none;
+    clear: right;
   }
 }
 

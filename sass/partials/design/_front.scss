@@ -2,16 +2,13 @@
 // Front page styles
 //
 
-#front {
-}
-
 #front-main,
 .front-info {
   text-align: center;
 }
 
 #front-main {
-  @include grid-span(9);
+  @include isolation-span(9, 1, 'right');
 
   h1 {
     border: none;
@@ -19,14 +16,23 @@
   }
 }
 
-.front-info {
-  @include grid-span(9);
-
+#front {
+  .front-info {
+    @include isolation-span(9, 1, 'right');
+  }
+  
   @include breakpoint($front-md) {
-    @include grid-span(3);  
+    
+    .front-info.sessions {
+      @include isolation-span(3, 1, 'right');
+    }
 
-    &:last-child {
-      @include grid-span(3, 'last');   
+    .front-info.workshops {
+      @include isolation-span(3, 4, 'right');
+    }
+
+    .front-info.parties {
+      @include isolation-span(3, 7, 'right');
     }
   }
 }
