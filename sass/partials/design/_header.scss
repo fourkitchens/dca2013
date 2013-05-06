@@ -51,7 +51,7 @@ header {
 
   @include breakpoint($nav-md) {
     text-align: center;
-    font-size: em(18);
+    font-size: em(24);
 
     ul {
       padding: .5em 0;
@@ -71,19 +71,23 @@ header {
 
 #nav-toggle {
   width: 50px;
-  height: 55px;
+  height: 50px;
   float: right;
   text-indent: -9999px;
   overflow: hidden;
   background: image-url('menu.png') transparent 0 0;
 }
 
+// Logo styles
+
 #branding {
   text-align: center;
   padding-top: 1em;
   padding-bottom: 1em;
+  @include grid-span(3);
 
   @include breakpoint($nav-sm) {
+    @include grid-span(9);
 
     #logo {
       margin-right: -50px;
@@ -92,5 +96,22 @@ header {
         max-width: 200px;
       }
     }
+  }
+}
+
+// Calls to action
+
+#cta-1,
+#cta-2 {
+  text-align: center;
+  padding-top: 5em;
+  @include grid-span(3);
+
+  .button {
+    font-size: em(18);
+  }
+
+  @include breakpoint($nav-sm) {
+    @include grid-span(9);
   }
 }

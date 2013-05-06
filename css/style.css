@@ -2916,7 +2916,7 @@ header #branding {
 @media (min-width: 460px) {
   #nav {
     text-align: center;
-    font-size: 1.125em;
+    font-size: 1.5em;
   }
   #nav ul {
     padding: 0.5em 0;
@@ -2932,7 +2932,7 @@ header #branding {
 
 #nav-toggle {
   width: 50px;
-  height: 55px;
+  height: 50px;
   float: right;
   text-indent: -9999px;
   overflow: hidden;
@@ -2943,13 +2943,48 @@ header #branding {
   text-align: center;
   padding-top: 1em;
   padding-bottom: 1em;
+  width: 31.81818%;
+  clear: right;
+  float: left;
+  margin-left: 0%;
+  margin-right: 2.27273%;
 }
 @media (min-width: 0) and (max-width: 459px) {
+  #branding {
+    width: 100%;
+    clear: right;
+    float: right;
+    margin-right: 0%;
+  }
   #branding #logo {
     margin-right: -50px;
   }
   #branding #logo img {
     max-width: 200px;
+  }
+}
+
+#cta-1,
+#cta-2 {
+  text-align: center;
+  padding-top: 5em;
+  width: 31.81818%;
+  clear: right;
+  float: left;
+  margin-left: 0%;
+  margin-right: 2.27273%;
+}
+#cta-1 .button,
+#cta-2 .button {
+  font-size: 1.125em;
+}
+@media (min-width: 0) and (max-width: 459px) {
+  #cta-1,
+  #cta-2 {
+    width: 100%;
+    clear: right;
+    float: right;
+    margin-right: 0%;
   }
 }
 
