@@ -2564,10 +2564,12 @@ html:hover [class^="ss-"] {
   border: 0;
   padding: 0.3em 0.6em;
   border-radius: .3em;
-  background-color: #ed9310;
+  background-color: #d34913;
+  color: white;
 }
 .cta:hover, button:hover, .button:hover {
-  background-color: #d34913;
+  background-color: #8d310d;
+  transition: background linear 350ms;
   color: white;
 }
 .cta:visited, button:visited, .button:visited {
