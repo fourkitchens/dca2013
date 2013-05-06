@@ -2598,7 +2598,7 @@ h1 {
   font-size: 3em;
   line-height: 1.125em;
   border-bottom: 2px solid #11212d;
-  margin-top: .5em;
+  margin: 0 0 0.5em 0;
   padding-bottom: .1em;
 }
 
