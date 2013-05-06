@@ -28,6 +28,21 @@ header {
   @include breakpoint($header-lg) {
     @include isolation-span(3, 4, 'right');
   }
+
+  #logo {
+    display: inline-block;
+    min-width: 248px;
+    min-height: 190px;
+    background: image-url('logo.png');
+
+    .js & {
+      color: transparent;
+    }
+
+    .svg & {
+      background: image-url('logo.svg');
+    }
+  }
 }
 
 // Calls to action
@@ -39,7 +54,7 @@ header {
   .button {
     font-size: em(18);
   }
-  
+
   @include breakpoint($header-lg) {
     padding-top: 5em;
   }
@@ -51,7 +66,7 @@ header {
   @include breakpoint($header-md) {
     @include isolation-span(4, 1, 'right');
   }
-  
+
   @include breakpoint($header-lg) {
     @include isolation-span(3, 1, 'right');
   }
@@ -65,7 +80,7 @@ header {
   @include breakpoint($header-md) {
     @include isolation-span(4, 6, 'right');
   }
-  
+
   @include breakpoint($header-lg) {
     @include isolation-span(3, 7, 'right');
   }
