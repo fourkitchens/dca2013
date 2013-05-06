@@ -9,7 +9,7 @@ header {
     @include grid-max;
   }
 
-  @include breakpoint($header-md) {
+  @include breakpoint($header-lg) {
     margin-bottom: 1em;
   }
 }
@@ -18,11 +18,11 @@ header {
 
 #branding {
   text-align: center;
+  margin-bottom: 1em;
   @include isolation-span(9, 1);
 
   @include breakpoint($header-sm) {
     margin-top: -2em;
-    margin-bottom: 1em;
   }
 
   @include breakpoint($header-lg) {
@@ -63,25 +63,16 @@ header {
 #cta-1 {
   @include isolation-span(9, 1);
 
-  @include breakpoint($header-md) {
-    @include isolation-span(4, 1, 'right');
-  }
-
   @include breakpoint($header-lg) {
     @include isolation-span(3, 1, 'right');
   }
 }
 
 #cta-2 {
-  @include breakpoint($header-sm) {
-    display: none;
-  }
-
-  @include breakpoint($header-md) {
-    @include isolation-span(4, 6, 'right');
-  }
+  display: none;
 
   @include breakpoint($header-lg) {
+    display: block;
     @include isolation-span(3, 7, 'right');
   }
 }
