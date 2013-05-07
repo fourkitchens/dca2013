@@ -42,6 +42,14 @@ $source-sans-pro: 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial sans-ser
 $icon-social:      "SSSocialCircle";
 $icon-symbolicons: "SSSymbolicons";
 
+// Spacing
+
+$space:          1em;
+$space-half:     $space/2;
+$space-and-half: $space*1.5;
+$space-double:   $space*2;
+$space-triple:   $space*3;
+
 // Breakpoints
 
 $contact-sm:  0 700px;

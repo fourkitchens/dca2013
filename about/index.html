@@ -43,23 +43,11 @@ Austin, TX 78701</p>
 
 <p><a href="http://goo.gl/maps/lhzeb" target="_blank">Get directions from Google Maps</a></p>
 
-<div id="map"></div>
-
-{% raw %}
-<script src="http://cdn.leafletjs.com/leaflet-0.5/leaflet.js"></script>
-<script>
-var map = L.map('map').setView([30.263581,-97.739568], 15);
-L.tileLayer('http://{s}.tile.cloudmade.com/3CBE3931811A4EBB83CE169BCB705740/997/256/{z}/{x}/{y}.png', {
-    attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://cloudmade.com">CloudMade</a>',
-    maxZoom: 18
-}).addTo(map);
-var marker = L.marker([30.263581,-97.739568]).addTo(map);
-marker.bindPopup("<b>Austin Convetion Center</b>")
-</script>
-{% endraw %}
+<div id="map">
+  <iframe width="580" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?q=Austin+Convention+Center,+East+Cesar+Chavez+Street,+Austin,+TX&amp;hl=en&amp;sll=30.307761,-97.753401&amp;sspn=1.160683,1.539459&amp;oq=austin+conv&amp;hq=Austin+Convention+Center,+East+Cesar+Chavez+Street,+Austin,+TX&amp;t=m&amp;ie=UTF8&amp;cid=8762832369911843592&amp;hnear=&amp;ll=30.263589,-97.739611&amp;spn=0.02224,0.049696&amp;z=14&amp;iwloc=A&amp;output=embed&iwloc=near"></iframe>
+</div>
 
 <p>If you are driving and need to park on Friday and Saturday, your best bet is to use on of the nearby parking garages. Parking meters are free on Sunday.</p>
-
 
 <p>
   <strong>2nd Street Garage</strong><br>

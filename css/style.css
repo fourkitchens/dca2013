@@ -3089,8 +3089,10 @@ header .inner {
 }
 
 #map {
-  height: 300px;
   margin-bottom: 1.5em;
+}
+#map iframe {
+  width: 100%;
 }
 
 .news-listing .entry h2 {
