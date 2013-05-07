@@ -2810,6 +2810,9 @@ main .inner {
   margin-bottom: 2em;
 }
 
+#nav-sub {
+  font-size: 1.3125em;
+}
 #nav-sub ul {
   margin: 0;
   padding: 0;
@@ -2825,12 +2828,12 @@ main .inner {
   color: white;
 }
 #nav-sub li:first-child {
-  padding-top: .5em;
+  padding: .5em 0 .25em;
   border-top-left-radius: .5em;
   border-top-right-radius: .5em;
 }
 #nav-sub li:last-child {
-  padding-bottom: .5em;
+  padding: .25em 0 .5em;
   border-bottom-left-radius: .5em;
   border-bottom-right-radius: .5em;
 }

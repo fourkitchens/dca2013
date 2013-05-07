@@ -30,6 +30,7 @@
 }
 
 #nav-sub { // Sub-navigation (Sections)
+  font-size: em(21);
 
   ul {
     margin: 0;
@@ -48,13 +49,13 @@
     }
 
     &:first-child {
-      padding-top: .5em;
+      padding: .5em 0 .25em;
       border-top-left-radius: .5em;
       border-top-right-radius: .5em;
     }
 
     &:last-child {
-      padding-bottom: .5em;
+      padding: .25em 0 .5em;
       border-bottom-left-radius: .5em;
       border-bottom-right-radius: .5em;
     }
