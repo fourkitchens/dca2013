@@ -7,20 +7,19 @@
   @include grid-max;
 
   .primary {
-    @include grid-span(9);
+    @include isolation-span(9, 1);
 
     @include breakpoint($sidebar) {
-      @include grid-span(6);
+      @include isolation-span(6, 1, 'right');
     }
   }
 
   .secondary {
     margin-top: 0;
-
-    @include grid-span(9);
+    @include isolation-span(9, 1);
 
     @include breakpoint($sidebar) {
-      @include grid-span(3,'last');
+      @include isolation-span(3, 7, 'right');
       margin-top: 6em;
     }
 
@@ -31,6 +30,7 @@
 }
 
 #nav-sub { // Sub-navigation (Sections)
+  font-size: em(21);
 
   ul {
     margin: 0;
@@ -49,13 +49,13 @@
     }
 
     &:first-child {
-      padding-top: .5em;
+      padding: .5em 0 .25em;
       border-top-left-radius: .5em;
       border-top-right-radius: .5em;
     }
 
     &:last-child {
-      padding-bottom: .5em;
+      padding: .25em 0 .5em;
       border-bottom-left-radius: .5em;
       border-bottom-right-radius: .5em;
     }
@@ -63,7 +63,7 @@
     &:hover {
       background-color: $lightblue;
       cursor: pointer;
-      
+
       a {
         color: $darkblue;
       }

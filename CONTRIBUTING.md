@@ -13,7 +13,7 @@ In Terminal, run these commands to install everything you need:
 
 ```bash
 sudo gem update --system
-sudo gem install jekyll --pre
+sudo gem install jekyll
 sudo gem install uglifier singularitygs jacket
 ```
 

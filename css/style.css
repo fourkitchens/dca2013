@@ -2564,10 +2564,12 @@ html:hover [class^="ss-"] {
   border: 0;
   padding: 0.3em 0.6em;
   border-radius: .3em;
-  background-color: #ed9310;
+  background-color: #d34913;
+  color: white;
 }
 .cta:hover, button:hover, .button:hover {
-  background-color: #d34913;
+  background-color: #8d310d;
+  transition: background linear 350ms;
   color: white;
 }
 .cta:visited, button:visited, .button:visited {
@@ -2598,23 +2600,23 @@ h1 {
   font-size: 3em;
   line-height: 1.125em;
   border-bottom: 2px solid #11212d;
-  margin-top: .5em;
+  margin: 0 0 0.5em 0;
   padding-bottom: .1em;
 }
 
 h2 {
   font-size: 2.25em;
-  line-height: 1.77777em;
+  line-height: 1.2em;
 }
 
 h3 {
   font-size: 1.5em;
-  line-height: 1.5em;
+  line-height: 1.2em;
 }
 
 h4 {
   font-size: 1.3125em;
-  line-height: 1.12382em;
+  line-height: 1em;
 }
 
 i {
@@ -2641,9 +2643,6 @@ i {
   opacity: .8;
 }
 
-.secondary p, .secondary li {
-  font-size: 1.3125em;
-}
 .secondary h2 {
   margin-top: 0;
   line-height: 1em;
@@ -2757,9 +2756,10 @@ main .inner {
 }
 .col-1 .primary {
   width: 100%;
-  clear: right;
   float: right;
-  margin-right: 0%;
+  margin-left: 0;
+  margin-right: 0;
+  clear: none;
 }
 
 .col-2 {
@@ -2773,32 +2773,35 @@ main .inner {
 }
 .col-2 .primary {
   width: 100%;
-  clear: right;
   float: right;
-  margin-right: 0%;
+  margin-left: 0;
+  margin-right: 0;
+  clear: none;
 }
 @media (min-width: 460px) {
   .col-2 .primary {
     width: 65.90909%;
-    clear: right;
     float: left;
+    margin-right: -100%;
     margin-left: 0%;
-    margin-right: 2.27273%;
+    clear: right;
   }
 }
 .col-2 .secondary {
   margin-top: 0;
   width: 100%;
-  clear: right;
   float: right;
-  margin-right: 0%;
+  margin-left: 0;
+  margin-right: 0;
+  clear: none;
 }
 @media (min-width: 460px) {
   .col-2 .secondary {
     width: 31.81818%;
-    clear: right;
     float: right;
-    margin-right: 0%;
+    margin-left: 0;
+    margin-right: 0;
+    clear: right;
     margin-top: 6em;
   }
 }
@@ -2806,6 +2809,9 @@ main .inner {
   margin-bottom: 2em;
 }
 
+#nav-sub {
+  font-size: 1.3125em;
+}
 #nav-sub ul {
   margin: 0;
   padding: 0;
@@ -2821,12 +2827,12 @@ main .inner {
   color: white;
 }
 #nav-sub li:first-child {
-  padding-top: .5em;
+  padding: 0.5em 0 0.25em;
   border-top-left-radius: .5em;
   border-top-right-radius: .5em;
 }
 #nav-sub li:last-child {
-  padding-bottom: .5em;
+  padding: 0.25em 0 0.5em;
   border-bottom-left-radius: .5em;
   border-bottom-right-radius: .5em;
 }
@@ -2840,12 +2846,6 @@ main .inner {
 
 .full {
   max-width: 94%;
-  margin: 0 auto;
-}
-
-header #nav ul,
-header #branding {
-  max-width: 880px;
   margin: 0 auto;
 }
 
@@ -2891,7 +2891,7 @@ header #branding {
 #nav a:hover {
   color: #d34913;
 }
-@media (min-width: 0) and (max-width: 459px) {
+@media (min-width: 0px) and (max-width: 458px) {
   #nav {
     border-bottom: 2px solid #11212d;
     font-size: 1.5em;
@@ -2929,71 +2929,204 @@ header #branding {
     margin-right: 0;
   }
 }
+@media (min-width: 700px) {
+  #nav {
+    font-size: 1.5em;
+  }
+}
 
 #nav-toggle {
   width: 50px;
-  height: 55px;
+  height: 50px;
   float: right;
   text-indent: -9999px;
   overflow: hidden;
-  background: url('/img/menu.png') transparent 0 0;
+  background: url('/img/menu.png') transparent no-repeat 0 0;
+  position: relative;
+  z-index: 500;
+}
+
+header #nav ul,
+header .inner {
+  max-width: 880px;
+  margin: 0 auto;
+}
+@media (min-width: 700px) {
+  header {
+    margin-bottom: 1em;
+  }
 }
 
 #branding {
   text-align: center;
-  padding-top: 1em;
-  padding-bottom: 1em;
+  margin-bottom: 1em;
+  width: 100%;
+  float: right;
+  margin-left: 0;
+  margin-right: 0;
+  clear: none;
 }
-@media (min-width: 0) and (max-width: 459px) {
-  #branding #logo {
-    margin-right: -50px;
+@media (min-width: 0px) and (max-width: 458px) {
+  #branding {
+    margin-top: -2em;
   }
-  #branding #logo img {
-    max-width: 200px;
+}
+@media (min-width: 700px) {
+  #branding {
+    width: 31.81818%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 34.09091%;
+    clear: right;
+  }
+}
+#branding #logo {
+  display: inline-block;
+  min-width: 248px;
+  min-height: 190px;
+  background: url('/img/logo.png');
+}
+.js #branding #logo {
+  color: transparent;
+}
+.svg #branding #logo {
+  background: url('/img/logo.svg');
+}
+
+#cta-1,
+#cta-2 {
+  text-align: center;
+}
+#cta-1 .button,
+#cta-2 .button {
+  font-size: 1.125em;
+}
+@media (min-width: 700px) {
+  #cta-1,
+  #cta-2 {
+    padding-top: 5em;
+  }
+}
+
+#cta-1 {
+  width: 100%;
+  float: right;
+  margin-left: 0;
+  margin-right: 0;
+  clear: none;
+}
+@media (min-width: 700px) {
+  #cta-1 {
+    width: 31.81818%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 0%;
+    clear: right;
+  }
+}
+
+#cta-2 {
+  display: none;
+}
+@media (min-width: 700px) {
+  #cta-2 {
+    display: block;
+    width: 31.81818%;
+    float: right;
+    margin-left: 0;
+    margin-right: 0;
+    clear: right;
   }
 }
 
 #front-main,
+#front-news,
 .front-info {
   text-align: center;
 }
 
 #front-main {
   width: 100%;
-  clear: right;
   float: right;
-  margin-right: 0%;
+  margin-left: 0;
+  margin-right: 0;
+  clear: right;
+  border-bottom: 4px solid #11212d;
+  margin-bottom: 1em;
 }
 #front-main h1 {
   border: none;
   margin-bottom: .2em;
 }
+#front-main .subheader {
+  color: #176dad;
+}
 
-.front-info {
+#front-news {
   width: 100%;
-  clear: right;
   float: right;
-  margin-right: 0%;
+  margin-left: 0;
+  margin-right: 0;
+  clear: right;
+  border-bottom: 4px solid #11212d;
+  padding-bottom: 1em;
+  margin-bottom: 2em;
+}
+#front-news i {
+  color: #176dad;
+}
+#front-news .post {
+  font-size: 1.3125em;
+}
+
+#front .front-info {
+  width: 100%;
+  float: right;
+  margin-left: 0;
+  margin-right: 0;
+  clear: right;
+  margin-bottom: 1em;
+}
+#front .front-info h2 {
+  line-height: 1;
+  margin-bottom: 0.5em;
+}
+#front .front-info img {
+  margin-bottom: 0.5em;
+  border: 2px solid #c5d5f0;
 }
 @media (min-width: 720px) {
-  .front-info {
-    width: 31.81818%;
-    clear: right;
-    float: left;
-    margin-left: 0%;
-    margin-right: 2.27273%;
+  #front {
+    margin-bottom: 0;
   }
-  .front-info:last-child {
+  #front .front-info.sessions {
     width: 31.81818%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 0%;
     clear: right;
+  }
+  #front .front-info.workshops {
+    width: 31.81818%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 34.09091%;
+    clear: right;
+  }
+  #front .front-info.parties {
+    width: 31.81818%;
     float: right;
-    margin-right: 0%;
+    margin-left: 0;
+    margin-right: 0;
+    clear: right;
   }
 }
 
 #map {
-  height: 300px;
   margin-bottom: 1.5em;
+}
+#map iframe {
+  width: 100%;
 }
 
 .news-listing .entry h2 {
@@ -3028,18 +3161,20 @@ section.contact i {
 @media (min-width: 0) and (max-width: 700px) {
   section.contact i {
     width: 100%;
-    clear: right;
     float: right;
-    margin-right: 0%;
+    margin-left: 0;
+    margin-right: 0;
+    clear: none;
     top: 0;
   }
 }
 @media (min-width: 0) and (max-width: 700px) {
   section.contact .contact-email {
     width: 100%;
-    clear: right;
     float: right;
-    margin-right: 0%;
+    margin-left: 0;
+    margin-right: 0;
+    clear: none;
     margin-bottom: 2em;
   }
 }
@@ -3057,59 +3192,72 @@ section.contact i {
 }
 #sponsors p {
   width: 100%;
-  clear: right;
   float: right;
-  margin-right: 0%;
+  margin-left: 0;
+  margin-right: 0;
+  clear: none;
   margin-top: 1em;
 }
 #sponsors .lone-star {
   width: 100%;
-  clear: right;
   float: right;
-  margin-right: 0%;
+  margin-left: 0;
+  margin-right: 0;
+  clear: none;
 }
 @media (min-width: 720px) {
   #sponsors .lone-star {
     width: 54.54545%;
-    clear: right;
     float: left;
+    margin-right: -100%;
     margin-left: 0%;
-    margin-right: 2.27273%;
+    clear: none;
   }
 }
 #sponsors .longhorn {
   width: 100%;
-  clear: right;
   float: right;
-  margin-right: 0%;
+  margin-left: 0;
+  margin-right: 0;
+  clear: none;
 }
 @media (min-width: 720px) {
   #sponsors .longhorn {
     width: 43.18182%;
-    clear: right;
     float: right;
-    margin-right: 0%;
+    margin-left: 0;
+    margin-right: 0;
+    clear: right;
   }
 }
 #sponsors .armadillo .sponsor {
   width: 100%;
-  clear: right;
   float: right;
-  margin-right: 0%;
+  margin-left: 0;
+  margin-right: 0;
+  clear: none;
 }
 @media (min-width: 720px) {
-  #sponsors .armadillo .sponsor {
+  #sponsors .armadillo .sponsor:nth-child(1) {
     width: 31.81818%;
-    clear: right;
     float: left;
+    margin-right: -100%;
     margin-left: 0%;
-    margin-right: 2.27273%;
-  }
-  #sponsors .armadillo .sponsor:last-child {
-    width: 31.81818%;
     clear: right;
+  }
+  #sponsors .armadillo .sponsor:nth-child(2) {
+    width: 31.81818%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 34.09091%;
+    clear: right;
+  }
+  #sponsors .armadillo .sponsor:nth-child(3) {
+    width: 31.81818%;
     float: right;
-    margin-right: 0%;
+    margin-left: 0;
+    margin-right: 0;
+    clear: right;
   }
 }
 
@@ -3136,13 +3284,17 @@ footer .social a {
 footer .social a:hover {
   color: #d34913;
 }
+footer .credits i {
+  padding: 0 0.5em;
+}
 @media (min-width: 0px) and (max-width: 460px) {
   footer .social,
   footer .credits {
     width: 100%;
-    clear: right;
     float: right;
-    margin-right: 0%;
+    margin-left: 0;
+    margin-right: 0;
+    clear: none;
   }
   footer .social {
     margin-bottom: .5em;
@@ -3205,6 +3357,18 @@ footer .social a:hover {
 }
 .js .submitted .session.expanded .desc:after {
   height: 0;
+}
+
+@media (min-width: 460px) {
+  .submit {
+    margin-top: -3.9em;
+  }
+  .submit h2 {
+    position: relative;
+    top: -.2em;
+    padding-bottom: .36em;
+    border-bottom: 2px solid #11212d;
+  }
 }
 
 .schedule h1 {
@@ -3281,9 +3445,10 @@ article.session div.filtered {
 .schedule article.session {
   padding-bottom: 2em;
   width: 100%;
-  clear: right;
   float: right;
-  margin-right: 0%;
+  margin-left: 0;
+  margin-right: 0;
+  clear: none;
 }
 .schedule article.session h2 {
   margin-top: 0;
