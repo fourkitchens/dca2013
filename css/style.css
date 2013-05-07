@@ -3284,6 +3284,9 @@ footer .social a {
 footer .social a:hover {
   color: #d34913;
 }
+footer .credits i {
+  padding: 0 0.5em;
+}
 @media (min-width: 0px) and (max-width: 460px) {
   footer .social,
   footer .credits {
