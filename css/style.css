@@ -2643,9 +2643,6 @@ i {
   opacity: .8;
 }
 
-.secondary p, .secondary li {
-  font-size: 1.3125em;
-}
 .secondary h2 {
   margin-top: 0;
   line-height: 1em;
@@ -3317,6 +3314,18 @@ footer .social a:hover {
 }
 .js .submitted .session.expanded .desc:after {
   height: 0;
+}
+
+@media (min-width: 460px) {
+  .submit {
+    margin-top: -3.9em;
+  }
+  .submit h2 {
+    position: relative;
+    top: -.2em;
+    padding-bottom: .36em;
+    border-bottom: 2px solid #11212d;
+  }
 }
 
 .schedule h1 {

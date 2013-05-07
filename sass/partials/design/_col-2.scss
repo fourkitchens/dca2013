@@ -16,7 +16,6 @@
 
   .secondary {
     margin-top: 0;
-
     @include isolation-span(9, 1);
 
     @include breakpoint($sidebar) {
@@ -63,7 +62,7 @@
     &:hover {
       background-color: $lightblue;
       cursor: pointer;
-      
+
       a {
         color: $darkblue;
       }

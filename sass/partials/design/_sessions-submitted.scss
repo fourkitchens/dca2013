@@ -44,3 +44,17 @@
     }
   }
 }
+
+// Sidebar
+.submit {
+  @include breakpoint($sidebar) {
+    margin-top: -3.9em;
+
+    h2 {
+      position: relative;
+      top: -.2em;
+      padding-bottom: .36em;
+      border-bottom: 2px solid #11212d;
+    }
+  }
+}
