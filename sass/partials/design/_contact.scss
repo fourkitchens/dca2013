@@ -3,27 +3,39 @@
 //
 
 section.contact {
-  @include breakpoint($contact-sm) {
-    text-align: center;
+  text-align: center;
+
+  @include breakpoint($contact-md) {
+    text-align: left;  
   }
 
-  i {
-    font-size: 2em;
-    line-height: 0.9em;
-    position: relative;
-    top: 0.25em;
-    
-    @include breakpoint($contact-sm) {
-      @include grid-span(9);
-      top: 0;
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      margin-bottom: $space;
+
+      i {
+        font-size: 2em;
+        line-height: 0.9em;
+        position: relative;
+        top: 0.25em;
+      }
+      @include breakpoint($contact-md) {
+        margin-bottom: $space-double;
+      }
     }
   }
   
   .contact-email {
-
-    @include breakpoint($contact-sm) {
-      @include grid-span(9);
-      margin-bottom: 2em;
+    display: block;
+    padding-top: $space;
+    margin-bottom: $space;
+    
+    @include breakpoint($contact-md) {
+      display: inline;    
     }
   }
 }

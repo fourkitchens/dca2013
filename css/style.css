@@ -2621,6 +2621,7 @@ h4 {
 
 i {
   font-style: normal;
+  color: #176dad;
 }
 
 .primary.content p {
@@ -2632,7 +2633,6 @@ i {
 }
 .primary.content i {
   margin-right: .5em;
-  color: #97c441;
 }
 .primary.content blockquote {
   font-size: 1.3125em;
@@ -2760,6 +2760,27 @@ main .inner {
   margin-left: 0;
   margin-right: 0;
   clear: none;
+}
+
+.col-1-skinny {
+  max-width: 880px;
+  margin: 0 auto;
+}
+.col-1-skinny .primary {
+  width: 100%;
+  float: right;
+  margin-left: 0;
+  margin-right: 0;
+  clear: none;
+}
+@media (min-width: 680px) {
+  .col-1-skinny .primary {
+    width: 77.27273%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 11.36364%;
+    clear: none;
+  }
 }
 
 .col-2 {
@@ -3190,35 +3211,41 @@ header .inner {
   font-size: 1.875em;
 }
 
-@media (min-width: 0) and (max-width: 700px) {
+section.contact {
+  text-align: center;
+}
+@media (min-width: 780px) {
   section.contact {
-    text-align: center;
+    text-align: left;
   }
 }
-section.contact i {
+section.contact ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+section.contact ul li {
+  margin-bottom: 1em;
+}
+section.contact ul li i {
   font-size: 2em;
   line-height: 0.9em;
   position: relative;
   top: 0.25em;
 }
-@media (min-width: 0) and (max-width: 700px) {
-  section.contact i {
-    width: 100%;
-    float: right;
-    margin-left: 0;
-    margin-right: 0;
-    clear: none;
-    top: 0;
+@media (min-width: 780px) {
+  section.contact ul li {
+    margin-bottom: 2em;
   }
 }
-@media (min-width: 0) and (max-width: 700px) {
+section.contact .contact-email {
+  display: block;
+  padding-top: 1em;
+  margin-bottom: 1em;
+}
+@media (min-width: 780px) {
   section.contact .contact-email {
-    width: 100%;
-    float: right;
-    margin-left: 0;
-    margin-right: 0;
-    clear: none;
-    margin-bottom: 2em;
+    display: inline;
   }
 }
 
