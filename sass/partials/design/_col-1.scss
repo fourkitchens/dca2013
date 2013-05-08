@@ -6,6 +6,6 @@
   @include grid-max;
 
   .primary {
-    @include grid-span(9);
+    @include isolation-span(9, 1);
   }
 }

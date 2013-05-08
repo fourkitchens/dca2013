@@ -2,7 +2,10 @@
 // About page
 //
 
-#map { // http://trentwalton.com/2013/04/11/responsive-maps
-  height: 300px;
-  margin-bottom: 1.5em;
+#map { 
+  margin-bottom: $space-and-half;
+  
+  iframe {
+    width: 100%;
+  }
 }

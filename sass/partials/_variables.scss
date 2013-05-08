@@ -2,7 +2,7 @@
 
 $grids: 9;
 $gutters: 1/4;
-$output: 'float';
+$output: 'isolation';
 
 $grid-max: 880px;
 
@@ -42,14 +42,23 @@ $source-sans-pro: 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial sans-ser
 $icon-social:      "SSSocialCircle";
 $icon-symbolicons: "SSSymbolicons";
 
+// Spacing
+
+$space:          1em;
+$space-half:     $space/2;
+$space-and-half: $space*1.5;
+$space-double:   $space*2;
+$space-triple:   $space*3;
+
 // Breakpoints
 
 $contact-sm:  0 700px;
 $faq-sm:      460px;
 $front-md:    720px;
 $footer-sm:   0px 460px;
-$nav-sm:      0 459px;
-$nav-md:      460px;
+$header-sm:   0px 458px;;
+$header-md:   460px;
+$header-lg:   700px;
 $sched-md:    500px;
 $sched-lg:    720px;
 $sidebar:     460px;

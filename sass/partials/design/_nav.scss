@@ -1,0 +1,117 @@
+//
+// Nav styles
+//
+
+// Responsive Nav styles, taken from:
+// https://github.com/viljamis/responsive-nav.js
+// https://github.com/viljamis/responsive-nav.js/blob/master/responsive-nav.css
+
+#nav ul {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: block;
+  list-style: none;
+}
+
+#nav li {
+  width: 100%;
+  display: block;
+}
+
+.js #nav {
+  clip: rect(0 0 0 0);
+  max-height: 0;
+  position: absolute;
+  display: block;
+  overflow: hidden;
+  zoom: 1;
+}
+
+#nav.opened {
+  max-height: 9999px;
+}
+
+@include breakpoint($header-md) {
+  .js #nav {
+    position: relative;
+    max-height: none;
+  }
+  #nav-toggle {
+    display: none;
+  }
+}
+
+// Custom nav styles
+
+#nav {
+
+  a {
+    color: $white;
+
+    &:hover {
+      color: $darkorange;
+    }
+  }
+
+  @include breakpoint($header-sm) {
+    border-bottom: 2px solid $lightbackground;
+    font-size: em(24);
+    background-color: $darkbackground;
+
+    ul {
+      padding: .5em 0;
+    }
+
+    li {
+      padding-left: 1em;
+
+      a {
+        display: block;
+      }
+
+      &:hover {
+        background-color: $darkorange;
+
+        a {
+          color: white;
+        }
+      }
+    }
+  }
+
+  @include breakpoint($header-md) {
+    text-align: center;
+    font-size: em(18);
+
+    ul {
+      padding: .5em 0;
+    }
+
+    li {
+      display: inline;
+      margin-right: 1em;
+
+      &:first-child {}
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  @include breakpoint($header-lg) {
+    font-size: em(24);
+  }
+}
+
+#nav-toggle {
+  width: 50px;
+  height: 50px;
+  float: right;
+  text-indent: -9999px;
+  overflow: hidden;
+  background: image-url('menu.png') transparent no-repeat 0 0;
+  position: relative;
+  z-index: 500;
+}

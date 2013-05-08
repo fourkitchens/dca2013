@@ -2,31 +2,72 @@
 // Front page styles
 //
 
-#front {
-}
-
 #front-main,
+#front-news,
 .front-info {
   text-align: center;
 }
 
 #front-main {
-  @include grid-span(9);
+  @include isolation-span(9, 1, 'right');
+  border-bottom: 4px solid $lightbackground;
+  margin-bottom: $space;
 
   h1 {
     border: none;
     margin-bottom: .2em;
   }
+
+  .subheader {
+    color: $blue;
+  }
 }
 
-.front-info {
-  @include grid-span(9);
+#front-news {
+  @include isolation-span(9, 1, 'right');
+  border-bottom: 4px solid $lightbackground;
+  padding-bottom: $space;
+  margin-bottom: $space-double;
 
-  @include breakpoint($front-md) {
-    @include grid-span(3);  
+  i {
+    color: $blue;
+  }
+  
+  .post {
+    font-size: em(21);
+  }
+}
 
-    &:last-child {
-      @include grid-span(3, 'last');   
+#front {
+  .front-info {
+    @include isolation-span(9, 1, 'right');
+    margin-bottom: $space;
+
+    h2 {
+      line-height: 1;
+      margin-bottom: $space-half;
+    }
+
+    img {
+      margin-bottom: $space-half;
+      border: 2px solid $lightblue;
     }
   }
+  
+  @include breakpoint($front-md) {
+    margin-bottom: 0;
+    
+    .front-info.sessions {
+      @include isolation-span(3, 1, 'right');
+    }
+
+    .front-info.workshops {
+      @include isolation-span(3, 4, 'right');
+    }
+
+    .front-info.parties {
+      @include isolation-span(3, 7, 'right');
+    }
+  }
+
 }

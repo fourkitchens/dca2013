@@ -24,23 +24,23 @@ h1 {
   font-size: em(48);
   line-height: 1.125em;
   border-bottom: 2px solid $lightbackground;
-  margin-top: .5em;
+  margin: 0 0 .5em 0;
   padding-bottom: .1em;
 }
 
 h2 {
   font-size: em(36);
-  line-height: 1.77777em;
+  line-height: 1.2em;
 }
 
 h3 {
   font-size: em(24);
-  line-height: 1.5em;
+  line-height: 1.2em;
 }
 
 h4 {
   font-size: em(21);
-  line-height: 1.12382em;
+  line-height: 1em;
 }
 
 // Misc
@@ -81,7 +81,7 @@ i {
 .secondary {
 
   p, li {
-    font-size: em(21);
+    //font-size: em(21);
   }
 
   h2 {

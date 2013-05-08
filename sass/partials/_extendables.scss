@@ -8,10 +8,12 @@
   border: 0;
   padding: .3em .6em;
   border-radius: .3em;
-  background-color: $orange;
+  background-color: $darkorange;
+  color: $white;
 
   &:hover {
-    background-color: $darkorange;
+    background-color: darken($darkorange, 15%);
+    transition: background linear 350ms;
     color: white;
   }
 
