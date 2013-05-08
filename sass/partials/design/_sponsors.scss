@@ -13,6 +13,62 @@
     margin-top: 1em;
   }
 
+  .sponsor {
+    a,
+    span {
+      display: inline-block;
+      min-width: 140px;
+      min-height: 140px;
+      background-repeat: no-repeat;
+
+      .js & {
+      color: transparent;
+      }
+    }
+  }
+
+  #astonish {
+    background-image: image-url('sponsors/astonish.png');
+
+
+    .svg & {
+      background-image: image-url('sponsors/astonish.svg');
+    }
+  }
+
+  #entermedia {
+    background-image: image-url('sponsors/entermedia.png');
+    min-width: 250px; 
+
+    .svg & {
+      background-image: image-url('sponsors/entermedia.svg');
+    }
+  }
+
+  #zeneva {
+    background-image: image-url('sponsors/zeneva.png');
+
+    .svg & {
+      background-image: image-url('sponsors/zeneva.svg');
+    }
+  }
+
+  #blackmesh {
+    background-image: image-url('sponsors/blackmesh.png');
+
+    .svg & {
+      background-image: image-url('sponsors/blackmesh.svg');
+    }
+  }
+
+  #justaddcloud {
+    background-image: image-url('sponsors/justaddcloud.png');
+
+    .svg & {
+      background-image: image-url('sponsors/justaddcloud.svg');
+    }
+  }
+
   .lone-star {
     @include isolation-span(9, 1);
 

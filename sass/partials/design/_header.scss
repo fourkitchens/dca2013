@@ -33,14 +33,14 @@ header {
     display: inline-block;
     min-width: 248px;
     min-height: 190px;
-    background: image-url('logo.png');
+    background: image-url('logo.png') no-repeat;
 
     .js & {
       color: transparent;
     }
 
     .svg & {
-      background: image-url('logo.svg');
+      background: image-url('logo.svg') no-repeat;
     }
   }
 }

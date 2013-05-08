@@ -2984,13 +2984,13 @@ header .inner {
   display: inline-block;
   min-width: 248px;
   min-height: 190px;
-  background: url('/img/logo.png');
+  background: url('/img/logo.png') no-repeat;
 }
 .js #branding #logo {
   color: transparent;
 }
 .svg #branding #logo {
-  background: url('/img/logo.svg');
+  background: url('/img/logo.svg') no-repeat;
 }
 
 #cta-1,
@@ -3239,6 +3239,48 @@ section.contact i {
   margin-right: 0;
   clear: none;
   margin-top: 1em;
+}
+#sponsors .sponsor a,
+#sponsors .sponsor span {
+  display: inline-block;
+  min-width: 140px;
+  min-height: 140px;
+  background-repeat: no-repeat;
+}
+.js #sponsors .sponsor a, .js
+#sponsors .sponsor span {
+  color: transparent;
+}
+#sponsors #astonish {
+  background-image: url('/img/sponsors/astonish.png');
+}
+.svg #sponsors #astonish {
+  background-image: url('/img/sponsors/astonish.svg');
+}
+#sponsors #entermedia {
+  background-image: url('/img/sponsors/entermedia.png');
+  min-width: 250px;
+}
+.svg #sponsors #entermedia {
+  background-image: url('/img/sponsors/entermedia.svg');
+}
+#sponsors #zeneva {
+  background-image: url('/img/sponsors/zeneva.png');
+}
+.svg #sponsors #zeneva {
+  background-image: url('/img/sponsors/zeneva.svg');
+}
+#sponsors #blackmesh {
+  background-image: url('/img/sponsors/blackmesh.png');
+}
+.svg #sponsors #blackmesh {
+  background-image: url('/img/sponsors/blackmesh.svg');
+}
+#sponsors #justaddcloud {
+  background-image: url('/img/sponsors/justaddcloud.png');
+}
+.svg #sponsors #justaddcloud {
+  background-image: url('/img/sponsors/justaddcloud.svg');
 }
 #sponsors .lone-star {
   width: 100%;
