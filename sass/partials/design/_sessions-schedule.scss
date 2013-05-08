@@ -77,9 +77,15 @@ article.session {
 
     // Filtered = suppressed from schedule
     &.filtered {
-      opacity: .25;
-      -webkit-filter: blur(4px);
-      @include transform(translateZ(-160px) rotateX(20deg));
+      @include transform(translateZ(-40px) rotateX(5deg));
+
+      .cssfilters & {
+        opacity: .4;
+        -webkit-filter: blur(8px);
+      }
+      .no-cssfilters & {
+        opacity: .2;
+      }
     }
   }
 

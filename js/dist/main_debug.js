@@ -66,6 +66,13 @@ b.inner.offsetHeight+"px}";t&&(m.innerHTML=a)},_resize:function(){"none"!==g.get
 
       }
     });
+
+    // Listen for [esc] key and clear search
+    $(document).keyup(function(e){
+      if (e.keyCode == 27) {
+        $('#magic-search').val('').trigger('keyup');
+      }
+    });
   });
 })(jQuery);
 ;(function($){

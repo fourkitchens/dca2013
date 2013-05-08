@@ -51,5 +51,12 @@
 
       }
     });
+
+    // Listen for [esc] key and clear search
+    $(document).keyup(function(e){
+      if (e.keyCode == 27) {
+        $('#magic-search').val('').trigger('keyup');
+      }
+    });
   });
 })(jQuery);

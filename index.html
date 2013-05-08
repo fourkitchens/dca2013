@@ -8,34 +8,36 @@ title: DrupalCamp Austin 2013 | June 21-23
   <div id="front-main">
     <h1>The biggest DrupalCamp in Texas</h1>
     <h2 class="subheader">Join us June 21-23 for three days of learning and fun!</h2>
-    <p>DrupalCamp Austin is back! This is the event to learn everything about Drupal, the best open source CMS and publishing framework. We'll cover everything&mdash;from beginner site building to advanced design and development.</p>
+    <p>DrupalCamp Austin is back! This is the event to learn everything about Drupal, the world's best open-source content management system and web framework. We'll cover everything from beginner-level site building to advanced design and development.</p>
   </div>
 
     <div id="front-news">
       <h2>News</h2>
-      {% for post in site.categories.news limit:3 %}
-        <i class="ss-star"></i><a class="post" href="{{ post.permalink }}">{{ post.title }}</a><br>
-      {% endfor %}
+      <ul>
+        {% for post in site.categories.news limit:3 %}
+          <li class="post ss-star"><a href="{{ post.permalink }}">{{ post.title }}</a></li>
+        {% endfor %}
+      </ul>
   </div>
 
   <div class="front-info sessions">
     <h2>Sessions</h2>
     <img src="/img/sessions.jpg" alt="Sessions">
     <p>Our one-hour sessions give you the best Drupal tips and tricks from the top talent in our community.</p>
-    <a class="button">See proposed sessions</a>
+    <a class="button" href="/sessions/#submitted-sessions">See proposed sessions</a>
   </div>
 
   <div class="front-info workshops">
     <h2>Workshops</h2>
     <img src="/img/workshops.jpg" alt="Workshops">
-    <p>Our workshops provide intensive classroom-style training, from Drupal's leading instructors.</p>
-    <p><em>Training offerings will be announced soon, check the <a href="/workshops" title="Training workshops">workshops page</a> to learn more.</em></p>
+    <p>Our workshops provide intensive, classroom-style training from Drupal's leading instructors.</p>
+    <p><em>Training offerings will be announced soon. Check the <a href="/workshops" title="Training workshops">workshops page</a> to learn more.</em></p>
   </div>
 
   <div class="front-info parties">
     <h2>Parties</h2>
     <img src="/img/parties.jpg" alt="Parties">
-    <p>After the sessions are over, the learning and socializing doesn't stop. This year we've got both an official Trivia Night and an after-party.</p>
+    <p>The learning and socializing doesn't stop when the sessions end! This year we have both an official trivia night and after-party.</p>
   </div>
 
 </div>
