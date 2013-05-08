@@ -2562,7 +2562,7 @@ html:hover [class^="ss-"] {
   display: inline-block;
   margin: .3em;
   border: 0;
-  padding: .3em .6em;
+  padding: 0.3em 0.6em;
   border-radius: .3em;
   background-color: #d34913;
   color: white;
@@ -2600,7 +2600,7 @@ h1 {
   font-size: 3em;
   line-height: 1.125em;
   border-bottom: 2px solid #11212d;
-  margin: 0 0 .5em 0;
+  margin: 0 0 0.5em 0;
   padding-bottom: .1em;
 }
 
@@ -2638,7 +2638,7 @@ i {
   font-size: 1.3125em;
   line-height: 1.4em;
   margin: 2em 0;
-  padding: .4em 2em;
+  padding: 0.4em 2em;
   border-left: 0.75em solid #62802a;
   opacity: .8;
 }
@@ -2691,7 +2691,6 @@ a {
   text-decoration: none;
   -webkit-transition: color 0.06s linear;
   -moz-transition: color 0.06s linear;
-  -ms-transition: color 0.06s linear;
   -o-transition: color 0.06s linear;
   transition: color 0.06s linear;
 }
@@ -2720,7 +2719,7 @@ textarea {
 }
 
 .button {
-  padding: .5em 1em;
+  padding: 0.5em 1em;
   font-size: 1.3125em;
 }
 
@@ -2822,18 +2821,18 @@ main .inner {
   list-style-image: none;
   list-style-type: none;
   background-color: #135c91;
-  padding: .2em .5em;
+  padding: 0.2em 0.5em;
 }
 #nav-sub li a {
   color: white;
 }
 #nav-sub li:first-child {
-  padding: .5em 0 .25em;
+  padding: 0.5em 0 0.25em;
   border-top-left-radius: .5em;
   border-top-right-radius: .5em;
 }
 #nav-sub li:last-child {
-  padding: .25em 0 .5em;
+  padding: 0.25em 0 0.5em;
   border-bottom-left-radius: .5em;
   border-bottom-right-radius: .5em;
 }
@@ -2899,7 +2898,7 @@ main .inner {
     background-color: #0a141b;
   }
   #nav ul {
-    padding: .5em 0;
+    padding: 0.5em 0;
   }
   #nav li {
     padding-left: 1em;
@@ -2920,7 +2919,7 @@ main .inner {
     font-size: 1.125em;
   }
   #nav ul {
-    padding: .5em 0;
+    padding: 0.5em 0;
   }
   #nav li {
     display: inline;
@@ -3070,14 +3069,37 @@ header .inner {
   margin-right: 0;
   clear: right;
   border-bottom: 4px solid #11212d;
-  padding-bottom: 1em;
   margin-bottom: 2em;
 }
-#front-news i {
-  color: #176dad;
+#front-news ul {
+  list-style: none;
 }
-#front-news .post {
+#front-news ul li.post {
   font-size: 1.3125em;
+  display: inline-block;
+  margin-right: 1em;
+}
+#front-news ul li.post:before {
+  color: #176dad;
+  padding-right: 0.5em;
+}
+@media (min-width: 0px) and (max-width: 718px) {
+  #front-news ul li.post {
+    display: list-item;
+    margin-right: 0;
+  }
+}
+@media (min-width: 0px) and (max-width: 718px) {
+  #front-news ul {
+    margin-left: 0;
+    padding-left: 2em;
+    text-indent: -2em;
+  }
+}
+@media (min-width: 0px) and (max-width: 718px) {
+  #front-news {
+    text-align: left;
+  }
 }
 
 #front .front-info {
@@ -3130,6 +3152,9 @@ header .inner {
   width: 100%;
 }
 
+.news-listing .entry {
+  margin-bottom: 2em;
+}
 .news-listing .entry h2 {
   margin-bottom: 0;
 }
@@ -3143,7 +3168,6 @@ header .inner {
   margin-bottom: 1em;
   -webkit-transition: all 0.25s ease-in-out;
   -moz-transition: all 0.25s ease-in-out;
-  -ms-transition: all 0.25s ease-in-out;
   -o-transition: all 0.25s ease-in-out;
   transition: all 0.25s ease-in-out;
 }
@@ -3345,7 +3369,6 @@ footer .credits i {
 .submitted .session .desc {
   -webkit-transition: all 0.4s ease-in-out;
   -moz-transition: all 0.4s ease-in-out;
-  -ms-transition: all 0.4s ease-in-out;
   -o-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
   overflow: hidden;
@@ -3365,11 +3388,9 @@ footer .credits i {
   background: -webkit-linear-gradient(top, rgba(10, 20, 27, 0), #0a141b);
   background: -moz-linear-gradient(top, rgba(10, 20, 27, 0), #0a141b);
   background: -o-linear-gradient(top, rgba(10, 20, 27, 0), #0a141b);
-  background: -ms-linear-gradient(top, rgba(10, 20, 27, 0), #0a141b);
   background: linear-gradient(top, rgba(10, 20, 27, 0), #0a141b);
   -webkit-transition: all 0.4s ease-in-out;
   -moz-transition: all 0.4s ease-in-out;
-  -ms-transition: all 0.4s ease-in-out;
   -o-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
 }
@@ -3398,7 +3419,7 @@ footer .credits i {
 .schedule .slot .time {
   clear: both;
   margin: 1em 0;
-  padding: .5em 1em;
+  padding: 0.5em 1em;
   background-color: #135c91;
   color: #000;
 }
@@ -3446,7 +3467,6 @@ article.session {
 article.session div {
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
-  -ms-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   -webkit-transform-origin: 50% 100% 50%;

@@ -26,15 +26,36 @@
 #front-news {
   @include isolation-span(9, 1, 'right');
   border-bottom: 4px solid $lightbackground;
-  padding-bottom: $space;
   margin-bottom: $space-double;
 
-  i {
-    color: $blue;
+  ul {
+    list-style: none;
+
+    li.post {
+      font-size: em(21);
+      display: inline-block;
+      margin-right: $space;
+      
+      &:before {
+        color: $blue;
+        padding-right: $space-half;
+      }
+
+      @include breakpoint($front-sm) {
+        display: list-item;
+        margin-right: 0;
+      }
+    }
+    
+    @include breakpoint($front-sm) {
+      margin-left: 0;
+      padding-left: $space-double;
+      text-indent: -$space-double;
+    }
   }
   
-  .post {
-    font-size: em(21);
+  @include breakpoint($front-sm) {
+    text-align: left;
   }
 }
 
