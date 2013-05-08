@@ -3456,13 +3456,18 @@ article.session div {
   transform-origin: 50% 100% 50%;
 }
 article.session div.filtered {
-  opacity: .25;
-  -webkit-filter: blur(4px);
-  -webkit-transform: translateZ(-160px) rotateX(20deg);
-  -moz-transform: translateZ(-160px) rotateX(20deg);
-  -ms-transform: translateZ(-160px) rotateX(20deg);
-  -o-transform: translateZ(-160px) rotateX(20deg);
-  transform: translateZ(-160px) rotateX(20deg);
+  -webkit-transform: translateZ(-40px) rotateX(5deg);
+  -moz-transform: translateZ(-40px) rotateX(5deg);
+  -ms-transform: translateZ(-40px) rotateX(5deg);
+  -o-transform: translateZ(-40px) rotateX(5deg);
+  transform: translateZ(-40px) rotateX(5deg);
+}
+.cssfilters article.session div.filtered {
+  opacity: .4;
+  -webkit-filter: blur(8px);
+}
+.no-cssfilters article.session div.filtered {
+  opacity: .2;
 }
 .schedule article.session {
   padding-bottom: 2em;
