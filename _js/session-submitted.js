@@ -1,4 +1,4 @@
-;(function($){
+(function($){
 	$(document).ready(function(){
     $('.submitted .session')
       // find description
