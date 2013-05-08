@@ -1,4 +1,4 @@
 pygments: true
-exclude: [CONTRIBUTING.md, README.md, sass, config.rb, package.json, Gruntfile.js, node_modules]
+exclude: [CONTRIBUTING.md, README.md, sass, config.rb, package.json, Gruntfile.js, node_modules, schedule]
 permalink: pretty
-debug: true
+debug: false
