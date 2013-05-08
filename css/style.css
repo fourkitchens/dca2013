@@ -3117,6 +3117,7 @@ header .inner {
 #front .front-info img {
   margin-bottom: 0.5em;
   border: 2px solid #c5d5f0;
+  max-width: 100%;
 }
 @media (min-width: 720px) {
   #front {
