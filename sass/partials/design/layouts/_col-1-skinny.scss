@@ -1,0 +1,15 @@
+//
+// Single column layout
+//
+
+.col-1-skinny {
+  @include grid-max;
+
+  .primary {
+    @include grid-span(9);  
+  
+    @include breakpoint($skinny) {
+      @include isolation-span(7, 2);  
+    }
+  }
+}

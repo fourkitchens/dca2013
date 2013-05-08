@@ -2621,6 +2621,7 @@ h4 {
 
 i {
   font-style: normal;
+  color: #176dad;
 }
 
 .primary.content p {
@@ -2632,7 +2633,6 @@ i {
 }
 .primary.content i {
   margin-right: .5em;
-  color: #97c441;
 }
 .primary.content blockquote {
   font-size: 1.3125em;
@@ -2760,6 +2760,27 @@ main .inner {
   margin-left: 0;
   margin-right: 0;
   clear: none;
+}
+
+.col-1-skinny {
+  max-width: 880px;
+  margin: 0 auto;
+}
+.col-1-skinny .primary {
+  width: 100%;
+  float: right;
+  margin-left: 0;
+  margin-right: 0;
+  clear: none;
+}
+@media (min-width: 680px) {
+  .col-1-skinny .primary {
+    width: 77.27273%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 11.36364%;
+    clear: none;
+  }
 }
 
 .col-2 {
@@ -2984,13 +3005,13 @@ header .inner {
   display: inline-block;
   min-width: 248px;
   min-height: 190px;
-  background: url('/img/logo.png');
+  background: url('/img/logo.png') no-repeat;
 }
 .js #branding #logo {
   color: transparent;
 }
 .svg #branding #logo {
-  background: url('/img/logo.svg');
+  background: url('/img/logo.svg') no-repeat;
 }
 
 #cta-1,
@@ -3117,6 +3138,7 @@ header .inner {
 #front .front-info img {
   margin-bottom: 0.5em;
   border: 2px solid #c5d5f0;
+  max-width: 100%;
 }
 @media (min-width: 720px) {
   #front {
@@ -3189,35 +3211,41 @@ header .inner {
   font-size: 1.875em;
 }
 
-@media (min-width: 0) and (max-width: 700px) {
+section.contact {
+  text-align: center;
+}
+@media (min-width: 780px) {
   section.contact {
-    text-align: center;
+    text-align: left;
   }
 }
-section.contact i {
+section.contact ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+section.contact ul li {
+  margin-bottom: 1em;
+}
+section.contact ul li i {
   font-size: 2em;
   line-height: 0.9em;
   position: relative;
   top: 0.25em;
 }
-@media (min-width: 0) and (max-width: 700px) {
-  section.contact i {
-    width: 100%;
-    float: right;
-    margin-left: 0;
-    margin-right: 0;
-    clear: none;
-    top: 0;
+@media (min-width: 780px) {
+  section.contact ul li {
+    margin-bottom: 2em;
   }
 }
-@media (min-width: 0) and (max-width: 700px) {
+section.contact .contact-email {
+  display: block;
+  padding-top: 1em;
+  margin-bottom: 1em;
+}
+@media (min-width: 780px) {
   section.contact .contact-email {
-    width: 100%;
-    float: right;
-    margin-left: 0;
-    margin-right: 0;
-    clear: none;
-    margin-bottom: 2em;
+    display: inline;
   }
 }
 
@@ -3239,6 +3267,48 @@ section.contact i {
   margin-right: 0;
   clear: none;
   margin-top: 1em;
+}
+#sponsors .sponsor a,
+#sponsors .sponsor span {
+  display: inline-block;
+  min-width: 140px;
+  min-height: 140px;
+  background-repeat: no-repeat;
+}
+.js #sponsors .sponsor a, .js
+#sponsors .sponsor span {
+  color: transparent;
+}
+#sponsors #astonish {
+  background-image: url('/img/sponsors/astonish.png');
+}
+.svg #sponsors #astonish {
+  background-image: url('/img/sponsors/astonish.svg');
+}
+#sponsors #entermedia {
+  background-image: url('/img/sponsors/entermedia.png');
+  min-width: 250px;
+}
+.svg #sponsors #entermedia {
+  background-image: url('/img/sponsors/entermedia.svg');
+}
+#sponsors #zeneva {
+  background-image: url('/img/sponsors/zeneva.png');
+}
+.svg #sponsors #zeneva {
+  background-image: url('/img/sponsors/zeneva.svg');
+}
+#sponsors #blackmesh {
+  background-image: url('/img/sponsors/blackmesh.png');
+}
+.svg #sponsors #blackmesh {
+  background-image: url('/img/sponsors/blackmesh.svg');
+}
+#sponsors #justaddcloud {
+  background-image: url('/img/sponsors/justaddcloud.png');
+}
+.svg #sponsors #justaddcloud {
+  background-image: url('/img/sponsors/justaddcloud.svg');
 }
 #sponsors .lone-star {
   width: 100%;

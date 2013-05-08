@@ -45,8 +45,9 @@ h4 {
 
 // Misc
 
-i {
+i { // icons
   font-style: normal; // Undoing italics
+  color: $blue;
 }
 
 // Primary content
@@ -61,9 +62,8 @@ i {
     font-size: em(18);
   }
 
-  i {
+  i { // icons
     margin-right: .5em;
-    color: $green;
   }
 
   blockquote {
