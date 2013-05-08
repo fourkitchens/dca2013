@@ -35,7 +35,7 @@
       font-size: em(21);
       display: inline-block;
       margin-right: $space;
-      
+
       &:before {
         color: $blue;
         padding-right: $space-half;
@@ -46,14 +46,14 @@
         margin-right: 0;
       }
     }
-    
+
     @include breakpoint($front-sm) {
       margin-left: 0;
       padding-left: $space-double;
       text-indent: -$space-double;
     }
   }
-  
+
   @include breakpoint($front-sm) {
     text-align: left;
   }
@@ -75,10 +75,10 @@
       max-width: 100%;
     }
   }
-  
+
   @include breakpoint($front-md) {
     margin-bottom: 0;
-    
+
     .front-info.sessions {
       @include isolation-span(3, 1, 'right');
     }
