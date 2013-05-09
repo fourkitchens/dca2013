@@ -1,7 +1,7 @@
 ---
 layout: session
 category: session
-permalink: /sessions/automating-testing-drupal-zombiejs
+permalink: /sessions/automating-testing-drupal-zombiejs/
 published: true
 
 title: Automating and Testing Drupal with Zombie.js

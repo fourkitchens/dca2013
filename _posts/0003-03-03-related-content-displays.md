@@ -1,7 +1,7 @@
 ---
 layout: session
 category: session
-permalink: /sessions/related-content-displays
+permalink: /sessions/related-content-displays/
 published: true
 
 title: Related Content Displays

@@ -1,7 +1,7 @@
 ---
 layout: session
 category: session
-permalink: /sessions/connecting-drupal-physical-world
+permalink: /sessions/connecting-drupal-physical-world/
 published: true
 
 title: Connecting Drupal to the Physical World

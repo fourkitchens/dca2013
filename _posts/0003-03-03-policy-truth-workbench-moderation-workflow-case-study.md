@@ -1,7 +1,7 @@
 ---
 layout: session
 category: session
-permalink: /sessions/policy-truth-workbench-moderation-workflow-case-study
+permalink: /sessions/policy-truth-workbench-moderation-workflow-case-study/
 published: true
 
 title: Policy of Truth — Workbench, moderation, and workflow case study

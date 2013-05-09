@@ -1,7 +1,7 @@
 ---
 layout: session
 category: session
-permalink: /sessions/building-drupal-themes-modern-way
+permalink: /sessions/building-drupal-themes-modern-way/
 published: true
 
 

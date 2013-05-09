@@ -1,7 +1,7 @@
 ---
 layout: session
 category: session
-permalink: /sessions/why-chose-meteor-drupal-lovechild
+permalink: /sessions/why-chose-meteor-drupal-lovechild/
 published: true
 
 title: Why we chose Meteor and what a Drupal/Meteor love child might look like

@@ -1,7 +1,7 @@
 ---
 layout: session
 category: session
-permalink: /sessions/remodeling-antique-plumbing-with-modern-tools
+permalink: /sessions/remodeling-antique-plumbing-with-modern-tools/
 published: true
 
 title: Remodeling Antique Plumbing With Modern Tools

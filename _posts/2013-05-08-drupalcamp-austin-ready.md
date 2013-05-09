@@ -1,7 +1,7 @@
 ---
 layout: news
 category: news
-permalink: /news/drupalcamp-austin-ready
+permalink: /news/drupalcamp-austin-ready/
 published: true
 
 title: DrupalCamp Austin is ready for action

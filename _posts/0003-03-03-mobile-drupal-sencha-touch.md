@@ -1,7 +1,7 @@
 ---
 layout: session
 category: session
-permalink: /sessions/mobile-drupal-sencha-touch
+permalink: /sessions/mobile-drupal-sencha-touch/
 published: true
 
 title: Mobile Drupal with Sencha Touch

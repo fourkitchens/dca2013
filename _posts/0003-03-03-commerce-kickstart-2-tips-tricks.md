@@ -1,7 +1,7 @@
 ---
 layout: session
 category: session
-permalink: /sessions/commerce-kickstart-2-tips-tricks
+permalink: /sessions/commerce-kickstart-2-tips-tricks/
 published: true
 
 title: Commerce Kickstart 2 — Tips and Tricks

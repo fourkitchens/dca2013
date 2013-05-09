@@ -1,7 +1,7 @@
 ---
 layout: session
 category: session
-permalink: /sessions/commerce-crash-course
+permalink: /sessions/commerce-crash-course/
 published: true
 
 title: Commerce Crash Course
