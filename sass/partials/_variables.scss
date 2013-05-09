@@ -24,10 +24,6 @@ $darkgreen:   #62802A;
 $orange:      #ED9310;
 $darkorange:  #D34913;
 
-// Local and hosted fonts
-
-@import "fonts/source-sans-pro";
-
 // Font stacks
 
 $quatro:          'quatro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -35,9 +31,6 @@ $atrament:        'atrament-web', 'Helvetica Neue', Helvetica, Arial, sans-serif
 $source-sans-pro: 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial sans-serif;
 
 // Icons
-
-@import "fonts/ss-social-circle";
-@import "fonts/ss-symbolicons-block";
 
 $icon-social:      "SSSocialCircle";
 $icon-symbolicons: "SSSymbolicons";
