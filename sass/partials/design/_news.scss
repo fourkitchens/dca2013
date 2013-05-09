@@ -17,3 +17,15 @@
     }
   }
 }
+
+// Individual news posts
+
+#post {
+  
+  h1.title {
+    @include breakpoint($news-sm) {
+      font-size: em(36);
+      padding-bottom: .2em;
+    }
+  }
+}
