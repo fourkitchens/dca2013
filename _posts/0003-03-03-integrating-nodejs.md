@@ -1,7 +1,7 @@
 ---
 layout: session
 category: session
-permalink: /sessions/integrating-nodejs
+permalink: /sessions/integrating-nodejs/
 published: true
 
 title: Integrating Node.JS

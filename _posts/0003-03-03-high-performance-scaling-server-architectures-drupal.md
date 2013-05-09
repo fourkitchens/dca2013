@@ -1,7 +1,7 @@
 ---
 layout: session
 category: session
-permalink: /sessions/high-performance-scaling-server-architectures-drupal
+permalink: /sessions/high-performance-scaling-server-architectures-drupal/
 published: true
 
 title: High-Performance and Scaling Server Architectures for Drupal

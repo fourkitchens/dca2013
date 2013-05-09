@@ -1,7 +1,7 @@
 ---
 layout: session
 category: session
-permalink: /sessions/sell-more-real-estate-with-drupal
+permalink: /sessions/sell-more-real-estate-with-drupal/
 published: true
 
 title: Sell More Real Estate with Drupal

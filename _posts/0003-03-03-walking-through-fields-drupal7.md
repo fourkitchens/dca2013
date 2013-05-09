@@ -1,7 +1,7 @@
 ---
 layout: session
 category: session
-permalink: /sessions/walking-through-fields-drupal7
+permalink: /sessions/walking-through-fields-drupal7/
 published: true
 
 title: Walking Through Fields in Drupal 7

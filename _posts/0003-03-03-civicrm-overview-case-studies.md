@@ -1,7 +1,7 @@
 ---
 layout: session
 category: session
-permalink: /sessions/civicrm-overview-case-studies
+permalink: /sessions/civicrm-overview-case-studies/
 published: true
 
 title: CiviCRM Overview and Case Studies

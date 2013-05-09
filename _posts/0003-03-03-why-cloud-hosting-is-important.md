@@ -1,7 +1,7 @@
 ---
 layout: session
 category: session
-permalink: /sessions/why-cloud-hosting-is-important
+permalink: /sessions/why-cloud-hosting-is-important/
 published: true
 
 title: Why Cloud Hosting is Important

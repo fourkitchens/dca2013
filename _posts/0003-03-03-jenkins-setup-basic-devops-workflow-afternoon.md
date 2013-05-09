@@ -1,7 +1,7 @@
 ---
 layout: session
 category: session
-permalink: /sessions/jenkins-setup-basic-devops-workflow-afternoon
+permalink: /sessions/jenkins-setup-basic-devops-workflow-afternoon/
 published: true
 
 title: Jenkins — Setup a Basic DevOps Workflow in an Afternoon

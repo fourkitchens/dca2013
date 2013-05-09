@@ -1,7 +1,7 @@
 ---
 layout: session
 category: session
-permalink: /sessions/spark-awe-demos-that-deliver-wow
+permalink: /sessions/spark-awe-demos-that-deliver-wow/
 published: true
 
 title: Spark and Awe — Demos that Deliver the Wow
