@@ -3136,10 +3136,24 @@ header .inner {
   line-height: 1;
   margin-bottom: 0.5em;
 }
-#front .front-info img {
-  margin-bottom: 0.5em;
-  border: 2px solid #c5d5f0;
+#front .front-info h2:after {
+  display: block;
+  content: '';
   max-width: 100%;
+  width: 280px;
+  height: 158px;
+  margin: .5em auto 0;
+  background-image: url('/img/fp-images.jpg');
+  box-shadow: inset 0 0 0.36em rgba(0, 0, 0, 0.8);
+}
+#front .front-info.sessions h2:after {
+  background-position: center top;
+}
+#front .front-info.workshops h2:after {
+  background-position: center -158px;
+}
+#front .front-info.parties h2:after {
+  background-position: center -316px;
 }
 @media (min-width: 720px) {
   #front {
