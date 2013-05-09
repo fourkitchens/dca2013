@@ -473,6 +473,18 @@ table {
   border-spacing: 0;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  -webkit-transition: opacity 0.25s ease-in-out;
+  -moz-transition: opacity 0.25s ease-in-out;
+  -ms-transition: opacity 0.25s ease-in-out;
+  -o-transition: opacity 0.25s ease-in-out;
+  transition: opacity 0.25s ease-in-out;
+}
+.wf-loading h1, .wf-loading h2, .wf-loading h3, .wf-loading h4, .wf-loading h5, .wf-loading h6 {
+  opacity: .25;
+  letter-spacing: -1.6px;
+}
+
 .cta, button, .button {
   display: inline-block;
   margin: .3em;
