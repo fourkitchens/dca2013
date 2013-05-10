@@ -70,24 +70,117 @@ module.exports = function(grunt) {
       }
     },
 
-    watch: {
-      js: {
-        files: ['_js/*.js'],
-        tasks: ['debug']
+    imagemin: {
+      dist: {
+        options: {
+          optimizationLevel: 3
+        },
+        files: [{
+          expand: true,
+          cwd: 'img',
+          src: ['**/*.png', '**/*.jpg'],
+          dest: 'img-min/'
+        }]
       }
-    }
+    },
+
+    svgmin: {
+      dist: {
+        files: [{
+          expand: true,
+          cwd: 'img',
+          src: '**/*.svg',
+          dest: 'img-min'
+        }]
+      }
+    },
+
+    watch: {
+      options: {
+        livereload: 9001
+      },
+      css: {
+        files: ['sass/{,**/}*.scss'],
+        tasks: ['compass:dev', 'jekyll:dev']
+      },
+      js: {
+        files: ['js/{,**/}*.js'],
+        tasks: ['jshint', 'uglify', 'jekyll:dev']
+      },
+      jekyll: {
+				files: ['{,**/}*.html', '!_site/{,**/}*.html'],
+				tasks: ['jekyll:dev']
+			}
+    },
+
+    compass: {
+      options: {
+        config: 'config.rb',
+        bundleExec: true
+      },
+      dev: {
+        options: {
+          environment: 'development'
+        }
+      },
+      dist: {
+        options: {
+          environment: 'production',
+          imagesDir: 'img-min',
+          force: true
+        }
+      }
+    },
+
+    parallel: {
+      assets: {
+        grunt: true,
+        tasks: ['imagemin', 'svgmin', 'uglify']
+      },
+      server: {
+        grunt: true,
+        tasks: ['jekyll:devserver', 'watch']
+      }
+    },
+
+    jekyll: {
+      server : {
+				server : true,
+				server_port : 4000,
+				bundleExec: true,
+			},
+			devserver : {
+				server : true,
+				server_port : 4000,
+				bundleExec: true,
+				config: '_config_dev.yml'
+			},
+			dev: {
+				bundleExec: true,
+				config: '_config_dev.yml'
+			},
+			prod: {
+				bundleExec: true
+			}
+		}
   });
 
   // Load Plugins.
   grunt.loadNpmTasks('grunt-contrib-clean');
-  grunt.loadNpmTasks('grunt-contrib-jshint');
-  grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-contrib-compass');
+  grunt.loadNpmTasks('grunt-contrib-jshint');
+  grunt.loadNpmTasks('grunt-contrib-imagemin');
+  grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-concat');
+  grunt.loadNpmTasks('grunt-parallel');
+  grunt.loadNpmTasks('grunt-svgmin');
+  grunt.loadNpmTasks('grunt-jekyll');
 
   // Our custom tasks.
+  grunt.registerTask('server', ['debug', 'parallel:server']);
   grunt.registerTask('debug', ['clean', 'jshint:dev', 'concat']);
-  grunt.registerTask('release', ['debug', 'jshint:prod', 'uglify']);
+  grunt.registerTask('release', ['clean', 'jshint:prod', 'concat', 'parallel:assets', 'compass:dist', 'jekyll:prod']);
 
   // Default task that is run when no arguments are passed.
   grunt.registerTask('default', ['release']);
