@@ -4,6 +4,8 @@ category: workshop
 permalink: /workshops/beginners-guide-to-drupal
 published: true
 
+subnav: beginner
+
 title: Beginner's guide to Drupal
 summary: Learn all of the key concepts you need to understand, navigate and build a basic Drupal site
 company: OSTraining

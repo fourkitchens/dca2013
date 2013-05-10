@@ -4,6 +4,8 @@ category: workshop
 permalink: /workshops/panels-for-themers
 published: true
 
+subnav: panels
+
 title: Panels for Themers - Creating Highly Flexible Layouts
 summary: 
 company: Chapter Three

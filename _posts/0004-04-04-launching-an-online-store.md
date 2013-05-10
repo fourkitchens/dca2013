@@ -4,6 +4,8 @@ category: workshop
 permalink: /workshops/launching-an-online-store
 published: true
 
+subnav: commerce
+
 title: Launching an Online Store with Commerce Kickstart 2.x
 summary: 
 company: Commerce Guys

@@ -12,7 +12,7 @@ title: Workshops | DrupalCamp Austin 2013
   {% for post in site.categories.workshop %}
 
     <article class="workshop">
-      <h2 class="title">{{ post.title }}</h2>
+      <h2 id="{{ post.subnav }}" class="title">{{ post.title }}</h2>
       <p class="meta">
         By {{ post.trainers }}, <a href="{{ post.url }}">{{ post.company }}</a><br>
         When: {{ post.day }}<br>

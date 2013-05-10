@@ -4,6 +4,8 @@ category: workshop
 permalink: /workshops/getting-stuff-into-drupal
 published: true
 
+subnav: migration
+
 title: Getting Stuff into Drupal: Basics of Content Migration
 summary: 
 company: Drupal Easy
