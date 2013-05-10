@@ -17,14 +17,14 @@ room: TBD
 
 Ascend to SEO demigodhood with Drupal 7 and an all-star cast of community contributed modules. In this crash course, you will learn how to make Drupal sing sweet music to the almighty Googlebot. Prepare to walk away with a powerful set of SEO tactics and best practices.
 
-## Session Highlights
+### Session Highlights
 
 * Twenty modules covered (yep, 20, all wondrous)
 * Which meta tags are valuable, which are not
 * Make sense of .htaccess and robots.txt
 * The correct way to use headings 1-6
 
-## Plus!
+### Plus!
 
 * Semantic blocks
 * Advanced front-end performance
