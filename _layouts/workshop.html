@@ -1,0 +1,16 @@
+---
+layout: col-2
+---
+
+<article class="workshop">
+  <h1>{{ page.title }}</h1>
+  <p class="meta">Trainers: {{ page.trainers }}</p>
+
+  <ul class="sched">
+    <li>Day: {{ page.day }}</li>
+    <li>Start time: {{ page.start }}</li>
+    <li>Room: {{ page.room }}</li>
+  </ul>
+
+  <div class="desc">{{ content }}</div>
+</article>
