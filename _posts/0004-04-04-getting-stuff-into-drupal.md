@@ -1,12 +1,12 @@
 ---
 layout: workshop
 category: workshop
-permalink: /workshops/getting-stuff-into-drupal
+permalink: /workshops/basics-of-content-migration
 published: true
 
 subnav: migration
 
-title: Getting Stuff into Drupal: Basics of Content Migration
+title: Getting Stuff into Drupal - Basics of Content Migration
 summary: 
 company: Drupal Easy
 url: http://drupaleasy.com/
