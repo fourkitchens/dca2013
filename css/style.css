@@ -729,7 +729,7 @@ main .inner {
   margin-right: 0;
   clear: none;
 }
-@media (min-width: 28.75em) {
+@media (min-width: 48em) {
   .col-2 .primary {
     width: 65.90909%;
     float: left;
@@ -746,7 +746,7 @@ main .inner {
   margin-right: 0;
   clear: none;
 }
-@media (min-width: 28.75em) {
+@media (min-width: 48em) {
   .col-2 .secondary {
     width: 31.81818%;
     float: right;
@@ -1426,7 +1426,7 @@ footer .credits i {
   height: 0;
 }
 
-@media (min-width: 28.75em) {
+@media (min-width: 48em) {
   .submit {
     margin-top: -3.9em;
   }
