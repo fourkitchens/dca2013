@@ -1,18 +1,18 @@
 ---
 layout: workshop
 category: workshop
-permalink: /workshops/frontend-performance
-published: true
+permalink: /workshops/node-js-drupal
+published: false
 
-subnav: performance
+subnav: node
 
-title: Frontend performance
+title: Integrating Node.js and Drupal
 summary: 
 company: Four Kitchens
 url: http://fourkitchens.com/
-trainers: Chris Ruppel
+trainers: Mike Minecki and Elliott Foster
 
-cost: $75
+cost: $150
 
 day: TBD
 start: TBD
