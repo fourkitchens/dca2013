@@ -12,11 +12,12 @@ company: Commerce Guys
 url: http://commerceguys.com/
 trainers: Ryan Szrama and Josh Miller
 
+day: Saturday
+date: 2013-06-22
+start: 9:30am
+end: 12:30pm
+room: Room 11A
 cost: $75
-
-day: TBD
-start: TBD
-room: TBD
 ---
 
 Drupal Commerce is an open source eCommerce framework developed to help you create unique online shopping experiences. Its core modules provide the basic systems you need to do business online without hard-coding assumptions for any particular business model, allowing you to build sites that meet your business needs instead of getting in your way.

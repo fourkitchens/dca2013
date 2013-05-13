@@ -12,11 +12,12 @@ company: Chapter Three
 url: http://chapterthree.com/
 trainers:
 
+day: Saturday
+date: 2013-06-22
+start: 1:30pm
+end: 5:30pm
+room: Room 11A
 cost: $75
-
-day: TBD
-start: TBD
-room: TBD
 ---
 
 With the power of Panels, you never have to make a .tpl file ever again! Okay, that's not true at all, but what Panels does give you is the ability you to create Drupal aware layouts that can be reused between dozens of other sites. If you create custom Panel pages per-content type, per-node, per-anything (instead of custom .tpl's for each) you will significantly reduce the number of .tpls you have to keep create and keep track of while saving a significant amount of time. Say goodbye to crowded templates folders!

@@ -12,11 +12,12 @@ company: OSTraining
 url: http://www.ostraining.com/
 trainers:
 
+day: Friday
+date: 2013-06-21
+start: 9:00am
+end: 5:00pm
+room: Room 11B
 cost: $150
-
-day: TBD
-start: TBD
-room: TBD
 ---
 
 This is the Absolute Beginner's Guide to Drupal. You'll learn all of the key concepts you need to understand, navigate and begin building a Drupal site. We've taught new Drupal users from the White House to Harvard and the New York Transit Commission to the small business owner.  We'll help it make sense.
