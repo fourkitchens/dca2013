@@ -4,6 +4,8 @@ category: workshop
 permalink: /workshops/node-js-drupal
 published: true
 
+subnav: nodejs
+
 title: Integrating Node.js and Drupal
 summary: 
 company: Four Kitchens
