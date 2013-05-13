@@ -62,9 +62,10 @@ The Grunt job cleans the `js/dist` folder by removing it completely. It then rec
 Jekyll has a hard requirement for posts' file names. The required format is as follows: ```YYYY-MM-DD-post-slug.md``` — but... we don't want to bother with a valid date for most types of pages. So we're using fake, hardcoded dates for most content. News is the notable exception, which **should** contain the actual publish date.
 
 ```
-News     YYYY-MM-DD-post-slug.md
-FAQs     0002-02-02-faq-title.md
-Sessions 0003-03-03-session-title.md
+News      YYYY-MM-DD-post-slug.md
+FAQs      0002-02-02-faq-title.md
+Sessions  0003-03-03-session-title.md
+Workshops 0004-04-04-workshop-title.md
 ```
 
 ### Templating

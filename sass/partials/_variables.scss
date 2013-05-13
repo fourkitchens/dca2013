@@ -24,10 +24,6 @@ $darkgreen:   #62802A;
 $orange:      #ED9310;
 $darkorange:  #D34913;
 
-// Local and hosted fonts
-
-@import "fonts/source-sans-pro";
-
 // Font stacks
 
 $quatro:          'quatro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -35,9 +31,6 @@ $atrament:        'atrament-web', 'Helvetica Neue', Helvetica, Arial, sans-serif
 $source-sans-pro: 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial sans-serif;
 
 // Icons
-
-@import "fonts/ss-social-circle";
-@import "fonts/ss-symbolicons-block";
 
 $icon-social:      "SSSocialCircle";
 $icon-symbolicons: "SSSymbolicons";
@@ -49,8 +42,11 @@ $space-half:     $space/2;
 $space-and-half: $space*1.5;
 $space-double:   $space*2;
 $space-triple:   $space*3;
+$space-quad:     $space*4;
 
 // Breakpoints
+
+$breakpoint-to-ems: true;
 
 $contact-md:  780px;
 $faq-sm:      460px;
@@ -60,8 +56,9 @@ $footer-sm:   0px 460px;
 $header-sm:   0px 458px;;
 $header-md:   460px;
 $header-lg:   700px;
+$news-sm:     0px 639px;
 $sched-md:    500px;
 $sched-lg:    720px;
-$sidebar:     460px;
+$sidebar:     768px;
 $skinny:      680px;
 $sponsors-md: 720px;

@@ -12,9 +12,9 @@
 
 @include font-face(
   "SSSymbolicons",
-  inline-font-files('ss-symbolicons-block/ss-symbolicons-block.woff', woff)
-  inline-font-files('ss-symbolicons-block/ss-symbolicons-block.ttf', truetype)
-  font-files('ss-symbolicons-block/ss-symbolicons-block.svg', svg),
+  font-files('ss-symbolicons-block/ss-symbolicons-block.woff', woff,
+    'ss-symbolicons-block/ss-symbolicons-block.ttf', truetype,
+    'ss-symbolicons-block/ss-symbolicons-block.svg', svg),
   'ss-symbolicons-block/ss-symbolicons-block.eot'
 );
 

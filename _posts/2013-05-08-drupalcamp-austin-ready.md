@@ -1,7 +1,7 @@
 ---
 layout: news
 category: news
-permalink: /news/drupalcamp-austin-ready
+permalink: /news/drupalcamp-austin-ready/
 published: true
 
 title: DrupalCamp Austin is ready for action
@@ -18,7 +18,7 @@ For starters, we’ve taken some critical functionality off our site and used ot
 * Registration is [handled through EventBrite](http://drupalcampaustin.eventbrite.com/)
 * Session submissions are [handled through Google docs](http://bit.ly/drupalatx-speak) ([Learn more](/sessions))
 
-You may be thinking "wat.. Drupal can do this" and you’re not wrong, but we wanted to change things up this year so we could focus on packing more awesome features into a featherweight, mobile-friendly site... made just for YOU!
+You may be thinking "wat.. Drupal can do this" and you’re not wrong, but we wanted to change things up this year so we could focus on packing more awesome features into a mobile-friendly site made just for YOU!
 
 For now, you can [browse submitted sessions](/sessions), [read about the program and venue](/about), or if you have a question [read the FAQs](/faq).
 

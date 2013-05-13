@@ -1,7 +1,7 @@
 ---
 layout: session
 category: session
-permalink: /sessions/XXXXX
+permalink: /sessions/XXXXX/
 published: false
 
 title: XXX

@@ -2,6 +2,15 @@
 // Extendables
 //
 
+%fontfade {
+  @include transition(opacity .25s ease-in-out);
+
+  .wf-loading & {
+    opacity: .25;
+    letter-spacing: -1.6px;
+  }
+}
+
 %button {
   display: inline-block;
   margin: .3em;

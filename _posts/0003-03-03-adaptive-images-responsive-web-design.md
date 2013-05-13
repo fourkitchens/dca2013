@@ -1,7 +1,7 @@
 ---
 layout: session
 category: session
-permalink: /sessions/adaptive-images-responsive-web-design
+permalink: /sessions/adaptive-images-responsive-web-design/
 published: true
 
 title: Adaptive Images for Responsive Web Design
