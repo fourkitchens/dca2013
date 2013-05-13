@@ -13,7 +13,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h2, h3, h4, h5, h6 {
-  color: $green;
   font-family: $atrament;
   text-transform: uppercase;
   margin-bottom: .5em;
@@ -30,17 +29,22 @@ h1 {
 }
 
 h2 {
+  color: $green;
   font-size: em(36);
   line-height: 1.2em;
 }
 
+h3, h4, h5, h6 {
+  color: $bodycolor;
+}
+
 h3 {
-  font-size: em(24);
+  font-size: em(28);
   line-height: 1.2em;
 }
 
 h4 {
-  font-size: em(21);
+  font-size: em(24);
   line-height: 1em;
 }
 
