@@ -640,6 +640,18 @@ textarea {
   resize: vertical;
 }
 
+.icon-alone {
+  display: inline-block;
+  /* Fix for clickability issue in WebKit */
+}
+
+.screen-reader-text {
+  /* Used to hide text for solo icons */
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+}
+
 .button {
   padding: .5em 1em;
   font-size: 1.3125em;
