@@ -1,15 +1,13 @@
 {% if site.debug %}
-  <script src="/js/dist/main_debug.js"></script>
+  <script src="/js/dist/main_debug.js" defer></script>
 {% else %}
-  <script src="/js/dist/main_release.min.js"></script>
+  <script src="/js/dist/main_release.min.js" defer></script>
 {% endif %}
-
-<script>var navigation = responsiveNav("#nav");</script>
 
 {% if page.ember %}
   {% if site.debug %}
-    <script src="/js/dist/schedule_debug.js"></script>
+    <script src="/js/dist/schedule_debug.js" defer></script>
   {% else %}
-    <script src="/js/dist/schedule_release.min.js"></script>
+    <script src="/js/dist/schedule_release.min.js" defer></script>
   {% endif %}
 {% endif %}
