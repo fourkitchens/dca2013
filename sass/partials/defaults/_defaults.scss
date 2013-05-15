@@ -58,13 +58,15 @@ textarea {
 }
 
 // Icons
+// http://css-tricks.com/html-for-icon-font-usage
 
-.icon-social {
-  font-family: $icon-social;
+.icon-alone {
+  display: inline-block; /* Fix for clickability issue in WebKit */
 }
-
-.icon-symbolicons {
-  font-family: $icon-symbolicons;
+.screen-reader-text { /* Used to hide text for solo icons */
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
 }
 
 // Buttons
