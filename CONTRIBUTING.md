@@ -27,6 +27,8 @@ git pull --rebase
 
 This will "rewind" your commits since your last pull, add the upstream commits, then "fast-forward" your commits back on top of the upstream changes. It may cause conflicts, but since upstream changes were already in the repo it was going to happen anyway.
 
+:whale2: Cute icons in front of commit messages are encouraged but not required :smile:
+
 ## Jekyll server
 
 In Terminal, run the following command to get a server started:
