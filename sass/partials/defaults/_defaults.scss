@@ -57,6 +57,20 @@ textarea {
   resize: vertical; // Allow only vertical resizing of textareas.
 }
 
+// Helper classes
+
+.center {
+  text-align: center;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
 // Icons
 // http://css-tricks.com/html-for-icon-font-usage
 
