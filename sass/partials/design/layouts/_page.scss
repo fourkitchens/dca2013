@@ -21,3 +21,22 @@ main {
     }
   }
 }
+
+.primary {
+
+  img {
+    margin-bottom: $space;
+
+    &.left {
+      @include breakpoint($primary-sm) {
+        margin-right: $space;  
+      }
+    }
+
+    &.right {
+      @include breakpoint($primary-sm) {
+        margin-left: $space;
+      }
+    }
+  }
+}
