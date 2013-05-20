@@ -147,7 +147,7 @@ module.exports = function(grunt) {
       server : {
 				server : true,
 				server_port : 4000,
-				bundleExec: true,
+				bundleExec: true
 			},
 			devserver : {
 				server : true,
