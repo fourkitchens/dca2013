@@ -41,6 +41,11 @@
         padding-right: $space-half;
       }
 
+      a {
+        font-family: $source-sans-pro;
+        font-weight: bold;
+      }
+
       @include breakpoint($front-sm) {
         display: list-item;
         margin-right: 0;
