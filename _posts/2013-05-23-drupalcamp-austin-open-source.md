@@ -2,7 +2,7 @@
 layout: news
 category: news
 permalink: /news/drupalcamp-austin-open-source/
-published: true
+published: false
 
 title: DrupalCamp Austin website is now Open Source!
 author: Chris Ruppel
