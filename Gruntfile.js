@@ -108,7 +108,7 @@ module.exports = function(grunt) {
         tasks: ['jshint', 'uglify', 'jekyll:dev']
       },
       jekyll: {
-				files: ['{,**/}*.html', '!_site/{,**/}*.html'],
+				files: ['{,**/}*.html', '_posts/*.md', '!_site/{,**/}*.html'],
 				tasks: ['jekyll:dev']
 			}
     },
