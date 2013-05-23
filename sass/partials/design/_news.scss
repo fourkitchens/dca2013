@@ -28,4 +28,14 @@
       padding-bottom: .2em;
     }
   }
+
+  img {
+    @include breakpoint($news-sm) {
+      &.left, &.right {
+        float: none;
+        margin-left: 0;
+        margin-right: 0;
+      }
+    }
+  }
 }
