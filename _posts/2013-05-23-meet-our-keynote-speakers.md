@@ -2,7 +2,7 @@
 layout: news
 category: news
 permalink: /news/meet-our-keynote-speakers
-published: false
+published: true
 
 title: Meet our keynote speakers
 author: Aaron Stanush
