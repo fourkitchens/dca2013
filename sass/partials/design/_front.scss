@@ -49,6 +49,7 @@
       @include breakpoint($front-sm) {
         display: list-item;
         margin-right: 0;
+        margin-bottom: $space-half;
       }
     }
 

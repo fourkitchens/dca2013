@@ -1063,6 +1063,7 @@ header .inner {
   #front-news ul li.post {
     display: list-item;
     margin-right: 0;
+    margin-bottom: 0.5em;
   }
 }
 @media (min-width: 0em) and (max-width: 44.875em) {
