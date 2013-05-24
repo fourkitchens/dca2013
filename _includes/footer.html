@@ -10,20 +10,25 @@
       </a>
     </span>
     <span class="credits">
-      Built with love by <a href="http://fourkitchens.com" title="Four Kitchens">Four Kitchens</a> in Austin, TX <i class="icon-dca-bullhorn"></i> <a href="/credits/">Credits</a>
+      Built with love by <a href="http://fourkitchens.com" title="Four Kitchens">Four Kitchens</a> in Austin, TX <i class="icon-dca-bullhorn"></i>
+      <br><br>
+      <a href="/credits/">Credits</a> &mdash; <a href="http://github.com/fourkitchens/dca2013">Fork or contribute to this site</a>
     </span>
   </footer>
 
-<script type="text/javascript">
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-10055851-6']);
-  _gaq.push(['_trackPageview']);
+{% if site.debug == false %}
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-10055851-6']);
+    _gaq.push(['_trackPageview']);
 
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-</script>
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+{% endif %}
+
 
 {% include scripts.html %}
