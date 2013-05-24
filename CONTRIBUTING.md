@@ -18,9 +18,12 @@ Then, in Terminal, run these commands to install everything you need:
 
 ```bash
 sudo gem update --system
-sudo gem install jekyll singularitygs
+sudo gem install bundler
+bundle install
 sudo npm install
 ```
+
+** NOTE: THIS IS NOT TESTED TO WORK WITH RVM OR RBENV **
 
 
 ## Local Development
