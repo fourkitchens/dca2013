@@ -2,7 +2,10 @@
 
 ## Required libraries
 
-You'll need to install node.js if you don't have it. The installer is available at http://nodejs.com
+You'll need to install node.js if you don't have it. The installer is available at http://nodejs.com. You will also need Grunt, which can be installed with:
+```bash
+sudo npm install -g grunt-cli
+```
 
 You may want to configure RubyGems to not install the unneeded RDoc stuff for each gem. To do that, add a `~/.gemrc` file and insert the following lines:
 
@@ -19,23 +22,20 @@ sudo gem install jekyll singularitygs
 sudo npm install
 ```
 
+
 ## Local Development
 
-In Terminal, run the following command to get a Jekyll server started:
+
+In Terminal, run the following command to have grunt start watching files, and start our Jekyll server:
 
 ```bash
 grunt server
 ```
 
-The server will exist as long as your command is running. By default you go to http://localhost:4000/ to see your Jekyll site.
+The server will exist as long as your command is running. By default you go to http://localhost:4000/ to see your Jekyll site. If will also concat all JavaScript, watch for .scss file changes and any changes within the _posts folder or in an .html file. Each one of these will trigger their respective tasks to run, the Jekyll static files to be rebuilt, and LiveReload to automaticaly reload the page.
 
 We have .gitignore excluding the ```_site``` directory that Jekyll creates because Github will take care of generating that folder when we push to ```gh-pages``` branch.
 
-### JavaScript
-
-To build the JavaScript, use `grunt watch`
-
-In _config.yml, there is a `debug` setting. Changing this to 'true' will use the non-minified versions of the JS. `false` will use the full minified production versions.
 
 ### The build pipeline
 

@@ -2,4 +2,3 @@ pygments: true
 exclude: [CONTRIBUTING.md, README.md, sass, config.rb, package.json, Gruntfile.js, node_modules]
 permalink: pretty
 debug: true
-development: true
