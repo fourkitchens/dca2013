@@ -1,0 +1,16 @@
+/*
+ * Credits page
+ */
+
+ul#contributors-list {
+  @include clearfix;
+  margin: 0;
+  padding: 0;
+
+  li {
+    list-style-type: none;
+    float: left;
+    width: 80px;
+    margin: 0 10px 0 0;
+  }
+}

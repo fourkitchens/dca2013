@@ -39,7 +39,8 @@ module.exports = function(grunt) {
           '_js/vendor/jquery.min.js',
           '_js/vendor/responsive-nav.min.js',
           '_js/faq.js',
-          '_js/session-submitted.js'
+          '_js/session-submitted.js',
+          '_js/credits.js'
         ],
         dest: 'js/dist/main_debug.js'
       },
