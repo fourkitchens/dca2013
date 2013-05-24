@@ -1057,10 +1057,15 @@ header .inner {
   color: #176dad;
   padding-right: 0.5em;
 }
+#front-news ul li.post a {
+  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial sans-serif;
+  font-weight: bold;
+}
 @media (min-width: 0em) and (max-width: 44.875em) {
   #front-news ul li.post {
     display: list-item;
     margin-right: 0;
+    margin-bottom: 0.5em;
   }
 }
 @media (min-width: 0em) and (max-width: 44.875em) {
@@ -1155,6 +1160,13 @@ header .inner {
   #post h1.title {
     font-size: 2.25em;
     padding-bottom: .2em;
+  }
+}
+@media (min-width: 0em) and (max-width: 39.9375em) {
+  #post img.left, #post img.right {
+    float: none;
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 
