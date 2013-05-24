@@ -35,7 +35,7 @@ Follow [@shawnokeefe](https://twitter.com/shawnokeefe/) on Twitter
 
 **Director at Open Source Hardware Association, Drupal Association Board Member, Open Source Diva**
 
-Keynoting on Saturday, June 22
+Keynoting on Sunday, June 23
 
 Cooper has held many leadership roles within the computer science sector. She has managed teams at Symantec and Apple Inc. and for six years served as chief open source "evangelist" for Sun Microsystems before leaving to serve as senior director for open source strategies at Intel. In 2009 she worked as "Open Source Diva" at REvolution Computing (now Revolution Analytics). She is a board observer at [Mozilla](http://www.mozilla.org/), and serves as a member of the [Apache Software Foundation](http://www.apache.org/). She was a board member at [Open Source Initiative](http://opensource.org/).
 
