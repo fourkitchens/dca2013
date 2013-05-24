@@ -1364,6 +1364,25 @@ section.contact .contact-email {
   }
 }
 
+/*
+ * Credits page
+ */
+ul#contributors-list {
+  margin: 0;
+  padding: 0;
+}
+ul#contributors-list:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+ul#contributors-list li {
+  list-style-type: none;
+  float: left;
+  width: 80px;
+  margin: 0 10px 0 0;
+}
+
 footer {
   max-width: 880px;
   margin: 0 auto;
