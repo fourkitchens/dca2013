@@ -2,12 +2,15 @@
 // Sponsors style
 //
 
+@import "sponsors/*.png";
+@include all-sponsors-sprites;
+
 #sponsors {
   @include clearfix;
   @include grid-max;
   text-align: center;
   margin-bottom: 2em;
-  
+
   p {
     @include isolation-span(9, 1);
     margin-top: 1em;
@@ -20,52 +23,53 @@
       min-width: 140px;
       min-height: 140px;
       background-repeat: no-repeat;
-
-      .js & {
       color: transparent;
-      }
     }
   }
 
   #astonish {
-    background-image: image-url('sponsors/astonish.png');
-
+    @extend .sponsors-astonish;
 
     .svg & {
-      background-image: image-url('sponsors/astonish.svg');
+      background-image: inline-image("sponsors/astonish.svg");
+      background-position: 0 0;
     }
   }
 
   #entermedia {
-    background-image: image-url('sponsors/entermedia.png');
-    min-width: 250px; 
+    @extend .sponsors-entermedia;
+    min-width: 250px;
 
     .svg & {
-      background-image: image-url('sponsors/entermedia.svg');
+      background-image: inline-image("sponsors/entermedia.svg");
+      background-position: 0 0;
     }
   }
 
   #zeneva {
-    background-image: image-url('sponsors/zeneva.png');
+    @extend .sponsors-zeneva;
 
     .svg & {
-      background-image: image-url('sponsors/zeneva.svg');
+      background-image: inline-image("sponsors/zeneva.svg");
+      background-position: 0 0;
     }
   }
 
   #blackmesh {
-    background-image: image-url('sponsors/blackmesh.png');
+    @extend .sponsors-blackmesh;
 
     .svg & {
-      background-image: image-url('sponsors/blackmesh.svg');
+      background-image: inline-image("sponsors/blackmesh.svg");
+      background-position: 0 0;
     }
   }
 
   #justaddcloud {
-    background-image: image-url('sponsors/justaddcloud.png');
+    @extend .sponsors-justaddcloud;
 
     .svg & {
-      background-image: image-url('sponsors/justaddcloud.svg');
+      background-image: inline-image("sponsors/justaddcloud.svg");
+      background-position: 0 0;
     }
   }
 
