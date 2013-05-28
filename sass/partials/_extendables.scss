@@ -6,6 +6,8 @@
   @include transition(opacity .25s ease-in-out);
 
   .wf-loading & {
+    font-size: 2em;
+    font-weight: 400;
     opacity: .25;
     letter-spacing: -1.6px;
   }
