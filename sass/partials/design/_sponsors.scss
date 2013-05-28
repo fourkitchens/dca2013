@@ -1,9 +1,6 @@
-//
-// Sponsors style
-//
-
-@import "sponsors/*.png";
-@include all-sponsors-sprites;
+/*
+ * Sponsor styles
+ */
 
 #sponsors {
   @include clearfix;
@@ -24,52 +21,6 @@
       min-height: 140px;
       background-repeat: no-repeat;
       color: transparent;
-    }
-  }
-
-  #astonish {
-    @extend .sponsors-astonish;
-
-    .svg & {
-      background-image: inline-image("sponsors/astonish.svg");
-      background-position: 0 0;
-    }
-  }
-
-  #entermedia {
-    @extend .sponsors-entermedia;
-    min-width: 250px;
-
-    .svg & {
-      background-image: inline-image("sponsors/entermedia.svg");
-      background-position: 0 0;
-    }
-  }
-
-  #zeneva {
-    @extend .sponsors-zeneva;
-
-    .svg & {
-      background-image: inline-image("sponsors/zeneva.svg");
-      background-position: 0 0;
-    }
-  }
-
-  #blackmesh {
-    @extend .sponsors-blackmesh;
-
-    .svg & {
-      background-image: inline-image("sponsors/blackmesh.svg");
-      background-position: 0 0;
-    }
-  }
-
-  #justaddcloud {
-    @extend .sponsors-justaddcloud;
-
-    .svg & {
-      background-image: inline-image("sponsors/justaddcloud.svg");
-      background-position: 0 0;
     }
   }
 
