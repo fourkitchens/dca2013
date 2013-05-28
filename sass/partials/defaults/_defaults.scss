@@ -21,7 +21,7 @@ body {
   font-family: $source-sans-pro;
   line-height: 1.4;
   color: $bodycolor;
-  background: $darkbackground image-url('background.png') repeat 0 0;
+  background: $darkbackground inline-image('background.png') repeat 0 0;
 }
 
 main {
