@@ -17,7 +17,7 @@
 
 #entermedia {
   @extend .sponsors-entermedia;
-  min-width: 250px;
+  width: 250px;
 
   .inlinesvg & {
     background-image: inline-image("sponsors/entermedia.svg");
