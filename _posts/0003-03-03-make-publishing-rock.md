@@ -7,8 +7,8 @@ published: true
 title: Make Publishing Rock! A Few Modules to Improve the Lives of Editors
 summary: In this session we'll help you understand what Site admins want, and how to give it to 'em.
 presenters: Michal Minecki
-track: Site Builder
-difficulty: Beginer
+track: Sitebuilding
+difficulty: Beginner
 
 day: TBD
 start: TBD
