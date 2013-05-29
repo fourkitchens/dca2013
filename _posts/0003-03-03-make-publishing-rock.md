@@ -1,7 +1,7 @@
 ---
 layout: session
 category: session
-permalink: /sessions/high-performance-scaling-server-architectures-drupal/
+permalink: /sessions/make-publishing-rock/
 published: true
 
 title: Make Publishing Rock! A Few Modules to Improve the Lives of Editors
