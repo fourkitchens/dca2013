@@ -4,7 +4,7 @@ category: session
 permalink: /sessions/node-js-awesomesauce/
 published: true
 
-title: Drupal and Node.js: 3 ways we used the two together.
+title: "Drupal and Node.js: 3 ways we used the two together"
 summary: Drupal and Node.js go together like bread and butter, or milk and cereal or a burger and fries. Learn how we we mix and matched 'em.
 presenters: Michal Minecki
 track: Development
