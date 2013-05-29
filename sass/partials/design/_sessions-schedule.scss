@@ -103,16 +103,6 @@ article.session {
     }
   }
 
-  // // All views look the same on small/medium screens
-  // @include breakpoint($sched-md) {
-  //   @include grid-span(4);
-
-  //   &:nth-of-type(2n) {
-  //     @include grid-span(4,6);
-  //   }
-  // }
-
-
   // Grid for Room view (3-col)
   section.room & {
     // 3 columns
