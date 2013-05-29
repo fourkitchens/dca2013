@@ -1530,18 +1530,23 @@ article.session div {
   transform-origin: 50% 100% 50%;
 }
 article.session div.filtered {
-  -webkit-transform: translateZ(-40px) rotateX(5deg);
-  -moz-transform: translateZ(-40px) rotateX(5deg);
-  -ms-transform: translateZ(-40px) rotateX(5deg);
-  -o-transform: translateZ(-40px) rotateX(5deg);
-  transform: translateZ(-40px) rotateX(5deg);
+  -webkit-transform: scale(0.8);
+  -moz-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  -o-transform: scale(0.8);
+  transform: scale(0.8);
+  opacity: .2;
+}
+.csstransforms3d article.session div.filtered {
+  -webkit-transform: translateZ(-40px) rotateX(24deg);
+  -moz-transform: translateZ(-40px) rotateX(24deg);
+  -ms-transform: translateZ(-40px) rotateX(24deg);
+  -o-transform: translateZ(-40px) rotateX(24deg);
+  transform: translateZ(-40px) rotateX(24deg);
 }
 .cssfilters article.session div.filtered {
   opacity: .4;
   -webkit-filter: blur(8px);
-}
-.no-cssfilters article.session div.filtered {
-  opacity: .2;
 }
 .schedule article.session {
   padding-bottom: 2em;

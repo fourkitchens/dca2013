@@ -77,14 +77,17 @@ article.session {
 
     // Filtered = suppressed from schedule
     &.filtered {
-      @include transform(translateZ(-40px) rotateX(5deg));
+      @include transform(scale(.8));
+      opacity: .2;
 
+      // 3D transforms
+      .csstransforms3d & {
+        @include transform(translateZ(-40px) rotateX(24deg));
+      }
+      // Blur
       .cssfilters & {
         opacity: .4;
         -webkit-filter: blur(8px);
-      }
-      .no-cssfilters & {
-        opacity: .2;
       }
     }
   }
