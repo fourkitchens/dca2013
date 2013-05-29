@@ -1,7 +1,7 @@
 ---
 layout: session
 category: session
-permalink: /sessions/high-performance-scaling-server-architectures-drupal/
+permalink: /sessions/node-js-awesomesauce/
 published: true
 
 title: Drupal and Node.js: 3 ways we used the two together.
