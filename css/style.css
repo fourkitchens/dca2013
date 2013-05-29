@@ -1505,6 +1505,94 @@ footer .credits i {
   height: 6em;
 }
 
+#sched {
+  padding-top: 1em;
+}
+#sched .column:not(:nth-of-type(1)) {
+  background: #97c441;
+  font-family: "atrament-web", "Impact", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 2em;
+  color: #222;
+  border-radius: .2em;
+  padding: 0 .5em;
+}
+@media (min-width: 45em) {
+  #sched.room .column:nth-of-type(2) {
+    width: 28.57143%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 0%;
+    clear: none;
+  }
+  #sched.room .column:nth-of-type(3) {
+    width: 28.57143%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 35.71429%;
+    clear: none;
+  }
+  #sched.room .column:nth-of-type(4) {
+    width: 28.57143%;
+    float: right;
+    margin-left: 0;
+    margin-right: 0;
+    clear: none;
+  }
+}
+@media (min-width: 45em) {
+  #sched.track .column:nth-of-type(2) {
+    width: 21.05263%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 0%;
+    clear: none;
+  }
+  #sched.track .column:nth-of-type(3) {
+    width: 21.05263%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 26.31579%;
+    clear: none;
+  }
+  #sched.track .column:nth-of-type(4) {
+    width: 21.05263%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 52.63158%;
+    clear: none;
+  }
+  #sched.track .column:nth-of-type(5) {
+    width: 21.05263%;
+    float: right;
+    margin-left: 0;
+    margin-right: 0;
+    clear: none;
+  }
+}
+@media (min-width: 45em) {
+  #sched.difficulty .column:nth-of-type(2) {
+    width: 28.57143%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 0%;
+    clear: none;
+  }
+  #sched.difficulty .column:nth-of-type(4) {
+    width: 28.57143%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 35.71429%;
+    clear: none;
+  }
+  #sched.difficulty .column:nth-of-type(3) {
+    width: 28.57143%;
+    float: right;
+    margin-left: 0;
+    margin-right: 0;
+    clear: none;
+  }
+}
+
 article.session {
   -webkit-transform-style: preserve3d;
   -moz-transform-style: preserve3d;
