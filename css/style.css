@@ -1600,6 +1600,37 @@ article.session div.filtered {
     clear: none;
   }
 }
+@media (min-width: 31.25em) {
+  section.track article.session.track-design-theming-and-ux {
+    width: 44.44444%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 0%;
+    clear: none;
+  }
+  section.track article.session.track-development {
+    width: 44.44444%;
+    float: right;
+    margin-left: 0;
+    margin-right: 0;
+    clear: none;
+  }
+  section.track article.session.track-business-and-marketing {
+    width: 44.44444%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 0%;
+    clear: none;
+    clear: both;
+  }
+  section.track article.session.track-site-building {
+    width: 44.44444%;
+    float: right;
+    margin-left: 0;
+    margin-right: 0;
+    clear: none;
+  }
+}
 @media (min-width: 45em) {
   section.track article.session.track-design-theming-and-ux {
     width: 21.05263%;

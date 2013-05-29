@@ -112,69 +112,78 @@ article.session {
 
   // Grid for Room view (3-col)
   section.room & {
-    // Singularity settings
-    // @TODO: use layout() instead of overriding global settings. This breaks things.
-    //   @see https://github.com/Team-Sass/Singularity/wiki/Spanning-The-Grid#group-context-overrides
-    $output: 'isolation';
-    $grids: 3;
+    // 3 columns
+    @include layout(3) {
+      @include breakpoint($sched-lg) {
+        &.room-chapter-three-room {
+          @include grid-span(1,1);
+        }
 
-    @include breakpoint($sched-lg) {
-      &.room-chapter-three-room {
-        @include grid-span(1,1);
-      }
+        &.room-room-102 {
+          @include grid-span(1,2);
+        }
 
-      &.room-room-102 {
-        @include grid-span(1,2);
-      }
-
-      &.room-entermedia-room {
-        @include grid-span(1,3);
+        &.room-entermedia-room {
+          @include grid-span(1,3);
+        }
       }
     }
   }
 
   // Grid for Difficulty view (3-col)
   section.difficulty & {
-    // Singularity settings
-    $output: 'isolation';
-    $grids: 3;
-
-    @include breakpoint($sched-lg) {
-      &.difficulty-beginner {
-        @include grid-span(1,1);
-      }
-
-      &.difficulty-intermediate {
-        @include grid-span(1,2);
-      }
-
-      &.difficulty-expert {
-        @include grid-span(1,3);
+    // 3 columns
+    @include layout(3) {
+      @include breakpoint($sched-lg) {
+        &.difficulty-beginner {
+          @include grid-span(1,1);
+        }
+        &.difficulty-intermediate {
+          @include grid-span(1,2);
+        }
+        &.difficulty-expert {
+          @include grid-span(1,3);
+        }
       }
     }
   }
 
-  // Grid for Track view (4-col)
+  // Grid for Track view (2/4-col)
   section.track & {
-    // Singularity settings
-    $output: 'isolation';
-    $grids: 4;
-
-    @include breakpoint($sched-lg) {
-      &.track-design-theming-and-ux {
-        @include grid-span(1,1);
+    // 2 columns
+    @include layout(2) {
+      @include breakpoint($sched-md) {
+        &.track-design-theming-and-ux {
+          @include grid-span(1,1);
+        }
+        &.track-development {
+          @include grid-span(1,2);
+        }
+        &.track-business-and-marketing {
+          @include grid-span(1,1);
+          clear: both;
+        }
+        &.track-site-building {
+          @include grid-span(1,2);
+        }
       }
+    }
 
-      &.track-development {
-        @include grid-span(1,2);
-      }
-
-      &.track-business-and-marketing {
-        @include grid-span(1,3);
-      }
-
-      &.track-site-building {
-        @include grid-span(1,4);
+    // 4 columns
+    @include layout(4) {
+      @include breakpoint($sched-lg) {
+        &.track-design-theming-and-ux {
+          @include grid-span(1,1);
+        }
+        &.track-development {
+          @include grid-span(1,2);
+        }
+        &.track-business-and-marketing {
+          @include grid-span(1,3);
+        }
+        &.track-site-building {
+          @include grid-span(1,4);
+        }
       }
     }
   }
