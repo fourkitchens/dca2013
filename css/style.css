@@ -672,6 +672,21 @@ textarea {
   font-size: 1.3125em;
 }
 
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #135c91;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #c5d5f0;
+  border: 3px solid transparent;
+  border-radius: 9px;
+  background-clip: content-box;
+}
+
 header:after {
   content: "";
   display: table;
@@ -1430,7 +1445,7 @@ footer .credits i {
   display: inline-block;
 }
 .filters label {
-  margin: 0 .6em 0 0;
+  margin: 0 .6em .3em 0;
   background-color: #135c91;
   color: #c5d5f0;
 }
