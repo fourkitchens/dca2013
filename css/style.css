@@ -475,7 +475,6 @@ table {
 h1, h2, h3, h4, h5, h6 {
   -webkit-transition: opacity 0.25s ease-in-out;
   -moz-transition: opacity 0.25s ease-in-out;
-  -ms-transition: opacity 0.25s ease-in-out;
   -o-transition: opacity 0.25s ease-in-out;
   transition: opacity 0.25s ease-in-out;
 }
@@ -623,7 +622,6 @@ a {
   text-decoration: none;
   -webkit-transition: color 0.06s linear;
   -moz-transition: color 0.06s linear;
-  -ms-transition: color 0.06s linear;
   -o-transition: color 0.06s linear;
   transition: color 0.06s linear;
 }
@@ -1110,7 +1108,7 @@ header .inner {
 #front .front-info.workshops h2:after {
   background-position: center -158px;
 }
-#front .front-info.parties h2:after {
+#front .front-info.keynotes h2:after {
   background-position: center -316px;
 }
 @media (min-width: 45em) {
@@ -1131,7 +1129,7 @@ header .inner {
     margin-left: 34.09091%;
     clear: right;
   }
-  #front .front-info.parties {
+  #front .front-info.keynotes {
     width: 31.81818%;
     float: right;
     margin-left: 0;
@@ -1181,7 +1179,6 @@ header .inner {
   margin-bottom: 1em;
   -webkit-transition: all 0.25s ease-in-out;
   -moz-transition: all 0.25s ease-in-out;
-  -ms-transition: all 0.25s ease-in-out;
   -o-transition: all 0.25s ease-in-out;
   transition: all 0.25s ease-in-out;
 }
@@ -1419,7 +1416,6 @@ footer .credits i {
 .submitted .session .desc {
   -webkit-transition: all 0.4s ease-in-out;
   -moz-transition: all 0.4s ease-in-out;
-  -ms-transition: all 0.4s ease-in-out;
   -o-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
   overflow: hidden;
@@ -1439,11 +1435,9 @@ footer .credits i {
   background: -webkit-linear-gradient(top, rgba(10, 20, 27, 0), #0a141b);
   background: -moz-linear-gradient(top, rgba(10, 20, 27, 0), #0a141b);
   background: -o-linear-gradient(top, rgba(10, 20, 27, 0), #0a141b);
-  background: -ms-linear-gradient(top, rgba(10, 20, 27, 0), #0a141b);
   background: linear-gradient(top, rgba(10, 20, 27, 0), #0a141b);
   -webkit-transition: all 0.4s ease-in-out;
   -moz-transition: all 0.4s ease-in-out;
-  -ms-transition: all 0.4s ease-in-out;
   -o-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
 }
@@ -1608,7 +1602,6 @@ article.session {
 article.session div {
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
-  -ms-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   -webkit-transform-origin: 50% 100% 50%;

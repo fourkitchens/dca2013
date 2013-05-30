@@ -92,7 +92,7 @@
     &.workshops h2:after {
       background-position: center -158px;
     }
-    &.parties h2:after {
+    &.keynotes h2:after {
       background-position: center -316px;
     }
   }
@@ -108,7 +108,7 @@
       @include isolation-span(3, 4, 'right');
     }
 
-    .front-info.parties {
+    .front-info.keynotes {
       @include isolation-span(3, 7, 'right');
     }
   }
