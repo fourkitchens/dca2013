@@ -90,3 +90,22 @@ textarea {
   padding: .5em 1em;
   font-size: em(21);
 }
+
+//
+// Scrollbars
+//
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: $darkblue;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: $lightblue;
+  border: 3px solid transparent;
+  border-radius: 9px;
+  background-clip: content-box;
+}
