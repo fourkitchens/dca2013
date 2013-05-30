@@ -475,6 +475,7 @@ table {
 h1, h2, h3, h4, h5, h6 {
   -webkit-transition: opacity 0.25s ease-in-out;
   -moz-transition: opacity 0.25s ease-in-out;
+  -ms-transition: opacity 0.25s ease-in-out;
   -o-transition: opacity 0.25s ease-in-out;
   transition: opacity 0.25s ease-in-out;
 }
@@ -485,7 +486,7 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: -1.6px;
 }
 
-.cta, button, .button {
+.cta, button, .button, .filters label {
   display: inline-block;
   margin: .3em;
   border: 0;
@@ -494,12 +495,12 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #d34913;
   color: white;
 }
-.cta:hover, button:hover, .button:hover {
+.cta:hover, button:hover, .button:hover, .filters label:hover {
   background-color: #8d310d;
   transition: background linear 350ms;
   color: white;
 }
-.cta:visited, button:visited, .button:visited {
+.cta:visited, button:visited, .button:visited, .filters label:visited {
   color: white;
 }
 
@@ -622,6 +623,7 @@ a {
   text-decoration: none;
   -webkit-transition: color 0.06s linear;
   -moz-transition: color 0.06s linear;
+  -ms-transition: color 0.06s linear;
   -o-transition: color 0.06s linear;
   transition: color 0.06s linear;
 }
@@ -1179,6 +1181,7 @@ header .inner {
   margin-bottom: 1em;
   -webkit-transition: all 0.25s ease-in-out;
   -moz-transition: all 0.25s ease-in-out;
+  -ms-transition: all 0.25s ease-in-out;
   -o-transition: all 0.25s ease-in-out;
   transition: all 0.25s ease-in-out;
 }
@@ -1406,6 +1409,60 @@ footer .credits i {
   margin-top: 0;
 }
 
+@media (min-width: 55em) {
+  .intro p {
+    float: left;
+    width: 45%;
+    margin-right: 5%;
+  }
+  .intro p:nth-child(odd) {
+    margin-right: 0;
+  }
+}
+.filters {
+  clear: both;
+}
+.filters ul {
+  margin: 0;
+  padding: 0;
+}
+.filters li {
+  display: inline-block;
+}
+.filters label {
+  background-color: #135c91;
+  color: #c5d5f0;
+}
+.filters label:hover {
+  background-color: #135c91;
+  color: #c5d5f0;
+}
+.filters label.active {
+  background-color: #d34913;
+  color: white;
+}
+.filters label input {
+  display: none;
+}
+
+.submitted {
+  clear: both;
+  padding-top: 1em;
+}
+
+.submitted .session {
+  opacity: 1;
+  max-height: 2000px;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.submitted .session.hidden {
+  opacity: 0;
+  max-height: 0;
+}
 .submitted .session p.meta {
   margin-top: 0;
   margin-bottom: 1em;
@@ -1414,11 +1471,17 @@ footer .credits i {
   opacity: 1;
 }
 .submitted .session .desc {
+  overflow: hidden;
   -webkit-transition: all 0.4s ease-in-out;
   -moz-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
   -o-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
-  overflow: hidden;
+}
+@media (min-width: 55em) {
+  .submitted .session .desc {
+    max-width: 82%;
+  }
 }
 .js .submitted .session .desc {
   max-height: 0em;
@@ -1435,9 +1498,11 @@ footer .credits i {
   background: -webkit-linear-gradient(top, rgba(10, 20, 27, 0), #0a141b);
   background: -moz-linear-gradient(top, rgba(10, 20, 27, 0), #0a141b);
   background: -o-linear-gradient(top, rgba(10, 20, 27, 0), #0a141b);
+  background: -ms-linear-gradient(top, rgba(10, 20, 27, 0), #0a141b);
   background: linear-gradient(top, rgba(10, 20, 27, 0), #0a141b);
   -webkit-transition: all 0.4s ease-in-out;
   -moz-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
   -o-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
 }
@@ -1446,18 +1511,6 @@ footer .credits i {
 }
 .js .submitted .session.expanded .desc:after {
   height: 0;
-}
-
-@media (min-width: 48em) {
-  .submit {
-    margin-top: -3.9em;
-  }
-  .submit h2 {
-    position: relative;
-    top: -.2em;
-    padding-bottom: .36em;
-    border-bottom: 2px solid #11212d;
-  }
 }
 
 .schedule h1 {
@@ -1602,6 +1655,7 @@ article.session {
 article.session div {
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   -webkit-transform-origin: 50% 100% 50%;
