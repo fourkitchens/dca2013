@@ -1430,6 +1430,7 @@ footer .credits i {
   display: inline-block;
 }
 .filters label {
+  margin: 0 .6em 0 0;
   background-color: #135c91;
   color: #c5d5f0;
 }
@@ -1452,12 +1453,12 @@ footer .credits i {
 
 .submitted .session {
   opacity: 1;
-  max-height: 2000px;
-  -webkit-transition: all 0.2s ease-in-out;
-  -moz-transition: all 0.2s ease-in-out;
-  -ms-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+  max-height: 154em;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 .submitted .session.hidden {
   opacity: 0;

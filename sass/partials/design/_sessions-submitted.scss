@@ -28,6 +28,7 @@
   }
   label {
     @extend %button;
+    margin: 0 .6em 0 0;
     background-color: $darkblue;
     color: $lightblue;
 
@@ -54,8 +55,8 @@
 
 .submitted .session {
   opacity: 1;
-  max-height: 2000px;
-  @include transition(all .2s ease-in-out);
+  max-height: 154em;
+  @include transition(all .4s ease-in-out);
 
   // Hidden sessions are hidden
   &.hidden {
