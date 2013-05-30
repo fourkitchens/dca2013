@@ -110,9 +110,9 @@ module.exports = function(grunt) {
         tasks: ['jshint', 'uglify', 'jekyll:dev']
       },
       jekyll: {
-				files: ['{,**/}*.html', '_posts/*.md', '!_site/{,**/}*.html'],
-				tasks: ['jekyll:dev']
-			}
+        files: ['{,**/}*.html', '_posts/*.md', '!_site/{,**/}*.html'],
+        tasks: ['jekyll:dev']
+      }
     },
 
     compass: {
@@ -146,24 +146,24 @@ module.exports = function(grunt) {
 
     jekyll: {
       server : {
-				server : true,
-				server_port : 4000,
-				bundleExec: true
-			},
-			devserver : {
-				server : true,
-				server_port : 4000,
-				bundleExec: true,
-				config: '_config_dev.yml'
-			},
-			dev: {
-				bundleExec: true,
-				config: '_config_dev.yml'
-			},
-			prod: {
-				bundleExec: true
-			}
-		}
+        server : true,
+        server_port : 4000,
+        bundleExec: true
+      },
+      devserver : {
+        server : true,
+        server_port : 4000,
+        bundleExec: true,
+        config: '_config_dev.yml'
+      },
+      dev: {
+        bundleExec: true,
+        config: '_config_dev.yml'
+      },
+      prod: {
+        bundleExec: true
+      }
+    }
   });
 
   // Load Plugins.
