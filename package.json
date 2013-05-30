@@ -14,7 +14,7 @@
     "grunt-contrib-watch": "~0.4.0",
     "grunt-contrib-concat": "~0.1.2",
     "grunt-contrib-imagemin": "~0.1.4",
-    "grunt-parallel": "~0.1.0",
+    "grunt-concurrent": "~0.2.0",
     "grunt-svgmin": "~0.1.0",
     "grunt-jekyll": "git://github.com/ChinggizKhan/grunt-jekyll.git#add-in-config"
   },
@@ -23,5 +23,8 @@
     "url": "https://github.com/fourkitchens/dca2013-static.git"
   },
   "author": "Four Kitchens",
-  "readmeFilename": "README.md"
+  "readmeFilename": "README.md",
+  "devDependencies": {
+    "grunt-concurrent": "~0.2.0"
+  }
 }

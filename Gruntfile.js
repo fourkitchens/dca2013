@@ -134,14 +134,13 @@ module.exports = function(grunt) {
       }
     },
 
-    parallel: {
-      assets: {
-        grunt: true,
-        tasks: ['imagemin', 'svgmin', 'uglify']
-      },
+    concurrent: {
+      assets: ['imagemin', 'svgmin', 'uglify'],
       server: {
-        grunt: true,
-        tasks: ['jekyll:devserver', 'watch']
+        tasks: ['jekyll:devserver', 'watch'],
+        options: {
+          logConcurrentOutput: true
+        }
       }
     },
 
@@ -175,14 +174,14 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-imagemin');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-concat');
-  grunt.loadNpmTasks('grunt-parallel');
+  grunt.loadNpmTasks('grunt-concurrent');
   grunt.loadNpmTasks('grunt-svgmin');
   grunt.loadNpmTasks('grunt-jekyll');
 
   // Our custom tasks.
-  grunt.registerTask('server', ['debug', 'parallel:server']);
+  grunt.registerTask('server', ['debug', 'concurrent:server']);
   grunt.registerTask('debug', ['clean', 'jshint:dev', 'concat']);
-  grunt.registerTask('release', ['clean', 'jshint:prod', 'concat', 'parallel:assets', 'compass:dist', 'jekyll:prod']);
+  grunt.registerTask('release', ['clean', 'jshint:prod', 'concat', 'concurrent:assets', 'compass:dist', 'jekyll:prod']);
 
   // Default task that is run when no arguments are passed.
   grunt.registerTask('default', ['release']);
