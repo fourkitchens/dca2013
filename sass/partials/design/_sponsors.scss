@@ -45,9 +45,15 @@
   $output: float;
   @include breakpoint($sponsors-md) {
     .lone-star .sponsor {}
-    .party .sponsor {}
-    .longhorn .sponsor {}
-    .trivia .sponsor {}
+    
+    .longhorn,
+    .party {
+      @include grid-span(4);
+    }
+    
+    .trivia {
+      @include grid-span(4, 'omega');
+    }
 
     .armadillo .sponsor {
       @include grid-span(3);

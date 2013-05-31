@@ -8,7 +8,8 @@
 
 #astonish {
   @extend .sponsors-astonish;
-
+  width: 250px;
+  
   .inlinesvg & {
     background-image: inline-image("sponsors/astonish.svg");
     background-position: 0 0;
@@ -21,6 +22,16 @@
 
   .inlinesvg & {
     background-image: inline-image("sponsors/entermedia.svg");
+    background-position: 0 0;
+  }
+}
+
+#volacci {
+  @extend .sponsors-volacci;
+  width: 250px;
+
+  .inlinesvg & {
+    background-image: inline-image("sponsors/volacci.svg");
     background-position: 0 0;
   }
 }
