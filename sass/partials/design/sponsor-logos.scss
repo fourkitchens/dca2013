@@ -54,11 +54,50 @@
   }
 }
 
+#pantheon {
+  @extend .sponsors-pantheon;
+  width: 200px;
+
+  .inlinesvg & {
+    background-image: inline-image("sponsors/pantheon.svg");
+    background-position: 0 0;
+  }
+}
+
+/*
+#osscube {
+  @extend .sponsors-osscube;
+
+  .inlinesvg & {
+    background-image: inline-image("sponsors/osscube.svg");
+    background-position: 0 0;
+  }
+}
+*/
+
 #justaddcloud {
   @extend .sponsors-justaddcloud;
 
   .inlinesvg & {
     background-image: inline-image("sponsors/justaddcloud.svg");
+    background-position: 0 0;
+  }
+}
+
+#commerce-guys {
+  @extend .sponsors-commerce-guys;
+
+  .inlinesvg & {
+    background-image: inline-image("sponsors/commerce-guys.svg");
+    background-position: 0 0;
+  }
+}
+
+#drupalizeme {
+  @extend .sponsors-drupalizeme;
+
+  .inlinesvg & {
+    background-image: inline-image("sponsors/drupalizeme.svg");
     background-position: 0 0;
   }
 }

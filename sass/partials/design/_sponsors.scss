@@ -56,13 +56,20 @@
     }
 
     .armadillo .sponsor {
-      @include grid-span(3);
+      @include grid-span(4);
 
       &:last-child {
-        @include grid-span(3, 'omega');
+        @include grid-span(4, 'omega');
       }
     }
 
-    .bat .sponsor {}
+    .bat .sponsor {
+      @include grid-span(4);
+
+      &:last-child {
+        @include grid-span(4, 'omega');
+      }
+    }
+  
   }
 }
