@@ -15,42 +15,42 @@
   }
 }
 
-// Filters
-.filters {
-  clear: both;
-
-  ul {
-    margin: 0;
-    padding: 0;
-  }
-  li {
-    display: inline-block;
-  }
-  label {
-    @extend %button;
-    margin: 0 .6em .3em 0;
-    background-color: $darkblue;
-    color: $lightblue;
-
-    &:hover {
-      background-color: $darkblue;
-      color: $lightblue;
-    }
-
-    &.active {
-      background-color: $darkorange;
-      color: $white;
-    }
-
-    input {
-      display: none;
-    }
-  }
-}
-
 .submitted {
   clear: both;
   padding-top: 1em;
+
+  // Filters
+  .filters {
+    clear: both;
+
+    ul {
+      margin: 0;
+      padding: 0;
+    }
+    li {
+      display: inline-block;
+    }
+    label {
+      @extend %button;
+      margin: 0 .6em .3em 0;
+      background-color: $darkblue;
+      color: $lightblue;
+
+      &:hover {
+        background-color: $darkblue;
+        color: $lightblue;
+      }
+
+      &.active {
+        background-color: $darkorange;
+        color: $white;
+      }
+
+      input {
+        display: none;
+      }
+    }
+  }
 }
 
 .submitted .session {
