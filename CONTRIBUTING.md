@@ -2,7 +2,7 @@
 
 ## Required libraries
 
-You'll need to install node.js if you don't have it. The installer is available at http://nodejs.com. You will also need Grunt, which can be installed with:
+You'll need to install node.js if you don't have it. The installer is available at http://nodejs.org. You will also need Grunt, which can be installed with:
 ```bash
 sudo npm install -g grunt-cli
 ```
