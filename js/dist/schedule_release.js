@@ -2351,7 +2351,7 @@ t.push(e)},buildContainer:function(r){var n=new Ember.Container;return Ember.Con
 
     resetScheduleInfo: function() {
       var self = this;
-      var request = $.ajax('/sessions.json');
+      var request = $.ajax('/schedule.json');
 
       request.done(function(data, textStatus, jqXHR) {
         if (jqXHR.status === 200) {

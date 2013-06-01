@@ -3,6 +3,7 @@ layout: session
 category: session
 permalink: /sessions/why-chose-meteor-drupal-lovechild/
 published: true
+accepted: true
 
 title: Why we chose Meteor and what a Drupal/Meteor love child might look like
 summary: If Drupal and Meteor had a love child, what would it look like?

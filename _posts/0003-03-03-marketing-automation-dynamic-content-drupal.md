@@ -3,6 +3,7 @@ layout: session
 category: session
 permalink: /sessions/marketing-automation-dynamic-content-drupal/
 published: true
+accepted: true
 
 title: Marketing Automation & Dynamic Content in Drupal
 summary: Marketing Automation & Dynamic Content in Drupal - What can this new and exploding technology do for your Drupal website? Think deep customer engagement...

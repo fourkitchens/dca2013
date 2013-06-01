@@ -30882,7 +30882,7 @@ Ember
 
     resetScheduleInfo: function() {
       var self = this;
-      var request = $.ajax('/sessions.json');
+      var request = $.ajax('/schedule.json');
 
       request.done(function(data, textStatus, jqXHR) {
         if (jqXHR.status === 200) {

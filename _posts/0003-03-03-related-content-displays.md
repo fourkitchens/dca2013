@@ -3,6 +3,7 @@ layout: session
 category: session
 permalink: /sessions/related-content-displays/
 published: true
+accepted: true
 
 title: Related Content Displays
 summary: Rock your related content displays by using Drupal's taxonomy. Teach end users how to categorize content using everyday words and thought processes.

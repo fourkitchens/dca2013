@@ -1,0 +1,10 @@
+---
+---
+[
+{% for item in site.categories.session %}
+  {% if item.accepted == true %}
+    {% include post.json %},
+  {% endif %}
+{% endfor %}
+false
+]
