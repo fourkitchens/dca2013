@@ -21,6 +21,7 @@
   border-radius: .3em;
   background-color: $darkorange;
   color: $white;
+  cursor: pointer;
 
   &:hover {
     background-color: darken($darkorange, 15%);
