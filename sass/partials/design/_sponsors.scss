@@ -9,7 +9,7 @@
   margin-bottom: 2em;
 
   p {
-    @include isolation-span(9, 1);
+    @include grid-span(9, 1);
     margin-top: 1em;
   }
 
@@ -24,38 +24,52 @@
     }
   }
 
-  .lone-star {
-    @include isolation-span(9, 1);
-
-    @include breakpoint($sponsors-md) {
-      @include isolation-span(5, 1);
-    }
+  .lone-star,
+  .party,
+  .longhorn,
+  .trivia,
+  .armadillo,
+  .bat {
+    @include clearfix;
+    text-align: center;
   }
 
-  .longhorn {
-    @include isolation-span(9, 1);
+}
 
-    @include breakpoint($sponsors-md) {
-      @include isolation-span(4, 6, 'right');
+//
+// Sponsor layout
+// @see sponsor-logos.scss for graphics
+//
+
+@include layout(12) {
+  $output: float;
+  @include breakpoint($sponsors-md) {
+    .lone-star .sponsor {}
+    
+    .longhorn,
+    .party {
+      @include grid-span(4);
     }
-  }
+    
+    .trivia {
+      @include grid-span(4, 'omega');
+    }
 
-  .armadillo {
+    .armadillo .sponsor {
+      @include grid-span(4);
 
-    .sponsor {
-      @include isolation-span(9, 1);
-
-      @include breakpoint($sponsors-md) {
-        &:nth-child(1) {
-          @include isolation-span(3, 1, 'right');
-        }
-        &:nth-child(2) {
-          @include isolation-span(3, 4, 'right');
-        }
-        &:nth-child(3) {
-          @include isolation-span(3, 7, 'right');
-        }
+      &:last-child {
+        @include grid-span(4, 'omega');
       }
     }
+
+    .bat .sponsor {
+      @include grid-span(4);
+
+      &:last-child {
+        @include grid-span(4, 'omega');
+      }
+    }
+  
   }
 }

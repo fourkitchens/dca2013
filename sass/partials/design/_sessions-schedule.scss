@@ -5,17 +5,34 @@
 $sched-pad: 2em;
 $reset-width: 6em;
 
+$layout-room: 2 3 3 3; // 3-col
+$layout-track: 2 3 3 3 3; // 4-col
+$layout-difficulty: 2 3 3 3; // 3-col
+
 .schedule {
+  * {
+    @include box-sizing(border-box);
+  }
+
   h1 {
     text-align: center;
   }
 
-  .slot .time {
-    clear: both;
-    margin: 1em 0;
-    padding: .5em 1em;
-    background-color: $darkblue;
-    color: #000;
+  .slot {
+    @include clearfix;
+
+    .time {
+      clear: both;
+      margin-top: 1em;
+      margin-bottom: 1em;
+      padding: .5em;
+      background-color: $darkblue;
+      color: #000;
+
+      @include breakpoint($sched-lg) {
+        margin-top: 0;
+      }
+    }
   }
 
   // Schedule filters
@@ -62,7 +79,7 @@ $reset-width: 6em;
 //
 // To keep the Sass much lighter weight, we're not scoping all of
 // this stuff to the .schedule class. Things are still scoped
-// to each schedule view using & - section.[room|track|difficulty]
+// to each schedule view using & = section.[room|track|difficulty]
 //
 
 // Column headings - changes when user clicks "Order by"
@@ -71,32 +88,41 @@ $reset-width: 6em;
 
   // generic styles
   .column:not(:nth-of-type(1)) {
+    display: none; // until $sched-lg
     background: $green;
     font-family: $atrament;
     font-size: 2em;
     color: #222;
     border-radius: .2em;
     padding: 0 .5em;
+    white-space: nowrap;
     // fun stuff
     // position: -webkit-sticky;
     // position:    -moz-sticky;
     // position:     -ms-sticky;
     // position:      -o-sticky;
     // top: .5em;
+
+    @include breakpoint($sched-lg) {
+      display: inline-block;
+    }
   }
 
   &.room {
     @include breakpoint($sched-lg) {
-      @include layout(3) {
-        // .column:nth-of-type(1) // not used
-        .column:nth-of-type(2) {
+      @include layout($layout-room) {
+        .time {
           @include grid-span(1,1);
         }
-        .column:nth-of-type(3) {
+        // .column:nth-of-type(1) // not used
+        .column:nth-of-type(2) {
           @include grid-span(1,2);
         }
-        .column:nth-of-type(4) {
+        .column:nth-of-type(3) {
           @include grid-span(1,3);
+        }
+        .column:nth-of-type(4) {
+          @include grid-span(1,4);
         }
       }
     }
@@ -104,19 +130,22 @@ $reset-width: 6em;
 
   &.track {
     @include breakpoint($sched-lg) {
-      @include layout(4) {
-        // .column:nth-of-type(1) // not used
-        .column:nth-of-type(2) {
+      @include layout($layout-track) {
+        .time {
           @include grid-span(1,1);
         }
-        .column:nth-of-type(3) {
+        // .column:nth-of-type(1) // not used
+        .column:nth-of-type(2) {
           @include grid-span(1,2);
         }
-        .column:nth-of-type(4) {
+        .column:nth-of-type(3) {
           @include grid-span(1,3);
         }
-        .column:nth-of-type(5) {
+        .column:nth-of-type(4) {
           @include grid-span(1,4);
+        }
+        .column:nth-of-type(5) {
+          @include grid-span(1,5);
         }
       }
     }
@@ -124,18 +153,21 @@ $reset-width: 6em;
 
   &.difficulty {
     @include breakpoint($sched-lg) {
-      @include layout(3) {
+      @include layout($layout-difficulty) {
+        .time {
+          @include grid-span(1,1);
+        }
         // .column:nth-of-type(1) // not used
         .column:nth-of-type(2) {
-          @include grid-span(1,1);
+          @include grid-span(1,2);
         }
         // Ember spits out 'Expert' column heading second
         .column:nth-of-type(4) {
-          @include grid-span(1,2);
-        }
-        // Ember spits out 'Intermediate' column heading second
-        .column:nth-of-type(3) {
           @include grid-span(1,3);
+        }
+        // Ember spits out 'Intermediate' column heading third
+        .column:nth-of-type(3) {
+          @include grid-span(1,4);
         }
       }
     }
@@ -184,18 +216,18 @@ article.session {
   // Grid for Room view (3-col)
   section.room & {
     // 3 columns
-    @include layout(3) {
-      @include breakpoint($sched-lg) {
+    @include breakpoint($sched-lg) {
+      @include layout($layout-room) {
         &.room-chapter-three-room {
-          @include grid-span(1,1);
-        }
-
-        &.room-room-102 {
           @include grid-span(1,2);
         }
 
-        &.room-entermedia-room {
+        &.room-room-102 {
           @include grid-span(1,3);
+        }
+
+        &.room-entermedia-room {
+          @include grid-span(1,4);
         }
       }
     }
@@ -204,16 +236,16 @@ article.session {
   // Grid for Difficulty view (3-col)
   section.difficulty & {
     // 3 columns
-    @include layout(3) {
-      @include breakpoint($sched-lg) {
+    @include breakpoint($sched-lg) {
+      @include layout($layout-difficulty) {
         &.difficulty-beginner {
-          @include grid-span(1,1);
-        }
-        &.difficulty-intermediate {
           @include grid-span(1,2);
         }
-        &.difficulty-expert {
+        &.difficulty-intermediate {
           @include grid-span(1,3);
+        }
+        &.difficulty-expert {
+          @include grid-span(1,4);
         }
       }
     }
@@ -222,8 +254,8 @@ article.session {
   // Grid for Track view (2/4-col)
   section.track & {
     // 2 columns
-    @include layout(2) {
-      @include breakpoint($sched-md) {
+    @include breakpoint($sched-md) {
+      @include layout(2) {
         &.track-design-theming-and-ux {
           @include grid-span(1,1);
         }
@@ -241,19 +273,19 @@ article.session {
     }
 
     // 4 columns
-    @include layout(4) {
-      @include breakpoint($sched-lg) {
+    @include breakpoint($sched-lg) {
+      @include layout($layout-track) {
         &.track-design-theming-and-ux {
-          @include grid-span(1,1);
-        }
-        &.track-development {
           @include grid-span(1,2);
         }
-        &.track-business-and-marketing {
+        &.track-development {
           @include grid-span(1,3);
         }
-        &.track-site-building {
+        &.track-business-and-marketing {
           @include grid-span(1,4);
+        }
+        &.track-site-building {
+          @include grid-span(1,5);
         }
       }
     }
