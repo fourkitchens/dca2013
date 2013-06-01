@@ -3,6 +3,7 @@ layout: session
 category: session
 permalink: /sessions/site-building-like-software-engineer/
 published: true
+accepted: true
 
 title: Site Building like a Software Engineer
 summary: In the vast majority of Drupal projects most of the site architecture is defined by clicking around in the admin area. This ends up being both extremely powerful and dangerous. To help avoid some of the dangers I propose we start taking site building as seriously as software engineers take their data and object models.

@@ -3,6 +3,7 @@ layout: session
 category: session
 permalink: /sessions/policy-truth-workbench-moderation-workflow-case-study/
 published: true
+accepted: true
 
 title: Policy of Truth — Workbench, moderation, and workflow case study
 summary: Come see this case-study for the UT Austin Policy Office website where we turn the workbench module on its head and make it do even more.

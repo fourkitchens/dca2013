@@ -3,6 +3,7 @@ layout: session
 category: session
 permalink: /sessions/drupals-destiny/
 published: true
+accepted: true
 
 title: Drupal's Destiny
 summary: Where's this Drupal thing headed? Check out this market and technology analysis and catch a glimpse of Drupal's Destiny!
@@ -10,9 +11,9 @@ presenters: Josh Koenig
 track: Business
 difficulty: Beginner
 
-day: TBD
-start: TBD
-room: TBD
+day: Saturday
+start: 3:00pm
+room: Room 14
 ---
 
 Drupal has grown over the past decade from dorm-room project to a CMS powerhouse. Now that the project seems to be on the edge of glory, what does the future hold?

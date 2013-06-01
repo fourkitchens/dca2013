@@ -3,6 +3,7 @@ layout: session
 category: session
 permalink: /sessions/omega3-use-dont-get-used/
 published: true
+accepted: true
 
 title: "Omega 3: Use it, don't get used to it"
 summary: Run with the crowd, run past the crowd.

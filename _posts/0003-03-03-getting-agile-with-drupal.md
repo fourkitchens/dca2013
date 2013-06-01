@@ -3,6 +3,7 @@ layout: session
 category: session
 permalink: /sessions/getting-agile-with-drupal/
 published: true
+accepted: true
 
 title: Getting Agile with Drupal
 summary: Come see Getting agile with Drupal to learn about Scrumming the Drupal way.

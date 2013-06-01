@@ -3,6 +3,7 @@ layout: session
 category: session
 permalink: /sessions/integrating-nodejs/
 published: true
+accepted: true
 
 title: Integrating Node.JS
 summary: How to Node your Drupal with the Node.js Integration API

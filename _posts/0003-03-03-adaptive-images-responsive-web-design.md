@@ -3,6 +3,7 @@ layout: session
 category: session
 permalink: /sessions/adaptive-images-responsive-web-design/
 published: true
+accepted: true
 
 title: Adaptive Images for Responsive Web Design
 summary: Learn tricks and techniques to build future-friendly images for RWD sites & apps.

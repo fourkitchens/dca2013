@@ -3,6 +3,7 @@ layout: session
 category: session
 permalink: /sessions/practical-performance-tuning-benchmarking/
 published: true
+accepted: true
 
 title: Practical performance tuning and benchmarking
 summary: A down to earth guide on how to diagnose, and treat performance problems in Drupal.

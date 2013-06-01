@@ -3,6 +3,7 @@ layout: session
 category: session
 permalink: /sessions/automating-testing-drupal-zombiejs/
 published: true
+accepted: true
 
 title: Automating and Testing Drupal with Zombie.js
 summary: Let's say you need to automate something repetitive that you always do within the Drupal UI. Enter Zombie.js... a lightweight, insanely fast, headless browser for testing and automation within a single Node.js package.

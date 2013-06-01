@@ -3,6 +3,7 @@ layout: session
 category: session
 permalink: /sessions/marketers-case-drupal/
 published: true
+accepted: true
 
 title: The Marketers' Case for Drupal
 summary: What's driving the world's best marketing teams to go Drupal.
@@ -10,9 +11,9 @@ presenters: Tom Wentworth
 track: Business
 difficulty: Beginner
 
-day: TBD
-start: TBD
-room: TBD
+day: Saturday
+start: 9:30am
+room: Room 14
 ---
 
 Digital marketers demand greater agility and interoperability from their platforms as they adapt to the rapidly changing web. Drupal is proving itself again and again as a leading platform for Web Experience Management (WEM).

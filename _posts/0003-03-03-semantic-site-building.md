@@ -3,6 +3,7 @@ layout: session
 category: session
 permalink: /sessions/semantic-site-building/
 published: true
+accepted: true
 
 title: Semantic Site Building
 summary: Improve the quality of your site building by respecting the semantics of Drupal building blocks and the naming schemes you use.

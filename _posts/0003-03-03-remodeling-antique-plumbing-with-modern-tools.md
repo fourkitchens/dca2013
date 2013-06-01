@@ -3,6 +3,7 @@ layout: session
 category: session
 permalink: /sessions/remodeling-antique-plumbing-with-modern-tools/
 published: true
+accepted: true
 
 title: Remodeling Antique Plumbing With Modern Tools
 summary: Spacer gifs and 8.3 filenames are long gone, but still we labor on elderly sites. What are the old pitfalls and modern workarounds?

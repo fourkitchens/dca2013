@@ -3,6 +3,7 @@ layout: session
 category: session
 permalink: /sessions/civicrm-developers-sitebuilders-themers/
 published: true
+accepted: true
 
 title: CiviCRM for Developers, Site Builders, and Themers
 summary: CiviCRM is not Drupal... and that's a GOOD thing. This sessions will cover both Why and How of using CiviCRM with Drupal. Why CiviCRM can be a better alternative than Drupal native CRM or SaaS options. How some simple tips, tricks, and approaches can get you past the fact that CiviCRM is not Drupal and learning to love CiviCRM for the amazing solution it is.
