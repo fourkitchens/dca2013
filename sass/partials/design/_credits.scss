@@ -2,6 +2,8 @@
  * Credits page
  */
 
+$avatar-size: 80px;
+
 ul#contributors-list {
   @include clearfix;
   margin: 0;
@@ -10,7 +12,12 @@ ul#contributors-list {
   li {
     list-style-type: none;
     float: left;
-    width: 80px;
+    width: $avatar-size;
     margin: 0 10px 0 0;
+
+    img {
+      width: $avatar-size;
+      height: $avatar-size;
+    }
   }
 }

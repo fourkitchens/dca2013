@@ -2,11 +2,11 @@
 layout: news
 category: news
 permalink: /news/drupalcamp-austin-open-source/
-published: false
+published: true
 
 title: DrupalCamp Austin website is now Open Source!
 author: Chris Ruppel
-summary: We're excited to announce that the DrupalCamp Austin website is totally open source!
+summary: We're excited to announce that the DrupalCamp Austin website is totally open source! Read on to see how you can make changes to the site.
 ---
 
 We're continuing to experiment with the DrupalCamp Austin website, so we're excited to announce that we've open sourced the whole thing!
@@ -20,6 +20,8 @@ Why bother doing this? Well, it means that as of right now **YOU can make any ch
 * [Using Pull Requests](https://help.github.com/articles/using-pull-requests)
 * [Creating a Pull Request](https://help.github.com/articles/creating-a-pull-request)
 
-You can continue to use the [Submit a Session](http://bit.ly/drupalatx-speak) form, but if you're feeling really saucy go ahead and PR a session submission ^_^
+### Thanks for helping!
 
-Questions or comments? Give us a shout on [Twitter](http://twitter.com/drupalatx) or use our [Contact page](/contact/).
+As our small way of saying thanks, we've set up a [contributor list on the credits page](/credits/). As soon as your pull request gets merged, your lovely mug will automatically show up in that list. Pretty neat, huh?
+
+Questions or comments? Give us a shout on [Twitter](http://twitter.com/drupalatx) or use our [contact page](/contact/).
