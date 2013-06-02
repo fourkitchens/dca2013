@@ -486,7 +486,7 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: -1.6px;
 }
 
-.cta, button, .button, .filters label {
+.cta, .submitted .filters label, button, .button {
   display: inline-block;
   margin: .3em;
   border: 0;
@@ -496,12 +496,12 @@ h1, h2, h3, h4, h5, h6 {
   color: white;
   cursor: pointer;
 }
-.cta:hover, button:hover, .button:hover, .filters label:hover {
+.cta:hover, .submitted .filters label:hover, button:hover, .button:hover {
   background-color: #8d310d;
   transition: background linear 350ms;
   color: white;
 }
-.cta:visited, button:visited, .button:visited, .filters label:visited {
+.cta:visited, .submitted .filters label:visited, button:visited, .button:visited {
   color: white;
 }
 
@@ -510,6 +510,31 @@ h1, h2, h3, h4, h5, h6 {
 }
 .cta:hover {
   background-color: #135c91;
+}
+
+.submitted .filters label, .schedule .filters button {
+  margin: 0 .36em .5em 0;
+  padding: 0.3em .4em .15em;
+  background-color: #135c91;
+  color: #c5d5f0;
+}
+.submitted .filters label:hover, .schedule .filters button:hover {
+  background-color: #135c91;
+  color: #c5d5f0;
+}
+.submitted .filters label:before, .schedule .filters button:before {
+  content: '\2718 ';
+  padding-right: .4em;
+}
+.submitted .filters label.active, .schedule .filters button.active, .submitted .filters label.selected, .schedule .filters button.selected {
+  background-color: #d34913;
+  color: white;
+}
+.submitted .filters label.active:before, .schedule .filters button.active:before, .submitted .filters label.selected:before, .schedule .filters button.selected:before {
+  content: '\2714 ';
+}
+.submitted .filters label input, .schedule .filters button input {
+  display: none;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -1440,44 +1465,19 @@ footer .credits i {
     margin-right: 0;
   }
 }
-.filters {
-  clear: both;
-}
-.filters ul {
-  margin: 0;
-  padding: 0;
-}
-.filters li {
-  display: inline-block;
-}
-.filters label {
-  margin: 0 .36em .5em 0;
-  padding: 0.3em .4em .15em;
-  background-color: #135c91;
-  color: #c5d5f0;
-}
-.filters label:hover {
-  background-color: #135c91;
-  color: #c5d5f0;
-}
-.filters label:before {
-  content: '\2718 ';
-  padding-right: .4em;
-}
-.filters label.active {
-  background-color: #d34913;
-  color: white;
-}
-.filters label.active:before {
-  content: '\2714 ';
-}
-.filters label input {
-  display: none;
-}
-
 .submitted {
   clear: both;
   padding-top: 1em;
+}
+.submitted .filters {
+  clear: both;
+}
+.submitted .filters ul {
+  margin: 0;
+  padding: 0;
+}
+.submitted .filters li {
+  display: inline-block;
 }
 
 .submitted .session {
@@ -1579,14 +1579,6 @@ footer .credits i {
   margin-left: 1.5em;
   padding-right: .5em;
   text-align: right;
-}
-.schedule .filters button.toggle {
-  background-color: #135c91;
-  color: #c5d5f0;
-}
-.schedule .filters button.toggle.selected {
-  background-color: #d34913;
-  color: white;
 }
 .schedule .filters .filters-reset button {
   position: absolute;

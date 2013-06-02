@@ -11,22 +11,22 @@ title: Sessions | DrupalCamp Austin 2013
   <p>Here are our submitted sessions in no particular order. <em>The official schedule will be posted during the week of June 3rd.</em></p>
 </div>
 
-<div class="filters">
-  <h2>Filter submissions</h2>
-
-  <div class="f-track">
-    <ul>
-      <li><label class="active"><input type="checkbox" checked value="Frontend / UX">Frontend / UX</label></li>
-      <li><label class="active"><input type="checkbox" checked value="Development">Development</label></li>
-      <li><label class="active"><input type="checkbox" checked value="Business">Business</label></li>
-      <li><label class="active"><input type="checkbox" checked value="Sitebuilding">Sitebuilding</label></li>
-      <li><label class="active"><input type="checkbox" checked value="Government / Non-profit / Education">Government / Non-profit / Education</label></li>
-    </ul>
-    <br>
-  </div>
-</div>
-
 <div class="submitted">
+  <div class="filters">
+    <h2>Filter submissions</h2>
+
+    <div class="f-track">
+      <ul>
+        <li><label class="active"><input type="checkbox" checked value="Frontend / UX">Frontend / UX</label></li>
+        <li><label class="active"><input type="checkbox" checked value="Development">Development</label></li>
+        <li><label class="active"><input type="checkbox" checked value="Business">Business</label></li>
+        <li><label class="active"><input type="checkbox" checked value="Sitebuilding">Sitebuilding</label></li>
+        <li><label class="active"><input type="checkbox" checked value="Government / Non-profit / Education">Government / Non-profit / Education</label></li>
+      </ul>
+      <br>
+    </div>
+  </div>
+
 {% for post in site.categories.session %}
 
   <article class="session" data-difficulty="{{ post.difficulty }}" data-track="{{ post.track }}">

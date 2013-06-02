@@ -50,15 +50,7 @@ $layout-difficulty: 2 3 3 3; // 3-col
 
     // <button> automatically extends %button
     button {
-      &.toggle {
-        background-color: $darkblue;
-        color: $lightblue;
-
-        &.selected {
-          background-color: $darkorange;
-          color: $white;
-        }
-      }
+      @extend %filter;
     }
 
     // Big ol' Reset button
