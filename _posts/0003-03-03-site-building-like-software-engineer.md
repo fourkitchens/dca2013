@@ -11,9 +11,9 @@ presenters: Mark Ferree
 track: Sitebuilding
 difficulty: Intermediate
 
-day: TBD
-start: TBD
-room: TBD
+day: Saturday
+start: 3:00pm
+room: Room 13A
 ---
 
 This session is intended for the site builders, architects and developers, anyone that finds themselves doing their work in Drupal's UI instead of a code editor.

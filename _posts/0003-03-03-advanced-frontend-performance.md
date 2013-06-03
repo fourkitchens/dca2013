@@ -7,7 +7,7 @@ published: true
 title: Advanced Frontend Performance
 summary: Come learn how to make your web pages load super fast.
 presenters: Chris Ruppel
-track: Frontend / UX
+track: Frontend
 difficulty: Advanced
 
 day: TBD

@@ -11,9 +11,9 @@ presenters: Casey Cobb, Stephen Pope
 track: Development
 difficulty: Intermediate
 
-day: TBD
-start: TBD
-room: TBD
+day: Sunday
+start: 10:30am
+room: Room 13A
 ---
 
 In this talk, we'll discuss some thoughts on why we have really enjoyed working in the Meteor Node.js framework and what we think Drupal and Meteor could learn from each other.

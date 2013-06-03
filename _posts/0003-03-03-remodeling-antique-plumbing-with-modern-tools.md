@@ -11,9 +11,9 @@ presenters: Dustin Younse
 track: Development
 difficulty: Intermediate
 
-day: TBD
-start: TBD
-room: TBD
+day: Sunday
+start: 4:00pm
+room: Room 13A
 ---
 
 This talk is targeted at developers of all experience levels, although it shouldn't get so technical that a beginner would be completely lost.

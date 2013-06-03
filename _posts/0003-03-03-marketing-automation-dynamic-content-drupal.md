@@ -8,17 +8,18 @@ accepted: true
 title: Marketing Automation & Dynamic Content in Drupal
 summary: Marketing Automation & Dynamic Content in Drupal - What can this new and exploding technology do for your Drupal website? Think deep customer engagement...
 presenters: Ben Finklea
-track: Frontend / UX
+track: Frontend
 difficulty: Intermediate
 
-day: TBD
-start: TBD
-room: TBD
+day: Sunday
+start: 4:00pm
+room: Room 13B
 ---
 
 Over the past few years, Marketing Automation has exploded in popularity and use in corporations and non-profits across nearly every vertical. It has become a crucial piece of the Digital Marketing equation and an opportunity for Drupal as more customers are looking for new and creative ways to bridge content with customer to increase engagement.
 
 This session will cover:
+
 * What can marketing automation do,
 * Using Marketing Automation data to hyper-customize a Drupal website,
 * Increasing measurable, bottom-line outcomes for Drupal website owners,

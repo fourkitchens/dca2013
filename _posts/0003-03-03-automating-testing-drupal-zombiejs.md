@@ -11,9 +11,9 @@ presenters: Travis Tidwell
 track: Development
 difficulty: Advanced
 
-day: TBD
-start: TBD
-room: TBD
+day: Sunday
+start: 3:00pm
+room: Room 13A
 ---
 
 ### The Bite

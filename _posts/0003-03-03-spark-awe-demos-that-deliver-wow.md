@@ -11,9 +11,9 @@ presenters: Brant Wynn, Chris Yates
 track: Sitebuilding
 difficulty: Beginner
 
-day: TBD
-start: TBD
-room: TBD
+day: Saturday
+start: 4:00pm
+room: Room 14
 ---
 
 The Demo Framework is a new distribution that highlights powerful features created by our community. It is intended to be used as a starterkit for promoting enterprise-ready Drupal solutions. It uses modules from popular distributions like Spark, Commerce Kickstart and Panopoly to deliver an engaging web experience management solution.

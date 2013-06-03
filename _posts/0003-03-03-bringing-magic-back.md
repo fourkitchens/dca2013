@@ -8,11 +8,11 @@ accepted: true
 title: Bringing Magic Back
 summary: Bring some magic back to your frontend development with the needed modules and tools to speed your site up!
 presenters: Ian Joseph Carrico
-track: Frontend / UX
+track: Frontend
 difficulty: Intermediate
 
 day: Saturday
-start: 11:30am
+start: 3:00pm
 room: Room 13B
 ---
 

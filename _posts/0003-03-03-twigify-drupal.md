@@ -8,7 +8,7 @@ accepted: true
 title: Twigify Drupal
 summary: A deep dive into Twig in Drupal 8 that includes a live demo of a Drupal module to automatically convert your existing Drupal themes to Twig
 presenters: Forest Mars
-track:  Frontend / UX
+track:  Frontend
 difficulty: Intermediate
 
 day: Saturday

@@ -11,9 +11,9 @@ presenters: Josh Miller
 track: Sitebuilding
 difficulty: Intermediate
 
-day: TBD
-start: TBD
-room: TBD
+day: Sunday
+start: 9:30am
+room: Room 14
 ---
 
 Built on top of Drupal Commerce, Commerce Kickstart 2.0 is a distribution of Drupal that installs a demo store out of the box, implementing a variety of eCommerce best practices and improving the store administrator user experience. It is feature-rich, including numerous contributed modules that add helpful functionality to Drupal Commerce.

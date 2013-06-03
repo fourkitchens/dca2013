@@ -11,9 +11,9 @@ presenters: Michael Anello
 track: Sitebuilding
 difficulty: Beginner
 
-day: TBD
-start: TBD
-room: TBD
+day: Sunday
+start: 11:30am
+room: Room 13B
 ---
 
 Drupal is an incredibly powerful content management system with an enourmous number of well-written, extendible, and flexible contributed modules. Learning to be proficient in Drupal core is a great and necessary skill, but learning to leverage contributed modules will really advance your skills to the next level.

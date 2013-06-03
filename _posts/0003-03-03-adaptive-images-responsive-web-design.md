@@ -8,12 +8,12 @@ accepted: true
 title: Adaptive Images for Responsive Web Design
 summary: Learn tricks and techniques to build future-friendly images for RWD sites & apps.
 presenters: Christopher Schmitt
-track: Frontend / UX
+track: Frontend
 difficulty: Intermediate
 
-day: TBD
-start: TBD
-room: TBD
+day: Sunday
+start: 11:30am
+room: Room 14
 ---
 
 The open web doesn't stop at our desktop. Smart phones and tablets not only contain more computing power and better browsers than the computers that started the Internet economy, they have better displays.
