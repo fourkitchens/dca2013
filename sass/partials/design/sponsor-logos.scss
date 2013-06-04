@@ -122,7 +122,6 @@
   }
 }
 
-/*
 #favish {
   @extend .sponsors-favish;
 
@@ -131,4 +130,12 @@
     background-position: 0 0;
   }
 }
-*/
+
+#chapterthree {
+  @extend .sponsors-chapterthree;
+
+  .inlinesvg & {
+    background-image: inline-image("sponsors/chapterthree.svg");
+    background-position: 0 0;
+  }
+}

@@ -1369,7 +1369,7 @@ section.contact .contact-email {
     margin-left: 0%;
     margin-right: 1.69492%;
   }
-  .bat .sponsor:nth-child(3) {
+  .bat .sponsor:nth-child(3), .bat .sponsor:last-child {
     width: 32.20339%;
     clear: right;
     float: right;

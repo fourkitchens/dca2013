@@ -66,7 +66,8 @@
     .bat .sponsor {
       @include grid-span(4);
 
-      &:nth-child(3) {
+      &:nth-child(3),
+      &:last-child {
         @include grid-span(4, 'omega');
       }
     }
