@@ -1181,6 +1181,14 @@ header .inner {
   }
 }
 
+@media (min-width: 0em) and (max-width: 39.9375em) {
+  img.left, img.right {
+    float: none;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
 #map {
   margin-bottom: 1.5em;
 }

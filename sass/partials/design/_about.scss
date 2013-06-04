@@ -2,6 +2,16 @@
 // About page
 //
 
+img {
+  @include breakpoint($about-sm) {
+    &.left, &.right {
+      float: none;
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+}
+
 #map { 
   margin-bottom: $space-and-half;
   
