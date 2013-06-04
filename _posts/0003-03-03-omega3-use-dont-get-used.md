@@ -3,16 +3,17 @@ layout: session
 category: session
 permalink: /sessions/omega3-use-dont-get-used/
 published: true
+accepted: true
 
 title: "Omega 3: Use it, don't get used to it"
 summary: Run with the crowd, run past the crowd.
 presenters: Chad Evans
-track: Frontend / UX
+track: Frontend
 difficulty: Intermediate
 
-day: TBD
-start: TBD
-room: TBD
+day: Saturday
+start: 11:30am
+room: Room 13B
 ---
 
 "Omega…" she whispered through her webcam microphone. "Omega! I choose you!" shouted the man sporting cut-off sleeves and a mullet. "Omega?" asked the child entrepreneur quizzically. Then, heard echoing through the labyrinthian matrices of drupal.org, "Omega" was uttered for the 9872435th time.

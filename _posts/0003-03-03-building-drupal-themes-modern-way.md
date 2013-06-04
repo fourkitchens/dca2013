@@ -8,7 +8,7 @@ published: true
 title: Building Drupal Themes the Modern Way
 summary: CSS Frameworks, Grunt, Less/Sass, and good organization can make your theme development a lot faster if you know how to use them properly.
 presenters: Patrick Coffey
-track: Frontend / UX
+track: Frontend
 difficulty: Intermediate
 
 day: TBD

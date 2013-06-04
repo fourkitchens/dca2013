@@ -3,6 +3,7 @@ layout: session
 category: session
 permalink: /sessions/remodeling-antique-plumbing-with-modern-tools/
 published: true
+accepted: true
 
 title: Remodeling Antique Plumbing With Modern Tools
 summary: Spacer gifs and 8.3 filenames are long gone, but still we labor on elderly sites. What are the old pitfalls and modern workarounds?
@@ -10,9 +11,9 @@ presenters: Dustin Younse
 track: Development
 difficulty: Intermediate
 
-day: TBD
-start: TBD
-room: TBD
+day: Sunday
+start: 4:00pm
+room: Room 13A
 ---
 
 This talk is targeted at developers of all experience levels, although it shouldn't get so technical that a beginner would be completely lost.

@@ -15,54 +15,6 @@
   }
 }
 
-// Filters
-.filters {
-  clear: both;
-
-  ul {
-    margin: 0;
-    padding: 0;
-  }
-  li {
-    display: inline-block;
-  }
-  label {
-    @extend %button;
-    margin: 0 .36em .5em 0;
-    padding: 0.3em .4em .15em;
-    background-color: $darkblue;
-    color: $lightblue;
-
-    // hover state
-    &:hover {
-      background-color: $darkblue;
-      color: $lightblue;
-    }
-
-    // default icon is an X
-    &:before {
-      content: '\2718 ';
-      padding-right: .4em;
-    }
-
-    // active styles
-    &.active {
-      background-color: $darkorange;
-      color: $white;
-
-      // when checked, change icon to checkmark
-      &:before {
-        content: '\2714 ';
-      }
-    }
-
-    // Hide native checkbox
-    input {
-      display: none;
-    }
-  }
-}
-
 //
 // Session list
 //
@@ -70,6 +22,22 @@
 .submitted {
   clear: both;
   padding-top: 1em;
+
+  // Filters
+  .filters {
+    clear: both;
+
+    ul {
+      margin: 0;
+      padding: 0;
+    }
+    li {
+      display: inline-block;
+    }
+    label {
+      @extend %filter;
+    }
+  }
 }
 
 .submitted .session {

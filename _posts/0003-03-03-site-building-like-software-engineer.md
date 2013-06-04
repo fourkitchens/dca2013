@@ -3,6 +3,7 @@ layout: session
 category: session
 permalink: /sessions/site-building-like-software-engineer/
 published: true
+accepted: true
 
 title: Site Building like a Software Engineer
 summary: In the vast majority of Drupal projects most of the site architecture is defined by clicking around in the admin area. This ends up being both extremely powerful and dangerous. To help avoid some of the dangers I propose we start taking site building as seriously as software engineers take their data and object models.
@@ -10,9 +11,9 @@ presenters: Mark Ferree
 track: Sitebuilding
 difficulty: Intermediate
 
-day: TBD
-start: TBD
-room: TBD
+day: Saturday
+start: 3:00pm
+room: Room 13A
 ---
 
 This session is intended for the site builders, architects and developers, anyone that finds themselves doing their work in Drupal's UI instead of a code editor.

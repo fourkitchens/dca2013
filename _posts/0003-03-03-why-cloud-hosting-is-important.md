@@ -7,7 +7,7 @@ published: true
 title: Why Cloud Hosting is Important
 summary: The importance of hosting your Drupal site on the cloud!
 presenters: Timothy Lee
-track: Frontend / UX
+track: Frontend
 difficulty: Intermediate
 
 day: TBD

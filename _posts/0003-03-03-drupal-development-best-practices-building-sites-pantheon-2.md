@@ -1,19 +1,22 @@
 ---
 layout: session
 category: session
-permalink: /sessions/drupal-development-best-practices-building-sites-pantheon/
+permalink: /sessions/drupal-development-best-practices-building-sites-pantheon-2/
 published: true
+accepted: true
 
-title: Drupal Development Best Practices & Building Sites on Pantheon
+title: Drupal Development Best Practices & Building Sites on Pantheon Pt 2
 summary: Learn how to use the Pantheon platform to level up your Drupal development game by using version control, dev/test/live environments, and high performance tools.
 presenters: Matt Cheney
 track: Development
 difficulty: Beginner
 
-day: TBD
-start: TBD
-room: TBD
+day: Saturday
+start: 10:30am
+room: Room 13A
 ---
+
+### Part 2 of 2
 
 Are you using version control for your projects? How about separate development, testing, and live environments? Interested in integrating high performance technologies like Varnish and Redis into your projects? Just want to know how Pantheon works and how to make the most of it?
 

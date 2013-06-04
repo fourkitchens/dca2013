@@ -3,6 +3,7 @@ layout: session
 category: session
 permalink: /sessions/drupal-commerce2-on-drupal8/
 published: true
+accepted: true
 
 title: Drupal Commerce 2.x on Drupal 8
 summary: Learn how we're retooling Commerce on Drupal 8 and shrinking our codebase thanks to new features in Drupal core.
@@ -10,9 +11,9 @@ presenters: Ryan Szrama
 track: Development
 difficulty: Intermediate
 
-day: TBD
-start: TBD
-room: TBD
+day: Saturday
+start: 11:30am
+room: Room 13A
 ---
 
 Development of Drupal Commerce 2.x began in Drupal core through contributions to core initiatives and new core modules. As a result, the next version of Drupal Commerce will feature a shrunken codebase thanks to updates to Drupal's core Entity API and the Entity Reference module, which alone deprecates a significant portion of the Product Reference, Line Item, and Customer modules.

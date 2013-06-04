@@ -3,16 +3,17 @@ layout: session
 category: session
 permalink: /sessions/bringing-magic-back/
 published: true
+accepted: true
 
 title: Bringing Magic Back
 summary: Bring some magic back to your frontend development with the needed modules and tools to speed your site up!
 presenters: Ian Joseph Carrico
-track: Frontend / UX
+track: Frontend
 difficulty: Intermediate
 
-day: TBD
-start: TBD
-room: TBD
+day: Saturday
+start: 3:00pm
+room: Room 13B
 ---
 
 Frontend development is changing, and themers need the right tools to create performant, mobile-first sites. Starting to navigate the many modules, CSS preprocessors and libraries out there can be incredibly overwelming. But have no fear, we are here to bring some *magic* back into your project with some tools to improve your development workflow.

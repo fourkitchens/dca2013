@@ -3,6 +3,7 @@ layout: session
 category: session
 permalink: /sessions/import-map-5000-points-interest-minutes/
 published: true
+accepted: true
 
 title: Import and Map Over 5,000 Points of Interest in 45 Minutes
 summary: Learn how to import over 5,000 points of interest with the Feeds module and use the Geofield module to build a proximity search in less than 45 minutes!
@@ -10,9 +11,9 @@ presenters: Michael Anello
 track: Sitebuilding
 difficulty: Beginner
 
-day: TBD
-start: TBD
-room: TBD
+day: Sunday
+start: 11:30am
+room: Room 13B
 ---
 
 Drupal is an incredibly powerful content management system with an enourmous number of well-written, extendible, and flexible contributed modules. Learning to be proficient in Drupal core is a great and necessary skill, but learning to leverage contributed modules will really advance your skills to the next level.

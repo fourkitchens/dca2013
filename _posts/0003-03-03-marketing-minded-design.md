@@ -7,7 +7,7 @@ published: true
 title: "Marketing-Minded Design: Little Design Changes Will Lead to Bigger Money"
 summary: Beauty doesn't earn bucks. The site you've poured your heart and time into might looks amazing but probably misses the mark for what you're trying to do or help someone else do -- make money!
 presenters: Mitch Holt, Erik Wagner
-track: Frontend / UX
+track: Frontend
 difficulty: Intermediate
 
 day: TBD

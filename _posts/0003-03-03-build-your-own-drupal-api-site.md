@@ -3,6 +3,7 @@ layout: session
 category: session
 permalink: /sessions/build-your-own-drupal-api-site/
 published: true
+accepted: true
 
 title: Build your own Drupal API site
 summary: Learn how to quickly build a local API site for reference offline as well as for including your own projects.
@@ -10,9 +11,9 @@ presenters: Ron Northcutt
 track: Development
 difficulty: Intermediate
 
-day: TBD
-start: TBD
-room: TBD
+day: Saturday
+start: 9:30am
+room: Room 13B
 ---
 
 Oh noes! Api.drupal.org is down... or I am on a plane... or I don't have a wifi connection... how can I look up the details on that hook/function/class that I need?

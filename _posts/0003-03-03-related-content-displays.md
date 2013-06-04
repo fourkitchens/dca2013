@@ -3,6 +3,7 @@ layout: session
 category: session
 permalink: /sessions/related-content-displays/
 published: true
+accepted: true
 
 title: Related Content Displays
 summary: Rock your related content displays by using Drupal's taxonomy. Teach end users how to categorize content using everyday words and thought processes.
@@ -10,9 +11,9 @@ presenters: Jay Epstein
 track: Sitebuilding
 difficulty: Beginner
 
-day: TBD
-start: TBD
-room: TBD
+day: Saturday
+start: 5:00pm
+room: Room 13A
 ---
 
 For beginners that have some familiarity with simple Views, Fields and Content Types, creating related content displays is the key to launching interesting, relevant and feature rich websites.
