@@ -1,16 +1,16 @@
 ---
-published: "true"
+published: true
 layout: session
 category: session
-permalink: "/sessions/internal-culture-at-github/"
+permalink: /sessions/brewing-github/
 accepted: true
-title: Internal Culture at GitHub
-summary: A look into the company culture of GitHub
+title: Brewing Github
+summary: How Github ships
 presenters: Kyle Daigle
 track: Business
 difficulty: Beginner
 day: Saturday
-start: "11:30am"
+start: 11:30am
 room: Room 14
 
 ---
