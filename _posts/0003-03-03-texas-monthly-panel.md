@@ -5,7 +5,7 @@ permalink: /sessions/texas-monthly-panel/
 published: true
 accepted: true
 
-title: Texas Monthly Panel
+title: Texas Monthly goes digital with Drupal
 summary: Panel discussion about Texas Monthly magazine website relaunch
 presenters: Ryan Krouskup, Ethan Worrell
 track: Business
