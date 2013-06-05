@@ -7,7 +7,7 @@ published: true
 title: CiviCRM Overview and Case Studies
 summary: CiviCRM use cases for non-profits, membership-driven associations, and professional societies.
 presenters: Peter Petrik
-track: Government / Non-profit / Education
+track: Business
 difficulty: Beginner
 
 day: TBD

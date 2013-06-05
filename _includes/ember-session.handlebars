@@ -3,16 +3,12 @@
   <div {{bindAttr class="filtered"}}>
     <h2><a href="{{unbound permalink}}">{{unbound title}}</a></h2>
     <p class="meta">Presented by {{unbound presenters}}</p>
-    <p class="sched">{{unbound day}} in {{unbound room}} at {{unbound start}}</p>
-    <ul class="meta">
-      <li>{{unbound track}}</li>
-      <li>{{unbound difficulty}}</li>
-    </ul>
     {{#if showContent}}
-      <button {{action "collapse" session target="view"}}>Hide summary</button>
+      <button {{action "collapse" session target="view"}}>Hide info</button>
+      <p class="sched">{{unbound day}} <span class="room">in {{unbound room}}</span> at {{unbound start}}</p>
       <div class="desc">{{{unbound summary}}}</div>
     {{else}}
-      <button {{action "expand" session target="view"}}>Show summary</button>
+      <button {{action "expand" session target="view"}}>Show more info</button>
     {{/if}}
   </div>
 </script>

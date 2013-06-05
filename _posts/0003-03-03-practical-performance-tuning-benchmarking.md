@@ -3,6 +3,7 @@ layout: session
 category: session
 permalink: /sessions/practical-performance-tuning-benchmarking/
 published: true
+accepted: true
 
 title: Practical performance tuning and benchmarking
 summary: A down to earth guide on how to diagnose, and treat performance problems in Drupal.
@@ -10,9 +11,9 @@ presenters: Nick Lewis
 track: Development
 difficulty: Intermediate
 
-day: TBD
-start: TBD
-room: TBD
+day: Sunday
+start: 11:30am
+room: Room 13A
 ---
 
 Performance problems in Drupal are like cancer. Its best to prevent them by following best practices and regular testing. In this session we’ll simulate a nightmare: A poorly optimized site that’s being brought down by traffic spikes.

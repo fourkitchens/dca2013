@@ -2,7 +2,55 @@
 // Submitted Sessions
 //
 
+// Intro
+@include breakpoint($grid-max) {
+  .intro p {
+    float: left;
+    width: 45%;
+    margin-right: 5%;
+
+    &:nth-child(odd) {
+      margin-right: 0;
+    }
+  }
+}
+
+//
+// Session list
+//
+
+.submitted {
+  clear: both;
+  padding-top: 1em;
+
+  // Filters
+  .filters {
+    clear: both;
+
+    ul {
+      margin: 0;
+      padding: 0;
+    }
+    li {
+      display: inline-block;
+    }
+    label {
+      @extend %filter;
+    }
+  }
+}
+
 .submitted .session {
+  opacity: 1;
+  max-height: 154em;
+  @include transition(all .4s ease-in-out);
+
+  // Hidden sessions are hidden
+  &.hidden {
+    opacity: 0;
+    max-height: 0;
+  }
+
   p.meta {
     margin-top: 0;
     margin-bottom: 1em;
@@ -13,8 +61,12 @@
   }
 
   .desc {
-    @include transition(all .4s ease-in-out);
     overflow: hidden;
+    @include transition(all .4s ease-in-out);
+
+    @include breakpoint($grid-max) {
+      max-width: 82%;
+    }
 
     // if JS fires, collapse descriptions
     .js & {
@@ -41,20 +93,6 @@
 
     &:after {
       height: 0;
-    }
-  }
-}
-
-// Sidebar
-.submit {
-  @include breakpoint($sidebar) {
-    margin-top: -3.9em;
-
-    h2 {
-      position: relative;
-      top: -.2em;
-      padding-bottom: .36em;
-      border-bottom: 2px solid #11212d;
     }
   }
 }

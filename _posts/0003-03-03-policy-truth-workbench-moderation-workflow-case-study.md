@@ -3,16 +3,17 @@ layout: session
 category: session
 permalink: /sessions/policy-truth-workbench-moderation-workflow-case-study/
 published: true
+accepted: true
 
 title: Policy of Truth — Workbench, moderation, and workflow case study
 summary: Come see this case-study for the UT Austin Policy Office website where we turn the workbench module on its head and make it do even more.
 presenters: David Diers, Taylor Smith
-track: Development
+track: Business
 difficulty: Advanced
 
-day: TBD
-start: TBD
-room: TBD
+day: Sunday
+start: 3:00pm
+room: Room 13B
 ---
 
 This session is a case study of Four Kitchens' work with UT Austin's Policy Office on a custom policy publishing and approval workflow. The business problems faced by the policy office require a lot of flexibility and wide discretion in terms of workflow, presentation, and access.

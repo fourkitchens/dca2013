@@ -1,12 +1,234 @@
 ---
 layout: full
 title: Schedule | DrupalCamp Austin 2013
-
-ember: true
 ---
 
-<div id="ember-container"></div>
+<div class="schedule">
+  <h1 class="title">Schedule</h1>
+  <div class="filters">
+    <div class="filters-track" style="display: none; ">
+      <label>Track:</label>
+      <button class="toggle selected">Business</button>
+      <button class="toggle selected">Development</button>
+      <button class="toggle selected">Frontend</button>
+      <button class="toggle selected">Sitebuilding</button>
+    </div>
 
-{% include ember-app.handlebars %}
-{% include ember-schedule.handlebars %}
-{% include ember-session.handlebars %}
+<!--
+    <div class="filters-difficulty">
+      <label>Difficulty:</label>
+      <button class="toggle selected">Beginner</button>
+      <button class="toggle selected">Intermediate</button>
+      <button class="toggle selected">Advanced</button>
+    </div>
+
+    <div class="column-select">
+      <label>Order by:</label>
+      <button class="toggle selected">room</button>
+      <button class="toggle">track</button>
+      <button class="toggle">difficulty</button>
+    </div>
+ -->
+
+    <div class="filters-reset" style="display: none; ">
+      <button>Reset</button>
+    </div>
+  </div>
+
+    <section id="sched" class="room" data-bindattr-8="8">
+      <h2>Saturday</h2>
+
+      <header>
+        <span class="column"></span>
+        <span class="column">Room 13B</span>
+        <span class="column">Room 13A</span>
+        <span class="column">Room 14</span>
+      </header>
+
+      <section class="slot">
+        <h3 class="time">Saturday, 9:30am</h3>
+        <article class="session difficulty-intermediate track-development room-room-13b">
+          <h2><a href="/sessions/build-your-own-drupal-api-site/">Build your own Drupal API site</a></h2>
+          <p class="meta">Presented by Ron Northcutt</p>
+        </article><!-- .session -->
+        <article class="session difficulty-beginner track-development room-room-13a">
+          <h2><a href="/sessions/drupal-development-best-practices-building-sites-pantheon-1/">Drupal Development Best Practices &amp; Building Sites on Pantheon Pt 1</a></h2>
+          <p class="meta">Presented by Matt Cheney</p>
+        </article><!-- .session -->
+        <article class="session difficulty-beginner track-business room-room-14">
+          <h2><a href="/sessions/marketers-case-drupal/">The Marketers' Case for Drupal</a></h2>
+          <p class="meta">Presented by Tom Wentworth</p>
+        </article><!-- .session -->
+      </section><!-- .slot -->
+
+      <section class="slot">
+        <h3 class="time">Saturday, 10:30am</h3>
+        <article class="session difficulty-beginner track-business room-room-13b">
+          <h2><a href="/sessions/selling-drupal/">Selling Drupal</a></h2>
+          <p class="meta">Presented by Thad Martin</p>
+        </article><!-- .session -->
+        <article class="session difficulty-beginner track-development room-room-13a">
+          <h2><a href="/sessions/drupal-development-best-practices-building-sites-pantheon-2/">Drupal Development Best Practices &amp; Building Sites on Pantheon Pt 2</a></h2>
+          <p class="meta">Presented by Matt Cheney</p>
+        </article><!-- .session -->
+        <article class="session difficulty-intermediate track-frontend room-room-14">
+          <h2><a href="/sessions/twigify-drupal/">Twigify Drupal</a></h2>
+          <p class="meta">Presented by Forest Mars</p>
+        </article><!-- .session -->
+      </section><!-- .slot -->
+
+      <section class="slot">
+        <h3 class="time">Saturday, 11:30am</h3>
+        <article class="session difficulty-intermediate track-frontend room-room-13b">
+          <h2><a href="/sessions/omega3-use-dont-get-used/">Omega 3: Use it, don't get used to it</a></h2>
+          <p class="meta">Presented by Chad Evans</p>
+        </article><!-- .session -->
+        <article class="session difficulty-intermediate track-development room-room-13a">
+          <h2><a href="/sessions/drupal-commerce2-on-drupal8/">Drupal Commerce 2.x on Drupal 8</a></h2>
+          <p class="meta">Presented by Ryan Szrama</p>
+        </article><!-- .session -->
+        <article class="session difficulty-beginner track-business room-room-14">
+          <h2><a href="/sessions/internal-culture-at-github/">Internal Culture at GitHub</a></h2>
+          <p class="meta">Presented by Kyle Daigle</p>
+        </article><!-- .session -->
+      </section><!-- .slot -->
+
+      <section class="slot">
+        <h3 class="time">Saturday, 3:00pm</h3>
+        <article class="session difficulty-intermediate track-frontend room-room-13b">
+          <h2><a href="/sessions/bringing-magic-back/">Bringing Magic Back</a></h2>
+          <p class="meta">Presented by Ian Joseph Carrico</p>
+        </article><!-- .session -->
+        <article class="session difficulty-intermediate track-sitebuilding room-room-13a">
+          <h2><a href="/sessions/site-building-like-software-engineer/">Site Building like a Software Engineer</a></h2>
+          <p class="meta">Presented by Mark Ferree</p>
+        </article><!-- .session -->
+        <article class="session difficulty-beginner track-business room-room-14">
+          <h2><a href="/sessions/drupals-destiny/">Drupal's Destiny</a></h2>
+          <p class="meta">Presented by Josh Koenig</p>
+        </article><!-- .session -->
+      </section><!-- .slot -->
+
+      <section class="slot">
+        <h3 class="time">Saturday, 4:00pm</h3>
+        <article class="session difficulty-beginner track-business room-room-13b">
+          <h2><a href="/sessions/writing-digital-marketing-plan/">Writing a Digital Marketing Plan</a></h2>
+          <p class="meta">Presented by Kylon Gustin</p>
+        </article><!-- .session -->
+        <article class="session difficulty-intermediate track-development room-room-13a">
+          <h2><a href="/sessions/life-drupal-dev-tips-pitfalls-workflow/">Life as a Drupal dev: Tips, pitfalls, workflow</a></h2>
+          <p class="meta">Presented by Bronius Motekaitis</p>
+        </article><!-- .session -->
+        <article class="session difficulty-beginner track-sitebuilding room-room-14">
+          <h2><a href="/sessions/spark-awe-demos-that-deliver-wow/">Spark and Awe: Demos that Deliver the Wow</a></h2>
+          <p class="meta">Presented by Brant Wynn, Chris Yates</p>
+        </article><!-- .session -->
+      </section><!-- .slot -->
+
+      <section class="slot">
+        <h3 class="time">Saturday, 5:00pm</h3>
+        <article class="session difficulty-advanced track-development room-room-13b">
+          <h2><a href="/sessions/cross-platform-apps/">Cross-platform apps</a></h2>
+          <p class="meta">Presented by Michael Favia, Dane Macaulay</p>
+        </article><!-- .session -->
+        <article class="session difficulty-beginner track-sitebuilding room-room-13a">
+          <h2><a href="/sessions/related-content-displays/">Related Content Displays</a></h2>
+          <p class="meta">Presented by Jay Epstein</p>
+        </article><!-- .session -->
+        <article class="session difficulty-advanced track-development room-room-14">
+          <h2><a href="/sessions/integrating-nodejs/">Integrating Node.JS</a></h2>
+          <p class="meta">Presented by Ryan Oles</p>
+        </article><!-- .session -->
+      </section><!-- .slot -->
+
+      <h2>Sunday</h2>
+
+      <header>
+        <span class="column"></span>
+        <span class="column">Room 13B</span>
+        <span class="column">Room 13A</span>
+        <span class="column">Room 14</span>
+      </header>
+
+      <section class="slot">
+        <h3 class="time">Sunday, 9:30am</h3>
+        <article class="session difficulty-intermediate track-business room-room-13b">
+          <h2><a href="/sessions/civicrm-developers-sitebuilders-themers/">CiviCRM for Developers, Site Builders, and Themers</a></h2>
+          <p class="meta">Presented by Kevin Reynen</p>
+        </article><!-- .session -->
+        <article class="session difficulty-advanced track-development room-room-13a">
+          <h2><a href="/sessions/tdd-oo-sps-case-study-fighting-drupal/">TDD and OO in SPS: A case study in fighting Drupal</a></h2>
+          <p class="meta">Presented by Erik Summerfield</p>
+        </article><!-- .session -->
+        <article class="session difficulty-intermediate track-sitebuilding room-room-14">
+          <h2><a href="/sessions/commerce-kickstart-2-tips-tricks/">Commerce Kickstart 2 — Tips and Tricks</a></h2>
+          <p class="meta">Presented by Josh Miller</p>
+        </article><!-- .session -->
+      </section><!-- .slot -->
+
+      <section class="slot">
+        <h3 class="time">Sunday, 10:30am</h3>
+        <article class="session difficulty-intermediate track-business room-room-13b">
+          <h2><a href="/sessions/getting-agile-with-drupal/">Getting Agile with Drupal</a></h2>
+          <p class="meta">Presented by Johnnie Fox</p>
+        </article><!-- .session -->
+        <article class="session difficulty-intermediate track-development room-room-13a">
+          <h2><a href="/sessions/why-chose-meteor-drupal-lovechild/">Why we chose Meteor and what a Drupal/Meteor love child might look like</a></h2>
+          <p class="meta">Presented by Casey Cobb, Stephen Pope</p>
+        </article><!-- .session -->
+        <article class="session difficulty-intermediate track-sitebuilding room-room-14">
+          <h2><a href="/sessions/semantic-site-building/">Semantic Site Building</a></h2>
+          <p class="meta">Presented by Jody Hamilton</p>
+        </article><!-- .session -->
+      </section><!-- .slot -->
+
+      <section class="slot">
+        <h3 class="time">Sunday, 11:30am</h3>
+        <article class="session difficulty-beginner track-sitebuilding room-room-13b">
+          <h2><a href="/sessions/import-map-5000-points-interest-minutes/">Import and Map Over 5,000 Points of Interest in 45 Minutes</a></h2>
+          <p class="meta">Presented by Michael Anello</p>
+        </article><!-- .session -->
+        <article class="session difficulty-intermediate track-development room-room-13a">
+          <h2><a href="/sessions/practical-performance-tuning-benchmarking/">Practical performance tuning and benchmarking</a></h2>
+          <p class="meta">Presented by Nick Lewis</p>
+        </article><!-- .session -->
+        <article class="session difficulty-intermediate track-frontend room-room-14">
+          <h2><a href="/sessions/adaptive-images-responsive-web-design/">Adaptive Images for Responsive Web Design</a></h2>
+          <p class="meta">Presented by Christopher Schmitt</p>
+        </article><!-- .session -->
+      </section><!-- .slot -->
+
+      <section class="slot">
+        <h3 class="time">Sunday, 3:00pm</h3>
+        <article class="session difficulty-advanced track-business room-room-13b">
+          <h2><a href="/sessions/policy-truth-workbench-moderation-workflow-case-study/">Policy of Truth — Workbench, moderation, and workflow case study</a></h2>
+          <p class="meta">Presented by David Diers, Taylor Smith</p>
+        </article><!-- .session -->
+        <article class="session difficulty-advanced track-development room-room-13a">
+          <h2><a href="/sessions/automating-testing-drupal-zombiejs/">Automating and Testing Drupal with Zombie.js</a></h2>
+          <p class="meta">Presented by Travis Tidwell</p>
+        </article><!-- .session -->
+        <article class="session difficulty-intermediate track-business room-room-14">
+          <h2><a href="/sessions/texas-monthly-panel/">Texas Monthly Panel</a></h2>
+          <p class="meta">Presented by Ryan Krouskup, Ethan Worrell</p>
+        </article><!-- .session -->
+      </section><!-- .slot -->
+
+      <section class="slot">
+        <h3 class="time">Sunday, 4:00pm</h3>
+        <article class="session difficulty-intermediate track-frontend room-room-13b">
+          <h2><a href="/sessions/marketing-automation-dynamic-content-drupal/">Marketing Automation &amp; Dynamic Content in Drupal</a></h2>
+          <p class="meta">Presented by Ben Finklea</p>
+        </article><!-- .session -->
+        <article class="session difficulty-intermediate track-development room-room-13a">
+          <h2><a href="/sessions/remodeling-antique-plumbing-with-modern-tools/">Remodeling Antique Plumbing With Modern Tools</a></h2>
+          <p class="meta">Presented by Dustin Younse</p>
+        </article><!-- .session -->
+        <article class="session difficulty-intermediate track-frontend room-room-14">
+          <h2><a href="/sessions/get-more-from-content-reader-aware-design/">Get More From Your Content with Reader Aware Design</a></h2>
+          <p class="meta">Presented by Ben Brown</p>
+        </article><!-- .session -->
+      </section><!-- .slot -->
+
+    </section><!-- .sched -->
+  </div>

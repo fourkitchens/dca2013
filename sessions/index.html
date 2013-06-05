@@ -1,37 +1,41 @@
 ---
-layout: col-2
+layout: col-1
 title: Sessions | DrupalCamp Austin 2013
-
-blocks:
-- submit
 ---
 
-<h1 class="title">Sessions</h1>
+<h1 class="title">Submitted Sessions</h1>
 
-<p>Like other DrupalCamps, the presentations at our event come from <em>you</em>, the members of the Drupal community. DrupalCamp Austin is an excellent opportunity to teach others about the interesting code, design, or client projects you've solved using Drupal.</p>
-
-<p>We are looking for talks at different skill levels on a range of Drupal topics. These include:</p>
-
-<ul>
-  <li>Development</li>
-  <li>Design and user experience</li>
-  <li>Business</li>
-  <li>Site building</li>
-  <li>Government, non-profit, and education</li>
-</ul>
+<div class="intro">
+  <p>DrupalCamp Austin is an excellent opportunity to teach others about the interesting code, design, or client projects you've solved using Drupal.</p>
+  <p>Like other DrupalCamps, the presentations at our event come from <em>you</em>, the members of the Drupal community.</p>
+  <p>Here are our submitted sessions in no particular order. <em>The official schedule will be posted during the week of June 3rd.</em></p>
+</div>
 
 <div class="submitted">
-  <h2 id="submitted-sessions">Submitted sessions</h2>
+  <div class="filters">
+    <h2>Filter submissions</h2>
 
-  {% for post in site.categories.session %}
+    <div class="f-track">
+      <ul>
+        <li><label class="active"><input type="checkbox" checked value="Frontend">Frontend</label></li>
+        <li><label class="active"><input type="checkbox" checked value="Development">Development</label></li>
+        <li><label class="active"><input type="checkbox" checked value="Business">Business</label></li>
+        <li><label class="active"><input type="checkbox" checked value="Sitebuilding">Sitebuilding</label></li>
+        <!-- <li><label class="active"><input type="checkbox" checked value="Government / Non-profit / Education">Government / Non-profit / Education</label></li> -->
+      </ul>
+      <br>
+    </div>
+  </div>
 
-    <article class="session">
-      <h3 class="title"><a href="{{ post.permalink }}">{{ post.title }}</a></h3>
-      <p class="meta"><em>By {{ post.presenters }}</em></p>
-      <div class="desc">
-        {{ post.content }}
-      </div>
-    </article>
+{% for post in site.categories.session %}
 
-  {% endfor %}
+  <article class="session" data-difficulty="{{ post.difficulty }}" data-track="{{ post.track }}">
+    <h3 class="title"><a href="{{ post.permalink }}">{{ post.title }}</a></h3>
+    <p class="meta"><em>By {{ post.presenters }}</em></p>
+    <div class="desc">
+      {{ post.content }}
+    </div>
+  </article>
+
+{% endfor %}
 </div><!-- .submitted -->

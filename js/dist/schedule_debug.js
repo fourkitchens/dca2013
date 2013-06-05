@@ -30751,7 +30751,7 @@ Ember
 
 })();
 
-;(function ($) {
+;(function($) {
   var cl = console.log.bind(console);
   var App = Ember.Application.create({
     LOG_TRANSITIONS: true,
@@ -30795,10 +30795,6 @@ Ember
       }),
       Ember.Object.create({
         name: 'difficulty',
-        selected: false
-      }),
-      Ember.Object.create({
-        name: 'presenters',
         selected: false
       })
     ],
@@ -30886,7 +30882,7 @@ Ember
 
     resetScheduleInfo: function() {
       var self = this;
-      var request = $.ajax('/sessions.json');
+      var request = $.ajax('/schedule.json');
 
       request.done(function(data, textStatus, jqXHR) {
         if (jqXHR.status === 200) {
