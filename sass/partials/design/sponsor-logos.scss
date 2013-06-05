@@ -85,19 +85,57 @@
 }
 
 #commerce-guys {
-  @extend .sponsors-commerce-guys;
+  @extend .sponsors-commerceguys;
 
   .inlinesvg & {
-    background-image: inline-image("sponsors/commerce-guys.svg");
+    background-image: inline-image("sponsors/commerceguys.svg");
     background-position: 0 0;
   }
 }
+
+/*
+#bluedropcookbook {
+  @extend .sponsors-bluedropcookbook;
+
+  .inlinesvg & {
+    background-image: inline-image("sponsors/bluedropcookbook.svg");
+    background-position: 0 0;
+  }
+}
+*/
 
 #drupalizeme {
   @extend .sponsors-drupalizeme;
 
   .inlinesvg & {
     background-image: inline-image("sponsors/drupalizeme.svg");
+    background-position: 0 0;
+  }
+}
+
+#pushpinplanner {
+  @extend .sponsors-pushpinplanner;
+
+  .inlinesvg & {
+    background-image: inline-image("sponsors/pushpinplanner.svg");
+    background-position: 0 0;
+  }
+}
+
+#favish {
+  @extend .sponsors-favish;
+
+  .inlinesvg & {
+    background-image: inline-image("sponsors/favish.svg");
+    background-position: 0 0;
+  }
+}
+
+#chapterthree {
+  @extend .sponsors-chapterthree;
+
+  .inlinesvg & {
+    background-image: inline-image("sponsors/chapterthree.svg");
     background-position: 0 0;
   }
 }
