@@ -7,7 +7,7 @@ accepted: true
 
 title: Bringing Magic Back
 summary: Bring some magic back to your frontend development with the needed modules and tools to speed your site up!
-presenters: Ian Joseph Carrico
+presenters: Ian Carrico
 track: Frontend
 difficulty: Intermediate
 
