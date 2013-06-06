@@ -1880,34 +1880,70 @@ article.session.filtered {
   }
 }
 @media (min-width: 57.5em) {
-  section.track article.session.track-business {
+  section.track article.session[data-track="business"] {
     width: 20%;
     float: left;
     margin-right: -100%;
     margin-left: 15%;
     clear: none;
   }
-  section.track article.session.track-development {
+  section.track article.session[data-track="development"] {
     width: 20%;
     float: left;
     margin-right: -100%;
     margin-left: 36.66667%;
     clear: none;
   }
-  section.track article.session.track-frontend {
+  section.track article.session[data-track="frontend"] {
     width: 20%;
     float: left;
     margin-right: -100%;
     margin-left: 58.33333%;
     clear: none;
   }
-  section.track article.session.track-sitebuilding {
+  section.track article.session[data-track="sitebuilding"] {
     width: 20%;
     float: right;
     margin-left: 0;
     margin-right: 0;
     clear: none;
   }
+}
+
+@media (min-width: 57.5em) {
+  .room article.full {
+    width: 80.85106%;
+    float: right;
+    margin-left: 0;
+    margin-right: 0;
+    clear: none;
+  }
+  .track article.full {
+    width: 85%;
+    float: right;
+    margin-left: 0;
+    margin-right: 0;
+    clear: none;
+  }
+  .difficulty article.full {
+    width: 80.85106%;
+    float: right;
+    margin-left: 0;
+    margin-right: 0;
+    clear: none;
+  }
+}
+article.full h2 {
+  text-align: center;
+  position: relative;
+  top: 0.19em;
+  background: #62802a;
+  color: #222;
+  border-radius: .16em;
+  padding: .23em;
+}
+article.full .name {
+  white-space: nowrap;
 }
 
 @font-face {
