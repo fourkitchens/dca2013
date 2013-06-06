@@ -1,10 +1,6 @@
-// Sigularity grid
-
-$grids: 9;
-$gutters: 1/4;
-$output: 'isolation';
-
-$grid-max: 880px;
+//
+// Variables file
+//
 
 // Colors
 
@@ -60,3 +56,17 @@ $sched-lg:    920px;
 $sidebar:     768px;
 $skinny:      680px;
 $sponsors-md: 720px;
+
+// Sigularity grid
+
+$grids: 9;
+$gutters: 1/4;
+$output: 'isolation';
+
+$grid-max: 880px;
+
+// Layouts for schedule
+
+$layout-room: 2 3 3 3; // 3-col
+$layout-track: 2 3 3 3 3; // 4-col
+$layout-difficulty: 2 3 3 3; // 3-col

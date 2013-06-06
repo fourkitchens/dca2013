@@ -25,7 +25,7 @@
 
   &:hover {
     background-color: darken($darkorange, 15%);
-    transition: background linear 350ms;
+    @include transition(background linear 160ms);
     color: white;
   }
 

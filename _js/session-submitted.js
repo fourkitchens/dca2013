@@ -11,7 +11,7 @@
         $(this).parent().toggleClass('expanded');
       });
 
-    $('.filters input').click(function(){
+    $('.submitted .filters input').click(function(){
       var tracks = [];
 
       if ($(this).is(':checked')) {

@@ -40,6 +40,7 @@ module.exports = function(grunt) {
           '_js/vendor/responsive-nav.min.js',
           '_js/vendor/fastclick.js',
           '_js/faq.js',
+          '_js/session-schedule.js',
           '_js/session-submitted.js',
           '_js/credits.js'
         ],

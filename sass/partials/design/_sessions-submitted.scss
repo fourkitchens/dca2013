@@ -22,22 +22,6 @@
 .submitted {
   clear: both;
   padding-top: 1em;
-
-  // Filters
-  .filters {
-    clear: both;
-
-    ul {
-      margin: 0;
-      padding: 0;
-    }
-    li {
-      display: inline-block;
-    }
-    label {
-      @extend %filter;
-    }
-  }
 }
 
 .submitted .session {
