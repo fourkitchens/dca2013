@@ -12,7 +12,7 @@ track: Sitebuilding
 difficulty: Intermediate
 
 day: Saturday
-start: 3:00pm
+start: 11:30am
 room: Room 13A
 ---
 
