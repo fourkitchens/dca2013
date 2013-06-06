@@ -1,210 +1,27 @@
 //
-// Schedule
+// Individual sessions for schedule
 //
 
-$sched-pad: 2em;
-$reset-width: 6em;
-
-$layout-room: 2 3 3 3; // 3-col
-$layout-track: 2 3 3 3 3; // 4-col
-$layout-difficulty: 2 3 3 3; // 3-col
-
-.schedule {
-  * {
-    @include box-sizing(border-box);
-  }
-
-  h1 {
-    text-align: center;
-  }
-
-  .slot {
-    @include clearfix;
-
-    .time {
-      clear: both;
-      margin-top: 1em;
-      margin-bottom: 1em;
-      padding: .5em;
-      background-color: $darkblue;
-      color: #000;
-
-      @include breakpoint($sched-lg) {
-        margin-top: 0;
-      }
-    }
-  }
-
-  // Schedule filters
-  .filters {
-    position: relative;
-    padding-right: $reset-width + $sched-pad + 2em;
-
-    label {
-      display: inline-block;
-      width: 5em;
-      margin-left: $sched-pad - .5em;
-      padding-right: .5em;
-      text-align: right;
-    }
-
-    // <button> automatically extends %button
-    button {
-      @extend %filter;
-    }
-
-    // Big ol' Reset button
-    .filters-reset {
-      button {
-        position: absolute;
-        top: 0;
-        right: $sched-pad;
-        background: $darkgreen;
-        color: $white;
-        width: $reset-width;
-        height: $reset-width;
-      }
-    }
-  }
-}
-
-//
-// To keep the Sass much lighter weight, we're not scoping all of
-// this stuff to the .schedule class. Things are still scoped
-// to each schedule view using & = section.[room|track|difficulty]
-//
-
-// Column headings - changes when user clicks "Order by"
-#sched {
-  padding-top: 1em;
-  position: relative;
-
-  // Day headings should fall in line vertically with column headings
-  @include breakpoint($sched-lg) {
-    & > h2 {
-      float: left;
-      position: absolute;
-    }
-    & > h2:nth-of-type(2) {
-      @include transform(translateY(1.8em));
-    }
-
-    header:nth-of-type(2) {
-      margin-top: 4em;
-    }
-  }
-
-  // generic styles
-  .column:not(:nth-of-type(1)) {
-    display: none; // until $sched-lg
-    background: $green;
-    font-family: $atrament;
-    font-size: 2em;
-    color: #222;
-    border-radius: .2em;
-    padding: 0 .5em;
-    white-space: nowrap;
-    // fun stuff
-    // position: -webkit-sticky;
-    // position:    -moz-sticky;
-    // position:     -ms-sticky;
-    // position:      -o-sticky;
-    // top: .5em;
-
-    @include breakpoint($sched-lg) {
-      display: inline-block;
-    }
-  }
-
-  &.room {
-    @include breakpoint($sched-lg) {
-      @include layout($layout-room) {
-        .time {
-          @include grid-span(1,1);
-        }
-        // .column:nth-of-type(1) // not used
-        .column:nth-of-type(2) {
-          @include grid-span(1,4);
-        }
-        .column:nth-of-type(3) {
-          @include grid-span(1,3);
-        }
-        .column:nth-of-type(4) {
-          @include grid-span(1,2);
-        }
-      }
-    }
-  }
-
-  &.track {
-    @include breakpoint($sched-lg) {
-      @include layout($layout-track) {
-        .time {
-          @include grid-span(1,1);
-        }
-        // .column:nth-of-type(1) // not used
-        .column:nth-of-type(2) {
-          @include grid-span(1,2);
-        }
-        .column:nth-of-type(3) {
-          @include grid-span(1,3);
-        }
-        .column:nth-of-type(4) {
-          @include grid-span(1,4);
-        }
-        .column:nth-of-type(5) {
-          @include grid-span(1,5);
-        }
-      }
-    }
-  }
-
-  &.difficulty {
-    @include breakpoint($sched-lg) {
-      @include layout($layout-difficulty) {
-        .time {
-          @include grid-span(1,1);
-        }
-        // .column:nth-of-type(1) // not used
-        .column:nth-of-type(2) {
-          @include grid-span(1,2);
-        }
-        .column:nth-of-type(3) {
-          @include grid-span(1,3);
-        }
-        .column:nth-of-type(4) {
-          @include grid-span(1,4);
-        }
-      }
-    }
-  }
-}
-
-// Individual sessions
 article.session {
   // Transform container settings
-  @include transform-style(preserve3d);
+  @include transform-style(preserve-3d);
   @include perspective(600px);
+  @include transition(all .3s ease-in-out);
+  @include transform-origin(50% 100%);
 
-  // UI fanciness for schedule filtering
-  div {
-    @include transition(all .3s ease-in-out);
-    @include transform-origin(50% 100%);
+  // Filtered = suppressed from schedule
+  &.filtered {
+    @include transform(scale(.8));
+    opacity: .2;
 
-    // Filtered = suppressed from schedule
-    &.filtered {
-      @include transform(scale(.8));
-      opacity: .2;
-
-      // 3D transforms
-      .csstransforms3d & {
-        @include transform(translateZ(-40px) rotateX(24deg));
-      }
-      // Blur
-      .cssfilters & {
-        opacity: .4;
-        -webkit-filter: blur(8px);
-      }
+    // 3D transforms
+    .csstransforms3d & {
+      @include transform(translateZ(-2em) rotateX(24deg) scale(.8));
+    }
+    // Blur
+    .cssfilters & {
+      opacity: .4;
+      -webkit-filter: blur(8px);
     }
   }
 
@@ -224,13 +41,13 @@ article.session {
     // 3 columns
     @include breakpoint($sched-lg) {
       @include layout($layout-room) {
-        &.room-room-14 {
+        &[data-room="room-14"] {
           @include grid-span(1,2);
         }
-        &.room-room-13a {
+        &[data-room="room-13a"] {
           @include grid-span(1,3);
         }
-        &.room-room-13b {
+        &[data-room="room-13b"] {
           @include grid-span(1,4);
         }
       }
@@ -242,13 +59,13 @@ article.session {
     // 3 columns
     @include breakpoint($sched-lg) {
       @include layout($layout-difficulty) {
-        &.difficulty-beginner {
+        &[data-difficulty="beginner"] {
           @include grid-span(1,2);
         }
-        &.difficulty-intermediate {
+        &[data-difficulty="intermediate"] {
           @include grid-span(1,3);
         }
-        &.difficulty-advanced {
+        &[data-difficulty="advanced"] {
           @include grid-span(1,4);
         }
       }
@@ -260,17 +77,17 @@ article.session {
     // 2 columns
     @include breakpoint($sched-md) {
       @include layout(2) {
-        &.track-business {
+        &[data-track="business"] {
           @include grid-span(1,1);
         }
-        &.track-development {
+        &[data-track="development"] {
           @include grid-span(1,2);
         }
-        &.track-frontend {
+        &[data-track="frontend"] {
           @include grid-span(1,1);
           clear: both;
         }
-        &.track-sitebuilding {
+        &[data-track="sitebuilding"] {
           @include grid-span(1,2);
         }
       }

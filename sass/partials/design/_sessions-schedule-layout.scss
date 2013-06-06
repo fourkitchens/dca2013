@@ -1,0 +1,67 @@
+//
+// Schedule layout
+//
+
+$sched-pad: 1em;
+$reset-width: 7.5em;
+$reset-height: 2.1em;
+
+.schedule {
+  * {
+    @include box-sizing(border-box);
+  }
+
+  h1 {
+    text-align: center;
+  }
+
+  .slot {
+    @include clearfix;
+
+    .time {
+      clear: both;
+      margin-top: 1em;
+      margin-bottom: 1em;
+      padding: 0.5em;
+      background-color: $darkblue;
+      color: #000;
+      border-radius: 0.2em;
+
+      @include breakpoint($sched-lg) {
+        margin-top: 0.2em;
+      }
+    }
+  }
+
+  // Schedule filters
+  .filters {
+    min-height: $reset-width + 3em;
+    position: relative;
+    padding-left: $reset-width + $sched-pad;
+
+    // on big screens make it shorter.
+    // temporary until we add other filters.
+    @include breakpoint($sched-lg) {
+      min-height: $reset-height;
+    }
+
+    // Big ol' Reset button
+    .f-reset {
+      button {
+        position: absolute;
+        top: -0.3em;
+        left: 0;
+        background: $darkgreen;
+        color: $white;
+        width: $reset-width;
+        height: $reset-width + 1em;
+
+        // on big screens make it shorter.
+        // temporary until we add other filters.
+        @include breakpoint($sched-lg) {
+          height: $reset-height;
+        }
+      }
+    }
+  }
+}

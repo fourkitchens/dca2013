@@ -486,7 +486,7 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: -1.6px;
 }
 
-.cta, .submitted .filters label, button, .button {
+.cta, .filters label, button, .button {
   display: inline-block;
   margin: .3em;
   border: 0;
@@ -496,12 +496,16 @@ h1, h2, h3, h4, h5, h6 {
   color: white;
   cursor: pointer;
 }
-.cta:hover, .submitted .filters label:hover, button:hover, .button:hover {
+.cta:hover, .filters label:hover, button:hover, .button:hover {
   background-color: #8d310d;
-  transition: background linear 350ms;
+  -webkit-transition: background linear 160ms;
+  -moz-transition: background linear 160ms;
+  -ms-transition: background linear 160ms;
+  -o-transition: background linear 160ms;
+  transition: background linear 160ms;
   color: white;
 }
-.cta:visited, .submitted .filters label:visited, button:visited, .button:visited {
+.cta:visited, .filters label:visited, button:visited, .button:visited {
   color: white;
 }
 
@@ -512,28 +516,28 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #135c91;
 }
 
-.submitted .filters label, .schedule .filters button {
+.filters label {
   margin: 0 .36em .5em 0;
   padding: 0.3em .4em .15em;
   background-color: #135c91;
   color: #c5d5f0;
 }
-.submitted .filters label:hover, .schedule .filters button:hover {
+.filters label:hover {
   background-color: #135c91;
   color: #c5d5f0;
 }
-.submitted .filters label:before, .schedule .filters button:before {
+.filters label:before {
   content: '\2718 ';
   padding-right: .4em;
 }
-.submitted .filters label.active, .schedule .filters button.active, .submitted .filters label.selected, .schedule .filters button.selected {
+.filters label.active, .filters label.selected {
   background-color: #d34913;
   color: white;
 }
-.submitted .filters label.active:before, .schedule .filters button.active:before, .submitted .filters label.selected:before, .schedule .filters button.selected:before {
+.filters label.active:before, .filters label.selected:before {
   content: '\2714 ';
 }
-.submitted .filters label input, .schedule .filters button input {
+.filters label input {
   display: none;
 }
 
@@ -1463,6 +1467,20 @@ footer .credits i {
   margin-top: 0;
 }
 
+.filters {
+  clear: both;
+}
+.filters ul {
+  margin: 0;
+  padding: 0;
+}
+.filters li {
+  display: inline-block;
+}
+.filters .filter {
+  height: 2.7em;
+}
+
 @media (min-width: 55em) {
   .intro p {
     float: left;
@@ -1476,16 +1494,6 @@ footer .credits i {
 .submitted {
   clear: both;
   padding-top: 1em;
-}
-.submitted .filters {
-  clear: both;
-}
-.submitted .filters ul {
-  margin: 0;
-  padding: 0;
-}
-.submitted .filters li {
-  display: inline-block;
 }
 
 .submitted .session {
@@ -1568,34 +1576,39 @@ footer .credits i {
   clear: both;
   margin-top: 1em;
   margin-bottom: 1em;
-  padding: .5em;
+  padding: 0.5em;
   background-color: #135c91;
   color: #000;
+  border-radius: 0.2em;
 }
 @media (min-width: 57.5em) {
   .schedule .slot .time {
-    margin-top: 0;
+    margin-top: 0.2em;
   }
 }
 .schedule .filters {
+  min-height: 10.5em;
   position: relative;
-  padding-right: 10em;
+  padding-left: 8.5em;
 }
-.schedule .filters label {
-  display: inline-block;
-  width: 5em;
-  margin-left: 1.5em;
-  padding-right: .5em;
-  text-align: right;
+@media (min-width: 57.5em) {
+  .schedule .filters {
+    min-height: 2.1em;
+  }
 }
-.schedule .filters .filters-reset button {
+.schedule .filters .f-reset button {
   position: absolute;
-  top: 0;
-  right: 2em;
+  top: -0.3em;
+  left: 0;
   background: #62802a;
   color: white;
-  width: 6em;
-  height: 6em;
+  width: 7.5em;
+  height: 8.5em;
+}
+@media (min-width: 57.5em) {
+  .schedule .filters .f-reset button {
+    height: 2.1em;
+  }
 }
 
 #sched {
@@ -1618,7 +1631,7 @@ footer .credits i {
     margin-top: 4em;
   }
 }
-#sched .column:not(:nth-of-type(1)) {
+#sched .column {
   display: none;
   background: #97c441;
   font-family: "atrament-web", "Impact", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -1629,7 +1642,7 @@ footer .credits i {
   white-space: nowrap;
 }
 @media (min-width: 57.5em) {
-  #sched .column:not(:nth-of-type(1)) {
+  #sched .column {
     display: inline-block;
   }
 }
@@ -1641,25 +1654,25 @@ footer .credits i {
     margin-left: 0%;
     clear: none;
   }
-  #sched.room .column:nth-of-type(2) {
+  #sched.room .column:nth-of-type(1) {
     width: 25.53191%;
-    float: right;
-    margin-left: 0;
-    margin-right: 0;
+    float: left;
+    margin-right: -100%;
+    margin-left: 19.14894%;
     clear: none;
   }
-  #sched.room .column:nth-of-type(3) {
+  #sched.room .column:nth-of-type(2) {
     width: 25.53191%;
     float: left;
     margin-right: -100%;
     margin-left: 46.80851%;
     clear: none;
   }
-  #sched.room .column:nth-of-type(4) {
+  #sched.room .column:nth-of-type(3) {
     width: 25.53191%;
-    float: left;
-    margin-right: -100%;
-    margin-left: 19.14894%;
+    float: right;
+    margin-left: 0;
+    margin-right: 0;
     clear: none;
   }
 }
@@ -1671,28 +1684,28 @@ footer .credits i {
     margin-left: 0%;
     clear: none;
   }
-  #sched.track .column:nth-of-type(2) {
+  #sched.track .column:nth-of-type(1) {
     width: 20%;
     float: left;
     margin-right: -100%;
     margin-left: 15%;
     clear: none;
   }
-  #sched.track .column:nth-of-type(3) {
+  #sched.track .column:nth-of-type(2) {
     width: 20%;
     float: left;
     margin-right: -100%;
     margin-left: 36.66667%;
     clear: none;
   }
-  #sched.track .column:nth-of-type(4) {
+  #sched.track .column:nth-of-type(3) {
     width: 20%;
     float: left;
     margin-right: -100%;
     margin-left: 58.33333%;
     clear: none;
   }
-  #sched.track .column:nth-of-type(5) {
+  #sched.track .column:nth-of-type(4) {
     width: 20%;
     float: right;
     margin-left: 0;
@@ -1708,21 +1721,21 @@ footer .credits i {
     margin-left: 0%;
     clear: none;
   }
-  #sched.difficulty .column:nth-of-type(2) {
+  #sched.difficulty .column:nth-of-type(1) {
     width: 25.53191%;
     float: left;
     margin-right: -100%;
     margin-left: 19.14894%;
     clear: none;
   }
-  #sched.difficulty .column:nth-of-type(3) {
+  #sched.difficulty .column:nth-of-type(2) {
     width: 25.53191%;
     float: left;
     margin-right: -100%;
     margin-left: 46.80851%;
     clear: none;
   }
-  #sched.difficulty .column:nth-of-type(4) {
+  #sched.difficulty .column:nth-of-type(3) {
     width: 25.53191%;
     float: right;
     margin-left: 0;
@@ -1732,18 +1745,16 @@ footer .credits i {
 }
 
 article.session {
-  -webkit-transform-style: preserve3d;
-  -moz-transform-style: preserve3d;
-  -ms-transform-style: preserve3d;
-  -o-transform-style: preserve3d;
-  transform-style: preserve3d;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  transform-style: preserve-3d;
   -webkit-perspective: 600px;
   -moz-perspective: 600px;
   -ms-perspective: 600px;
   -o-perspective: 600px;
   perspective: 600px;
-}
-article.session div {
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   -ms-transition: all 0.3s ease-in-out;
@@ -1755,7 +1766,7 @@ article.session div {
   -o-transform-origin: 50% 100% 50%;
   transform-origin: 50% 100% 50%;
 }
-article.session div.filtered {
+article.session.filtered {
   -webkit-transform: scale(0.8);
   -moz-transform: scale(0.8);
   -ms-transform: scale(0.8);
@@ -1763,14 +1774,14 @@ article.session div.filtered {
   transform: scale(0.8);
   opacity: .2;
 }
-.csstransforms3d article.session div.filtered {
-  -webkit-transform: translateZ(-40px) rotateX(24deg);
-  -moz-transform: translateZ(-40px) rotateX(24deg);
-  -ms-transform: translateZ(-40px) rotateX(24deg);
-  -o-transform: translateZ(-40px) rotateX(24deg);
-  transform: translateZ(-40px) rotateX(24deg);
+.csstransforms3d article.session.filtered {
+  -webkit-transform: translateZ(-2em) rotateX(24deg) scale(0.8);
+  -moz-transform: translateZ(-2em) rotateX(24deg) scale(0.8);
+  -ms-transform: translateZ(-2em) rotateX(24deg) scale(0.8);
+  -o-transform: translateZ(-2em) rotateX(24deg) scale(0.8);
+  transform: translateZ(-2em) rotateX(24deg) scale(0.8);
 }
-.cssfilters article.session div.filtered {
+.cssfilters article.session.filtered {
   opacity: .4;
   -webkit-filter: blur(8px);
 }
@@ -1786,21 +1797,21 @@ article.session div.filtered {
   margin-top: 0;
 }
 @media (min-width: 57.5em) {
-  section.room article.session.room-room-14 {
+  section.room article.session[data-room="room-14"] {
     width: 25.53191%;
     float: left;
     margin-right: -100%;
     margin-left: 19.14894%;
     clear: none;
   }
-  section.room article.session.room-room-13a {
+  section.room article.session[data-room="room-13a"] {
     width: 25.53191%;
     float: left;
     margin-right: -100%;
     margin-left: 46.80851%;
     clear: none;
   }
-  section.room article.session.room-room-13b {
+  section.room article.session[data-room="room-13b"] {
     width: 25.53191%;
     float: right;
     margin-left: 0;
@@ -1809,21 +1820,21 @@ article.session div.filtered {
   }
 }
 @media (min-width: 57.5em) {
-  section.difficulty article.session.difficulty-beginner {
+  section.difficulty article.session[data-difficulty="beginner"] {
     width: 25.53191%;
     float: left;
     margin-right: -100%;
     margin-left: 19.14894%;
     clear: none;
   }
-  section.difficulty article.session.difficulty-intermediate {
+  section.difficulty article.session[data-difficulty="intermediate"] {
     width: 25.53191%;
     float: left;
     margin-right: -100%;
     margin-left: 46.80851%;
     clear: none;
   }
-  section.difficulty article.session.difficulty-advanced {
+  section.difficulty article.session[data-difficulty="advanced"] {
     width: 25.53191%;
     float: right;
     margin-left: 0;
@@ -1832,21 +1843,21 @@ article.session div.filtered {
   }
 }
 @media (min-width: 31.25em) {
-  section.track article.session.track-business {
+  section.track article.session[data-track="business"] {
     width: 44.44444%;
     float: left;
     margin-right: -100%;
     margin-left: 0%;
     clear: none;
   }
-  section.track article.session.track-development {
+  section.track article.session[data-track="development"] {
     width: 44.44444%;
     float: right;
     margin-left: 0;
     margin-right: 0;
     clear: none;
   }
-  section.track article.session.track-frontend {
+  section.track article.session[data-track="frontend"] {
     width: 44.44444%;
     float: left;
     margin-right: -100%;
@@ -1854,7 +1865,7 @@ article.session div.filtered {
     clear: none;
     clear: both;
   }
-  section.track article.session.track-sitebuilding {
+  section.track article.session[data-track="sitebuilding"] {
     width: 44.44444%;
     float: right;
     margin-left: 0;
