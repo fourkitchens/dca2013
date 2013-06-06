@@ -1593,6 +1593,11 @@ footer .credits i {
 }
 @media (min-width: 57.5em) {
   .schedule .filters {
+    padding-left: 15.9em;
+  }
+}
+@media (min-width: 57.5em) {
+  .schedule .filters {
     min-height: 2.1em;
   }
 }
@@ -1608,6 +1613,7 @@ footer .credits i {
 @media (min-width: 57.5em) {
   .schedule .filters .f-reset button {
     height: 2.1em;
+    left: 7.4em;
   }
 }
 
