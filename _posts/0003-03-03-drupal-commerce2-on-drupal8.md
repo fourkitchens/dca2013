@@ -12,7 +12,7 @@ track: Development
 difficulty: Intermediate
 
 day: Saturday
-start: 11:30am
+start: 3:00pm
 room: Room 13A
 ---
 
