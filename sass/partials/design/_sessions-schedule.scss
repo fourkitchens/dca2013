@@ -33,6 +33,7 @@ article.session {
     // Defaults for headings
     h2 {
       margin-top: 0;
+      text-transform: none;
     }
   }
 
@@ -141,6 +142,7 @@ article.full {
     color: #222;
     border-radius: .16em;
     padding: .23em;
+    text-transform: none;
   }
 
   .name {
