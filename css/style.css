@@ -1600,6 +1600,23 @@ footer .credits i {
 
 #sched {
   padding-top: 1em;
+  position: relative;
+}
+@media (min-width: 57.5em) {
+  #sched > h2 {
+    float: left;
+    position: absolute;
+  }
+  #sched > h2:nth-of-type(2) {
+    -webkit-transform: translateY(1.8em);
+    -moz-transform: translateY(1.8em);
+    -ms-transform: translateY(1.8em);
+    -o-transform: translateY(1.8em);
+    transform: translateY(1.8em);
+  }
+  #sched header:nth-of-type(2) {
+    margin-top: 4em;
+  }
 }
 #sched .column:not(:nth-of-type(1)) {
   display: none;
