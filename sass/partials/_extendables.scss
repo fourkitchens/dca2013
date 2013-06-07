@@ -64,6 +64,7 @@
   &:before {
     content: '\2610 ';
     padding-right: .4em;
+    font-family: $dcatx;
   }
 
   // active styles
@@ -75,6 +76,7 @@
     // when checked, change icon to a checked box
     &:before {
       content: '\2611 ';
+      font-family: $dcatx;
     }
   }
 
