@@ -10,3 +10,8 @@ _site
 # For Grunt npm modules
 node_modules
 _tmp
+
+# Ignore bundler files
+.bundle
+vendor/bundle
+
