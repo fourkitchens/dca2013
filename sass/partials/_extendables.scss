@@ -60,7 +60,7 @@
     color: $lightblue;
   }
 
-  // default icon is an X
+  // default icon is an unchecked box
   &:before {
     content: '\2610 ';
     padding-right: .4em;
@@ -72,7 +72,7 @@
     background-color: $darkorange;
     color: $white;
 
-    // when checked, change icon to checkmark
+    // when checked, change icon to a checked box
     &:before {
       content: '\2611 ';
     }
