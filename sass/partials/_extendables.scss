@@ -60,10 +60,11 @@
     color: $lightblue;
   }
 
-  // default icon is an X
+  // default icon is an unchecked box
   &:before {
-    content: '\2718 ';
+    content: '\2610 ';
     padding-right: .4em;
+    font-family: $dcatx;
   }
 
   // active styles
@@ -72,9 +73,10 @@
     background-color: $darkorange;
     color: $white;
 
-    // when checked, change icon to checkmark
+    // when checked, change icon to a checked box
     &:before {
-      content: '\2714 ';
+      content: '\2611 ';
+      font-family: $dcatx;
     }
   }
 
