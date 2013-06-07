@@ -43,6 +43,22 @@
 
 @include layout(12) {
   $output: float;
+
+  @include breakpoint($sponsors-sm) {
+    #sponsors {
+      width: 90%
+    }
+
+    .armadillo .sponsor,
+    .bat .sponsor {
+      @include grid-span(6);
+      
+      &:nth-child(2n+2) {
+        @include grid-span(6, 'omega');
+      }
+    }
+  }
+
   @include breakpoint($sponsors-md) {
     .lone-star .sponsor {}
     
@@ -66,8 +82,7 @@
     .bat .sponsor {
       @include grid-span(4);
 
-      &:nth-child(3),
-      &:last-child {
+      &:nth-child(3n+3) {
         @include grid-span(4, 'omega');
       }
     }
