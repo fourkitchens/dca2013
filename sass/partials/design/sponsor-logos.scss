@@ -93,7 +93,6 @@
   }
 }
 
-/*
 #bluedropcookbook {
   @extend .sponsors-bluedropcookbook;
 
@@ -102,7 +101,6 @@
     background-position: 0 0;
   }
 }
-*/
 
 #drupalizeme {
   @extend .sponsors-drupalizeme;
@@ -121,6 +119,17 @@
     background-position: 0 0;
   }
 }
+
+/*
+#polycot {
+  @extend .sponsors-polycot;
+
+  .inlinesvg & {
+    background-image: inline-image("sponsors/polycot.svg");
+    background-position: 0 0;
+  }
+}
+*/
 
 #favish {
   @extend .sponsors-favish;

@@ -1343,6 +1343,27 @@ section.contact .contact-email {
   clear: both;
 }
 
+@media (min-width: 0) and (max-width: 44.875em) {
+  #sponsors {
+    width: 90%;
+  }
+
+  .armadillo .sponsor,
+  .bat .sponsor {
+    width: 49.15254%;
+    clear: right;
+    float: left;
+    margin-left: 0%;
+    margin-right: 1.69492%;
+  }
+  .armadillo .sponsor:nth-child(2n+2),
+  .bat .sponsor:nth-child(2n+2) {
+    width: 49.15254%;
+    clear: right;
+    float: right;
+    margin-right: 0%;
+  }
+}
 @media (min-width: 45em) {
   .longhorn,
   .party {
@@ -1381,7 +1402,7 @@ section.contact .contact-email {
     margin-left: 0%;
     margin-right: 1.69492%;
   }
-  .bat .sponsor:nth-child(3), .bat .sponsor:last-child {
+  .bat .sponsor:nth-child(3n+3) {
     width: 32.20339%;
     clear: right;
     float: right;
