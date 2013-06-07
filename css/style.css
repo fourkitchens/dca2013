@@ -1348,12 +1348,11 @@ section.contact .contact-email {
   clear: both;
 }
 
-@media (min-width: 0) and (max-width: 44.875em) {
+@media (min-width: 0) and (max-width: 30em) {
   #sponsors {
     width: 90%;
   }
 
-  .armadillo .sponsor,
   .bat .sponsor {
     width: 49.15254%;
     clear: right;
@@ -1361,7 +1360,6 @@ section.contact .contact-email {
     margin-left: 0%;
     margin-right: 1.69492%;
   }
-  .armadillo .sponsor:nth-child(2n+2),
   .bat .sponsor:nth-child(2n+2) {
     width: 49.15254%;
     clear: right;
@@ -1369,7 +1367,7 @@ section.contact .contact-email {
     margin-right: 0%;
   }
 }
-@media (min-width: 45em) {
+@media (min-width: 30.125em) {
   .longhorn .sponsor {
     width: 32.20339%;
     clear: right;
@@ -1398,20 +1396,6 @@ section.contact .contact-email {
     margin-right: 0%;
   }
 
-  .armadillo .sponsor {
-    width: 23.72881%;
-    clear: right;
-    float: left;
-    margin-left: 0%;
-    margin-right: 1.69492%;
-  }
-  .armadillo .sponsor:last-child {
-    width: 23.72881%;
-    clear: right;
-    float: right;
-    margin-right: 0%;
-  }
-
   .bat .sponsor {
     width: 32.20339%;
     clear: right;
@@ -1434,6 +1418,40 @@ section.contact .contact-email {
   }
   .bat .sponsor:last-child {
     width: 49.15254%;
+    clear: right;
+    float: right;
+    margin-right: 0%;
+  }
+}
+@media (min-width: 30.125em) and (max-width: 48.0625em) {
+  #sponsors {
+    width: 98%;
+  }
+
+  .armadillo .sponsor {
+    width: 49.15254%;
+    clear: right;
+    float: left;
+    margin-left: 0%;
+    margin-right: 1.69492%;
+  }
+  .armadillo .sponsor:nth-child(2n+2) {
+    width: 49.15254%;
+    clear: right;
+    float: right;
+    margin-right: 0%;
+  }
+}
+@media (min-width: 48.125em) {
+  .armadillo .sponsor {
+    width: 23.72881%;
+    clear: right;
+    float: left;
+    margin-left: 0%;
+    margin-right: 1.69492%;
+  }
+  .armadillo .sponsor:last-child {
+    width: 23.72881%;
     clear: right;
     float: right;
     margin-right: 0%;
