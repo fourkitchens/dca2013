@@ -6,22 +6,44 @@
 @import "sponsors/*.png";
 @include all-sponsors-sprites;
 
-#astonish {
-  @extend .sponsors-astonish;
-  width: 250px;
-  
-  .inlinesvg & {
-    background-image: inline-image("sponsors/astonish.svg");
-    background-position: 0 0;
-  }
-}
-
 #entermedia {
   @extend .sponsors-entermedia;
   width: 250px;
 
   .inlinesvg & {
     background-image: inline-image("sponsors/entermedia.svg");
+    background-position: 0 0;
+  }
+}
+
+/*
+#patientconversation {
+  @extend .sponsors-patientconversation;
+  width: 250px;
+  
+  .inlinesvg & {
+    background-image: inline-image("sponsors/patientconversation.svg");
+    background-position: 0 0;
+  }
+}
+*/
+
+#acquia {
+  @extend .sponsors-acquia;
+  width: 250px;
+  
+  .inlinesvg & {
+    background-image: inline-image("sponsors/acquia.svg");
+    background-position: 0 0;
+  }
+}
+
+#astonish {
+  @extend .sponsors-astonish;
+  width: 250px;
+  
+  .inlinesvg & {
+    background-image: inline-image("sponsors/astonish.svg");
     background-position: 0 0;
   }
 }

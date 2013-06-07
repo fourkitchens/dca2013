@@ -8,6 +8,10 @@
   text-align: center;
   margin-bottom: 2em;
 
+  h3 {
+    color: $green;
+  }
+
   p {
     @include grid-span(9, 1);
     margin-top: 1em;
@@ -56,19 +60,30 @@
       &:nth-child(2n+2) {
         @include grid-span(6, 'omega');
       }
+
+      &:last-child {
+        @include grid-span(12);
+      }
     }
   }
 
   @include breakpoint($sponsors-md) {
     .lone-star .sponsor {}
     
-    .longhorn,
-    .party {
-      @include grid-span(4);
+    .longhorn .sponsor {
+      @include grid-span(6);
+
+      &:last-child {
+        @include grid-span(6, 'omega');
+      }
     }
     
-    .trivia {
-      @include grid-span(4, 'omega');
+    .party-trivia .sponsor {
+      @include grid-span(6);
+      
+      &:last-child {
+        @include grid-span(6, 'omega');
+      }
     }
 
     .armadillo .sponsor {
@@ -84,6 +99,10 @@
 
       &:nth-child(3n+3) {
         @include grid-span(4, 'omega');
+      }
+
+      &:last-child {
+        @include grid-span(12);
       }
     }
   
