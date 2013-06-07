@@ -53,16 +53,11 @@
       width: 90%
     }
 
-    .armadillo .sponsor,
     .bat .sponsor {
       @include grid-span(6);
       
       &:nth-child(2n+2) {
         @include grid-span(6, 'omega');
-      }
-
-      &:last-child {
-        @include grid-span(12);
       }
     }
   }
@@ -71,10 +66,10 @@
     .lone-star .sponsor {}
     
     .longhorn .sponsor {
-      @include grid-span(6);
+      @include grid-span(4);
 
       &:last-child {
-        @include grid-span(6, 'omega');
+        @include grid-span(4, 'omega');
       }
     }
     
@@ -86,25 +81,46 @@
       }
     }
 
-    .armadillo .sponsor {
-      @include grid-span(4);
-
-      &:last-child {
-        @include grid-span(4, 'omega');
-      }
-    }
-
     .bat .sponsor {
       @include grid-span(4);
 
       &:nth-child(3n+3) {
         @include grid-span(4, 'omega');
       }
+      
+      &:nth-child(7) {
+        @include grid-span(6);
+      }
 
       &:last-child {
-        @include grid-span(12);
+        @include grid-span(6, 'omega');
       }
     }
-  
+
+    @include breakpoint('max-width' ($sponsors-lg - 1)) { // Put styles here that ONLY apply to medium
+      #sponsors {
+        width: 98%
+      }
+
+      .armadillo .sponsor {
+        @include grid-span(6); // Put two logos per row
+
+        &:nth-child(2n+2) {
+          @include grid-span(6, 'omega');
+        }
+      }
+    }
+
   }
+
+  @include breakpoint($sponsors-lg) {
+    .armadillo .sponsor {
+      @include grid-span(3); // Put all four logos on the same row
+
+      &:last-child {
+        @include grid-span(3, 'omega');
+      }
+    }
+  }
+
 }
