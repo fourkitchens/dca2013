@@ -1368,24 +1368,17 @@ section.contact .contact-email {
     float: right;
     margin-right: 0%;
   }
-  .armadillo .sponsor:last-child,
-  .bat .sponsor:last-child {
-    width: 100%;
-    clear: right;
-    float: right;
-    margin-right: 0%;
-  }
 }
 @media (min-width: 45em) {
   .longhorn .sponsor {
-    width: 49.15254%;
+    width: 32.20339%;
     clear: right;
     float: left;
     margin-left: 0%;
     margin-right: 1.69492%;
   }
   .longhorn .sponsor:last-child {
-    width: 49.15254%;
+    width: 32.20339%;
     clear: right;
     float: right;
     margin-right: 0%;
@@ -1406,14 +1399,14 @@ section.contact .contact-email {
   }
 
   .armadillo .sponsor {
-    width: 32.20339%;
+    width: 23.72881%;
     clear: right;
     float: left;
     margin-left: 0%;
     margin-right: 1.69492%;
   }
   .armadillo .sponsor:last-child {
-    width: 32.20339%;
+    width: 23.72881%;
     clear: right;
     float: right;
     margin-right: 0%;
@@ -1432,8 +1425,15 @@ section.contact .contact-email {
     float: right;
     margin-right: 0%;
   }
+  .bat .sponsor:nth-child(7) {
+    width: 49.15254%;
+    clear: right;
+    float: left;
+    margin-left: 0%;
+    margin-right: 1.69492%;
+  }
   .bat .sponsor:last-child {
-    width: 100%;
+    width: 49.15254%;
     clear: right;
     float: right;
     margin-right: 0%;

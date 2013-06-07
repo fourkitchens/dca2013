@@ -16,7 +16,6 @@
   }
 }
 
-/*
 #patientconversation {
   @extend .sponsors-patientconversation;
   width: 250px;
@@ -26,7 +25,6 @@
     background-position: 0 0;
   }
 }
-*/
 
 #acquia {
   @extend .sponsors-acquia;
@@ -86,16 +84,15 @@
   }
 }
 
-/*
 #osscube {
   @extend .sponsors-osscube;
-
+  width: 200px;
+  
   .inlinesvg & {
     background-image: inline-image("sponsors/osscube.svg");
     background-position: 0 0;
   }
 }
-*/
 
 #justaddcloud {
   @extend .sponsors-justaddcloud;
@@ -142,7 +139,6 @@
   }
 }
 
-/*
 #polycot {
   @extend .sponsors-polycot;
 
@@ -151,7 +147,6 @@
     background-position: 0 0;
   }
 }
-*/
 
 #favish {
   @extend .sponsors-favish;

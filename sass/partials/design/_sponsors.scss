@@ -60,10 +60,6 @@
       &:nth-child(2n+2) {
         @include grid-span(6, 'omega');
       }
-
-      &:last-child {
-        @include grid-span(12);
-      }
     }
   }
 
@@ -71,10 +67,10 @@
     .lone-star .sponsor {}
     
     .longhorn .sponsor {
-      @include grid-span(6);
+      @include grid-span(4);
 
       &:last-child {
-        @include grid-span(6, 'omega');
+        @include grid-span(4, 'omega');
       }
     }
     
@@ -87,10 +83,10 @@
     }
 
     .armadillo .sponsor {
-      @include grid-span(4);
+      @include grid-span(3);
 
       &:last-child {
-        @include grid-span(4, 'omega');
+        @include grid-span(3, 'omega');
       }
     }
 
@@ -100,9 +96,13 @@
       &:nth-child(3n+3) {
         @include grid-span(4, 'omega');
       }
+      
+      &:nth-child(7) {
+        @include grid-span(6);
+      }
 
       &:last-child {
-        @include grid-span(12);
+        @include grid-span(6, 'omega');
       }
     }
   
