@@ -62,7 +62,7 @@
 
   // default icon is an X
   &:before {
-    content: '\2718 ';
+    content: '\2610 ';
     padding-right: .4em;
   }
 
@@ -74,7 +74,7 @@
 
     // when checked, change icon to checkmark
     &:before {
-      content: '\2714 ';
+      content: '\2611 ';
     }
   }
 

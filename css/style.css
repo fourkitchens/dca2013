@@ -527,7 +527,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #c5d5f0;
 }
 .filters label:before {
-  content: '\2718 ';
+  content: '\2610 ';
   padding-right: .4em;
 }
 .filters label.active, .filters label.selected {
@@ -535,7 +535,7 @@ h1, h2, h3, h4, h5, h6 {
   color: white;
 }
 .filters label.active:before, .filters label.selected:before {
-  content: '\2714 ';
+  content: '\2611 ';
 }
 .filters label input {
   display: none;
