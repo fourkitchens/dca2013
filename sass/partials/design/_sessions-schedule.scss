@@ -139,13 +139,29 @@ article.full {
     position: relative;
     top: 0.19em;
     background: $darkgreen;
-    color: #222;
+    color: $white;
     border-radius: .16em;
     padding: .23em;
     text-transform: none;
+
+    &.lunch {
+      background: $white;
+      color: $darkgray;
+    }
+
+    &.keynote {
+      a {
+        color: $white;
+
+        &:hover {
+          color: $darkgray;
+        }
+      }
+    }
   }
 
   .name {
     white-space: nowrap;
   }
+
 }
