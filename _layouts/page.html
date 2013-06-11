@@ -31,7 +31,13 @@
   <script>document.write('<script src=\"http://' + (location.host || 'localhost').split(':')[0] + ':9005/livereload.js?snipver=1\"></' + 'script>')</script>
   {% endif %}
 </head>
+
+{% if page.bodyclass == empty %}
 <body>
+{% else %}
+<body class="{{ page.bodyclass }}">
+{% endif %}
+
   <header>
     {% include header.html %}
   </header>
