@@ -2032,7 +2032,7 @@ article.full h2 {
   padding: .23em;
   text-transform: none;
 }
-article.full h2.lunch {
+article.full h2.registration, article.full h2.lunch, article.full h2.announcements {
   background: white;
   color: #222222;
 }

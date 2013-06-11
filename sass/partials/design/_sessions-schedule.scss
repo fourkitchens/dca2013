@@ -144,7 +144,9 @@ article.full {
     padding: .23em;
     text-transform: none;
 
-    &.lunch {
+    &.registration,
+    &.lunch,
+    &.announcements {
       background: $white;
       color: $darkgray;
     }
