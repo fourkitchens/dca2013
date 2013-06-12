@@ -14,7 +14,7 @@ title: DrupalCamp Austin 2013 | June 21-23
     <div id="front-news">
       <h2>News</h2>
       <ul>
-        {% for post in site.categories.news limit:3 %}
+        {% for post in site.categories.news limit:4 %}
           <li class="post icon-dca-star"><a href="{{ post.permalink }}">{{ post.title }}</a></li>
         {% endfor %}
       </ul>
