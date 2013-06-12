@@ -9,7 +9,7 @@
 }
 
 #front-main {
-  @include isolation-span(9, 1, 'right');
+  @include grid-span(9, 1);
   border-bottom: 4px solid $lightbackground;
   margin-bottom: $space;
 
@@ -24,7 +24,8 @@
 }
 
 #front-news {
-  @include isolation-span(9, 1, 'right');
+  @include grid-span(9, 1);
+  clear: both;
   border-bottom: 4px solid $lightbackground;
   margin-bottom: $space-double;
 
@@ -67,8 +68,8 @@
 
 #front {
   .front-info {
-    @include isolation-span(9, 1, 'right');
-    margin-bottom: $space;
+    @include grid-span(9, 1);
+    margin-bottom: $space-double;
 
     h2 {
       line-height: 1;
@@ -95,22 +96,33 @@
     &.keynotes h2:after {
       background-position: center -316px;
     }
+    &.webleadershipday h2:after {
+      background-position: center -474px;
+    }
+    &.trivia h2:after {
+      background-position: center -632px;
+    }
   }
 
   @include breakpoint($front-md) {
-    margin-bottom: 0;
 
     .front-info.sessions {
-      @include isolation-span(3, 1, 'right');
+      @include grid-span(3, 1, $options: 'right');
     }
 
     .front-info.workshops {
-      @include isolation-span(3, 4, 'right');
+      @include grid-span(3, 4);
     }
 
     .front-info.keynotes {
-      @include isolation-span(3, 7, 'right');
+      @include grid-span(3, 7);
+    }
+
+    .front-info.webleadershipday {
+      @include grid-span(4, 1, $options: 'right');
+    }
+    .front-info.trivia {
+      @include grid-span(4, 6);
     }
   }
-
 }

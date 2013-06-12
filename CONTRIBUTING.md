@@ -14,6 +14,14 @@ install: --no-rdoc --no-ri
 update:  --no-rdoc --no-ri
 ```
 
+You may want to configure Bundler to install gems in a location relative to the project instead of globally; in this case the `/vendor` directory of the project.
+
+```bash
+mkdir ~/.bundle
+touch ~/.bundle/config
+echo 'BUNDLE_PATH: vendor/bundle' >> ~/.bundle/config
+```
+
 Then, in Terminal, run these commands to install everything you need:
 
 ```bash
@@ -23,7 +31,7 @@ bundle install
 sudo npm install
 ```
 
-** NOTE: THIS IS NOT TESTED TO WORK WITH RVM OR RBENV **
+:warning: THIS IS NOT TESTED TO WORK WITH RVM OR RBENV
 
 
 ## Local Development

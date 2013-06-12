@@ -2,6 +2,18 @@
 // Individual sessions for schedule
 //
 
+// Default title style for sessions and other events in time slots.
+.schedule .slot {
+  h2 {
+    font-size: em(24);
+    
+    @include breakpoint($sched-md) {
+      font-size: em(30);
+      text-transform: none;
+    }
+  }
+}
+
 article.session {
   // Transform container settings
   @include transform-style(preserve-3d);
@@ -30,10 +42,9 @@ article.session {
     padding-bottom: 2em;
     @include grid-span(9);
 
-    // Defaults for headings
+    // Defaults for session titles
     h2 {
       margin-top: 0;
-      text-transform: none;
     }
   }
 
@@ -138,14 +149,25 @@ article.full {
     text-align: center;
     position: relative;
     top: 0.19em;
-    background: $darkgreen;
-    color: #222;
+    background: $white;
+    color: $darkgray;
     border-radius: .16em;
     padding: .23em;
-    text-transform: none;
+
+    &.keynote {
+      background: $darkgreen;
+      a {
+        color: $white;
+
+        &:hover {
+          color: $darkgray;
+        }
+      }
+    }
   }
 
   .name {
     white-space: nowrap;
   }
+
 }
