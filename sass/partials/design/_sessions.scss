@@ -24,3 +24,20 @@
     margin-top: 0;
   }
 }
+
+//
+// Details page
+//
+
+.session-details {
+  // Sidebar
+  aside {
+    @include grid-span(4, omega);
+  }
+
+  // Session description
+  .desc {
+    @include grid-span(5);
+    padding-top: 1.5em;
+  }
+}
