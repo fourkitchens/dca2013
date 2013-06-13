@@ -24,8 +24,9 @@ $reset-height: 2.1em;
       margin-bottom: 1em;
       padding: 0.5em;
       background-color: $darkblue;
-      color: #000;
+      color: $white;
       border-radius: 0.2em;
+      text-transform: none;
 
       @include breakpoint($sched-lg) {
         margin-top: 0.2em;
