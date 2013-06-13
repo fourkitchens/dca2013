@@ -1554,6 +1554,22 @@ footer .credits i {
   margin-top: 0;
 }
 
+.session-details aside {
+  width: 43.18182%;
+  float: right;
+  margin-left: 0;
+  margin-right: 0;
+  clear: none;
+}
+.session-details .desc {
+  width: 54.54545%;
+  float: left;
+  margin-right: -100%;
+  margin-left: 0%;
+  clear: none;
+  padding-top: 1.5em;
+}
+
 .filters {
   clear: both;
 }
