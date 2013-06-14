@@ -50,15 +50,15 @@ title: Schedule | DrupalCamp Austin 2013
     </header>
 
     {% for post in site.categories.session reversed %}
-      {% if post.day == 'Saturday' and post.accepted == true %}
+      {% if post.room == 'full' and post.accepted == true %}
+{% include session-full.html %}
+      {% elsif post.day == 'Saturday' and post.accepted == true %}
         {% capture slot %}{% cycle 'begin', 'skip', 'end' %}{% endcapture %}
         {% if slot == 'begin' %}
         <section class="slot">
           <h3 class="time">{{ post.day }}, {{ post.start }}</h3>
         {% endif %}
-
-        {% include session.html %}
-
+{% include session.html %}
         {% if slot == 'end' %}
         </section>
         {% endif %}

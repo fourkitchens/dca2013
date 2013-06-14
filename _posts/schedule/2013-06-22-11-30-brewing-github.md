@@ -5,7 +5,7 @@ permalink: /sessions/brewing-github/
 published: true
 accepted: true
 
-title: Brewing Github
+title: Brewing GitHub
 summary: How Github ships
 presenters: Kyle Daigle
 track: Business
