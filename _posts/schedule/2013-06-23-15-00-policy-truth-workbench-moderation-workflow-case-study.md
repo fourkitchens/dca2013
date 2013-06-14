@@ -9,7 +9,7 @@ title: Policy of Truth — Workbench, moderation, and workflow case study
 summary: Come see this case-study for the UT Austin Policy Office website where we turn the workbench module on its head and make it do even more.
 presenters: David Diers, Taylor Smith
 track: Business
-difficulty: Advanced
+difficulty: Intermediate
 
 day: Sunday
 start: 3:00pm
