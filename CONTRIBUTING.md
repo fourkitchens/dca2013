@@ -64,12 +64,15 @@ After finishing your work, run ```grunt build``` to build production copies of t
 
 ### Naming conventions
 
-Jekyll has a hard requirement for posts' file names. The required format is as follows: ```YYYY-MM-DD-post-slug.md``` — but... we don't want to bother with a valid date for most types of pages. So we're using fake, hardcoded dates for most content. News is the notable exception, which **should** contain the actual publish date.
+Jekyll has a hard requirement for posts' file names. The required format is as follows: ```YYYY-MM-DD-post-slug.md``` — but... we don't want to bother with a valid date for most types of pages. So we're using fake, hardcoded dates for most content. Exceptions:
+
+* News **should** contain the actual publish date in ```YYYY-MM-DD``` format
+* Scheduled sessions use an unofficial, extended date format: ```YYYY-MM-DD-HH-mm```, where HH is 24-hour clock and ```mm``` is minutes. Although hour and minutes make no difference to Jekyll, it provides alphabetization of posts within its main loop, so that we can print them out in the correct order on the schedule.
 
 ```
 News      YYYY-MM-DD-post-slug.md
 FAQs      0002-02-02-faq-title.md
-Sessions  0003-03-03-session-title.md
+Sessions  YYYY-MM-DD-HH-mm-session-title.md
 Workshops 0004-04-04-workshop-title.md
 ```
 

@@ -5,6 +5,26 @@ title: Schedule | DrupalCamp Austin 2013
 
 <div class="schedule">
   <h1 class="title">Schedule</h1>
+
+  <h2>Friday</h2>
+  
+  <p>
+  <strong>Workshops</strong><br>
+  We've got two paid full-day workshops on Friday: <a href="/workshops/#beginner">Beginner's guide to Drupal</a> and <a href="/workshops/#nodejs">Integrating Node.js and Drupal</a>.
+  </p>
+
+  <p>
+  <strong><a href="http://webleadershipday.com/">Web Leadership Day</a></strong><br>
+  A new FREE event that gathers voices from across the web for a single day of deep dives into the business and future of the web.
+  </p>
+  
+  <p>
+  <strong><a href="http://geektrivianight.eventbrite.com/">Geek Trivia Night</a></strong><br>
+  Come test your knowledge of history, pop culture, music, TV, film, and the internet at our first ever Geek Trivia Night. <a href="/news/geek-trivia-night/">Check out our blog post</a> to get all the info.
+  </p>
+
+  <hr>
+
   <div class="filters">
     <div class="filter f-track">
       <ul>
@@ -41,248 +61,57 @@ title: Schedule | DrupalCamp Austin 2013
   </div>
 
   <section id="sched" class="room">
-      <h2>Saturday</h2>
+    <h2>Saturday</h2>
 
-      <header>
-        <span class="column">Room 14</span>
-        <span class="column">Room 13A</span>
-        <span class="column">Room 13B</span>
-      </header>
+    <header>
+      <span class="column">Room 14</span>
+      <span class="column">Room 13A</span>
+      <span class="column">Room 13B</span>
+    </header>
 
-      <section class="slot">
-        <h3 class="time">Saturday, 8:30am</h3>
-        <article class="full">
-          <h2 class="registration">Registration and breakfast</h2>
-        </article>
-      </section>
+    {% for post in site.categories.session reversed %}
+    {% if post.day == 'Saturday' %}
+      {% if post.room == 'full' and post.accepted == true %}
+{% include session-full.html %}
+      {% elsif post.accepted == true %}
+        {% capture slot %}{% cycle 'begin', 'skip', 'end' %}{% endcapture %}
+        {% if slot == 'begin' %}
+        <section class="slot">
+          <h3 class="time">{{ post.day }}, {{ post.start }}</h3>
+        {% endif %}
+{% include session.html %}
+        {% if slot == 'end' %}
+        </section>
+        {% endif %}
+      {% endif %}
+    {% endif %}
+    {% endfor %}
 
-      <section class="slot">
-        <h3 class="time">Saturday, 9:30am</h3>
-        <article class="session" data-difficulty="intermediate" data-track="development" data-room="room-13b">
-          <h2><a href="/sessions/build-your-own-drupal-api-site/">Build your own Drupal API site</a></h2>
-          <p class="meta">Presented by Ron Northcutt</p>
-        </article><!-- .session -->
-        <article class="session" data-difficulty="beginner" data-track="development" data-room="room-13a">
-          <h2><a href="/sessions/drupal-development-best-practices-building-sites-pantheon-1/">Drupal Development Best Practices &amp; Building Sites on Pantheon Pt 1</a></h2>
-          <p class="meta">Presented by Matt Cheney</p>
-        </article><!-- .session -->
-        <article class="session" data-difficulty="beginner" data-track="business" data-room="room-14">
-          <h2><a href="/sessions/marketers-case-drupal/">The Marketers' Case for Drupal</a></h2>
-          <p class="meta">Presented by Tom Wentworth</p>
-        </article><!-- .session -->
-      </section><!-- .slot -->
+    <h2>Sunday</h2>
 
-      <section class="slot">
-        <h3 class="time">Saturday, 10:30am</h3>
-        <article class="session" data-difficulty="beginner" data-track="business" data-room="room-13b">
-          <h2><a href="/sessions/selling-drupal/">Selling Drupal</a></h2>
-          <p class="meta">Presented by Thad Martin</p>
-        </article><!-- .session -->
-        <article class="session" data-difficulty="beginner" data-track="development" data-room="room-13a">
-          <h2><a href="/sessions/drupal-development-best-practices-building-sites-pantheon-2/">Drupal Development Best Practices &amp; Building Sites on Pantheon Pt 2</a></h2>
-          <p class="meta">Presented by Matt Cheney</p>
-        </article><!-- .session -->
-        <article class="session" data-difficulty="intermediate" data-track="frontend" data-room="room-14">
-          <h2><a href="/sessions/twigify-drupal/">Twigify Drupal</a></h2>
-          <p class="meta">Presented by Forest Mars</p>
-        </article><!-- .session -->
-      </section><!-- .slot -->
+    <header>
+      <span class="column">Room 14</span>
+      <span class="column">Room 13A</span>
+      <span class="column">Room 13B</span>
+    </header>
 
-      <section class="slot">
-        <h3 class="time">Saturday, 11:30am</h3>
-        <article class="session" data-difficulty="intermediate" data-track="frontend" data-room="room-13b">
-          <h2><a href="/sessions/omega3-use-dont-get-used/">Omega 3: Use it, don't get used to it</a></h2>
-          <p class="meta">Presented by Chad Evans</p>
-        </article><!-- .session -->
-        <article class="session" data-difficulty="intermediate" data-track="sitebuilding" data-room="room-13a">
-          <h2><a href="/sessions/site-building-like-software-engineer/">Site Building like a Software Engineer</a></h2>
-          <p class="meta">Presented by Mark Ferree</p>
-        </article><!-- .session -->
-        <article class="session" data-difficulty="beginner" data-track="business" data-room="room-14">
-          <h2><a href="/sessions/brewing-github/">Brewing GitHub</a></h2>
-          <p class="meta">Presented by Kyle Daigle</p>
-        </article><!-- .session -->
-      </section><!-- .slot -->
-
-      <section class="slot">
-        <h3 class="time">Saturday, 12:30pm</h3>
-        <article class="full">
-          <h2 class="lunch">Break for lunch 12:30-1:45pm</h2>
-          <p>Check out our <a href="/about/#food">list of places to eat nearby</a>.</p>
-        </article>
-      </section>
-
-      <section class="slot">
-        <h3 class="time">Saturday, 1:45pm</h3>
-        <article class="full">
-          <h2 class="announcements">Announcements and group photo</h2>
-        </article>
-      </section>
-
-      <section class="slot">
-        <h3 class="time">Saturday, 2:00pm</h3>
-        <article class="full">
-          <h2 class="keynote"><a href="/news/meet-our-keynote-speakers/">Keynote with <span class="name">Shawn O'Keefe</span></a></h2>
-        </article>
-      </section>
-
-      <section class="slot">
-        <h3 class="time">Saturday, 3:00pm</h3>
-        <article class="session" data-difficulty="intermediate" data-track="frontend" data-room="room-13b">
-          <h2><a href="/sessions/bringing-magic-back/">Bringing Magic Back</a></h2>
-          <p class="meta">Presented by Ian Carrico</p>
-        </article><!-- .session -->
-        <article class="session" data-difficulty="intermediate" data-track="development" data-room="room-13a">
-          <h2><a href="/sessions/drupal-commerce2-on-drupal8/">Drupal Commerce 2.x on Drupal 8</a></h2>
-          <p class="meta">Presented by Ryan Szrama</p>
-        </article><!-- .session -->
-        <article class="session" data-difficulty="beginner" data-track="business" data-room="room-14">
-          <h2><a href="/sessions/drupals-destiny/">Drupal's Destiny</a></h2>
-          <p class="meta">Presented by Josh Koenig</p>
-        </article><!-- .session -->
-      </section><!-- .slot -->
-
-      <section class="slot">
-        <h3 class="time">Saturday, 4:00pm</h3>
-        <article class="session" data-difficulty="beginner" data-track="business" data-room="room-13b">
-          <h2><a href="/sessions/writing-digital-marketing-plan/">Writing a Digital Marketing Plan</a></h2>
-          <p class="meta">Presented by Kylon Gustin</p>
-        </article><!-- .session -->
-        <article class="session" data-difficulty="intermediate" data-track="development" data-room="room-13a">
-          <h2><a href="/sessions/life-drupal-dev-tips-pitfalls-workflow/">Life as a Drupal dev: Tips, pitfalls, workflow</a></h2>
-          <p class="meta">Presented by Bronius Motekaitis</p>
-        </article><!-- .session -->
-        <article class="session" data-difficulty="beginner" data-track="sitebuilding" data-room="room-14">
-          <h2><a href="/sessions/spark-awe-demos-that-deliver-wow/">Spark and Awe: Demos that Deliver the Wow</a></h2>
-          <p class="meta">Presented by Brant Wynn, Chris Yates</p>
-        </article><!-- .session -->
-      </section><!-- .slot -->
-
-      <section class="slot">
-        <h3 class="time">Saturday, 5:00pm</h3>
-        <article class="session" data-difficulty="advanced" data-track="development" data-room="room-13b">
-          <h2><a href="/sessions/cross-platform-apps/">Cross-platform apps</a></h2>
-          <p class="meta">Presented by Michael Favia, Dane Macaulay</p>
-        </article><!-- .session -->
-        <article class="session" data-difficulty="beginner" data-track="sitebuilding" data-room="room-13a">
-          <h2><a href="/sessions/related-content-displays/">Related Content Displays</a></h2>
-          <p class="meta">Presented by Jay Epstein</p>
-        </article><!-- .session -->
-        <article class="session" data-difficulty="advanced" data-track="development" data-room="room-14">
-          <h2><a href="/sessions/integrating-nodejs/">Integrating Node.JS</a></h2>
-          <p class="meta">Presented by Ryan Oles</p>
-        </article><!-- .session -->
-      </section><!-- .slot -->
-
-      <h2>Sunday</h2>
-
-      <header>
-        <span class="column">Room 14</span>
-        <span class="column">Room 13A</span>
-        <span class="column">Room 13B</span>
-      </header>
-
-      <section class="slot">
-        <h3 class="time">Sunday, 9am</h3>
-        <article class="full">
-          <h2 class="registration">Registration and breakfast</h2>
-        </article>
-      </section>
-
-      <section class="slot">
-        <h3 class="time">Sunday, 9:30am</h3>
-        <article class="session" data-difficulty="intermediate" data-track="business" data-room="room-13b">
-          <h2><a href="/sessions/civicrm-developers-sitebuilders-themers/">CiviCRM for Developers, Site Builders, and Themers</a></h2>
-          <p class="meta">Presented by Kevin Reynen</p>
-        </article><!-- .session -->
-        <article class="session" data-difficulty="advanced" data-track="development" data-room="room-13a">
-          <h2><a href="/sessions/tdd-oo-sps-case-study-fighting-drupal/">TDD and OO in SPS: A case study in fighting Drupal</a></h2>
-          <p class="meta">Presented by Erik Summerfield</p>
-        </article><!-- .session -->
-        <article class="session" data-difficulty="intermediate" data-track="sitebuilding" data-room="room-14">
-          <h2><a href="/sessions/commerce-kickstart-2-tips-tricks/">Commerce Kickstart 2 — Tips and Tricks</a></h2>
-          <p class="meta">Presented by Josh Miller</p>
-        </article><!-- .session -->
-      </section><!-- .slot -->
-
-      <section class="slot">
-        <h3 class="time">Sunday, 10:30am</h3>
-        <article class="session" data-difficulty="intermediate" data-track="business" data-room="room-13b">
-          <h2><a href="/sessions/getting-agile-with-drupal/">Getting Agile with Drupal</a></h2>
-          <p class="meta">Presented by Johnnie Fox</p>
-        </article><!-- .session -->
-        <article class="session" data-difficulty="intermediate" data-track="development" data-room="room-13a">
-          <h2><a href="/sessions/why-chose-meteor-drupal-lovechild/">Why we chose Meteor and what a Drupal/Meteor love child might look like</a></h2>
-          <p class="meta">Presented by Casey Cobb, Stephen Pope</p>
-        </article><!-- .session -->
-        <article class="session" data-difficulty="intermediate" data-track="sitebuilding" data-room="room-14">
-          <h2><a href="/sessions/semantic-site-building/">Semantic Site Building</a></h2>
-          <p class="meta">Presented by Jody Hamilton</p>
-        </article><!-- .session -->
-      </section><!-- .slot -->
-
-      <section class="slot">
-        <h3 class="time">Sunday, 11:30am</h3>
-        <article class="session" data-difficulty="beginner" data-track="sitebuilding" data-room="room-13b">
-          <h2><a href="/sessions/import-map-5000-points-interest-minutes/">Import and Map Over 5,000 Points of Interest in 45 Minutes</a></h2>
-          <p class="meta">Presented by Michael Anello</p>
-        </article><!-- .session -->
-        <article class="session" data-difficulty="intermediate" data-track="development" data-room="room-13a">
-          <h2><a href="/sessions/practical-performance-tuning-benchmarking/">Practical performance tuning and benchmarking</a></h2>
-          <p class="meta">Presented by Nick Lewis</p>
-        </article><!-- .session -->
-        <article class="session" data-difficulty="intermediate" data-track="frontend" data-room="room-14">
-          <h2><a href="/sessions/adaptive-images-responsive-web-design/">Adaptive Images for Responsive Web Design</a></h2>
-          <p class="meta">Presented by Christopher Schmitt</p>
-        </article><!-- .session -->
-      </section><!-- .slot -->
-
-      <section class="slot">
-        <h3 class="time">Sunday, 12:30pm</h3>
-        <article class="full">
-          <h2 class="lunch">Break for lunch 12:30-2pm</h2>
-          <p>Check out our <a href="/about/#food">list of places to eat nearby</a>.</p>
-        </article>
-      </section>
-
-      <section class="slot">
-        <h3 class="time">Sunday, 2:00pm</h3>
-        <article class="full">
-          <h2 class="keynote"><a href="/news/meet-our-keynote-speakers/">Keynote with <span class="name">Danese Cooper</span></a></h2>
-        </article>
-      </section>
-
-      <section class="slot">
-        <h3 class="time">Sunday, 3:00pm</h3>
-        <article class="session" data-difficulty="advanced" data-track="business" data-room="room-13b">
-          <h2><a href="/sessions/policy-truth-workbench-moderation-workflow-case-study/">Policy of Truth — Workbench, moderation, and workflow case study</a></h2>
-          <p class="meta">Presented by David Diers, Taylor Smith</p>
-        </article><!-- .session -->
-        <article class="session" data-difficulty="advanced" data-track="development" data-room="room-13a">
-          <h2><a href="/sessions/automating-testing-drupal-zombiejs/">Automating and Testing Drupal with Zombie.js</a></h2>
-          <p class="meta">Presented by Travis Tidwell</p>
-        </article><!-- .session -->
-        <article class="session" data-difficulty="intermediate" data-track="business" data-room="room-14">
-          <h2><a href="/sessions/texas-monthly-panel/">Texas Monthly goes digital with Drupal</a></h2>
-          <p class="meta">Presented by Ryan Krouskup, Ethan Worrell</p>
-        </article><!-- .session -->
-      </section><!-- .slot -->
-
-      <section class="slot">
-        <h3 class="time">Sunday, 4:00pm</h3>
-        <article class="session" data-difficulty="intermediate" data-track="frontend" data-room="room-13b">
-          <h2><a href="/sessions/marketing-automation-dynamic-content-drupal/">Marketing Automation &amp; Dynamic Content in Drupal</a></h2>
-          <p class="meta">Presented by Ben Finklea</p>
-        </article><!-- .session -->
-        <article class="session" data-difficulty="intermediate" data-track="development" data-room="room-13a">
-          <h2><a href="/sessions/remodeling-antique-plumbing-with-modern-tools/">Remodeling Antique Plumbing With Modern Tools</a></h2>
-          <p class="meta">Presented by Dustin Younse</p>
-        </article><!-- .session -->
-        <article class="session" data-difficulty="intermediate" data-track="frontend" data-room="room-14">
-          <h2><a href="/sessions/get-more-from-content-reader-aware-design/">Get More From Your Content with Reader Aware Design</a></h2>
-          <p class="meta">Presented by Ben Brown</p>
-        </article><!-- .session -->
-      </section><!-- .slot -->
+    {% for post in site.categories.session reversed %}
+    {% if post.day == 'Sunday' %}
+      {% if post.room == 'full' and post.accepted == true %}
+{% include session-full.html %}
+      {% elsif post.accepted == true %}
+        {% capture slot %}{% cycle 'begin', 'skip', 'end' %}{% endcapture %}
+        {% if slot == 'begin' %}
+        <section class="slot">
+          <h3 class="time">{{ post.day }}, {{ post.start }}</h3>
+        {% endif %}
+{% include session.html %}
+        {% if slot == 'end' %}
+        </section>
+        {% endif %}
+      {% endif %}
+    {% endif %}
+    {% endfor %}
 
     </section><!-- .sched -->
   </div>
