@@ -49,6 +49,13 @@ a {
   }
 }
 
+hr {
+  border: 0;
+  height: 2px;
+  background: $lightbackground;
+  margin-bottom: $space-double;
+}
+
 img {
   vertical-align: middle; // Remove the gap between images and the bottom of their containers: h5bp.com/i/440
 }
