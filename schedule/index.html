@@ -41,6 +41,42 @@ title: Schedule | DrupalCamp Austin 2013
   </div>
 
   <section id="sched" class="room">
+    <h2>Saturday</h2>
+
+    <header>
+      <span class="column">Room 14</span>
+      <span class="column">Room 13A</span>
+      <span class="column">Room 13B</span>
+    </header>
+
+    {% for post in site.categories.session reversed %}
+      {% if post.day == 'Saturday' and post.accepted == true %}
+        {% capture slot %}{% cycle 'begin', 'skip', 'end' %}{% endcapture %}
+        {% if slot == 'begin' %}
+        <section class="slot">
+          <h3 class="time">{{ post.day }}, {{ post.start }}</h3>
+        {% endif %}
+
+        {% include session.html %}
+
+        {% if slot == 'end' %}
+        </section>
+        {% endif %}
+      {% endif %}
+    {% endfor %}
+
+    <h2>Sunday</h2>
+
+    <header>
+      <span class="column">Room 14</span>
+      <span class="column">Room 13A</span>
+      <span class="column">Room 13B</span>
+    </header>
+
+
+  </section>
+
+  <section id="sched" class="room">
       <h2>Saturday</h2>
 
       <header>
