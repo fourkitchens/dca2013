@@ -16,6 +16,8 @@ start: 4:00pm
 room: Room 13A
 ---
 
-This talk is targeted at developers of all experience levels, although it shouldn't get so technical that a beginner would be completely lost.
+Spacer gifs and 8.3 filenames are a thing of the past, but the internet is still full of sites that built around them.  If you ever need to work on a codebase of a sufficient age, what are the old pitfalls and modern workarounds?
 
-I will be looking at problems with old technology, such as developing around the 31 stylesheet limitation in old versions of IE, HTML4 class and ID naming issues, dealing with aging and confusing codebases without breaking or re-coding existing deployed sites and methods of retrofitting modern coding and deployment strategies onto existing sites while the plane is still in the air.
+I will be looking at some of the problems you are likely to encounter with old technology, such as developing around the 31 stylesheet limitation in old versions of IE, HTML4 class and ID naming issues, dealing with aging and confusing codebases without breaking or re-coding deployed sites, and methods of retrofitting modern coding and deployment strategies onto existing sites with minimal downtime.
+
+This is web development at the trailing edge!
