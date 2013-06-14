@@ -1,7 +1,7 @@
 ---
 layout: news
 category: news
-permalink: /news/meet-our-keynote-speakers
+permalink: /news/meet-our-keynote-speakers/
 published: true
 
 title: Meet our keynote speakers
