@@ -13,7 +13,7 @@ difficulty: Beginner
 
 day: Saturday
 start: 3:00pm
-room: Room 14
+room: Room 12
 ---
 
 Drupal has grown over the past decade from dorm-room project to a CMS powerhouse. Now that the project seems to be on the edge of glory, what does the future hold?

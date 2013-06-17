@@ -13,7 +13,7 @@ difficulty: Intermediate
 
 day: Sunday
 start: 10:30am
-room: Room 14
+room: Room 12
 ---
 
 The usability of a CMS for its administrators and editors is closely tied to the semantic sense of the site build. Likewise, the maintainability (including ease of upgrade and feature addition) is greatly enhanced by intelligent semantics. By semantic site building in Drupal, I mean that all content types should be labeled and represent types of content, that user roles should be labeled and represent permissioned roles of users, and so on.

@@ -13,7 +13,7 @@ difficulty: Intermediate
 
 day: Saturday
 start: 11:30am
-room: Room 12
+room: Room 14
 ---
 
 "Omega…" she whispered through her webcam microphone. "Omega! I choose you!" shouted the man sporting cut-off sleeves and a mullet. "Omega?" asked the child entrepreneur quizzically. Then, heard echoing through the labyrinthian matrices of drupal.org, "Omega" was uttered for the 9872435th time.

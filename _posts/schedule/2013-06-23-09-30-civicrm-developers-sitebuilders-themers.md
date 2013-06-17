@@ -13,7 +13,7 @@ difficulty: Intermediate
 
 day: Sunday
 start: 9:30am
-room: Room 12
+room: Room 14
 ---
 
 Developers, site builders, and themers who are already familiar with Drupal's secret handshakes and special sauces may be reluctant to invest time learning how to accomplish similar tasks in CiviCRM, but there are some big advantages to using CiviCRM with Drupal over one of the Drupal native CRM projects or a commercial SaaS solution. This sessions will answer many of the How's to making Drupal and CiviCRM work well together, but we'll also get into the Why.

@@ -13,7 +13,7 @@ difficulty: Intermediate
 
 day: Sunday
 start: 3:00pm
-room: Room 14
+room: Room 12
 ---
 
 Texas Monthly did indeed have a homemade "content-managed" website prior to building their totally re-imagined site in Drupal 7.  That scary place is where we will start our panel discussion about a unique redesign project for an iconicTexas magazine.  Members of the Texas Monthly digital strategy team and the Entermedia's development team will discuss the process, challenges, frustrations, and ultimate success they shared in bringing a traditional print media company to a place where they can leverage their online presence as a true asset.
