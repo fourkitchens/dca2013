@@ -13,7 +13,7 @@ difficulty: Advanced
 
 day: Sunday
 start: 3:00pm
-room: Room 13A
+room: Room 13
 ---
 
 ### The Bite

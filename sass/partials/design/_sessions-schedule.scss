@@ -56,10 +56,10 @@ article.session {
         &[data-room="room-14"] {
           @include grid-span(1,2);
         }
-        &[data-room="room-13a"] {
+        &[data-room="room-13"] {
           @include grid-span(1,3);
         }
-        &[data-room="room-13b"] {
+        &[data-room="room-12"] {
           @include grid-span(1,4);
         }
       }

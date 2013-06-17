@@ -13,7 +13,7 @@ difficulty: Beginner
 
 day: Saturday
 start: 10:30am
-room: Room 13A
+room: Room 13
 ---
 
 ### Part 2 of 2

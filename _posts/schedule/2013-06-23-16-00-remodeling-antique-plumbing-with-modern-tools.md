@@ -13,7 +13,7 @@ difficulty: Intermediate
 
 day: Sunday
 start: 4:00pm
-room: Room 13A
+room: Room 13
 ---
 
 Spacer gifs and 8.3 filenames are a thing of the past, but the internet is still full of sites that built around them.  If you ever need to work on a codebase of a sufficient age, what are the old pitfalls and modern workarounds?
