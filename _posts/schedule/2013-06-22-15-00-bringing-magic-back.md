@@ -13,7 +13,7 @@ difficulty: Intermediate
 
 day: Saturday
 start: 3:00pm
-room: Room 12
+room: Room 14
 ---
 
 Frontend development is changing, and themers need the right tools to create performant, mobile-first sites. Starting to navigate the many modules, CSS preprocessors and libraries out there can be incredibly overwelming. But have no fear, we are here to bring some *magic* back into your project with some tools to improve your development workflow.

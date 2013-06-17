@@ -13,7 +13,7 @@ difficulty: Intermediate
 
 day: Saturday
 start: 9:30am
-room: Room 12
+room: Room 14
 ---
 
 Oh noes! Api.drupal.org is down... or I am on a plane... or I don't have a wifi connection... how can I look up the details on that hook/function/class that I need?

@@ -13,7 +13,7 @@ difficulty: Intermediate
 
 day: Saturday
 start: 10:30am
-room: Room 14
+room: Room 12
 ---
 
 Twig is a new PHP-based, compiled, templating language that is slated to be the default theming engine in Drupal 8 (which will ship with only one theme engine.) It brings about significant improvements that promise to make front-end development simpler, faster and more secure.

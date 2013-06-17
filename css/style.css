@@ -1924,7 +1924,7 @@ article.session.filtered {
   margin-top: 0;
 }
 @media (min-width: 57.5em) {
-  section.room article.session[data-room="room-14"] {
+  section.room article.session[data-room="room-12"] {
     width: 25.53191%;
     float: left;
     margin-right: -100%;
@@ -1938,7 +1938,7 @@ article.session.filtered {
     margin-left: 46.80851%;
     clear: none;
   }
-  section.room article.session[data-room="room-12"] {
+  section.room article.session[data-room="room-14"] {
     width: 25.53191%;
     float: right;
     margin-left: 0;

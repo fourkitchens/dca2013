@@ -13,7 +13,7 @@ difficulty: Beginner
 
 day: Saturday
 start: 4:00pm
-room: Room 12
+room: Room 14
 ---
 
 Would you take a road trip without a map (app)?

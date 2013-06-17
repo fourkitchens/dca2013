@@ -13,7 +13,7 @@ difficulty: Beginner
 
 day: Saturday
 start: 11:30am
-room: Room 14
+room: Room 12
 ---
 
 GitHub just turned 5 years old. During that time, it grew from a small team of **4** to **171** employees all over the globe, working on their own schedules, and without any managers.
