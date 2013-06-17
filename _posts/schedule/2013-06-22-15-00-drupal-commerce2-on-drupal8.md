@@ -13,7 +13,7 @@ difficulty: Intermediate
 
 day: Saturday
 start: 3:00pm
-room: Room 13A
+room: Room 13
 ---
 
 Development of Drupal Commerce 2.x began in Drupal core through contributions to core initiatives and new core modules. As a result, the next version of Drupal Commerce will feature a shrunken codebase thanks to updates to Drupal's core Entity API and the Entity Reference module, which alone deprecates a significant portion of the Product Reference, Line Item, and Customer modules.

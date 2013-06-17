@@ -40,4 +40,8 @@ We hope to see you there!
 
 And seriously, feel free to RSVP, even if your team is not full yet.
 
-<a href="http://geektrivianight.eventbrite.com/" class="button">RSVP for Trivia Night</a>
+<p><a href="http://geektrivianight.eventbrite.com/" class="button">RSVP for Trivia Night</a></p>
+
+Thanks to <a href="http://volacci.com/" target="_blank">Volacci</a>, our Geek Trivia Night sponsor.
+
+![Volacci](/img/sponsors/volacci.png)

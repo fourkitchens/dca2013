@@ -13,7 +13,7 @@ difficulty: Intermediate
 
 day: Sunday
 start: 10:30am
-room: Room 13A
+room: Room 13
 ---
 
 In this talk, we'll discuss some thoughts on why we have really enjoyed working in the Meteor Node.js framework and what we think Drupal and Meteor could learn from each other.

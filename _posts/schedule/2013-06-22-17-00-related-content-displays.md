@@ -13,7 +13,7 @@ difficulty: Beginner
 
 day: Saturday
 start: 5:00pm
-room: Room 13A
+room: Room 13
 ---
 
 For beginners that have some familiarity with simple Views, Fields and Content Types, creating related content displays is the key to launching interesting, relevant and feature rich websites.
