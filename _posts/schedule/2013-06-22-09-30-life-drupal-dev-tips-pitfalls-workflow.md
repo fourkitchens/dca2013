@@ -2,15 +2,17 @@
 published: true
 layout: session
 category: session
-permalink: "/sessions/life-drupal-dev-tips-pitfalls-workflow/"
+permalink: /sessions/life-drupal-dev-tips-pitfalls-workflow/
 accepted: true
-title: "Life as a Drupal dev: Tips, pitfalls, workflow"
-summary: "From the efficiency nut who loves a good and seamless workflow to the head-scratching beginner: Concepts to help you succeed in your Drupal projects."
+
+title: Life as a Drupal dev - Tips, pitfalls, workflow
+summary: From the efficiency nut who loves a good and seamless workflow to the head-scratching beginner - Concepts to help you succeed in your Drupal projects
 presenters: Bronius Motekaitis
 track: Development
 difficulty: Intermediate
+
 day: Saturday
-start: "9:30am"
+start: 9:30am
 room: Room 14
 ---
 
