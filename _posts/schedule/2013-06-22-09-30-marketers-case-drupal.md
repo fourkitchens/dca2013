@@ -1,13 +1,13 @@
 ---
+published: true
 layout: session
 category: session
 permalink: /sessions/marketers-case-drupal/
-published: true
 accepted: true
 
 title: The Marketers' Case for Drupal
 summary: What's driving the world's best marketing teams to go Drupal.
-presenters: Tom Wentworth
+presenters: Katelyn Fogarty
 track: Business
 difficulty: Beginner
 
