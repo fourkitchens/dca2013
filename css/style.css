@@ -1697,6 +1697,50 @@ footer .credits i {
     margin-top: 0.2em;
   }
 }
+.schedule .friday {
+  padding-bottom: 1em;
+  border-bottom: #11212d solid 2px;
+  margin-bottom: 2em;
+}
+.schedule .friday:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.schedule .friday article {
+  width: 100%;
+  float: right;
+  margin-left: 0;
+  margin-right: 0;
+  clear: none;
+  margin-bottom: 1em;
+}
+@media (min-width: 57.5em) {
+  .schedule .friday article {
+    margin-bottom: 0;
+  }
+  .schedule .friday article.workshops {
+    width: 31.81818%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 0%;
+    clear: none;
+  }
+  .schedule .friday article.webleadershipday {
+    width: 31.81818%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 34.09091%;
+    clear: none;
+  }
+  .schedule .friday article.trivianight {
+    width: 31.81818%;
+    float: right;
+    margin-left: 0;
+    margin-right: 0;
+    clear: none;
+  }
+}
 .schedule .filters {
   min-height: 10.5em;
   position: relative;
