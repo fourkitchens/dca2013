@@ -1562,19 +1562,37 @@ footer .credits i {
 }
 
 .session-details aside {
-  width: 43.18182%;
+  width: 100%;
   float: right;
   margin-left: 0;
   margin-right: 0;
   clear: none;
 }
+@media (min-width: 30.125em) {
+  .session-details aside {
+    width: 43.18182%;
+    float: right;
+    margin-left: 0;
+    margin-right: 0;
+    clear: none;
+  }
+}
 .session-details .desc {
-  width: 54.54545%;
-  float: left;
-  margin-right: -100%;
-  margin-left: 0%;
+  width: 100%;
+  float: right;
+  margin-left: 0;
+  margin-right: 0;
   clear: none;
   padding-top: 1.5em;
+}
+@media (min-width: 30.125em) {
+  .session-details .desc {
+    width: 54.54545%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 0%;
+    clear: none;
+  }
 }
 
 .filters {

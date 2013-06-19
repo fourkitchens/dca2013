@@ -32,12 +32,20 @@
 .session-details {
   // Sidebar
   aside {
-    @include grid-span(4, omega);
+    @include grid-span(9);
+    
+    @include breakpoint($session-lg) {
+      @include grid-span(4, omega);
+    }
   }
 
   // Session description
   .desc {
-    @include grid-span(5);
+    @include grid-span(9);
     padding-top: 1.5em;
+
+    @include breakpoint($session-lg) {
+      @include grid-span(5);
+    }
   }
 }
