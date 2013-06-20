@@ -24,8 +24,9 @@
   //
   // Day/Room headings
   //
+
   header {
-    // Sticky headers FTW!
+    // day/room headings are sticky
     position: -webkit-sticky;
     position:    -moz-sticky;
     position:     -ms-sticky;
@@ -33,11 +34,19 @@
     top: 0;
     z-index: 100;
     padding: 0.5em 0;
-    @include background(linear-gradient(top, $darkbackground 60%, rgba($darkbackground,0)));
+    background: $darkbackground;
 
+    @include breakpoint($filters) {
+      top: $filter-height - 0.2em;
+    }
     @include breakpoint($sched-lg) {
+      @include background(linear-gradient(top, $darkbackground 60%, rgba($darkbackground,0)));
       padding-bottom: 2em;
       margin-bottom: -1em;
+    }
+
+    h2 {
+      margin-bottom: 0;
     }
 
     .column {
@@ -61,16 +70,6 @@
   //
 
   &.room {
-    .time {
-      // Time headings should be sticky on linear view
-      position: -webkit-sticky;
-      position:    -moz-sticky;
-      position:     -ms-sticky;
-      position:      -o-sticky;
-      top: 1.8em;
-      z-index: 90;
-    }
-
     @include breakpoint($sched-lg) {
       @include layout($layout-room) {
         .time {

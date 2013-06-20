@@ -22,14 +22,25 @@ $reset-height: 2.1em;
       clear: both;
       margin-top: 1em;
       margin-bottom: 1em;
-      padding: 0.5em;
+      padding: 0.2em 0.5em 0.5em 0.5em;
       background-color: $darkblue;
       color: $white;
       border-radius: 0.2em;
       text-transform: none;
+      // Time headings should be sticky on linear view
+      position: -webkit-sticky;
+      position:    -moz-sticky;
+      position:     -ms-sticky;
+      position:      -o-sticky;
+      top: 2.1em;
+      z-index: 90;
 
+      @include breakpoint($filters) {
+        top: $filter-height + 0.8em;
+      }
       @include breakpoint($sched-lg) {
         margin-top: 0.2em;
+        text-align: right;
       }
     }
   }
@@ -69,18 +80,25 @@ $reset-height: 2.1em;
   //
 
   .filters {
+    @include clearfix;
     min-height: $reset-width + 3em;
-    position: relative;
     padding-left: $reset-width + 1em;
+    position: relative;
+
+    @include breakpoint($filters) {
+      min-height: $reset-height;
+      padding-top: 0.4em;
+      position: -webkit-sticky;
+      position:    -moz-sticky;
+      position:     -ms-sticky;
+      position:      -o-sticky;
+      top: 0;
+      z-index: 100;
+      background: $darkbackground;
+    }
 
     @include breakpoint($sched-lg) {
       padding-left: $reset-width + $sched-pad;
-    }
-
-    // on big screens make it shorter.
-    // temporary until we add other filters.
-    @include breakpoint($sched-lg) {
-      min-height: $reset-height;
     }
 
     // Big ol' Reset button
@@ -96,8 +114,11 @@ $reset-height: 2.1em;
 
         // on big screens make it shorter and move it.
         // temporary until we add other filters.
+        @include breakpoint($filters) {
+          height: $reset-height + 0.1em;
+          top: 0.1em;
+        }
         @include breakpoint($sched-lg) {
-          height: $reset-height;
           left: $sched-pad - 1em;
         }
       }

@@ -2,8 +2,31 @@
 // Individual sessions for schedule
 //
 
-// Default title style for sessions and other events in time slots.
+.day {
+  @include transform-style(preserve-3d);
+  @include transform-origin(50%, 100%);
+  @include perspective(60em);
+}
+
 .schedule .slot {
+  // These are defaults for the "expire" styles
+  @include transition($x-quick);
+  max-height: 28em;
+  overflow: hidden;
+  opacity: 1;
+
+  @include breakpoint($sched-lg) {
+    max-height: 12em;
+  }
+
+  // Expired time slots should take up less space
+  &.expired {
+    max-height: 0;
+    opacity: 0;
+    @include transform(translateY(-2em) rotateX(42deg));
+  }
+
+  // Headings for sessions/keynotes/etc
   h2 {
     font-size: em(24);
 
@@ -18,7 +41,7 @@ article.session {
   // Transform container settings
   @include transform-style(preserve-3d);
   @include perspective(600px);
-  @include transition(all .3s ease-in-out);
+  @include transition($x-quick);
   @include transform-origin(50% 100%);
 
   // Filtered = suppressed from schedule
@@ -39,7 +62,7 @@ article.session {
 
   // Defaults for each session
   .schedule & {
-    padding-bottom: 2em;
+    padding: 0 1em 2em;
     @include grid-span(9);
 
     // Defaults for session titles
