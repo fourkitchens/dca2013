@@ -1704,11 +1704,22 @@ footer .credits i {
   clear: both;
   margin-top: 1em;
   margin-bottom: 1em;
-  padding: 0.5em;
+  padding: 0.2em 0.5em 0.5em 0.5em;
   background-color: #135c91;
   color: white;
   border-radius: 0.2em;
   text-transform: none;
+  position: -webkit-sticky;
+  position: -moz-sticky;
+  position: -ms-sticky;
+  position: -o-sticky;
+  top: 2.1em;
+  z-index: 90;
+}
+@media (min-width: 43.75em) {
+  .schedule .slot .time {
+    top: 3.6em;
+  }
 }
 @media (min-width: 57.5em) {
   .schedule .slot .time {
@@ -1834,12 +1845,7 @@ footer .credits i {
   top: 0;
   z-index: 100;
   padding: 0.5em 0;
-  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(60%, #0a141b), color-stop(100%, rgba(10, 20, 27, 0)));
-  background: -webkit-linear-gradient(top, #0a141b 60%, rgba(10, 20, 27, 0));
-  background: -moz-linear-gradient(top, #0a141b 60%, rgba(10, 20, 27, 0));
-  background: -o-linear-gradient(top, #0a141b 60%, rgba(10, 20, 27, 0));
-  background: -ms-linear-gradient(top, #0a141b 60%, rgba(10, 20, 27, 0));
-  background: linear-gradient(top, #0a141b 60%, rgba(10, 20, 27, 0));
+  background: #0a141b;
 }
 @media (min-width: 43.75em) {
   .day header {
@@ -1848,9 +1854,18 @@ footer .credits i {
 }
 @media (min-width: 57.5em) {
   .day header {
+    background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(60%, #0a141b), color-stop(100%, rgba(10, 20, 27, 0)));
+    background: -webkit-linear-gradient(top, #0a141b 60%, rgba(10, 20, 27, 0));
+    background: -moz-linear-gradient(top, #0a141b 60%, rgba(10, 20, 27, 0));
+    background: -o-linear-gradient(top, #0a141b 60%, rgba(10, 20, 27, 0));
+    background: -ms-linear-gradient(top, #0a141b 60%, rgba(10, 20, 27, 0));
+    background: linear-gradient(top, #0a141b 60%, rgba(10, 20, 27, 0));
     padding-bottom: 2em;
     margin-bottom: -1em;
   }
+}
+.day header h2 {
+  margin-bottom: 0;
 }
 .day header .column {
   display: none;
@@ -1865,19 +1880,6 @@ footer .credits i {
 @media (min-width: 57.5em) {
   .day header .column {
     display: inline-block;
-  }
-}
-.day.room .time {
-  position: -webkit-sticky;
-  position: -moz-sticky;
-  position: -ms-sticky;
-  position: -o-sticky;
-  top: 1.8em;
-  z-index: 90;
-}
-@media (min-width: 43.75em) {
-  .day.room .time {
-    top: 3.2em;
   }
 }
 @media (min-width: 57.5em) {
@@ -2006,7 +2008,7 @@ article.session.filtered {
   -webkit-filter: blur(8px);
 }
 .schedule article.session {
-  padding-bottom: 2em;
+  padding: 0 1em 2em;
   width: 100%;
   float: right;
   margin-left: 0;

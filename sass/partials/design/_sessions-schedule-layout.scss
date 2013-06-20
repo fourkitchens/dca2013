@@ -22,12 +22,22 @@ $reset-height: 2.1em;
       clear: both;
       margin-top: 1em;
       margin-bottom: 1em;
-      padding: 0.5em;
+      padding: 0.2em 0.5em 0.5em 0.5em;
       background-color: $darkblue;
       color: $white;
       border-radius: 0.2em;
       text-transform: none;
+      // Time headings should be sticky on linear view
+      position: -webkit-sticky;
+      position:    -moz-sticky;
+      position:     -ms-sticky;
+      position:      -o-sticky;
+      top: 2.1em;
+      z-index: 90;
 
+      @include breakpoint($filters) {
+        top: $filter-height + 0.8em;
+      }
       @include breakpoint($sched-lg) {
         margin-top: 0.2em;
         text-align: right;

@@ -62,7 +62,7 @@ article.session {
 
   // Defaults for each session
   .schedule & {
-    padding-bottom: 2em;
+    padding: 0 1em 2em;
     @include grid-span(9);
 
     // Defaults for session titles
