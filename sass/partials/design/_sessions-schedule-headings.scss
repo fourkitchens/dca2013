@@ -6,47 +6,55 @@
 // to each schedule view using & = section.[room|track|difficulty]
 //
 
-// Column headings - changes when user clicks "Order by"
-#sched {
+.day {
   padding-top: 1em;
   position: relative;
 
   // Day headings should fall in line vertically with column headings
   @include breakpoint($sched-lg) {
-    & > h2 {
+    header > h2 {
       float: left;
       position: absolute;
     }
-    & > h2:nth-of-type(2) {
+    header > h2:nth-of-type(2) {
       @include transform(translateY(1.8em));
     }
+  }
 
-    header:nth-of-type(2) {
-      margin-top: 4em;
+  //
+  // Day/Room headings
+  //
+  header {
+    // Sticky headers FTW!
+    position: -webkit-sticky;
+    position:    -moz-sticky;
+    position:     -ms-sticky;
+    position:      -o-sticky;
+    top: 0;
+    z-index: 100;
+    padding: 0.5em 0 2em;
+    margin-bottom: -1em;
+    @include background(linear-gradient(top, $darkbackground 60%, rgba($darkbackground,0)));
+
+    .column {
+      display: none;
+      background: $green;
+      font-family: $atrament;
+      font-size: 2em;
+      color: #222;
+      border-radius: .2em;
+      padding: 0 .5em;
+      white-space: nowrap;
+
+      @include breakpoint($sched-lg) {
+        display: inline-block;
+      }
     }
   }
 
-  // generic styles
-  .column {
-    display: none; // until $sched-lg
-    background: $green;
-    font-family: $atrament;
-    font-size: 2em;
-    color: #222;
-    border-radius: .2em;
-    padding: 0 .5em;
-    white-space: nowrap;
-    // fun stuff
-    // position: -webkit-sticky;
-    // position:    -moz-sticky;
-    // position:     -ms-sticky;
-    // position:      -o-sticky;
-    // top: .5em;
-
-    @include breakpoint($sched-lg) {
-      display: inline-block;
-    }
-  }
+  //
+  // Schedule by Room
+  //
 
   &.room {
     @include breakpoint($sched-lg) {

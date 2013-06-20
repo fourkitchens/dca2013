@@ -6,7 +6,7 @@ title: Schedule | DrupalCamp Austin 2013
 <div class="schedule">
   <h1 class="title">Schedule</h1>
 
-  <section class="friday">
+  <section id="friday" class="day">
     <h2>Friday</h2>
 
     <article class="workshops">
@@ -29,8 +29,7 @@ title: Schedule | DrupalCamp Austin 2013
       <p>Come test your knowledge of history, pop culture, music, TV, film, and the internet at our first ever Geek Trivia Night&mdash;hosted by Volacci. <a href="/news/geek-trivia-night/">Read our blog post for more info</a>.</p>
       <a class="button" href="http://geektrivianight.eventbrite.com/">Sign up (free)</a>
     </article>
-
-</section><!-- .friday -->
+  </section><!-- .friday -->
 
   <section class="filters">
     <div class="filter f-track">
@@ -62,10 +61,9 @@ title: Schedule | DrupalCamp Austin 2013
     </div>
   </section>
 
-  <section id="sched" class="room">
-    <h2>Saturday</h2>
-
+  <section id="saturday" class="day room">
     <header>
+      <h2>Saturday</h2>
       <span class="column">ENTERMEDIA<br>Room 12</span>
       <span class="column">Acquia<br>Room 13</span>
       <span class="column">Patient Conversation<br>Room 14</span>
@@ -89,9 +87,11 @@ title: Schedule | DrupalCamp Austin 2013
     {% endif %}
     {% endfor %}
 
-    <h2>Sunday</h2>
+  </section><!-- #saturday -->
+  <section id="sunday" class="day room">
 
     <header>
+      <h2>Sunday</h2>
       <span class="column">ENTERMEDIA<br>Room 12</span>
       <span class="column">Acquia<br>Room 13</span>
       <span class="column">Patient Conversation<br>Room 14</span>
@@ -115,5 +115,5 @@ title: Schedule | DrupalCamp Austin 2013
     {% endif %}
     {% endfor %}
 
-    </section><!-- .sched -->
-  </div>
+  </section><!-- #sunday -->
+</div><!-- .schedule -->
