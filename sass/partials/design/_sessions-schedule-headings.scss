@@ -32,9 +32,13 @@
     position:      -o-sticky;
     top: 0;
     z-index: 100;
-    padding: 0.5em 0 2em;
-    margin-bottom: -1em;
+    padding: 0.5em 0;
     @include background(linear-gradient(top, $darkbackground 60%, rgba($darkbackground,0)));
+
+    @include breakpoint($sched-lg) {
+      padding-bottom: 2em;
+      margin-bottom: -1em;
+    }
 
     .column {
       display: none;
@@ -57,10 +61,21 @@
   //
 
   &.room {
+    .time {
+      // Time headings should be sticky on linear view
+      position: -webkit-sticky;
+      position:    -moz-sticky;
+      position:     -ms-sticky;
+      position:      -o-sticky;
+      top: 1.8em;
+      z-index: 90;
+    }
+
     @include breakpoint($sched-lg) {
       @include layout($layout-room) {
         .time {
           @include grid-span(1,1);
+          position: static; // unset the sticky header on large schedule
         }
         .column:nth-of-type(1) {
           @include grid-span(1,2);
