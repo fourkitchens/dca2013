@@ -1762,17 +1762,30 @@ footer .credits i {
 }
 .schedule .filters {
   min-height: 10.5em;
-  position: relative;
   padding-left: 8.5em;
+  position: relative;
 }
-@media (min-width: 57.5em) {
+.schedule .filters:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media (min-width: 43.75em) {
   .schedule .filters {
-    padding-left: 15.9em;
+    min-height: 2.1em;
+    padding-top: 0.4em;
+    position: -webkit-sticky;
+    position: -moz-sticky;
+    position: -ms-sticky;
+    position: -o-sticky;
+    top: 0;
+    z-index: 100;
+    background: #0a141b;
   }
 }
 @media (min-width: 57.5em) {
   .schedule .filters {
-    min-height: 2.1em;
+    padding-left: 15.9em;
   }
 }
 .schedule .filters .f-reset button {
@@ -1784,9 +1797,14 @@ footer .credits i {
   width: 7.5em;
   height: 8.5em;
 }
+@media (min-width: 43.75em) {
+  .schedule .filters .f-reset button {
+    height: 2.2em;
+    top: 0.1em;
+  }
+}
 @media (min-width: 57.5em) {
   .schedule .filters .f-reset button {
-    height: 2.1em;
     left: 7.4em;
   }
 }
@@ -1823,6 +1841,11 @@ footer .credits i {
   background: -ms-linear-gradient(top, #0a141b 60%, rgba(10, 20, 27, 0));
   background: linear-gradient(top, #0a141b 60%, rgba(10, 20, 27, 0));
 }
+@media (min-width: 43.75em) {
+  .day header {
+    top: 2.6em;
+  }
+}
 @media (min-width: 57.5em) {
   .day header {
     padding-bottom: 2em;
@@ -1851,6 +1874,11 @@ footer .credits i {
   position: -o-sticky;
   top: 1.8em;
   z-index: 90;
+}
+@media (min-width: 43.75em) {
+  .day.room .time {
+    top: 3.2em;
+  }
 }
 @media (min-width: 57.5em) {
   .day.room .time {

@@ -56,6 +56,7 @@ $news-sm:     0px 639px;
 $primary-sm:  480px;
 $sched-md:    500px;
 $sched-lg:    920px;
+$filters:     700px;
 $sidebar:     768px;
 $skinny:      680px;
 $session-lg:  482px;
@@ -80,3 +81,7 @@ $layout-difficulty: 2 3 3 3; // 3-col
 // Transitions
 
 $x-quick: all .3s ease-in-out;
+
+// Schedule vars
+
+$filter-height: 2.8em;

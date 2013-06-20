@@ -24,8 +24,9 @@
   //
   // Day/Room headings
   //
+
   header {
-    // Sticky headers FTW!
+    // day/room headings are sticky
     position: -webkit-sticky;
     position:    -moz-sticky;
     position:     -ms-sticky;
@@ -35,6 +36,9 @@
     padding: 0.5em 0;
     @include background(linear-gradient(top, $darkbackground 60%, rgba($darkbackground,0)));
 
+    @include breakpoint($filters) {
+      top: $filter-height - 0.2em;
+    }
     @include breakpoint($sched-lg) {
       padding-bottom: 2em;
       margin-bottom: -1em;
@@ -69,6 +73,10 @@
       position:      -o-sticky;
       top: 1.8em;
       z-index: 90;
+
+      @include breakpoint($filters) {
+        top: $filter-height + 0.4em;
+      }
     }
 
     @include breakpoint($sched-lg) {
