@@ -4,7 +4,7 @@
         {% capture slot %}{% cycle 'begin', 'skip', 'end' %}{% endcapture %}
         {% if slot == 'begin' %}
         <section class="slot">
-          <h3 class="time">{{ post.day }}, {{ post.start }}</h3>
+          <h3 class="time">{{ post.start }}</h3>
         {% endif %}
 {% include session.html %}
         {% if slot == 'end' %}
