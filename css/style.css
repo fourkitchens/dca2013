@@ -1883,6 +1883,48 @@ footer .credits i {
   }
 }
 
+.day {
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transform-origin: 50% 100%;
+  -moz-transform-origin: 50% 100%;
+  -ms-transform-origin: 50% 100%;
+  -o-transform-origin: 50% 100%;
+  transform-origin: 50% 100%;
+  -webkit-perspective: 60em;
+  -moz-perspective: 60em;
+  -ms-perspective: 60em;
+  -o-perspective: 60em;
+  perspective: 60em;
+}
+
+.schedule .slot {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  max-height: 28em;
+  overflow: hidden;
+  opacity: 1;
+}
+@media (min-width: 57.5em) {
+  .schedule .slot {
+    max-height: 12em;
+  }
+}
+.schedule .slot.expired {
+  max-height: 0;
+  opacity: 0;
+  -webkit-transform: translateY(-2em) rotateX(42deg);
+  -moz-transform: translateY(-2em) rotateX(42deg);
+  -ms-transform: translateY(-2em) rotateX(42deg);
+  -o-transform: translateY(-2em) rotateX(42deg);
+  transform: translateY(-2em) rotateX(42deg);
+}
 .schedule .slot h2 {
   font-size: 1.5em;
 }
