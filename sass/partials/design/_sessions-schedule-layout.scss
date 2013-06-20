@@ -34,21 +34,23 @@ $reset-height: 2.1em;
     }
   }
 
+  //
   // Friday events
+  //
 
-  .friday {
+  #friday {
     padding-bottom: $space;
     border-bottom: $lightbackground solid 2px;
     margin-bottom: $space-double;
     @include clearfix;
-    
+
     article {
       @include grid-span(9);
       margin-bottom: $space;
-      
+
       @include breakpoint($sched-lg) {
         margin-bottom: 0;
-        
+
         &.workshops {
           @include grid-span(3, 1);
         }
@@ -62,7 +64,10 @@ $reset-height: 2.1em;
     }
   }
 
+  //
   // Schedule filters
+  //
+
   .filters {
     min-height: $reset-width + 3em;
     position: relative;
