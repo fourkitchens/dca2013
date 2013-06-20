@@ -1713,6 +1713,7 @@ footer .credits i {
 @media (min-width: 57.5em) {
   .schedule .slot .time {
     margin-top: 0.2em;
+    text-align: right;
   }
 }
 .schedule #friday {

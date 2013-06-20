@@ -30,6 +30,7 @@ $reset-height: 2.1em;
 
       @include breakpoint($sched-lg) {
         margin-top: 0.2em;
+        text-align: right;
       }
     }
   }
