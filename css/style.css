@@ -1715,6 +1715,16 @@ footer .credits i {
   position: -o-sticky;
   top: 2.1em;
   z-index: 90;
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  transform-style: preserve-3d;
 }
 @media (min-width: 43.75em) {
   .schedule .slot .time {
@@ -1846,6 +1856,16 @@ footer .credits i {
   z-index: 100;
   padding: 0.5em 0;
   background: #0a141b;
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  transform-style: preserve-3d;
 }
 @media (min-width: 43.75em) {
   .day header {

@@ -35,6 +35,9 @@
     z-index: 100;
     padding: 0.5em 0;
     background: $darkbackground;
+    // HW accel to help position: sticky
+    @include transform(translateZ(0));
+    @include transform-style(preserve-3d);
 
     @include breakpoint($filters) {
       top: $filter-height - 0.2em;
