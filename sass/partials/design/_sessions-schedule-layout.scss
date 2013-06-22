@@ -34,6 +34,9 @@ $reset-height: 2.1em;
       position:      -o-sticky;
       top: 2.1em;
       z-index: 90;
+      // HW accel to help position: sticky
+      @include transform(translateZ(0));
+      @include transform-style(preserve-3d);
 
       @include breakpoint($filters) {
         top: $filter-height + 0.8em;
