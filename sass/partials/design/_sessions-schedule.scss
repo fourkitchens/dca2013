@@ -11,7 +11,7 @@
 .schedule .slot {
   // These are defaults for the "expire" styles
   @include transition($x-quick);
-  max-height: 28em;
+  max-height: 38em;
   overflow: hidden;
   opacity: 1;
 
