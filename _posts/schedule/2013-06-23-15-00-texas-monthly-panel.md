@@ -1,18 +1,18 @@
 ---
 layout: session
 category: session
-permalink: "/sessions/texas-monthly-panel/"
+permalink: /sessions/texas-monthly-panel/
 published: true
 accepted: true
 
 title: Texas Monthly goes digital with Drupal
 summary: Panel discussion about Texas Monthly magazine website relaunch
-presenters: "Ryan Krouskup, Chris Kendall, Ethan Worrel, and Sam Martin"
+presenters: Ryan Krouskup, Chris Kendall, Ethan Worrel, and Sam Martin
 track: Business
 difficulty: Intermediate
 
 day: Sunday
-start: "3:00pm"
+start: 3:00pm
 room: Room 12
 ---
 
