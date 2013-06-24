@@ -8,13 +8,14 @@ layout: col-1
   <p class="meta">Presenters: {{ page.presenters }}</p>
 
   <aside>
-    <ul class="sched">
-      <li>{{ page.day }}, {{ page.start }} in {{ page.room }}</li>
-    </ul>
+    <p>Presented on {{ page.day }} at {{ page.start }} in {{ page.room }}</p>
 
     <ul class="meta">
       <li>Difficulty: {{ page.difficulty }}</li>
       <li>Track: {{ page.track }}</li>
+      {% if page.slides != null %}
+        <li><a href="{{ page.slides }}">View slides</a></li>
+      {% endif %}
     </ul>
   </aside>
 
