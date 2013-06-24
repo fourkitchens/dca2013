@@ -1,8 +1,0 @@
----
----
-[
-{% for item in site.categories.dummy_session reversed %}
-  {% include post.json %},
-{% endfor %}
-false
-]
