@@ -10,9 +10,10 @@ summary: Learn how to quickly build a local API site for reference offline as we
 presenters: Ron Northcutt
 track: Development
 difficulty: Intermediate
+slides: "http://slid.es/ronnorthcutt/build-your-owndrupal-api-site"
 
 day: Saturday
-start: 4pm
+start: 4:00pm
 room: Room 13
 ---
 
