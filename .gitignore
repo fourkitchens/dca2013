@@ -1,3 +1,6 @@
+# ignore .htaccess as it will symlink to the .txt file we generate
+_site/.htaccess
+
 # we use Macs, lol
 .DS_Store
 
