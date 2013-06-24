@@ -10,6 +10,7 @@ summary: How to Node your Drupal with the Node.js Integration API
 presenters: Ryan Oles
 track: Development
 difficulty: Advanced
+slides: "https://speakerdeck.com/rh0/integrating-node-dot-js"
 
 day: Saturday
 start: 5:00pm
