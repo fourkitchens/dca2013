@@ -10,7 +10,7 @@ summary: Spacer gifs and 8.3 filenames are long gone, but still we labor on elde
 presenters: Dustin Younse
 track: Development
 difficulty: Intermediate
-slides: https://speakerdeck.com/milsyobtaf/remodeling-antique-plumbing-with-modern-tools
+slides: "https://speakerdeck.com/milsyobtaf/remodeling-antique-plumbing-with-modern-tools"
 
 day: Sunday
 start: 4:00pm
