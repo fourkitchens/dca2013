@@ -4,6 +4,7 @@ category: session
 permalink: /sessions/brewing-github/
 published: true
 accepted: true
+slides: "https://speakerdeck.com/kyledaigle/brewing-github"
 
 title: Brewing GitHub
 summary: How Github ships
