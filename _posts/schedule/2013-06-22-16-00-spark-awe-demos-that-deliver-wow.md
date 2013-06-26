@@ -10,6 +10,7 @@ summary: We'll talk about the Demo Framework distribution, how it can be leverag
 presenters: Brant Wynn, Chris Yates
 track: Sitebuilding
 difficulty: Beginner
+slides: "http://brantwynn.github.io/wow.slides"
 
 day: Saturday
 start: 4:00pm
@@ -20,8 +21,8 @@ The Demo Framework is a new distribution that highlights powerful features creat
 
 ### Topics
 
-- The Demo Framework core - what goes into building a distribution for sales engineers.
-- Demoing Drupal - user personas, demo scenarios, scripts and best practices.
 - Case Study - delivering ""Wow thru visual storytelling"" through a live demonstration.
+- Demoing Drupal - user personas, demo scenarios, scripts and best practices.
 - Installing and configuring Drupal distributions (using Demo Framework as our example)
+- The Demo Framework core - what goes into building a distribution for sales engineers.
 - Q/A - getting involved with distributions, demos, and feedback from the audience.
