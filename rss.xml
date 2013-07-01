@@ -1,0 +1,27 @@
+---
+# Source: https://raw.github.com/coyled/coyled.com/master/rss.xml
+---
+<?xml version="1.0"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>DrupalCamp Austin 2013</title>
+    <link>http://2013.drupalcampaustin.org</link>
+    <atom:link href="http://2013.drupalcampaustin.org/rss.xml" rel="self" type="application/rss+xml" />
+    <description>The biggest DrupalCamp in Texas</description>
+    <language>en-us</language>
+    <pubDate>{{ site.time | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
+    <lastBuildDate>{{ site.time | date: "%a, %d %b %Y %H:%M:%S %z" }}</lastBuildDate>
+
+    {% for post in site.categories.news %}
+    <item>
+      <title>{{ post.title }}</title>
+      <link>http://2013.drupalcampaustin.org{{ post.url }}</link>
+      <pubDate>{{ post.date | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
+      <author>{{ post.author }}</author>
+      <guid>http://2013.drupalcampaustin.org{{ post.url }}</guid>
+      <description>{{ post.content | xml_escape }}</description>
+    </item>
+    {% endfor %}
+
+  </channel>
+</rss>

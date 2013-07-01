@@ -11,7 +11,7 @@ presenters: Erik Summerfield
 track: Development
 difficulty: Advanced
 
-slides: http://www.slideshare.net/Phase2Technology/oo-and-tdd-in-sps
+slides: "http://www.slideshare.net/Phase2Technology/oo-and-tdd-in-sps"
 
 day: Sunday
 start: 9:30am
