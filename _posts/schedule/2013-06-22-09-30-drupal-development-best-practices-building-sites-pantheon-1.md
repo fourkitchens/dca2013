@@ -1,19 +1,18 @@
 ---
+published: true
 layout: session
 category: session
-permalink: /sessions/drupal-development-best-practices-building-sites-pantheon-1/
-published: true
+permalink: "/sessions/drupal-development-best-practices-building-sites-pantheon-1/"
 accepted: true
-
-title: Drupal Development Best Practices & Building Sites on Pantheon Pt 1
-summary: Learn how to use the Pantheon platform to level up your Drupal development game by using version control, dev/test/live environments, and high performance tools.
+title: "Drupal Development Best Practices & Building Sites on Pantheon Pt 1"
+summary: "Learn how to use the Pantheon platform to level up your Drupal development game by using version control, dev/test/live environments, and high performance tools."
 presenters: Matt Cheney
 track: Development
 difficulty: Beginner
-
 day: Saturday
-start: 9:30am
+start: "9:30am"
 room: Room 13
+video: "http://www.youtube.com/watch?v=-CJI9IWTRoQ"
 ---
 
 ### Part 1 of 2
