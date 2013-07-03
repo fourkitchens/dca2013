@@ -1,19 +1,18 @@
 ---
+published: true
 layout: session
 category: session
-permalink: /sessions/semantic-site-building/
-published: true
+permalink: "/sessions/semantic-site-building/"
 accepted: true
-
 title: Semantic Site Building
 summary: Improve the quality of your site building by respecting the semantics of Drupal building blocks and the naming schemes you use.
 presenters: Jody Hamilton
 track: Sitebuilding
 difficulty: Intermediate
-
 day: Sunday
-start: 10:30am
+start: "10:30am"
 room: Room 12
+video: "http://www.youtube.com/watch?v=-Eq1k_8qiws"
 ---
 
 The usability of a CMS for its administrators and editors is closely tied to the semantic sense of the site build. Likewise, the maintainability (including ease of upgrade and feature addition) is greatly enhanced by intelligent semantics. By semantic site building in Drupal, I mean that all content types should be labeled and represent types of content, that user roles should be labeled and represent permissioned roles of users, and so on.
