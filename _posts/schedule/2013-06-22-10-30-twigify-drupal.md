@@ -1,19 +1,18 @@
 ---
+published: true
 layout: session
 category: session
-permalink: /sessions/twigify-drupal/
-published: true
+permalink: "/sessions/twigify-drupal/"
 accepted: true
-
 title: Twigify Drupal
 summary: A deep dive into Twig in Drupal 8 that includes a live demo of a Drupal module to automatically convert your existing Drupal themes to Twig
 presenters: Forest Mars
-track:  Frontend
+track: Frontend
 difficulty: Intermediate
-
 day: Saturday
-start: 10:30am
+start: "10:30am"
 room: Room 12
+video: "http://www.youtube.com/watch?v=Shb72n9C-yc"
 ---
 
 Twig is a new PHP-based, compiled, templating language that is slated to be the default theming engine in Drupal 8 (which will ship with only one theme engine.) It brings about significant improvements that promise to make front-end development simpler, faster and more secure.
