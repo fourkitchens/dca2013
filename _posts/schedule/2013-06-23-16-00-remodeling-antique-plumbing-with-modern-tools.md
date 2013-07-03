@@ -1,20 +1,19 @@
 ---
+published: true
 layout: session
 category: session
-permalink: /sessions/remodeling-antique-plumbing-with-modern-tools/
-published: true
+permalink: "/sessions/remodeling-antique-plumbing-with-modern-tools/"
 accepted: true
-
 title: Remodeling Antique Plumbing With Modern Tools
-summary: Spacer gifs and 8.3 filenames are long gone, but still we labor on elderly sites. What are the old pitfalls and modern workarounds?
+summary: "Spacer gifs and 8.3 filenames are long gone, but still we labor on elderly sites. What are the old pitfalls and modern workarounds?"
 presenters: Dustin Younse
 track: Development
 difficulty: Intermediate
 slides: "https://speakerdeck.com/milsyobtaf/remodeling-antique-plumbing-with-modern-tools"
-
 day: Sunday
-start: 4:00pm
+start: "4:00pm"
 room: Room 13
+video: "http://www.youtube.com/watch?v=goJLYSU3d2w"
 ---
 
 Spacer gifs and 8.3 filenames are a thing of the past, but the internet is still full of sites are that built around them.  If you ever need to work on a codebase of a sufficient age, what are the old pitfalls and modern workarounds?
