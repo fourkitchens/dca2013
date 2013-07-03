@@ -1,19 +1,18 @@
 ---
+published: true
 layout: session
 category: session
-permalink: /sessions/getting-agile-with-drupal/
-published: true
+permalink: "/sessions/getting-agile-with-drupal/"
 accepted: true
-
 title: Getting Agile with Drupal
 summary: Come see Getting agile with Drupal to learn about Scrumming the Drupal way.
 presenters: Johnnie Fox
 track: Business
 difficulty: Intermediate
-
 day: Sunday
-start: 10:30am
+start: "10:30am"
 room: Room 14
+video: "http://www.youtube.com/watch?v=P1FUsawxRaE"
 ---
 
 Waterfall, Agile, Extreme Programming, Water-gile In this session we will discuss agile strategies that can help you get to done; efficiently, quickly and happier. I will cover the Scrum Framework concepts and some of the lessons learned from using agile strategy to manage a multinational distributed team. that does Drupal every day.
