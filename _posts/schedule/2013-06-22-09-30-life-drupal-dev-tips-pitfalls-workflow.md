@@ -2,18 +2,17 @@
 published: true
 layout: session
 category: session
-permalink: /sessions/life-drupal-dev-tips-pitfalls-workflow/
+permalink: "/sessions/life-drupal-dev-tips-pitfalls-workflow/"
 accepted: true
-
 title: "Life as a Drupal dev: Tips, pitfalls, and workflow"
 summary: "From the efficiency nut who loves a good and seamless workflow to the head-scratching beginner: Concepts to help you succeed in your Drupal projects."
 presenters: Bronius Motekaitis
 track: Development
 difficulty: Intermediate
-
 day: Saturday
-start: 9:30am
+start: "9:30am"
 room: Room 14
+video: "http://www.youtube.com/watch?v=-VMLLWjtfyM"
 ---
 
 Typical challenges we face include handling local and remote team collaboration, project juggling, learning curve, and hard walls. Let’s dive into some hit-the-ground, specific concepts and tips to make your next Drupal-based project a success!
