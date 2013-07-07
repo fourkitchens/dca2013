@@ -13,6 +13,7 @@ day: Saturday
 start: "11:30am"
 room: Room 14
 video: "http://www.youtube.com/watch?v=FZ7vnw9gmQY"
+slides: "http://dl.dropboxusercontent.com/u/50531394/omega3/slides.html"
 ---
 
 "Omega…" she whispered through her webcam microphone. "Omega! I choose you!" shouted the man sporting cut-off sleeves and a mullet. "Omega?" asked the child entrepreneur quizzically. Then, heard echoing through the labyrinthian matrices of drupal.org, "Omega" was uttered for the 9872435th time.
