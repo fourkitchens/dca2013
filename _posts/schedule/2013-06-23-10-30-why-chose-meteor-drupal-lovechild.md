@@ -1,19 +1,18 @@
 ---
+published: true
 layout: session
 category: session
-permalink: /sessions/why-chose-meteor-drupal-lovechild/
-published: true
+permalink: "/sessions/why-chose-meteor-drupal-lovechild/"
 accepted: true
-
 title: Why we chose Meteor and what a Drupal/Meteor love child might look like
-summary: If Drupal and Meteor had a love child, what would it look like?
-presenters: Casey Cobb, Stephen Pope
+summary: "If Drupal and Meteor had a love child, what would it look like?"
+presenters: "Casey Cobb, Stephen Pope"
 track: Development
 difficulty: Intermediate
-
 day: Sunday
-start: 10:30am
+start: "10:30am"
 room: Room 13
+video: "http://www.youtube.com/watch?v=cD-fYXMPviE"
 ---
 
 In this talk, we'll discuss some thoughts on why we have really enjoyed working in the Meteor Node.js framework and what we think Drupal and Meteor could learn from each other.

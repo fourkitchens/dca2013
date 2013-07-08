@@ -1,19 +1,18 @@
 ---
+published: true
 layout: session
 category: session
-permalink: /sessions/cross-platform-apps/
-published: true
+permalink: "/sessions/cross-platform-apps/"
 accepted: true
-
-title: Cross-platform apps
+title: "Cross-platform apps"
 summary: We’ll discuss and demonstrate some best practices for creating compelling cross platform apps for IOS and Android using modern web technologies you already use (HTML/CSS/JS) and the Drupal website you already have.
-presenters: Michael Favia, Dane Macaulay
+presenters: "Michael Favia, Dane Macaulay"
 track: Development
 difficulty: Advanced
-
 day: Saturday
-start: 5:00pm
+start: "5:00pm"
 room: Room 14
+video: "http://www.youtube.com/watch?v=ikx9c0GiOIY"
 ---
 
 We’ll discuss and demonstrate some best practices for creating compelling cross platform apps for IOS and Android using modern web technologies you already use (HTML/CSS/JS) and the Drupal website you already have.

@@ -2,18 +2,17 @@
 published: true
 layout: session
 category: session
-permalink: /sessions/marketers-case-drupal/
+permalink: "/sessions/marketers-case-drupal/"
 accepted: true
-
-title: The Marketers' Case for Drupal
-summary: What's driving the world's best marketing teams to go Drupal.
+title: "The Marketers' Case for Drupal"
+summary: "What's driving the world's best marketing teams to go Drupal."
 presenters: Katelyn Fogarty
 track: Business
 difficulty: Beginner
-
 day: Saturday
-start: 9:30am
+start: "9:30am"
 room: Room 12
+video: "http://www.youtube.com/watch?v=_ZaHr0WD8kk"
 ---
 
 Digital marketers demand greater agility and interoperability from their platforms as they adapt to the rapidly changing web. Drupal is proving itself again and again as a leading platform for Web Experience Management (WEM).

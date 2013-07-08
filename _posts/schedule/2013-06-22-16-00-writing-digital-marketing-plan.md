@@ -1,19 +1,18 @@
 ---
+published: true
 layout: session
 category: session
-permalink: /sessions/writing-digital-marketing-plan/
-published: true
+permalink: "/sessions/writing-digital-marketing-plan/"
 accepted: true
-
 title: Writing a Digital Marketing Plan
 summary: "Do you have a Digital Marketing Plan? You should! Come to this session to get started and to receive a free template."
 presenters: Kylon Gustin
 track: Business
 difficulty: Beginner
-
 day: Saturday
-start: 4:00pm
+start: "4:00pm"
 room: Room 14
+video: "http://www.youtube.com/watch?v=Po8dgjb6KRE"
 ---
 
 Would you take a road trip without a map (app)?

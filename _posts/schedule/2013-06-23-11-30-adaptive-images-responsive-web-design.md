@@ -1,19 +1,18 @@
 ---
+published: true
 layout: session
 category: session
-permalink: /sessions/adaptive-images-responsive-web-design/
-published: true
+permalink: "/sessions/adaptive-images-responsive-web-design/"
 accepted: true
-
 title: Adaptive Images for Responsive Web Design
-summary: Learn tricks and techniques to build future-friendly images for RWD sites & apps.
+summary: "Learn tricks and techniques to build future-friendly images for RWD sites & apps."
 presenters: Christopher Schmitt
 track: Frontend
 difficulty: Intermediate
-
 day: Sunday
-start: 11:30am
+start: "11:30am"
 room: Room 12
+video: "http://www.youtube.com/watch?v=q0NJp7uzyJ8"
 ---
 
 The open web doesn't stop at our desktop. Smart phones and tablets not only contain more computing power and better browsers than the computers that started the Internet economy, they have better displays.

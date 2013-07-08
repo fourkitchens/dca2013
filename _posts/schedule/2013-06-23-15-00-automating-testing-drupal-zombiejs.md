@@ -1,19 +1,18 @@
 ---
+published: true
 layout: session
 category: session
-permalink: /sessions/automating-testing-drupal-zombiejs/
-published: true
+permalink: "/sessions/automating-testing-drupal-zombiejs/"
 accepted: true
-
 title: Automating and Testing Drupal with Zombie.js
-summary: Let's say you need to automate something repetitive that you always do within the Drupal UI. Enter Zombie.js... a lightweight, insanely fast, headless browser for testing and automation within a single Node.js package.
+summary: "Let's say you need to automate something repetitive that you always do within the Drupal UI. Enter Zombie.js... a lightweight, insanely fast, headless browser for testing and automation within a single Node.js package."
 presenters: Travis Tidwell
 track: Development
 difficulty: Advanced
-
 day: Sunday
-start: 3:00pm
+start: "3:00pm"
 room: Room 13
+video: "http://www.youtube.com/watch?v=_OPU58fNARQ"
 ---
 
 ### The Bite

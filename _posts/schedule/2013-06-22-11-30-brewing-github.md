@@ -1,20 +1,19 @@
 ---
+published: true
 layout: session
 category: session
-permalink: /sessions/brewing-github/
-published: true
+permalink: "/sessions/brewing-github/"
 accepted: true
 slides: "https://speakerdeck.com/kyledaigle/brewing-github"
-
 title: Brewing GitHub
 summary: How Github ships
 presenters: Kyle Daigle
 track: Business
 difficulty: Beginner
-
 day: Saturday
-start: 11:30am
+start: "11:30am"
 room: Room 12
+video: "http://www.youtube.com/watch?v=zIuURMyMfEQ"
 ---
 
 GitHub just turned 5 years old. During that time, it grew from a small team of **4** to **171** employees all over the globe, working on their own schedules, and without any managers.
