@@ -32,6 +32,7 @@ $reset-height: 2.1em;
       position:    -moz-sticky;
       position:     -ms-sticky;
       position:      -o-sticky;
+      position:         sticky;
       top: 2.1em;
       z-index: 90;
       // HW accel to help position: sticky
@@ -95,6 +96,7 @@ $reset-height: 2.1em;
       position:    -moz-sticky;
       position:     -ms-sticky;
       position:      -o-sticky;
+      position:         sticky;
       top: 0;
       z-index: 100;
       background: $darkbackground;
