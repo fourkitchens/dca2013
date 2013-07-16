@@ -1713,6 +1713,7 @@ footer .credits i {
   position: -moz-sticky;
   position: -ms-sticky;
   position: -o-sticky;
+  position: sticky;
   top: 2.1em;
   z-index: 90;
   -webkit-transform: translateZ(0);
@@ -1799,6 +1800,7 @@ footer .credits i {
     position: -moz-sticky;
     position: -ms-sticky;
     position: -o-sticky;
+    position: sticky;
     top: 0;
     z-index: 100;
     background: #0a141b;
@@ -1852,6 +1854,7 @@ footer .credits i {
   position: -moz-sticky;
   position: -ms-sticky;
   position: -o-sticky;
+  position: sticky;
   top: 0;
   z-index: 100;
   padding: 0.5em 0;
