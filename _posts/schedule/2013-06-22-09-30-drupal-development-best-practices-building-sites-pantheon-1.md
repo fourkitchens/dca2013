@@ -12,7 +12,7 @@ difficulty: Beginner
 day: Saturday
 start: "9:30am"
 room: Room 13
-video: "http://www.youtube.com/watch?v=-CJI9IWTRoQ"
+video: "-CJI9IWTRoQ"
 ---
 
 ### Part 1 of 2

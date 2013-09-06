@@ -13,7 +13,7 @@ slides: "http://brantwynn.github.io/wow.slides"
 day: Saturday
 start: "4:00pm"
 room: Room 12
-video: "http://www.youtube.com/watch?v=G11w5ozWKJU"
+video: "G11w5ozWKJU"
 ---
 
 The Demo Framework is a new distribution that highlights powerful features created by our community. It is intended to be used as a starterkit for promoting enterprise-ready Drupal solutions. It uses modules from popular distributions like Spark, Commerce Kickstart and Panopoly to deliver an engaging web experience management solution.

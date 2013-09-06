@@ -12,7 +12,7 @@ difficulty: Beginner
 day: Saturday
 start: "5:00pm"
 room: Room 13
-video: "http://www.youtube.com/watch?v=moiNS6s05M8"
+video: "moiNS6s05M8"
 ---
 
 For beginners that have some familiarity with simple Views, Fields and Content Types, creating related content displays is the key to launching interesting, relevant and feature rich websites.

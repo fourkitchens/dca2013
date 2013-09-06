@@ -13,7 +13,7 @@ slides: "http://slid.es/ronnorthcutt/build-your-owndrupal-api-site"
 day: Saturday
 start: "4:00pm"
 room: Room 13
-video: "http://www.youtube.com/watch?v=ktpEd8dRMjQ"
+video: "ktpEd8dRMjQ"
 ---
 
 Oh noes! Api.drupal.org is down... or I am on a plane... or I don't have a wifi connection... how can I look up the details on that hook/function/class that I need?

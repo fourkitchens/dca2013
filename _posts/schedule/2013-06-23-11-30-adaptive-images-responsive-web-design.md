@@ -12,7 +12,7 @@ difficulty: Intermediate
 day: Sunday
 start: "11:30am"
 room: Room 12
-video: "http://www.youtube.com/watch?v=q0NJp7uzyJ8"
+video: "q0NJp7uzyJ8"
 ---
 
 The open web doesn't stop at our desktop. Smart phones and tablets not only contain more computing power and better browsers than the computers that started the Internet economy, they have better displays.

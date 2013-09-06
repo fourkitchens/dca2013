@@ -12,7 +12,7 @@ difficulty: Beginner
 day: Sunday
 start: "11:30am"
 room: Room 14
-video: "http://www.youtube.com/watch?v=ZkEaFiv7naI"
+video: "ZkEaFiv7naI"
 ---
 
 Drupal is an incredibly powerful content management system with an enourmous number of well-written, extendible, and flexible contributed modules. Learning to be proficient in Drupal core is a great and necessary skill, but learning to leverage contributed modules will really advance your skills to the next level.

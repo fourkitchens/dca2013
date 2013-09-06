@@ -12,7 +12,7 @@ difficulty: Intermediate
 day: Sunday
 start: "4:00pm"
 room: Room 14
-video: "http://www.youtube.com/watch?v=hRAhl_6epRU"
+video: "hRAhl_6epRU"
 ---
 
 Over the past few years, Marketing Automation has exploded in popularity and use in corporations and non-profits across nearly every vertical. It has become a crucial piece of the Digital Marketing equation and an opportunity for Drupal as more customers are looking for new and creative ways to bridge content with customer to increase engagement.

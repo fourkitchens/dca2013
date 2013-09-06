@@ -12,7 +12,7 @@ difficulty: Intermediate
 day: Saturday
 start: "11:30am"
 room: Room 13
-video: "http://www.youtube.com/watch?v=O8motapHnvs"
+video: "O8motapHnvs"
 ---
 
 This session is intended for the site builders, architects and developers, anyone that finds themselves doing their work in Drupal's UI instead of a code editor.
