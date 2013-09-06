@@ -19,5 +19,8 @@ layout: col-1
     </ul>
   </aside>
 
+  {% if page.video != null %}
+    <iframe width="560" height="315" src="//www.youtube.com/embed/{{ page.video }}?list=PL42rSVhWmWRtydBksnU16IszNR7J58cnH" frameborder="0" allowfullscreen></iframe>
+  {% endif %}
   <div class="desc">{{ content }}</div>
 </article>
