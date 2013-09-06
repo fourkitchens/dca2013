@@ -12,7 +12,7 @@ difficulty: Beginner
 day: Saturday
 start: "4:00pm"
 room: Room 14
-video: "http://www.youtube.com/watch?v=Po8dgjb6KRE"
+video: "Po8dgjb6KRE"
 ---
 
 Would you take a road trip without a map (app)?

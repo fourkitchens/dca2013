@@ -12,7 +12,7 @@ difficulty: Beginner
 day: Saturday
 start: "9:30am"
 room: Room 12
-video: "http://www.youtube.com/watch?v=_ZaHr0WD8kk"
+video: "_ZaHr0WD8kk"
 ---
 
 Digital marketers demand greater agility and interoperability from their platforms as they adapt to the rapidly changing web. Drupal is proving itself again and again as a leading platform for Web Experience Management (WEM).

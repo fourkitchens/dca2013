@@ -13,7 +13,7 @@ slides: "https://speakerdeck.com/milsyobtaf/remodeling-antique-plumbing-with-mod
 day: Sunday
 start: "4:00pm"
 room: Room 13
-video: "http://www.youtube.com/watch?v=goJLYSU3d2w"
+video: "goJLYSU3d2w"
 ---
 
 Spacer gifs and 8.3 filenames are a thing of the past, but the internet is still full of sites are that built around them.  If you ever need to work on a codebase of a sufficient age, what are the old pitfalls and modern workarounds?

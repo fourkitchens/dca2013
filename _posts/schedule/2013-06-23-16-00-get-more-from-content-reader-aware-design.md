@@ -12,7 +12,7 @@ difficulty: Intermediate
 day: Sunday
 start: "4:00pm"
 room: Room 12
-video: "http://www.youtube.com/watch?v=rIn56WjtBh8"
+video: "rIn56WjtBh8"
 ---
 
 What happens to your content when it falls off the front page? How can we as web publishers do a better job of merchandising our content? Ben Brown will explore methods for building more value for readers and publishers by using reader aware design techniques, and by re-imagining content archives as a back catalog.

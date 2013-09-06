@@ -12,7 +12,7 @@ difficulty: Advanced
 day: Sunday
 start: "3:00pm"
 room: Room 13
-video: "http://www.youtube.com/watch?v=_OPU58fNARQ"
+video: "_OPU58fNARQ"
 ---
 
 ### The Bite

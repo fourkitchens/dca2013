@@ -12,7 +12,7 @@ difficulty: Intermediate
 day: Sunday
 start: "3:00pm"
 room: Room 12
-video: "http://www.youtube.com/watch?v=-bmVyepOqXE"
+video: "-bmVyepOqXE"
 ---
 
 ## Panelists

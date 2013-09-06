@@ -12,7 +12,7 @@ difficulty: Intermediate
 day: Sunday
 start: "3:00pm"
 room: Room 14
-video: "http://www.youtube.com/watch?v=SfQp1HZXSy4"
+video: "SfQp1HZXSy4"
 ---
 
 This session is a case study of Four Kitchens' work with UT Austin's Policy Office on a custom policy publishing and approval workflow. The business problems faced by the policy office require a lot of flexibility and wide discretion in terms of workflow, presentation, and access.

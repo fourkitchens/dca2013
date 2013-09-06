@@ -12,7 +12,7 @@ difficulty: Beginner
 day: Saturday
 start: "3:00pm"
 room: Room 12
-video: "http://www.youtube.com/watch?v=4ZTccMcP2Ls"
+video: "4ZTccMcP2Ls"
 ---
 
 Drupal has grown over the past decade from dorm-room project to a CMS powerhouse. Now that the project seems to be on the edge of glory, what does the future hold?

@@ -12,7 +12,7 @@ difficulty: Advanced
 day: Saturday
 start: "5:00pm"
 room: Room 14
-video: "http://www.youtube.com/watch?v=ikx9c0GiOIY"
+video: "ikx9c0GiOIY"
 ---
 
 We’ll discuss and demonstrate some best practices for creating compelling cross platform apps for IOS and Android using modern web technologies you already use (HTML/CSS/JS) and the Drupal website you already have.

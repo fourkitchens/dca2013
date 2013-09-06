@@ -12,7 +12,7 @@ difficulty: Intermediate
 day: Saturday
 start: "11:30am"
 room: Room 14
-video: "http://www.youtube.com/watch?v=FZ7vnw9gmQY"
+video: "FZ7vnw9gmQY"
 slides: "http://dl.dropboxusercontent.com/u/50531394/omega3/slides.html"
 ---
 

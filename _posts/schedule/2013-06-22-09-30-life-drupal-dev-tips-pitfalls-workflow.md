@@ -12,7 +12,7 @@ difficulty: Intermediate
 day: Saturday
 start: "9:30am"
 room: Room 14
-video: "http://www.youtube.com/watch?v=-VMLLWjtfyM"
+video: "-VMLLWjtfyM"
 ---
 
 Typical challenges we face include handling local and remote team collaboration, project juggling, learning curve, and hard walls. Let’s dive into some hit-the-ground, specific concepts and tips to make your next Drupal-based project a success!

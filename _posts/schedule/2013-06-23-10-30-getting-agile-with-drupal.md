@@ -12,7 +12,7 @@ difficulty: Intermediate
 day: Sunday
 start: "10:30am"
 room: Room 14
-video: "http://www.youtube.com/watch?v=P1FUsawxRaE"
+video: "P1FUsawxRaE"
 ---
 
 Waterfall, Agile, Extreme Programming, Water-gile In this session we will discuss agile strategies that can help you get to done; efficiently, quickly and happier. I will cover the Scrum Framework concepts and some of the lessons learned from using agile strategy to manage a multinational distributed team. that does Drupal every day.
